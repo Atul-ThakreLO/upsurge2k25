@@ -37,4 +37,6 @@ const HeroDesktop = forwardRef((props,refs) => {
   );
 });
 
+HeroDesktop.displayName = "HeroDesktop";
+
 export default HeroDesktop;
