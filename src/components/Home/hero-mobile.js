@@ -1,40 +1,3 @@
-// import Image from "next/image";
-// import React, { forwardRef } from "react";
-
-// const HeroMobile = forwardRef((props, refs) => {
-//   // return <div className="h-screen w-full bg-gradient-to-b from-white via-5% via-gray-600 to-black"></div>;
-//   return (
-//     <div
-//       // ref={refs.bgRef}
-//       className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-no-repeat bg-center bg-cover bg-[url('/hero/bgmb.png')]"
-//     >
-//       <div>
-//         <h1 className="name2 font-squid text-5xl leading-12 text-center text-[#EF428C text-pink-800 opacity- absolute top-52 left-1/2 -translate-x-1/2">
-//           upsurge <br /> <span className="ml-30">2k25</span>
-//         </h1>
-//         <h1 className="name1 font-squid text-5xl leading-12 text-center text-[#85073d] opacity-70 absolute top-52 left-1/2 -translate-x-1/2">
-//           upsurge <br /> <span className="ml-30">2k25</span>
-//         </h1>
-//         <h1 className="name font-squid text-5xl leading-12 text-center text-white absolute top-52 left-1/2 -translate-x-1/2">
-//           upsurge <br /> <span className="ml-30">2k25</span>
-//         </h1>
-//       </div>
-//       <Image
-//         ref={refs.mainCharRef}
-//         className="main object-cover absolute bottom-[13%] scale-[1.2] left-[50%] -translate-x-1/2"
-//         style={{ transformStyle: "preserve-3d" }}
-//         src="/hero/tguard.png"
-//         alt="guard"
-//         width={800}
-//         height={1000}
-//         priority
-//       />
-//     </div>
-//   );
-// });
-
-// export default HeroMobile;
-
 import Image from "next/image";
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
@@ -196,5 +159,6 @@ const HeroMobile = forwardRef((props, refs) => {
   );
 });
 
+HeroMobile.displayName = "HeroMobile";
 
 export default HeroMobile;
