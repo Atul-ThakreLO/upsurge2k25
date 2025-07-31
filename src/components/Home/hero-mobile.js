@@ -1,8 +1,9 @@
 import Image from "next/image";
-import React, { forwardRef, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import Head from "next/head";
 
-const HeroMobile = forwardRef((props, refs) => {
+const HeroMobile = () => {
   const images = [
     "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938305/tguard_uieiv4.webp",
     "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/sguard_jhetrh.webp",
@@ -11,44 +12,44 @@ const HeroMobile = forwardRef((props, refs) => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageRef = useRef(null);
-  const glitchRef = useRef(null);
+  const intervalRef = useRef(null);
+  const isAnimatingRef = useRef(false);
 
   const createGlitchEffect = () => {
     const tl = gsap.timeline();
 
     tl.set(imageRef.current, {
       filter: "hue-rotate(0deg) saturate(1) brightness(1)",
-      transform: "scale(1.2)",
+      x: 0,
+      y: 0,
+      scale: 1.2,
     })
-
       .to(imageRef.current, {
-        duration: 0.05,
-        filter: "hue-rotate(90deg) saturate(2) brightness(1.2)",
-        x: "-48%",
-        ease: "none",
-      })
-      .to(imageRef.current, {
-        duration: 0.05,
-        filter: "hue-rotate(-90deg) saturate(0.5) brightness(1.5)",
-        x: "-52%",
+        duration: 0.04,
+        filter: "hue-rotate(90deg) saturate(1.8) brightness(1.1)",
+        x: -15,
+        y: 2,
         ease: "none",
       })
       .to(imageRef.current, {
         duration: 0.03,
-        filter: "hue-rotate(180deg) saturate(3) brightness(0.8)",
-        x: "-49%",
+        filter: "hue-rotate(-45deg) saturate(0.7) brightness(1.3)",
+        x: 10,
+        y: -1,
         ease: "none",
       })
       .to(imageRef.current, {
         duration: 0.02,
-        filter: "hue-rotate(45deg) saturate(1.5) brightness(1.3)",
-        x: "-51%",
+        filter: "hue-rotate(120deg) saturate(2) brightness(0.9)",
+        x: -8,
+        y: 1,
         ease: "none",
       })
       .to(imageRef.current, {
-        duration: 0.1,
+        duration: 0.08,
         filter: "hue-rotate(0deg) saturate(1) brightness(1)",
-        x: "-50%",
+        x: 0,
+        y: 0,
         ease: "power2.out",
       });
 
@@ -60,42 +61,37 @@ const HeroMobile = forwardRef((props, refs) => {
 
     tl.set(imageRef.current, {
       filter: "contrast(1) brightness(1) saturate(1)",
+      x: 0,
+      y: 0,
+      scale: 1.2,
     })
-
+      .to(imageRef.current, {
+        duration: 0.02,
+        filter: "contrast(1.3) brightness(1.2) saturate(1.4) hue-rotate(15deg)",
+        x: -12,
+        y: 2,
+        ease: "none",
+      })
       .to(imageRef.current, {
         duration: 0.03,
-        filter: "contrast(1.2) brightness(1.1) saturate(1.5) hue-rotate(10deg)",
-        x: "-48%",
-        y: "1px",
-        ease: "none",
-      })
-      .to(imageRef.current, {
-        duration: 0.02,
         filter:
-          "contrast(0.8) brightness(1.3) saturate(0.7) hue-rotate(-15deg)",
-        x: "-52%",
-        y: "-2px",
-        ease: "none",
-      })
-      .to(imageRef.current, {
-        duration: 0.04,
-        filter: "contrast(1.5) brightness(0.9) saturate(2) hue-rotate(25deg)",
-        x: "-49%",
-        y: "3px",
+          "contrast(0.8) brightness(1.4) saturate(0.6) hue-rotate(-20deg)",
+        x: 8,
+        y: -2,
         ease: "none",
       })
       .to(imageRef.current, {
         duration: 0.02,
-        filter: "contrast(1.1) brightness(1.2) saturate(1.2) hue-rotate(-8deg)",
-        x: "-51%",
-        y: "-1px",
+        filter: "contrast(1.6) brightness(0.8) saturate(1.8) hue-rotate(30deg)",
+        x: -5,
+        y: 3,
         ease: "none",
       })
       .to(imageRef.current, {
         duration: 0.06,
         filter: "contrast(1) brightness(1) saturate(1) hue-rotate(0deg)",
-        x: "-50%",
-        y: "0px",
+        x: 0,
+        y: 0,
         ease: "power2.out",
       });
 
@@ -103,63 +99,105 @@ const HeroMobile = forwardRef((props, refs) => {
   };
 
   const changeImageWithGlitch = () => {
+    if (isAnimatingRef.current) return;
+
+    isAnimatingRef.current = true;
+
     const glitchAnimation =
       Math.random() > 0.5 ? createGlitchEffect() : createAdvancedGlitchEffect();
 
-    glitchAnimation.play();
-
-    gsap.delayedCall(0.08, () => {
+    gsap.delayedCall(0.06, () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     });
+
+    gsap.delayedCall(0.15, () => {
+      isAnimatingRef.current = false;
+
+      gsap.set(imageRef.current, {
+        x: 0,
+        y: 0,
+        scale: 1.2,
+        filter: "none",
+      });
+    });
+
+    glitchAnimation.play();
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      changeImageWithGlitch();
-    }, 3000);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
 
-    return () => clearInterval(interval);
+    intervalRef.current = setInterval(() => {
+      changeImageWithGlitch();
+    }, 3500); 
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
   }, []);
 
   useEffect(() => {
-    if (refs && refs.triggerImageChange) {
-      refs.triggerImageChange.current = triggerImageChange;
+    if (imageRef.current) {
+      gsap.set(imageRef.current, {
+        x: 0,
+        y: 0,
+        scale: 1.2,
+      });
     }
-  }, [refs]);
+  }, []);
 
   return (
-    <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-no-repeat bg-center bg-cover bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753938304/bgmb_cav00a.webp')]">
-      <div>
-        <h1 className="name2 font-squid text-5xl leading-12 text-center text-pink-800 absolute top-52 left-1/2 -translate-x-1/2">
-          upsurge <br /> <span className="ml-30">2k25</span>
-        </h1>
-        <h1 className="name1 font-squid text-5xl leading-12 text-center text-[#85073d] opacity-70 absolute top-52 left-1/2 -translate-x-1/2">
-          upsurge <br /> <span className="ml-30">2k25</span>
-        </h1>
-        <h1 className="name font-squid text-5xl leading-12 text-center text-white absolute top-52 left-1/2 -translate-x-1/2">
-          upsurge <br /> <span className="ml-30">2k25</span>
-        </h1>
+    <>
+      <Head>
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dok1hsojb/image/upload/v1753938305/tguard_uieiv4.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/sguard_jhetrh.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/cguard_gxzesl.webp"
+        />
+      </Head>
+
+      <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-gradient-to-b from-white via-10% via-black to-170% to-pink-900">
+        <div className="absolute top-52 left-1/2 -translate-x-1/2">
+          <h1 className="font-squid text-5xl leading-12 text-center text-pink-800 absolute inset-0 blur-[1px]">
+            upsurge <br /> <span className="ml-30">2k25</span>
+          </h1>
+          <h1 className="font-squid text-5xl leading-12 text-center text-[#85073d] opacity-70 absolute inset-0">
+            upsurge <br /> <span className="ml-30">2k25</span>
+          </h1>
+          <h1 className="font-squid text-5xl leading-12 text-center text-white relative">
+            upsurge <br /> <span className="ml-30">2k25</span>
+          </h1>
+        </div>
+
+        <div className="absolute w-full bottom-[5%] left-1/2 -translate-x-1/2">
+          <Image
+            ref={imageRef}
+            className="object-cover w-full transition-opacity duration-200"
+            src={images[currentImageIndex]}
+            alt="character"
+            width={320}
+            height={240}
+            priority
+          />
+        </div>
       </div>
-
-      <Image
-        ref={(el) => {
-          imageRef.current = el;
-          // if (refs && refs.mainCharRef) {
-          //   refs.mainCharRef.current = el;
-          // }
-        }}
-        className="main object-cover absolute bottom-[13%] scale-[1.2] left-[50%] -translate-x-1/2 transition-opacity duration-200"
-        style={{ transformStyle: "preserve-3d" }}
-        src={images[currentImageIndex]}
-        alt="character"
-        width={800}
-        height={1000}
-        priority
-      />
-    </div>
+    </>
   );
-});
-
-HeroMobile.displayName = "HeroMobile";
+};
 
 export default HeroMobile;

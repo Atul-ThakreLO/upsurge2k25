@@ -9,18 +9,19 @@ import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkDevice = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+  // useEffect(() => {
+  //   console.log(window.innerWidth);
 
-    checkDevice();
-    window.addEventListener("resize", checkDevice);
-    return () => window.removeEventListener("resize", checkDevice);
-  }, []);
+  //   const checkDevice = () => {
+  //     setIsMobile(window.innerWidth < 768);
+  //   };
 
+  //   checkDevice();
+  //   window.addEventListener("resize", checkDevice);
+  //   return () => window.removeEventListener("resize", checkDevice);
+  // }, []);
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////// Animation /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,11 +46,11 @@ const Hero = () => {
         trigger: container,
         start: "top top",
         end: "bottom top",
-        scrub: 1, 
-        pin: fixedContainer, 
-        pinSpacing: false, 
+        scrub: 1,
+        pin: fixedContainer,
+        pinSpacing: false,
         invalidateOnRefresh: true,
-        fastScrollEnd: true, 
+        fastScrollEnd: true,
       },
     });
 
@@ -68,6 +69,7 @@ const Hero = () => {
     );
 
     [bgRef.current, mainCharRef.current].forEach((item) => {
+      if (window.innerWidth < 768) return;
       tlRef.current.to(item, {
         duration: 0.5,
         scale: 1.7,
@@ -98,10 +100,10 @@ const Hero = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  
   // Hero animation
 
   useGSAP(() => {
+    if (window.innerWidth < 768) return;
     let lastMouseX = 0;
     let lastMouseY = 0;
     let mouseStopTimer = null;
@@ -165,13 +167,12 @@ const Hero = () => {
   return (
     <div ref={containerRef}>
       <div ref={fixedContainerRef} className="relative">
-        {isMobile ? (
-          <HeroMobile ref={{ bgRef, mainCharRef }} />
-        ) : (
+        <div className="block md:hidden">
+          <HeroMobile />
+        </div>
+        <div className="hidden md:block">
           <HeroDesktop ref={{ bgRef, mainCharRef }} />
-        )}
-        <div className="hidden md:block"></div>
-        <div className="block md:hidden"></div>
+        </div>
       </div>
       <div
         ref={scrollingContainerRef}

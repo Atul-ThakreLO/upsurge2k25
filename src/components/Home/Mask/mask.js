@@ -53,7 +53,8 @@ export default function Mask({ modelPath }) {
       Math.pow(rotationTarget.current.x, 2) +
         Math.pow(rotationTarget.current.y, 2)
     );
-    const scale = 1 + distance * 0.1; // 3.5
+    const scale = 
+    window.innerWidth < 768 ? 0.5 + distance * 0.1 : 1 + distance * 0.1; // 3.5
     meshRef.current.scale.setScalar(scale);
   });
 

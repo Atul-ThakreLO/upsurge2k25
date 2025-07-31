@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compress: true,
   images: {
+    domains: ["res.cloudinary.com"],
+    formats: ["image/webp", "image/avif"],
     remotePatterns: [
       {
         protocol: "https",
@@ -9,6 +12,11 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+  },
+  swcMinify: true, 
+  experimental: {
+    esmExternals: true,
+    modern: true,
   },
 };
 
