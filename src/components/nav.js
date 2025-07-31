@@ -8,8 +8,8 @@ const Nav = () => {
         <div>
           <Image
             className="w-24 md:w-36"
-            src="/sglogo.png"
-            alt="Next.js logo"
+            src="https://res.cloudinary.com/dok1hsojb/image/upload/v1753939835/sglogo_yrrcuv.webp"
+            alt="Squid Game Logo"
             width={150}
             height={150}
             priority
@@ -19,7 +19,7 @@ const Nav = () => {
           <Image
             className=""
             src="/Logo.svg"
-            alt="Next.js logo"
+            alt="Menu logo"
             width={50}
             height={50}
             priority

@@ -5,11 +5,11 @@ const HeroDesktop = forwardRef((props,refs) => {
     <div className="w-[100%] relative overflow-hidden  h-screen">
       <div
         ref={refs.bgRef}
-        className="bg scale-[1.1] h-screen w-[100%] object-cover bg-[url('/hero/bg-back-ex.jpg')] bg-no-repeat bg-center bg-position-[center_bottom_-10rem bg-cover"
+        className="bg scale-[1.1] h-screen w-[100%] object-cover bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753938323/bg-back-ex_gyefjd.webp')] bg-no-repeat bg-center bg-position-[center_bottom_-10rem bg-cover"
       ></div>
       <div
         ref={refs.mainCharRef}
-        className="main bg-[url('/hero/bg-main_upscaled.png')] scale-[1.1] w-full md:w-1/2 h-[80vh] lg:h-[90vh] bg-center bg-no-repeat bg-cover absolute bottom-3 left-1/2 -translate-x-1/2"
+        className="main bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753938415/bg-main_upscaled_i2tz06.webp')] scale-[1.1] w-full md:w-1/2 h-[80vh] lg:h-[90vh] bg-center bg-no-repeat bg-cover absolute bottom-3 left-1/2 -translate-x-1/2"
       ></div>
 
       {/* <Image

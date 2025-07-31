@@ -3,7 +3,11 @@ import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const HeroMobile = forwardRef((props, refs) => {
-  const images = ["/hero/tguard.png", "/hero/sguard.png", "/hero/cguard.png"];
+  const images = [
+    "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938305/tguard_uieiv4.webp",
+    "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/sguard_jhetrh.webp",
+    "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/cguard_gxzesl.webp",
+  ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageRef = useRef(null);
@@ -117,8 +121,6 @@ const HeroMobile = forwardRef((props, refs) => {
     return () => clearInterval(interval);
   }, []);
 
-
-
   useEffect(() => {
     if (refs && refs.triggerImageChange) {
       refs.triggerImageChange.current = triggerImageChange;
@@ -126,7 +128,7 @@ const HeroMobile = forwardRef((props, refs) => {
   }, [refs]);
 
   return (
-    <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-no-repeat bg-center bg-cover bg-[url('/hero/bgmb.png')]">
+    <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-no-repeat bg-center bg-cover bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753938304/bgmb_cav00a.webp')]">
       <div>
         <h1 className="name2 font-squid text-5xl leading-12 text-center text-pink-800 absolute top-52 left-1/2 -translate-x-1/2">
           upsurge <br /> <span className="ml-30">2k25</span>
@@ -154,7 +156,6 @@ const HeroMobile = forwardRef((props, refs) => {
         height={1000}
         priority
       />
-
     </div>
   );
 });
