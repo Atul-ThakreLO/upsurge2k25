@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Head from "next/head";
+import { useGSAP } from "@gsap/react";
 
 const HeroMobile = () => {
   const images = [
@@ -12,6 +13,7 @@ const HeroMobile = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageRef = useRef(null);
+  const titleRef = useRef(null);
   const intervalRef = useRef(null);
   const isAnimatingRef = useRef(false);
 
@@ -131,7 +133,7 @@ const HeroMobile = () => {
 
     intervalRef.current = setInterval(() => {
       changeImageWithGlitch();
-    }, 3500); 
+    }, 3500);
 
     return () => {
       if (intervalRef.current) {
@@ -148,6 +150,24 @@ const HeroMobile = () => {
         scale: 1.2,
       });
     }
+  }, []);
+
+  useGSAP(() => {
+    [imageRef.current, titleRef.current].forEach((el) => {
+      gsap.to(el, {
+        duration: 0.5,
+        scale: 0.7,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "body",
+          start: "5% 20%",
+          end: "50% 5%",
+          // start: "10% 50%",
+          // end: "60% 20%",
+          scrub: 2,
+        },
+      });
+    });
   }, []);
 
   return (
@@ -173,13 +193,7 @@ const HeroMobile = () => {
 
       <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-gradient-to-b from-white via-10% via-black to-170% to-pink-900">
         <div className="absolute top-52 left-1/2 -translate-x-1/2">
-          <h1 className="font-squid text-5xl leading-12 text-center text-pink-800 absolute inset-0 blur-[1px]">
-            upsurge <br /> <span className="ml-30">2k25</span>
-          </h1>
-          <h1 className="font-squid text-5xl leading-12 text-center text-[#85073d] opacity-70 absolute inset-0">
-            upsurge <br /> <span className="ml-30">2k25</span>
-          </h1>
-          <h1 className="font-squid text-5xl leading-12 text-center text-white relative">
+          <h1 ref={titleRef} className="font-squid name2 text-5xl leading-12 text-center text-white relative">
             upsurge <br /> <span className="ml-30">2k25</span>
           </h1>
         </div>

@@ -29,6 +29,10 @@
   font-family: var(--font-squid);
 }
 
+.pink-shadow {
+  box-shadow: 0 0 10px #FF1493, 0 0 30px #FF1493, 0 0 50px #FF1493;
+}
+
 html {
   scroll-behavior: smooth;
 }
