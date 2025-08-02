@@ -139,7 +139,7 @@ const Hero = () => {
       const yMove = (e.clientY / window.innerHeight - 0.5) * 5;
 
       gsap.to(mainCharRef.current, {
-        left: `25%`,
+        // left: `25%`,
         x: `${xMove * 0.4}%`,
         y: -yMove * 10,
       });
