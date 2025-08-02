@@ -29,7 +29,7 @@ const RotateMask = () => {
           castShadow
         />
 
-        <Environment preset="sunset" />
+        {/* <Environment preset="sunset" /> */}
 
         <Mask modelPath="https://res.cloudinary.com/dok1hsojb/image/upload/v1753940672/mask_ajtjmf.glb" />
       </Canvas>
