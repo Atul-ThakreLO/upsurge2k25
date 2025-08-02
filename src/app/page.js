@@ -1,4 +1,5 @@
 import Events from "@/components/Home/events";
+import Footer from "@/components/Home/Footer/Footer";
 import Hero from "@/components/Home/hero";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Events />
         <Events />
       </div>
+      <Footer />
     </div>
   );
 }
