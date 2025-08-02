@@ -6,9 +6,12 @@ import { useGSAP } from "@gsap/react";
 
 const HeroMobile = () => {
   const images = [
-    "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938305/tguard_uieiv4.webp",
-    "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/sguard_jhetrh.webp",
-    "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/cguard_gxzesl.webp",
+    "https://res.cloudinary.com/dok1hsojb/image/upload/v1754073752/triangle-guard_ydj8dl.webp",
+    "https://res.cloudinary.com/dok1hsojb/image/upload/v1754073752/square-guard_mkvqyz.webp",
+    "https://res.cloudinary.com/dok1hsojb/image/upload/v1754076217/circle-guard_qtg02u.webp",
+    // "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/sguard_jhetrh.webp",
+    // "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/cguard_gxzesl.webp",
+    // "https://res.cloudinary.com/dok1hsojb/image/upload/v1753938306/cguard_gxzesl.webp",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -154,19 +157,31 @@ const HeroMobile = () => {
 
   useGSAP(() => {
     [imageRef.current, titleRef.current].forEach((el) => {
-      gsap.to(el, {
-        duration: 0.5,
-        scale: 0.7,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: "body",
-          start: "5% 20%",
-          end: "50% 5%",
-          // start: "10% 50%",
-          // end: "60% 20%",
-          scrub: 2,
-        },
+      gsap.set(el, {
+        scale: 0.6,
       });
+    });
+    gsap.from(imageRef.current, {
+      duration: 0.5,
+      scale: 1.2,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".ghanta",
+        start: "5% 20%",
+        end: "50% 5%",
+        scrub: 2,
+      },
+    });
+    gsap.from(titleRef.current, {
+      duration: 0.5,
+      scale: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".ghanta",
+        start: "5% 20%",
+        end: "50% 5%",
+        scrub: 2,
+      },
     });
   }, []);
 
@@ -192,16 +207,19 @@ const HeroMobile = () => {
       </Head>
 
       <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-gradient-to-b from-white via-10% via-black to-170% to-pink-900">
-        <div className="absolute top-52 left-1/2 -translate-x-1/2">
-          <h1 ref={titleRef} className="font-squid name2 text-5xl leading-12 text-center text-white relative">
+        <div className="absolute top-40 sm:top-52 left-1/2 -translate-x-1/2">
+          <h1
+            ref={titleRef}
+            className="font-squid name2 text-5xl leading-12 text-center text-white relative"
+          >
             upsurge <br /> <span className="ml-30">2k25</span>
           </h1>
         </div>
 
-        <div className="absolute w-full bottom-[5%] left-1/2 -translate-x-1/2">
+        <div className="absolute h-[55%] w-full bottom-[5%] left-1/2 -translate-x-1/2">
           <Image
             ref={imageRef}
-            className="object-cover w-full transition-opacity duration-200"
+            className="object-cover scale-[1.2] transition-opacity duration-200 mx-auto"
             src={images[currentImageIndex]}
             alt="character"
             width={320}

@@ -7,6 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import RotateMask from "./Mask/rotate-mask";
 import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
+import RegisterButton from "../ui/register-button";
 
 const Hero = () => {
   // const [isMobile, setIsMobile] = useState(false);
@@ -176,6 +177,7 @@ const Hero = () => {
       </div>
       <div
         ref={scrollingContainerRef}
+        style={{ transform: "translateY(100vh)" }}
         className="h-[160vh] rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
       >
         <div className="text-center">
@@ -183,7 +185,9 @@ const Hero = () => {
             Smackathon
           </h1>
           <p className="mt-8 text-lg md:text-xl">
-            A <span className="text-2xl md:text-3xl font-squid mx-3">24 Hrs</span> Hackathon
+            A{" "}
+            <span className="text-2xl md:text-3xl font-squid mx-3">24 Hrs</span>{" "}
+            Hackathon
           </p>
           <RotateMask />
           <p className=" md:w-[50%] mx-auto text-sm md:text-xl mt-10">
@@ -192,23 +196,9 @@ const Hero = () => {
             brilliant minds converge to solve real-world problems and build
             amazing projects from scratch! Click Register to register now
           </p>
-          {/* <div className="w-min mt-16 shadow-2xl shadow-pink-800 relative p-2 after:left-0 after:top-0 after:-z-10 after:rounded-2xl after:bg-[#ff809cbe] mx-auto after:absolute after:w-full after:h-full after:animate-pulse"> */}
-            <button className="relative mt-20 pink-shadow border-pink-100 border-2  bg-pink-700 hover:bg-pink-900 text-pink-200 font-squid cursor-pointer font-bold tracking-widest px-10 py-5 rounded-lg text-xl transition-colors duration-300 overflow-hidden w-72 h-16 group">
-              <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:-translate-x-full">
-                Register Now
-              </span>
-              <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-in-out translate-x-full group-hover:translate-x-0">
-                <Image
-                  src={"/Logo.svg"}
-                  className="object-cover transition-opacity duration-200"
-                  alt="logo"
-                  width={100}
-                  height={100}
-                  priority
-                />
-              </span>
-            </button>
-          {/* </div> */}
+          <div className="w-min mx-auto mt-20">
+            <RegisterButton />
+          </div>
         </div>
       </div>
     </div>
