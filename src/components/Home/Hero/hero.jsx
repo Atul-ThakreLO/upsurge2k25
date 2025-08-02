@@ -1,28 +1,15 @@
 "use client";
-import Image from "next/image";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import RotateMask from "./Mask/rotate-mask";
+import RotateMask from "../Mask/rotate-mask";
 import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
-import RegisterButton from "../ui/register-button";
+import RegisterButton from "../../ui/register-button";
 
 const Hero = () => {
-  // const [isMobile, setIsMobile] = useState(false);
-
-  // useEffect(() => {
-  //   console.log(window.innerWidth);
-
-  //   const checkDevice = () => {
-  //     setIsMobile(window.innerWidth < 768);
-  //   };
-
-  //   checkDevice();
-  //   window.addEventListener("resize", checkDevice);
-  //   return () => window.removeEventListener("resize", checkDevice);
-  // }, []);
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////// Animation /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////

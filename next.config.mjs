@@ -13,10 +13,10 @@ const nextConfig = {
       },
     ],
   },
-  swcMinify: true, 
+  // swcMinify: true, 
   experimental: {
     esmExternals: true,
-    modern: true,
+    // modern: true,
   },
 };
 

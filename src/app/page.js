@@ -1,6 +1,6 @@
 import Events from "@/components/Home/events";
 import Footer from "@/components/Home/Footer/Footer";
-import Hero from "@/components/Home/hero";
+import Hero from "@/components/Home/Hero/hero";
 
 export default function Home() {
   return (

@@ -1,3 +1,13 @@
+if (typeof ProgressEvent === "undefined") {
+  global.ProgressEvent = class ProgressEvent extends Event {
+    constructor(type, eventInitDict = {}) {
+      super(type, eventInitDict);
+      this.lengthComputable = eventInitDict.lengthComputable || false;
+      this.loaded = eventInitDict.loaded || 0;
+      this.total = eventInitDict.total || 0;
+    }
+  };
+}
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/nav";
