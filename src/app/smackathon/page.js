@@ -3,6 +3,8 @@ import Hero from "@/components/smackathon/Hero/hero";
 import React from "react";
 import LocateUs from "../../components/smackathon/LocateUs/locate-us";
 import Tracks from "@/components/smackathon/tracks"
+import KnobBox from "@/components/smackathon/Timeline/components/rules";
+import Timeline from "@/components/smackathon/Timeline/components/TimelineItem";
 
 const Page = () => {
   return (
@@ -11,6 +13,9 @@ const Page = () => {
     <main>
       <Hero />
       <Tracks/>
+      <Timeline/>
+{/*--<Section/>--*/}
+<KnobBox/>
       <LocateUs />
     </main>
   );
