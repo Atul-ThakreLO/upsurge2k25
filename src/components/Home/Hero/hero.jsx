@@ -8,6 +8,7 @@ import RotateMask from "../Mask/rotate-mask";
 import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
 import RegisterButton from "../../ui/register-button";
+import Link from "next/link";
 
 const Hero = () => {
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -184,7 +185,9 @@ const Hero = () => {
             amazing projects from scratch! Click Register to register now
           </p>
           <div className="w-min mx-auto mt-20">
-            <RegisterButton />
+            <Link href="/smackathon">
+              <RegisterButton />
+            </Link>
           </div>
         </div>
       </div>

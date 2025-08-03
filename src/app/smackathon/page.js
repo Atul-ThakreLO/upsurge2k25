@@ -1,6 +1,6 @@
-import Hero from "@/components/smackathon/hero";
+import Hero from "@/components/smackathon/Hero/hero";
 import React from "react";
-import LocateUs from "./locate-us";
+import LocateUs from "../../components/smackathon/LocateUs/locate-us";
 
 const Page = () => {
   return (

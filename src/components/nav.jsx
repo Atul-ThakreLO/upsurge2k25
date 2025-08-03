@@ -3,7 +3,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <div className="fixed z-50 w-full">
+    <nav className="fixed z-50 w-full">
       <div className="w-[90%] mt-5 mx-auto flex justify-between items-center">
         <div>
           <Image
@@ -26,7 +26,7 @@ const Nav = () => {
           />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
