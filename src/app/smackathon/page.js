@@ -1,4 +1,5 @@
 import Hero from "@/components/smackathon/hero";
+import Tracks from "@/components/smackathon/tracks"
 import React from "react";
 import LocateUs from "./locate-us";
 
@@ -8,6 +9,7 @@ const Page = () => {
     // </div>
     <main>
       <Hero />
+      <Tracks/>
       <LocateUs />
     </main>
   );
