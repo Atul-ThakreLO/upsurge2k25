@@ -41,7 +41,7 @@ const LocateUs = () => {
 
   return (
     <section className="bg-black text-pink-100 py-20">
-      <h1 className="text-5xl font-squid text-center font-bold tracking-widest">
+      <h1 className="text-3xl md:text-5xl font-squid text-center font-bold tracking-widest">
         Locate Us
       </h1>
       <div className="relative pb-8 md:pb-14">
