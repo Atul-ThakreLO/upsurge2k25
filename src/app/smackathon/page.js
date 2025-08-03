@@ -1,6 +1,8 @@
+
 import Hero from "@/components/smackathon/Hero/hero";
 import React from "react";
 import LocateUs from "../../components/smackathon/LocateUs/locate-us";
+import Tracks from "@/components/smackathon/tracks"
 
 const Page = () => {
   return (
@@ -8,6 +10,7 @@ const Page = () => {
     // </div>
     <main>
       <Hero />
+      <Tracks/>
       <LocateUs />
     </main>
   );
