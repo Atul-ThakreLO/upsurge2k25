@@ -5,7 +5,7 @@ import LocateUs from "../../components/smackathon/LocateUs/locate-us";
 import Tracks from "@/components/smackathon/tracks"
 import KnobBox from "@/components/smackathon/Timeline/components/rules";
 import Timeline from "@/components/smackathon/Timeline/components/TimelineItem";
-
+import FAQ from "@/components/smackathon/FAQ/faq";
 const Page = () => {
   return (
     // <div className="h-screen w-full bg-no-repeat bg-cover bg-center bg-[url('/smbg.png')]">
@@ -13,9 +13,10 @@ const Page = () => {
     <main>
       <Hero />
       <Tracks/>
-      <Timeline/>
+      <Timeline/>      
 {/*--<Section/>--*/}
 <KnobBox/>
+    <FAQ/>
       <LocateUs />
     </main>
   );
