@@ -38,7 +38,7 @@ const RotateMask = () => {
 
         <Suspense fallback={null}>
           <Environment
-            preset="sunset"
+            preset="city"
             background={false}
             onError={(error) => {
               console.warn("Environment loading failed:", error);
