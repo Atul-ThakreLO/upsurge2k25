@@ -1,0 +1,86 @@
+.envelope-wrapper {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-pink-500);
+  perspective: 1000px;
+}
+
+.lid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid transparent;
+}
+
+.lid-one {
+  border-top: 100px solid var(--color-pink-800);
+  z-index: 3;
+}
+
+.lid-two {
+  border-top: 100px solid var(--color-pink-800);
+  z-index: 1;
+}
+
+.envelope-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  border-top: 100px solid transparent;
+  border-right: 150px solid var(--color-pink-700);
+  border-bottom: 100px solid var(--color-pink-700);
+  border-left: 150px solid var(--color-pink-600);
+  z-index: 3;
+}
+
+.brochureCard {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 2;
+  background-image: url("/img/game-card.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .envelope-wrapper {
+    height: 160px;
+    width: 240px;
+  }
+
+  .lid {
+    border-right: 120px solid transparent;
+    border-left: 120px solid transparent;
+    border-bottom: 80px solid transparent;
+  }
+
+  .lid-one {
+    border-top: 80px solid var(--color-pink-800);
+  }
+
+  .lid-two {
+    border-top: 80px solid var(--color-pink-800);
+  }
+
+  .envelope-body {
+    border-top: 80px solid transparent;
+    border-right: 120px solid var(--color-pink-700);
+    border-bottom: 80px solid var(--color-pink-700);
+    border-left: 120px solid var(--color-pink-600);
+  }
+}

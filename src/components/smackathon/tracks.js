@@ -226,111 +226,169 @@ export default function Tracks() {
         </p>
       </motion.div>
 
-      {/* Enhanced Tracks Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center relative z-10">
-        {tracks.map((track, index) => {
-          const colorClasses = getColorClasses(track.color);
-          const survivalRate = Math.round((track.players / (track.players + track.eliminated)) * 100);
-          
-          return (
-            <motion.div
-              key={track.title}
-              className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-3xl p-8 shadow-2xl hover:${colorClasses.shadow} transition-all duration-500 group hover:scale-110 relative overflow-hidden ${colorClasses.bg}`}
-              initial={{ opacity: 0, y: 50, rotateX: -15 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
-              transition={{ delay: index * 0.15, duration: 0.8 }}
-              whileHover={{ 
-                scale: 1.05,
-                rotateY: 5,
-                z: 50
-              }}
-            >
-              {/* Game Number & Symbol */}
-              <div className="absolute top-4 right-4 flex flex-col items-center">
-                <div className="text-3xl text-pink-500/60 font-bold group-hover:text-pink-400 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12">
-                  {track.symbol}
+      {/* Enhanced Tracks Grid with centered last card */}
+      <div className="max-w-6xl mx-auto">
+        {/* First 6 cards in a 3x2 grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          {tracks.slice(0, 6).map((track, index) => {
+            const colorClasses = getColorClasses(track.color);
+            const survivalRate = Math.round((track.players / (track.players + track.eliminated)) * 100);
+            
+            return (
+              <motion.div
+                key={track.title}
+                className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-2xl p-6 shadow-2xl hover:${colorClasses.shadow} transition-all duration-500 group relative overflow-hidden ${colorClasses.bg} max-w-sm mx-auto`}
+                initial={{ opacity: 0, y: 50, rotateX: -15 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                transition={{ delay: index * 0.15, duration: 0.8 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  rotateY: 5,
+                  z: 50
+                }}
+              >
+                {/* Game Number & Symbol */}
+                <div className="absolute top-3 right-3 flex flex-col items-center">
+                  <div className="text-2xl text-pink-500/60 font-bold group-hover:text-pink-400 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12">
+                    {track.symbol}
+                  </div>
+                  <div className="text-xs font-mono text-gray-500 mt-1">
+                    GAME {track.gameNumber}
+                  </div>
                 </div>
-                <div className="text-xs font-mono text-gray-500 mt-1">
-                  GAME {track.gameNumber}
+
+                {/* Danger Indicator */}
+                <div className="absolute top-12 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="bg-red-500 text-white text-xs px-2 py-1 rounded font-mono animate-pulse">
+                    DANGER
+                  </div>
                 </div>
-              </div>
 
-              {/* Player Stats */}
-              <div className="absolute top-4 left-4 text-xs font-mono">
-                <div className="text-green-400">ACTIVE: {track.players}</div>
-                <div className="text-red-400">ELIMINATED: {track.eliminated}</div>
-              </div>
+                {/* Enhanced Glowing Border */}
+                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-20 transition-all duration-700 blur-sm`}></div>
+                
+                {/* Content */}
+                <div className="relative z-10 mt-8">
+                  {/* Icon and Title */}
+                  <div className="flex items-center space-x-3 mb-4">
+                    <motion.div 
+                      className={`w-16 h-16 bg-gradient-to-r ${colorClasses.gradient} rounded-xl flex items-center justify-center text-2xl shadow-xl`}
+                      whileHover={{ 
+                        rotate: 12,
+                        scale: 1.2
+                      }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {track.icon}
+                    </motion.div>
+                    <div>
+                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-pink-400 group-hover:to-red-400 game-text">
+                        {track.title}
+                      </h3>
+                      <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
+                        SURVIVAL PROTOCOL
+                      </div>
+                    </div>
+                  </div>
 
-              {/* Danger Indicator */}
-              <div className="absolute top-16 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="bg-red-500 text-white text-xs px-2 py-1 rounded font-mono animate-pulse">
-                  DANGER
-                </div>
-              </div>
+                  {/* Description - Centered */}
+                  <p className="text-gray-300 mt-3 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500 text-center">
+                    {track.description}
+                  </p>
 
-              {/* Enhanced Glowing Border */}
-              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-20 transition-all duration-700 blur-sm`}></div>
-              
-              {/* Content */}
-              <div className="relative z-10 mt-12">
-                {/* Icon and Title */}
-                <div className="flex items-center space-x-4 mb-6">
-                  <motion.div 
-                    className={`w-20 h-20 bg-gradient-to-r ${colorClasses.gradient} rounded-2xl flex items-center justify-center text-3xl shadow-2xl`}
-                    whileHover={{ 
-                      rotate: 12,
-                      scale: 1.2
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {track.icon}
-                  </motion.div>
-                  <div>
-                    <h3 className="text-2xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-pink-400 group-hover:to-red-400 game-text">
-                      {track.title}
-                    </h3>
-                    <div className={`text-sm font-mono ${colorClasses.text} opacity-75`}>
-                      SURVIVAL PROTOCOL
+                  {/* Risk Warning */}
+                  <div className="mt-4 flex items-center justify-center">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                      <span className="text-xs font-mono text-red-400">HIGH RISK GAME</span>
                     </div>
                   </div>
                 </div>
+              </motion.div>
+            );
+          })}
+        </div>
 
-                {/* Description */}
-                <p className="text-gray-300 mt-4 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500">
-                  {track.description}
-                </p>
-
-                {/* Survival Stats */}
-                <div className="mt-6 p-4 bg-black/50 rounded-xl border border-gray-700 group-hover:border-pink-500/50 transition-colors duration-500">
-                  <div className="flex justify-between text-xs font-mono text-gray-400 mb-2">
-                    <span>SURVIVAL RATE</span>
-                    <span className={survivalRate > 70 ? 'text-green-400' : survivalRate > 50 ? 'text-yellow-400' : 'text-red-400'}>
-                      {survivalRate}%
-                    </span>
+        {/* Last card centered */}
+        <div className="flex justify-center">
+          {tracks.slice(6).map((track, index) => {
+            const colorClasses = getColorClasses(track.color);
+            const actualIndex = index + 6;
+            
+            return (
+              <motion.div
+                key={track.title}
+                className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-2xl p-6 shadow-2xl hover:${colorClasses.shadow} transition-all duration-500 group relative overflow-hidden ${colorClasses.bg} max-w-sm`}
+                initial={{ opacity: 0, y: 50, rotateX: -15 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                transition={{ delay: actualIndex * 0.15, duration: 0.8 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  rotateY: 5,
+                  z: 50
+                }}
+              >
+                {/* Game Number & Symbol */}
+                <div className="absolute top-3 right-3 flex flex-col items-center">
+                  <div className="text-2xl text-pink-500/60 font-bold group-hover:text-pink-400 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12">
+                    {track.symbol}
                   </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                  <div className="text-xs font-mono text-gray-500 mt-1">
+                    GAME {track.gameNumber}
+                  </div>
+                </div>
+
+                {/* Danger Indicator */}
+                <div className="absolute top-12 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="bg-red-500 text-white text-xs px-2 py-1 rounded font-mono animate-pulse">
+                    DANGER
+                  </div>
+                </div>
+
+                {/* Enhanced Glowing Border */}
+                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-20 transition-all duration-700 blur-sm`}></div>
+                
+                {/* Content */}
+                <div className="relative z-10 mt-8">
+                  {/* Icon and Title */}
+                  <div className="flex items-center space-x-3 mb-4">
                     <motion.div 
-                      className={`bg-gradient-to-r ${colorClasses.gradient} h-2 rounded-full transition-all duration-1000`}
-                      initial={{ width: 0 }}
-                      animate={{ width: `${survivalRate}%` }}
-                      transition={{ delay: index * 0.2 + 0.5, duration: 1 }}
-                    />
+                      className={`w-16 h-16 bg-gradient-to-r ${colorClasses.gradient} rounded-xl flex items-center justify-center text-2xl shadow-xl`}
+                      whileHover={{ 
+                        rotate: 12,
+                        scale: 1.2
+                      }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {track.icon}
+                    </motion.div>
+                    <div>
+                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-pink-400 group-hover:to-red-400 game-text">
+                        {track.title}
+                      </h3>
+                      <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
+                        SURVIVAL PROTOCOL
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Description - Centered */}
+                  <p className="text-gray-300 mt-3 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500 text-center">
+                    {track.description}
+                  </p>
+
+                  {/* Risk Warning */}
+                  <div className="mt-4 flex items-center justify-center">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                      <span className="text-xs font-mono text-red-400">HIGH RISK GAME</span>
+                    </div>
                   </div>
                 </div>
-
-                {/* Risk Warning */}
-                <div className="mt-4 flex items-center">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs font-mono text-red-400">HIGH RISK GAME</span>
-                  </div>
-                </div>
-              </div>
-
-             
-            </motion.div>
-          );
-        })}
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
 
       {/* Warning Footer */}
