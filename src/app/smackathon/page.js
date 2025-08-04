@@ -6,7 +6,7 @@ import KnobBox from "@/components/smackathon/Timeline/components/rules";
 import Timeline from "@/components/smackathon/Timeline/components/TimelineItem";
 
 import FAQ from "@/components/smackathon/FAQ/faq";
-
+import Brochure from "../../components/smackathon/Brochure/brochure";
 
 // app/smackathon/page.js
 
@@ -56,12 +56,12 @@ const Page = () => {
     // </div>
     <main>
       <Hero />
-      <Tracks/>
-      <Timeline/>      
-{/*--<Section/>--*/}
-<KnobBox/>
-    <FAQ/>
-
+      <Brochure />
+      <Tracks />
+      <Timeline />
+      {/*--<Section/>--*/}
+      <KnobBox />
+      <FAQ />
       <LocateUs />
     </main>
   );

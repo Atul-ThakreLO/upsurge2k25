@@ -47,7 +47,9 @@ const LocateUs = () => {
       <div className="relative pb-8 md:pb-14">
         <div className="relative w-[90%] md:w-[70%] overflow-hidden mx-auto mt-20">
           <div className="absolute left-4 md:left-7 top-2  md:top-3 font-squid text-center ">
-            <h1 className="text-xl md:text-5xl leading-2 md:leading-none">YCCE</h1>
+            <h1 className="text-xl md:text-5xl leading-2 md:leading-none">
+              YCCE
+            </h1>
             <p className="text-sm md:text-lg ">CSE</p>
           </div>
           <Image
@@ -74,7 +76,9 @@ const LocateUs = () => {
               title="Google Map Overlay"
             ></iframe>
           </div>
-          <p className="text-lg font-bold text-black absolute bottom-0 left-1/2 -translate-x-1/2"> Use ctrl + Scroll to Zoom on Map</p>
+          <p className="hidden md:block text-lg font-bold text-black absolute bottom-0 left-1/2 -translate-x-1/2">
+            Use ctrl + Scroll to Zoom on Map
+          </p>
         </div>
         <div className="absolute w-full bottom-0 left-1/2 -translate-x-1/2 flex justify-center gap-2">
           <a
