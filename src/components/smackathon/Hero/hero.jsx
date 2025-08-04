@@ -163,7 +163,7 @@ const Hero = () => {
           <div className="mt-8">
             <p
               ref={dateRef}
-              className="text-pink-100 text-nowrap drop-shadow-[0_0_20px_#ff4da6] text-4xl md:text-5xl text-center opacity-0 transform translate-y-12"
+              className="text-pink-100 text-nowrap drop-shadow-[0_0_20px_#ff4da6] text-3xl md:text-5xl text-center opacity-0 transform translate-y-12"
             >
               22nd - 23rd August
             </p>

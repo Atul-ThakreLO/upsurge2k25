@@ -21,7 +21,7 @@ const RegisterDialog = () => {
           </DialogTitle>
           <DialogDescription>Fill The form</DialogDescription>
         </DialogHeader>
-        <div className="h-[80vh] md:h-[60vh]"></div>
+        <div className="h-[50vh] md:h-[60vh]"></div>
       </DialogContent>
     </Dialog>
   );
