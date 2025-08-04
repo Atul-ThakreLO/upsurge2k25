@@ -74,16 +74,17 @@ const LocateUs = () => {
               title="Google Map Overlay"
             ></iframe>
           </div>
+          <p className="text-lg font-bold text-black absolute bottom-0 left-1/2 -translate-x-1/2"> Use ctrl + Scroll to Zoom on Map</p>
         </div>
         <div className="absolute w-full bottom-0 left-1/2 -translate-x-1/2 flex justify-center gap-2">
           <a
-            className="cursor-pointer"
+            className="cursor-pointer "
             href="https://maps.app.goo.gl/gv5zbUJGv6ZHXf7Z7"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button
-              className="px-4 py-1 text-sm md:text-lg md:px-8 md:py-2 text-black bg-white hover:bg-gray-100 rounded-lg"
+              className="px-4 py-1 text-sm bg-pink-600 md:text-lg md:px-8 md:py-2 text-white hover:bg-pink-700 rounded-lg"
               type="button"
             >
               View on large Map
@@ -92,7 +93,7 @@ const LocateUs = () => {
           <button
             onClick={zoomIn}
             disabled={zoomLevel >= 20}
-            className="cursor-pointer py-1 px-3 md:py-2 md:px-4 text-sm md:text-lg bg-white hover:bg-gray-100 disabled:bg-gray-300 disabled:cursor-not-allowed shadow-lg rounded flex items-center justify-center font-bold text-gray-700 transition-colors"
+            className="cursor-pointer py-1 px-3 md:py-2 md:px-4 text-sm md:text-lg bg-pink-600 hover:bg-pink-700 text-white disabled:bg-gray-300 disabled:cursor-not-allowed shadow-lg rounded flex items-center justify-center font-bold transition-colors"
             title="Zoom In"
           >
             +
@@ -100,7 +101,7 @@ const LocateUs = () => {
           <button
             onClick={zoomOut}
             disabled={zoomLevel <= 1}
-            className="cursor-pointer py-1 px-3 md:py-2 md:px-4 text-sm md:text-lg bg-white hover:bg-gray-100 disabled:bg-gray-300 disabled:cursor-not-allowed shadow-lg rounded flex items-center justify-center font-bold text-gray-700 transition-colors"
+            className="cursor-pointer py-1 px-3 md:py-2 md:px-4 text-sm md:text-lg bg-pink-600 hover:bg-pink-700 text-white disabled:bg-gray-300 disabled:cursor-not-allowed shadow-lg rounded flex items-center justify-center font-bold transition-colors"
             title="Zoom Out"
           >
             −

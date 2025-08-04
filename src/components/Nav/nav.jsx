@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import NavMenu from "./nav-menu";
 
 const Nav = () => {
   return (
     <nav className="fixed z-50 w-full">
-      <div className="w-[90%] mt-5 mx-auto flex justify-between items-center">
+      <div className="relative w-[90%] mt-5 mx-auto flex justify-between items-center">
         <div>
           <Image
             className="w-24 md:w-36"
@@ -15,7 +16,7 @@ const Nav = () => {
             priority
           />
         </div>
-        <div>
+        <div className="absolute right-0 top-2">
           <Image
             className=""
             src="/Logo.svg"
@@ -24,6 +25,7 @@ const Nav = () => {
             height={50}
             priority
           />
+          {/* <NavMenu /> */}
         </div>
       </div>
     </nav>

@@ -206,7 +206,7 @@ const HeroMobile = () => {
         />
       </Head>
 
-      <div className="absolute top-0 left-0 h-screen scale-[1.2] w-full bg-gradient-to-b from-white via-10% via-black to-170% to-pink-900">
+      <div className="absolute top-0 left-0 h-screen w-full bg-gradient-to-b from-black to-170% to-pink-900">
         <div className="absolute top-40 sm:top-52 left-1/2 -translate-x-1/2">
           <h1
             ref={titleRef}
