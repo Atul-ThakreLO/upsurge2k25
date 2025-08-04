@@ -92,21 +92,21 @@ export default function Timeline() {
       </div>
 
       {/* Heading */}
-      <div className="relative z-20 max-w-screen-xl mx-auto px-4 py-1 mb-10 flex flex-col items-center">
-        <h2 className="text-pink-600 text-5xl font-black tracking-widest font-sans">타임라인</h2>
-        <h3 className="text-white text-xl tracking-[0.4em] font-[Orbitron] mt-2">TIMELINE</h3>
+      <div className="relative z-20 max-w-screen-xl mx-auto px-4 py-1 mb-30 flex flex-col items-center">
+        <h2 className="text-pink-600 tracking-widest font-sans text-4xl game-text md:text-6xl font-extrabold">타임라인</h2>
+        <h3 className="text-white text-3xl tracking-[0.4em] font-squid mt-2">TIMELINE</h3>
       </div>
 
       {/* Korean Label */}
-      <div className="absolute top-190 left-6 rotate-[-90deg] font-[Orbitron] font-extrabold tracking-widest text-3xl z-50">
-        <span className="text-pink-400">생존</span> 게임
+      <div className="absolute top-190  left-6 rotate-[-90deg] font-[Orbitron] font-extrabold tracking-widest text-3xl z-50">
+        <span className="text-pink-400">생존</span>  <span className="text-white/80">게임</span>
       </div>
 
       <div ref={ref} className="h-[1px] w-full" />
 
       {/* Bridge Tiles */}
       {inView && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 flex flex-col gap-4 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 flex flex-col gap-4 pointer-events-none mt-20">
           {Array.from({ length: totalRows }).map((_, rowIdx) => (
             <div key={rowIdx} className="flex gap-4 justify-center relative">
               {['left', 'right'].map((side) => {
