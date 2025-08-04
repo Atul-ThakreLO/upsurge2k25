@@ -1,10 +1,10 @@
 import Hero from "@/components/smackathon/Hero/hero";
 import LocateUs from "../../components/smackathon/LocateUs/locate-us";
-import Tracks from "@/components/smackathon/tracks"
+import Tracks from "@/components/smackathon/tracks";
 import Timeline from "@/components/smackathon/Timeline/TimelineItem";
 import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
-
+import Brochure from "../../components/smackathon/Brochure/brochure";
 
 // app/smackathon/page.js
 
@@ -54,11 +54,12 @@ const Page = () => {
     // </div>
     <main>
       <Hero />
-      <Tracks/>
-      <Timeline/>      
-{/*--<Section/>--*/}
-    <Rules/>
-    <FAQ/>
+      <Brochure />
+      <Tracks />
+      <Timeline />
+      {/*--<Section/>--*/}
+      <Rules />
+      <FAQ />
 
       <LocateUs />
     </main>

@@ -1,8 +1,13 @@
-"use client"
-import { Card, CardContent } from "@/components/smackathon/FAQ/ui/card"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/smackathon/FAQ/ui/accordion"
-import { useState } from "react"
-import FAQBackground from "./faq-background"
+"use client";
+import { Card, CardContent } from "@/components/smackathon/FAQ/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/smackathon/FAQ/ui/accordion";
+import { useState } from "react";
+import FAQBackground from "./faq-background";
 const faqData = [
   {
     id: "1",
@@ -18,7 +23,8 @@ const faqData = [
   },
   {
     id: "3",
-    question: "Is there any eligibility criteria to participate in Smackathon? If yes, which candidates are eligible?",
+    question:
+      "Is there any eligibility criteria to participate in Smackathon? If yes, which candidates are eligible?",
     answer:
       "SMACKATHON is open to students, professionals, and technology enthusiasts. Participants should have basic programming knowledge and passion for innovation. Teams can include members from different backgrounds including developers, designers, and business strategists.",
   },
@@ -26,7 +32,7 @@ const faqData = [
     id: "4",
     question: "Is accommodation facility available for outsiders?",
     answer:
-      "Yes, we provide accommodation assistance for outstation participants. Details about nearby hotels, hostels, and partner accommodations will be shared with registered participants. Early registration is recommended to secure the best rates.",
+      "Yes, we provide accommodation assistance for outstation participants — only for boys on the day of the Hackathon. Girls are requested to make their own accommodation arrangements. Details about nearby hotels, hostels, and partner stays will be shared with registered participants. Early registration is recommended to secure the best options.",
   },
   {
     id: "5",
@@ -46,10 +52,10 @@ const faqData = [
     answer:
       "While team participation is encouraged (3-5 members), individual participation is also welcome. We can help solo participants find teammates during the team formation session at the beginning of the event.",
   },
-]
+];
 
 export default function Component() {
-  const [hoveredCard, setHoveredCard] = useState(null)
+  const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a0c1b] via-[#101223] to-[#181a2b] flex flex-col items-center justify-start p-4 relative overflow-hidden py-8">
@@ -123,7 +129,9 @@ export default function Component() {
           <h2 className="text-4xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-white to-cyan-400 bg-clip-text mb-6 tracking-widest relative z-10">
             Assessment Criteria
           </h2>
-          <p className="text-gray-300 text-lg mb-16 tracking-wide relative z-10">For SMACKATHON 2025</p>
+          <p className="text-gray-300 text-lg mb-16 tracking-wide relative z-10">
+            For SMACKATHON 2025
+          </p>
 
           {/* Criteria Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -132,8 +140,18 @@ export default function Component() {
               <CardContent className="p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <div>
@@ -141,7 +159,8 @@ export default function Component() {
                       Quality of work submitted
                     </h3>
                     <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
-                      Excellence in code quality, design, and overall execution of your project.
+                      Excellence in code quality, design, and overall execution
+                      of your project.
                     </p>
                   </div>
                 </div>
@@ -153,7 +172,12 @@ export default function Component() {
               <CardContent className="p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-cyan-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -167,7 +191,8 @@ export default function Component() {
                       Timeliness of submissions
                     </h3>
                     <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
-                      Meeting deadlines and delivering your work within the specified timeframes.
+                      Meeting deadlines and delivering your work within the
+                      specified timeframes.
                     </p>
                   </div>
                 </div>
@@ -179,7 +204,12 @@ export default function Component() {
               <CardContent className="p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -193,7 +223,8 @@ export default function Component() {
                       Participation in discussions
                     </h3>
                     <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
-                      Active engagement in team discussions, mentorship sessions, and community interactions.
+                      Active engagement in team discussions, mentorship
+                      sessions, and community interactions.
                     </p>
                   </div>
                 </div>
@@ -205,7 +236,12 @@ export default function Component() {
               <CardContent className="p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -219,7 +255,8 @@ export default function Component() {
                       Innovation through imagination
                     </h3>
                     <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
-                      Creative thinking, unique approaches, and innovative solutions to complex problems.
+                      Creative thinking, unique approaches, and innovative
+                      solutions to complex problems.
                     </p>
                   </div>
                 </div>
@@ -229,29 +266,45 @@ export default function Component() {
         </CardContent>
       </Card>
 
-
       {/* FAQ Section */}
       <div className="relative w-full max-w-none mt-8 py-28 bg-[#111] rounded-2xl border-2 border-pink-500/40 backdrop-blur-sm shadow-xl shadow-pink-500/30 transition-all duration-300 z-10 overflow-hidden min-h-[900px]">
         {/* Track-Inspired Background Effects */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="w-full h-full" style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, #ff1493 2px, transparent 2px),radial-gradient(circle at 75% 75%, #ff69b4 2px, transparent 2px)`,
-            backgroundSize: '60px 60px'
-          }}></div>
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: `radial-gradient(circle at 25% 25%, #ff1493 2px, transparent 2px),radial-gradient(circle at 75% 75%, #ff69b4 2px, transparent 2px)`,
+              backgroundSize: "60px 60px",
+            }}
+          ></div>
         </div>
         {/* Floating Geometric Shapes */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-[10%] left-[5%] text-6xl text-pink-500/20 font-bold animate-pulse">△</div>
-          <div className="absolute top-[20%] right-[10%] text-5xl text-pink-500/20 font-bold animate-pulse">○</div>
-          <div className="absolute bottom-[25%] left-[15%] text-7xl text-pink-500/20 font-bold animate-pulse">□</div>
-          <div className="absolute top-[60%] right-[20%] text-4xl text-pink-500/20 font-bold animate-pulse">△</div>
-          <div className="absolute bottom-[40%] right-[30%] text-6xl text-pink-500/20 font-bold animate-pulse">○</div>
+          <div className="absolute top-[10%] left-[5%] text-6xl text-pink-500/20 font-bold animate-pulse">
+            △
+          </div>
+          <div className="absolute top-[20%] right-[10%] text-5xl text-pink-500/20 font-bold animate-pulse">
+            ○
+          </div>
+          <div className="absolute bottom-[25%] left-[15%] text-7xl text-pink-500/20 font-bold animate-pulse">
+            □
+          </div>
+          <div className="absolute top-[60%] right-[20%] text-4xl text-pink-500/20 font-bold animate-pulse">
+            △
+          </div>
+          <div className="absolute bottom-[40%] right-[30%] text-6xl text-pink-500/20 font-bold animate-pulse">
+            ○
+          </div>
         </div>
         {/* Scanlines */}
         <div className="absolute inset-0 pointer-events-none opacity-10">
-          <div className="w-full h-full" style={{
-            background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 20, 147, 0.3) 2px, rgba(255, 20, 147, 0.3) 4px)'
-          }}></div>
+          <div
+            className="w-full h-full"
+            style={{
+              background:
+                "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 20, 147, 0.3) 2px, rgba(255, 20, 147, 0.3) 4px)",
+            }}
+          ></div>
         </div>
 
         <div className="relative z-10 w-full max-w-none mx-auto px-4">
@@ -259,12 +312,18 @@ export default function Component() {
             <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-white to-cyan-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-300 tracking-wide">Everything you need to know about SMACKATHON</p>
+            <p className="text-lg text-gray-300 tracking-wide">
+              Everything you need to know about SMACKATHON
+            </p>
           </div>
 
           <Accordion type="single" collapsible className="space-y-6">
             {faqData.map((faq) => (
-              <AccordionItem key={faq.id} value={faq.id} className="border-none">
+              <AccordionItem
+                key={faq.id}
+                value={faq.id}
+                className="border-none"
+              >
                 <div className="bg-black/60 rounded-2xl border border-pink-500/30 backdrop-blur-sm hover:border-pink-400/50 hover:shadow-md hover:shadow-pink-500/20 hover:bg-black/70 transition-all duration-200 group relative overflow-hidden min-h-[120px]">
                   {/* Simplified Card Glow Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-500/3 to-cyan-500/3 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
@@ -272,8 +331,14 @@ export default function Component() {
                   <AccordionTrigger className="px-8 py-8 text-left hover:no-underline group relative z-10">
                     <div className="flex items-center gap-4 w-full">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-500 flex items-center justify-center text-[#2d1a00] font-bold text-lg shadow-lg group-hover:animate-pulse group-hover:shadow-yellow-400/50 group-hover:scale-110 transition-all duration-300 border border-yellow-300/40 relative">
-                        <span className='absolute inset-0 rounded-full pointer-events-none z-0' style={{boxShadow:'0 0 12px 2px #fde68a88, 0 0 24px 6px #fbbf2488'}}></span>
-                        <span className='relative z-10'>{faq.id}</span>
+                        <span
+                          className="absolute inset-0 rounded-full pointer-events-none z-0"
+                          style={{
+                            boxShadow:
+                              "0 0 12px 2px #fde68a88, 0 0 24px 6px #fbbf2488",
+                          }}
+                        ></span>
+                        <span className="relative z-10">{faq.id}</span>
                       </div>
                       <span className="text-lg font-semibold text-white group-hover:text-pink-400 transition-colors duration-300 drop-shadow-sm">
                         {faq.question}
@@ -292,6 +357,5 @@ export default function Component() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
