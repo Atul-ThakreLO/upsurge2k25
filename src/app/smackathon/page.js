@@ -5,6 +5,9 @@ import Tracks from "@/components/smackathon/tracks";
 import KnobBox from "@/components/smackathon/Timeline/components/rules";
 import Timeline from "@/components/smackathon/Timeline/components/TimelineItem";
 
+import FAQ from "@/components/smackathon/FAQ/faq";
+
+
 // app/smackathon/page.js
 
 export const metadata = {
@@ -53,10 +56,12 @@ const Page = () => {
     // </div>
     <main>
       <Hero />
-      <Tracks />
-      <Timeline />
-      {/*--<Section/>--*/}
-      <KnobBox />
+      <Tracks/>
+      <Timeline/>      
+{/*--<Section/>--*/}
+<KnobBox/>
+    <FAQ/>
+
       <LocateUs />
     </main>
   );
