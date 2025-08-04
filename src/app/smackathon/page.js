@@ -1,10 +1,8 @@
 import Hero from "@/components/smackathon/Hero/hero";
-import React from "react";
 import LocateUs from "../../components/smackathon/LocateUs/locate-us";
-import Tracks from "@/components/smackathon/tracks";
-import KnobBox from "@/components/smackathon/Timeline/components/rules";
-import Timeline from "@/components/smackathon/Timeline/components/TimelineItem";
-
+import Tracks from "@/components/smackathon/tracks"
+import Timeline from "@/components/smackathon/Timeline/TimelineItem";
+import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
 
 
@@ -59,7 +57,7 @@ const Page = () => {
       <Tracks/>
       <Timeline/>      
 {/*--<Section/>--*/}
-<KnobBox/>
+    <Rules/>
     <FAQ/>
 
       <LocateUs />
