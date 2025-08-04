@@ -2,29 +2,14 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { useAnimationFrame } from 'framer-motion';
-
+{/*import { useAnimationFrame } from 'framer-motion';*/}
+import { rules } from "../../../../../data";
 const knobImages = [
   '/rules/knob1.png',
   '/rules/knob3.png',
   '/rules/knob4.png',
   '/rules/knob5.png',
 ];
-
-const rules = [
-  "Team must consist of minimum 3 and a maximum of 5 members.",
-  "Team access pass will be distributed to the team upon registration, which will be used for further references.",
-  "The ideas presented by the teams should be original and not protected by patents, copyrights, or technical publications.",
-  "All official communication will be through the Smackathon email (smackathon@upsurge2k25.tech). Participants must monitor all folders.",
-  "Registrations must be completed through the Upsurge 2k25 website by 21st August 2025 to secure a spot.",
-  "Smackathon team is not responsible for late, lost, or mis-directed entries.",
-  "Problem statements will be provided on the day the Hackathon starts.",
-  "The team must commit to the given Git repository every hour during the Hackathon.",
-  "At least 2 members must be present at the allotted table at all times during Smackathon.",
-  "Participants must not engage in malicious activities. Damage to college property leads to disqualification.",
-  "Meals and rest areas will be provided if food and accommodation is opted. One accommodation ticket includes 2 beds.",
-];
-
 
 export default function RuleMobile() {
   type FloatingKnob = {

@@ -2,16 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const timelineItems = [
-  { day: "DAY 1", time: ["08:30 AM"], desc: "Check-in Time for Teams" },
-  { day: "DAY 1", time: ["10:00 AM", "11:30 AM"], desc: "Problem Statements Released, Submit Problem Statements" },
-  { day: "DAY 1", time: ["12:00 PM", "3:00 PM - 5:00 PM"], desc: "Development Begins, Idea Presentation" },
-  { day: "DAY 1", time: ["7:30 PM - 8:30 PM", "10:30 PM"], desc: "Dinner (coupon holders), Accommodation for ticket holders" },
-  { day: "DAY 2", time: ["7:00 AM - 8:00 AM", "8:30 AM"], desc: "Breakfast, Final Elimination" },
-  { day: "DAY 2", time: ["10:00 AM - 12:00 PM", "12:00 PM"], desc: "Final Presentations, Top 5 Finalists Declaration" },
-  { day: "DAY 2", time: ["2:00 PM"], desc: "Winners Announcement" },
-];
+import { timelineItems } from '../../../../../data';
 
 export default function Timeline() {
   const totalRows = timelineItems.length + 4;
