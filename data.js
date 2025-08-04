@@ -10,7 +10,7 @@ export const FooterContactDetails = [
     position: "(President ACM)",
     phone: "9158494481",
     tel: "tel:9158494481",
-  }
+  },
 ];
 
 import InstagramIcon from "./public/img/Instagram Icon";
@@ -29,4 +29,12 @@ export const FooterSocialLinks = [
   },
 ];
 
-export const EventLogos = [""]
+export const NavLinks = [
+  { name: "Home", href: "/" },
+  { name: "Smackathon", href: "/smackathon" },
+  { name: "Events", href: "#" },
+  { name: "Schedule", href: "#" },
+  { name: "Team", href: "#" },
+];
+
+export const EventLogos = [""];
