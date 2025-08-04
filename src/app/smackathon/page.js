@@ -4,8 +4,8 @@ import Tracks from "@/components/smackathon/tracks"
 import Timeline from "@/components/smackathon/Timeline/TimelineItem";
 import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
-
-
+{/*import Ddajki from "@/components/smackathon/animate/ddajki"*/}
+import Footer from "@/components/Home/Footer/Footer";
 // app/smackathon/page.js
 
 export const metadata = {
@@ -61,6 +61,8 @@ const Page = () => {
     <FAQ/>
 
       <LocateUs />
+      {/*<Ddajki/>*/}
+      <Footer />
     </main>
   );
 };
