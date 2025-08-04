@@ -2,16 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
-const timelineItems = [
-  { day: "DAY 1", time: ["08:30 AM"], desc: "Check-in Time for Teams" },
-  { day: "DAY 1", time: ["10:00 AM", "11:30 AM"], desc: "Problem Statements Released, Submit Problem Statements" },
-  { day: "DAY 1", time: ["12:00 PM", "3:00 PM - 5:00 PM"], desc: "Development Begins, Idea Presentation" },
-  { day: "DAY 1", time: ["7:30 PM - 8:30 PM", "10:30 PM"], desc: "Dinner (coupon holders), Accommodation for ticket holders" },
-  { day: "DAY 2", time: ["7:00 AM - 8:00 AM", "8:30 AM"], desc: "Breakfast, Final Elimination" },
-  { day: "DAY 2", time: ["10:00 AM - 12:00 PM", "12:00 PM"], desc: "Final Presentations, Top 5 Finalists Declaration" },
-  { day: "DAY 2", time: ["2:00 PM"], desc: "Winners Announcement" },
-];
+import { timelineItems } from '../../../../../data';
 
 export default function TimelineMobile() {
   const totalRows = timelineItems.length + 4;
@@ -78,12 +69,12 @@ export default function TimelineMobile() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#ff000044,_transparent_80%)] blur-3xl opacity-10" />
         <div className="absolute top-0 left-1/2 w-[100px] h-[300px] bg-white/10 rounded-full blur-3xl -translate-x-1/2" />
-        <div className="absolute inset-0 bg-[url('/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-[url('/timeline/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
       </div>
 
       {/* Heading */}
       <div className="relative z-20 text-center mb-10">
-        <h2 className="text-red-600 text-4xl font-black tracking-widest font-sans">타임라인</h2>
+        <h2 className="text-pink-600 text-4xl font-black tracking-widest font-sans">타임라인</h2>
         <h3 className="text-white text-sm tracking-[0.3em] font-[Orbitron] mt-1">TIMELINE</h3>
       </div>
 
@@ -110,7 +101,7 @@ export default function TimelineMobile() {
                   opacity: isBroken ? 0 : 1,
                   y: isBroken ? 50 : 0,
                 }}
-                className={`relative w-14 h-14 rounded border border-red-500 ${
+                className={`relative w-14 h-14 rounded border border-pink-500 ${
                   isBroken ? 'invisible' : 'bg-white/10'
                 }`}
                 style={{
@@ -151,7 +142,7 @@ export default function TimelineMobile() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.15 }}
               viewport={{ once: true }}
-              className="bg-red-600/80 rounded-lg p-3 border border-black shadow-lg"
+              className="bg-pink-600/80 rounded-lg p-3 border border-black shadow-lg"
             >
               <div className="text-xs font-bold mb-1">{item.day}</div>
               {item.time.map((time, i) => (

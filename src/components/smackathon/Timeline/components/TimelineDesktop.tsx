@@ -2,16 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const timelineItems = [
-  { day: "DAY 1", time: ["08:30 AM"], desc: "Check-in Time for Teams" },
-  { day: "DAY 1", time: ["10:00 AM", "11:30 AM"], desc: "Problem Statements Released, Submit Problem Statements" },
-  { day: "DAY 1", time: ["12:00 PM", "3:00 PM - 5:00 PM"], desc: "Development Begins, Idea Presentation" },
-  { day: "DAY 1", time: ["7:30 PM - 8:30 PM", "10:30 PM"], desc: "Dinner (coupon holders), Accommodation for ticket holders" },
-  { day: "DAY 2", time: ["7:00 AM - 8:00 AM", "8:30 AM"], desc: "Breakfast, Final Elimination" },
-  { day: "DAY 2", time: ["10:00 AM - 12:00 PM", "12:00 PM"], desc: "Final Presentations, Top 5 Finalists Declaration" },
-  { day: "DAY 2", time: ["2:00 PM"], desc: "Winners Announcement" },
-];
+import { timelineItems } from '../../../../../data';
 
 export default function Timeline() {
   const totalRows = timelineItems.length + 4;
@@ -88,25 +79,25 @@ export default function Timeline() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#ff000044,_transparent_80%)] blur-3xl opacity-10" />
         <div className="absolute top-0 left-1/2 w-[200px] h-[600px] bg-white/10 rounded-full blur-3xl -translate-x-1/2" />
         <div className="absolute top-1/2 left-1/2 w-[90vw] h-[40vh] bg-red-900 opacity-10 rounded-full blur-[200px] -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute inset-0 bg-[url('/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-[url('/timeline/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
       </div>
 
       {/* Heading */}
-      <div className="relative z-20 max-w-screen-xl mx-auto px-4 py-1 mb-10 flex flex-col items-center">
-        <h2 className="text-pink-600 text-5xl font-black tracking-widest font-sans">타임라인</h2>
-        <h3 className="text-white text-xl tracking-[0.4em] font-[Orbitron] mt-2">TIMELINE</h3>
+      <div className="relative z-20 max-w-screen-xl mx-auto px-4 py-1 mb-30 flex flex-col items-center">
+        <h2 className="text-pink-600 tracking-widest font-sans text-4xl game-text md:text-6xl font-extrabold">타임라인</h2>
+        <h3 className="text-white text-3xl tracking-[0.4em] font-squid mt-2">TIMELINE</h3>
       </div>
 
       {/* Korean Label */}
-      <div className="absolute top-190 left-6 rotate-[-90deg] font-[Orbitron] font-extrabold tracking-widest text-3xl z-50">
-        <span className="text-pink-400">생존</span> 게임
+      <div className="absolute top-190  left-6 rotate-[-90deg] font-[Orbitron] font-extrabold tracking-widest text-3xl z-50">
+        <span className="text-pink-400">생존</span>  <span className="text-white/80">게임</span>
       </div>
 
       <div ref={ref} className="h-[1px] w-full" />
 
       {/* Bridge Tiles */}
       {inView && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 flex flex-col gap-4 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 flex flex-col gap-4 pointer-events-none mt-20">
           {Array.from({ length: totalRows }).map((_, rowIdx) => (
             <div key={rowIdx} className="flex gap-4 justify-center relative">
               {['left', 'right'].map((side) => {
@@ -188,7 +179,7 @@ export default function Timeline() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes sparkle {
           0% {
             box-shadow: 0 0 10px var(--glow);
