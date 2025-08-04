@@ -88,7 +88,7 @@ export default function Timeline() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#ff000044,_transparent_80%)] blur-3xl opacity-10" />
         <div className="absolute top-0 left-1/2 w-[200px] h-[600px] bg-white/10 rounded-full blur-3xl -translate-x-1/2" />
         <div className="absolute top-1/2 left-1/2 w-[90vw] h-[40vh] bg-red-900 opacity-10 rounded-full blur-[200px] -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute inset-0 bg-[url('/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-[url('/timeline/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
       </div>
 
       {/* Heading */}
@@ -188,7 +188,7 @@ export default function Timeline() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes sparkle {
           0% {
             box-shadow: 0 0 10px var(--glow);

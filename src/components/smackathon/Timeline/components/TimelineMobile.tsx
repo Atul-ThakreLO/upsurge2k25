@@ -78,12 +78,12 @@ export default function TimelineMobile() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#ff000044,_transparent_80%)] blur-3xl opacity-10" />
         <div className="absolute top-0 left-1/2 w-[100px] h-[300px] bg-white/10 rounded-full blur-3xl -translate-x-1/2" />
-        <div className="absolute inset-0 bg-[url('/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-[url('/timeline/grain.png')] mix-blend-dark-light pointer-events-none z-10" />
       </div>
 
       {/* Heading */}
       <div className="relative z-20 text-center mb-10">
-        <h2 className="text-red-600 text-4xl font-black tracking-widest font-sans">타임라인</h2>
+        <h2 className="text-pink-600 text-4xl font-black tracking-widest font-sans">타임라인</h2>
         <h3 className="text-white text-sm tracking-[0.3em] font-[Orbitron] mt-1">TIMELINE</h3>
       </div>
 
@@ -110,7 +110,7 @@ export default function TimelineMobile() {
                   opacity: isBroken ? 0 : 1,
                   y: isBroken ? 50 : 0,
                 }}
-                className={`relative w-14 h-14 rounded border border-red-500 ${
+                className={`relative w-14 h-14 rounded border border-pink-500 ${
                   isBroken ? 'invisible' : 'bg-white/10'
                 }`}
                 style={{
@@ -151,7 +151,7 @@ export default function TimelineMobile() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.15 }}
               viewport={{ once: true }}
-              className="bg-red-600/80 rounded-lg p-3 border border-black shadow-lg"
+              className="bg-pink-600/80 rounded-lg p-3 border border-black shadow-lg"
             >
               <div className="text-xs font-bold mb-1">{item.day}</div>
               {item.time.map((time, i) => (

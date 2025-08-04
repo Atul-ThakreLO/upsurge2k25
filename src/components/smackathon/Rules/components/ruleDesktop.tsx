@@ -7,27 +7,25 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const initialKnobData = [
-  { top: '1%', left: '34.5%', src: '/knob1.png' },
-  { top: '18%', left: '60%', src: '/knob2.png' },
-  { top: '18%', left: '9%', src: '/knob3.png' },
-  { top: '41.5%', left: '17%', src: '/knob4.png' },
-  { top: '40%', left: '51%', src: '/knob5.png' },
+  { top: '1%', left: '34.5%', src: '/rules/knob1.png' },
+  { top: '18%', left: '60%', src: '/rules/knob2.png' },
+  { top: '18%', left: '9%', src: '/rules/knob3.png' },
+  { top: '41.5%', left: '17%', src: '/rules/knob4.png' },
+  { top: '40%', left: '51%', src: '/rules/knob5.png' },
 ];
 
 const rules = [
   "Team must consist of minimum 3 and a maximum of 5 members.",
   "Team access pass will be distributed to the team upon registration, which will be used for further references.",
   "The ideas presented by the teams should be original and not protected by patents, copyrights, or technical publications.",
-  "All official communication will be through the Smackathon email (smackathon@upsurge2k24.tech). Participants must monitor all folders.",
-  "Registrations must be completed through the Upsurge 2k24 website by 21st August 2024 to secure a spot.",
+  "All official communication will be through the Smackathon email (smackathon@upsurge2k25.tech). Participants must monitor all folders.",
+  "Registrations must be completed through the Upsurge 2k25 website by 21st August 2025 to secure a spot.",
   "Smackathon team is not responsible for late, lost, or mis-directed entries.",
   "Problem statements will be provided on the day the Hackathon starts.",
   "The team must commit to the given Git repository every hour during the Hackathon.",
   "At least 2 members must be present at the allotted table at all times during Smackathon.",
   "Participants must not engage in malicious activities. Damage to college property leads to disqualification.",
   "Meals and rest areas will be provided if food and accommodation is opted. One accommodation ticket includes 2 beds.",
-  "Per YCCE Policy, female participants cannot stay overnight. After 8 PM they must leave, and can return at 6 AM. Outside students will be accommodated in YCCE girls hostel.",
-  "Rules may change at the discretion of the Smackathon organizing team.",
 ];
 
 export default function KnobBox() {
@@ -37,7 +35,7 @@ export default function KnobBox() {
 
   const { ref: sectionRef, inView } = useInView({
     threshold: 0.4, 
-    triggerOnce: true, // play only once
+    triggerOnce: true, 
   });
 
 
@@ -91,7 +89,7 @@ export default function KnobBox() {
     <div ref={sectionRef} className="w-full px-8 py-10 ml-25 overflow-hidden">
         <div className='absolute right-6 z-50 w-64 h-64 p-2 rotate-[8deg]'>
   <Image
-    src="/ddajki.png"
+    src="/rules/ddajki.png"
     alt="Ggonggi Game Sticker"
     width={80}
     height={80}
@@ -116,7 +114,7 @@ export default function KnobBox() {
           onMouseEnter={shuffleKnobs}
           onMouseLeave={resetKnobs}
         >
-          <Image src="/box.png" alt="wooden box" fill className="object-contain" />
+          <Image src="/rules/box.png" alt="wooden box" fill className="object-contain" />
           {knobPositions.map((knob, idx) => (
             <motion.div
               key={idx}
@@ -152,7 +150,7 @@ export default function KnobBox() {
           {rules.map((rule, index) => (
             <div key={index} className="flex items-start gap-4">
               <Image
-                src={`/knob${(index % 5) + 1}.png`}
+                src={`/rules/knob${(index % 5) + 1}.png`}
                 alt="Rule icon"
                 width={35}
                 height={35}
