@@ -89,9 +89,13 @@ const Brochure = () => {
 
   return (
     <>
-      <section className="relative">
+      <section className="relative font-[Orbitron] bg-black py-10">
         {/* <div className="h-full w-full absolute top-0 bg-gradient-to-b from-black from-5% to-transparent z-[1]" /> */}
-        <div className="h-[70vh] w-full flex justify-center items-end pb-28 font-[Orbitron] bg-black">
+        <div className="py-10 text-white text-center w-full">
+          <p className="text-3xl">Brochure</p>
+          <p className="mt-3 flex justify-center tracking-widest gap-2">Click <span className="hidden md:block">or Hover</span> to open</p>
+        </div>
+        <div className=" w-full flex justify-center items-end pb-28 mt-10">
           <div
             ref={envelopeRef}
             className="envelope-wrapper relative z-10 flex justify-center cursor-pointer select-none"
@@ -110,7 +114,9 @@ const Brochure = () => {
                 <p className="text-sm md:text-base text-white/90 drop-shadow-md">
                   Click to Download
                 </p>
-                <button className="bg-pink-700 hover:bg-pink-800 py-1 px-3 rounded-lg mt-2">Download</button>
+                <button className="bg-pink-700 hover:bg-pink-800 py-1 px-3 rounded-lg mt-2">
+                  Download
+                </button>
               </div>
             </div>
           </div>
