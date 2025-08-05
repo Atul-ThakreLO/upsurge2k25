@@ -40,8 +40,8 @@ const Footer = ({ footerDetails }) => {
                   key={i}
                   src={src}
                   alt={`Sponsor Logo ${i + 1}`}
-                  width={100}
-                  height={100}
+                  width={`${i == 0 ? 125 : 100}`}
+                  height={`${i == 0 ? 125 : 100}`}
                   // style={{ height: "auto", width: "auto" }}
                   className="object-cover hover:scale-110 transition-transform duration-300"
                 />
