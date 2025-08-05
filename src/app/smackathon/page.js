@@ -57,9 +57,9 @@ const Page = () => {
     <main>
       <Hero />
       <Brochure />
+      <Prizepool/>
       <Tracks />
       <Timeline />
-      <Prizepool/>
       <Rules />
       <FAQ />
 
