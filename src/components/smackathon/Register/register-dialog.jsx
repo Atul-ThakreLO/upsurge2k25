@@ -53,7 +53,7 @@ const RegisterDialog = () => {
             </button>
           </div>
         ) : step === "offline" ? (
-          <div className="h-[65vh] md:h-[70vh]">
+          <div className="h-[70vh]">
             <iframe
               src="https://konfhub.com/widget/smackathon-2k25?desc=false&secondaryBg=ffffff&ticketBg=ffffff&borderCl=ffffff&bg=FFFFFF&fontColor=002E6E&ticketCl=002E6E&btnColor=fb5850&fontFamily=Nunito&borderRadius=10"
               id="konfhub-widget"
