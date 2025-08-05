@@ -133,7 +133,7 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 flex flex-col items-center">
             <Image
               ref={gfgLogoRef}
               className="object-cover rounded-full h-20 w-20 md:h-28 md:w-28 opacity-0 transform scale-70"
