@@ -4,7 +4,10 @@ import Tracks from "@/components/smackathon/tracks";
 import Timeline from "@/components/smackathon/Timeline/TimelineItem";
 import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
-import Brochure from "../../components/smackathon/Brochure/brochure";{/*import Ddajki from "@/components/smackathon/animate/ddajki"*/}
+import Brochure from "../../components/smackathon/Brochure/brochure";
+{
+  /*import Ddajki from "@/components/smackathon/animate/ddajki"*/
+}
 import Footer from "@/components/Home/Footer/Footer";
 import Prizepool from "@/components/smackathon/Prizepool/PrizePool";
 import Goodies from "../../components/smackathon/Goodies/Goodies";
@@ -56,9 +59,11 @@ const Page = () => {
     // <div className="h-screen w-full bg-no-repeat bg-cover bg-center bg-[url('/smbg.png')]">
     // </div>
     <main>
-     <Hero />
+      <Hero />
+      {/* <div className="transition h-[50px] w-full bg-black shadow-[0_40px_50px_#000000] relative z-10" /> */}
       <Brochure />
-      <Prizepool/>
+      <div className="transition h-[50px] w-full bg-black shadow-[0_30px_50px_20px_#000000] relative z-10" />
+      <Prizepool />
       <Goodies />
       <Tracks />
       <Timeline />
@@ -66,7 +71,7 @@ const Page = () => {
       <Rules />
       <FAQ />
       <LocateUs />
-<Footer footerDetails={FooterContactDetailsACM} />
+      <Footer footerDetails={FooterContactDetailsACM} />
     </main>
   );
 };

@@ -227,14 +227,14 @@ export default function Prizepool() {
           alt="Cyberpunk arena"
           className="w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/100"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/100"></div>
         <div className="absolute inset-0 cyber-grid"></div>
       </div>
 
       {/* Content */}
       <div
         ref={contentRef}
-        className="relative z-10 flex flex-col justify-center items-center px-4 py-8 min-h-screen"
+        className="relative mt-16 z-10 flex flex-col justify-center items-center px-4 py-8 min-h-screen"
       >
         <div ref={prizePoolRef} className="text-center mb-8">
           <h1
