@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export default function Ddajki() {
   const redControls = useAnimation();
@@ -9,20 +10,32 @@ export default function Ddajki() {
   const redRef = useRef<HTMLDivElement>(null);
   const blueRef = useRef<HTMLDivElement>(null);
   const [hasHit, setHasHit] = useState(false);
+  const [animationDone, setAnimationDone] = useState(false);
+
+
+  // Set up intersection observer
+  const { ref: containerRef, inView } = useInView({
+    triggerOnce: true, // Only run once
+    threshold: 0.9,     
+  });
 
   useEffect(() => {
-    // Animate blue ddakji dropping
-    blueControls.start({
-      x: ['0vw', '4vw'], // slight diagonal path
-      y: ['0vh', '40vh'],
-      rotate: [-70, -360],
-      transition: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-    });
+    if (!inView) return;
 
-    // Check collision every 100ms
+    // Delay start to ensure render
+    const timeout = setTimeout(() => {
+      blueControls.start({
+        x: ['0vw', '4vw'],
+        y: ['0vh', '40vh'],
+        rotate: [-70, -360],
+        transition: {
+          duration: 0.8,
+          ease: 'easeInOut',
+        },
+      });
+    }, 100);
+
+    // Collision detection
     const interval = setInterval(() => {
       if (!hasHit && redRef.current && blueRef.current) {
         const redBox = redRef.current.getBoundingClientRect();
@@ -37,52 +50,67 @@ export default function Ddajki() {
         if (isColliding) {
           setHasHit(true);
           redControls.start({
-            rotate: [0, -10, 10, -5, 0],
-            scale: [1, 0.95, 1],
-            transition: {
-              duration: 0.6,
-              delay:0.6 ,
-              ease: 'easeInOut',
-              type: 'keyframes',
-            },
-          });
+  rotateX: [0, -180, 0],  // Flipping on X-axis
+  y: [0, -30, 0],         // Small upward jump
+  scale: [1, 1.05, 1],    // Slight stretch and settle
+  transition: {
+    duration: 0.9,
+    delay: 0.3,
+    ease: 'easeInOut',
+  },
+}).then(() => {
+  setAnimationDone(true); // 
+});
+
         }
       }
     }, 100);
 
-    return () => clearInterval(interval);
-  }, [blueControls, redControls, hasHit]);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, [inView, blueControls, redControls, hasHit]);
 
   return (
-    <div className="fixed bottom-0 right-0 w-[600px] h-[600px] overflow-hidden">
+    <div
+      ref={containerRef}
+      className="bottom-50 right-10 w-[600px] h-[600px] overflow-visible transform-gpu will-change-transform pointer-events-none z-50 relative"
+    >
       {/* Red ddakji (target) */}
       <motion.div
         className="absolute"
         animate={redControls}
         ref={redRef}
         style={{ bottom: '20px', right: '40px' }}
+        
       >
         <Image
           src="/red.png"
           alt="Red Ddakji"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
       </motion.div>
 
       {/* Blue ddakji (hitter) */}
       <motion.div
         className="absolute"
-        initial={{ x: '0vw', y: '0vh', rotate: -90 }}
+        initial={{ x: '10vw', y: '30vh', rotate: -90 }}
         animate={blueControls}
         ref={blueRef}
-        style={{ top: '34px', left: '10px' }}
+        style={{ top: '10px', left: '10px' }}
+        onClick={() => {
+    if (animationDone) {
+      alert('Red ddakji clicked!');
+    }
+  }}
       >
         <Image
           src="/blue.png"
           alt="Blue Ddakji"
-          width={400}
-          height={400}
+          width={600}
+          height={600}
         />
       </motion.div>
     </div>

@@ -56,17 +56,16 @@ const Page = () => {
     // <div className="h-screen w-full bg-no-repeat bg-cover bg-center bg-[url('/smbg.png')]">
     // </div>
     <main>
-      <Hero />
+     <Hero />
       <Brochure />
       <Prizepool/>
       <Goodies />
       <Tracks />
       <Timeline />
+      {/*/*--<Section/>--*/}
       <Rules />
       <FAQ />
-
       <LocateUs />
-      {/*<Ddajki/>*/}
 <Footer footerDetails={FooterContactDetailsACM} />
     </main>
   );
