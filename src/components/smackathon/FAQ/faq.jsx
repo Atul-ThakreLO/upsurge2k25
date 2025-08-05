@@ -296,27 +296,18 @@ export default function Component() {
             ○
           </div>
         </div>
-        {/* Scanlines */}
-        <div className="absolute inset-0 pointer-events-none opacity-10">
-          <div
-            className="w-full h-full"
-            style={{
-              background:
-                "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 20, 147, 0.3) 2px, rgba(255, 20, 147, 0.3) 4px)",
-            }}
-          ></div>
-        </div>
+        
+             
 
-        <div className="relative z-10 w-full max-w-none mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-white to-cyan-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
+          <div className="relative z-10 w-full max-w-none mx-auto px-4 py-4">
+          <div className="text-center mb-18">
+            <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-white to-cyan-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-300 tracking-wide">
               Everything you need to know about SMACKATHON
             </p>
-          </div>
-
+          </div> 
           <Accordion type="single" collapsible className="space-y-6 px-8 md:px-16 lg:px-24 xl:px-32">
             {faqData.map((faq) => (
               <AccordionItem
