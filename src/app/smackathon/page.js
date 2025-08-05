@@ -6,6 +6,8 @@ import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
 import Brochure from "../../components/smackathon/Brochure/brochure";{/*import Ddajki from "@/components/smackathon/animate/ddajki"*/}
 import Footer from "@/components/Home/Footer/Footer";
+import Goodies from "../../components/smackathon/Goodies/Goodies";
+import { FooterContactDetailsACM } from "../../../data";
 // app/smackathon/page.js
 
 export const metadata = {
@@ -55,6 +57,7 @@ const Page = () => {
     <main>
       <Hero />
       <Brochure />
+      <Goodies />
       <Tracks />
       <Timeline />
       {/*--<Section/>--*/}
@@ -63,7 +66,7 @@ const Page = () => {
 
       <LocateUs />
       {/*<Ddajki/>*/}
-      <Footer />
+<Footer footerDetails={FooterContactDetailsACM} />
     </main>
   );
 };
