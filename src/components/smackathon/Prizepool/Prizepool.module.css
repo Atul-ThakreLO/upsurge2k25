@@ -1,0 +1,27 @@
+/* Define the @font-face rule specifically for this component */
+@font-face {
+  font-family: 'Game Of Squids';
+  src: url('/Game Of Squids.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* A custom class to apply the font */
+.gameOfSquidsFont {
+  font-family: 'Game Of Squids', sans-serif;
+}
+
+/* Added Warrior Tech font */
+@font-face {
+  font-family: 'WarriorTech';
+  src: url('/WarriotTech-rvdRp.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional class to use the font */
+.warriorFont {
+  font-family: 'WarriorTech', sans-serif;
+}
