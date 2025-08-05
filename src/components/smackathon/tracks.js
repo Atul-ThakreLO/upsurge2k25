@@ -151,7 +151,6 @@ export default function Tracks() {
     <div className={`bg-black py-20 px-4 sm:px-10 min-h-screen text-white font-sans relative overflow-hidden ${glitchActive ? 'animate-pulse' : ''}`}>
       
 
-
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="w-full h-full" style={{
@@ -244,7 +243,8 @@ export default function Tracks() {
                 whileHover={{ 
                   scale: 1.05,
                   rotateY: 5,
-                  z: 50
+                  z: 50,
+                  transition: { duration: 0.2, type: "spring", stiffness: 300, damping: 20 }
                 }}
               >
                 {/* Game Number & Symbol */}
@@ -282,7 +282,7 @@ export default function Tracks() {
                       {track.icon}
                     </motion.div>
                     <div>
-                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-pink-400 group-hover:to-red-400 game-text">
+                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-white game-text">
                         {track.title}
                       </h3>
                       <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
@@ -325,7 +325,8 @@ export default function Tracks() {
                 whileHover={{ 
                   scale: 1.05,
                   rotateY: 5,
-                  z: 50
+                  z: 50,
+                  transition: { duration: 0.2, type: "spring", stiffness: 300, damping: 20 }
                 }}
               >
                 {/* Game Number & Symbol */}
@@ -363,7 +364,7 @@ export default function Tracks() {
                       {track.icon}
                     </motion.div>
                     <div>
-                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-pink-400 group-hover:to-red-400 game-text">
+                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-white game-text">
                         {track.title}
                       </h3>
                       <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
@@ -401,16 +402,16 @@ export default function Tracks() {
         <div className="inline-block bg-gradient-to-r from-pink-600 via-red-600 to-pink-600 p-8 rounded-3xl shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 bg-black/20 animate-pulse"></div>
           <div className="relative z-10">
-            <div className="text-6xl mb-4">⚠️</div>
+            <div className="text-6xl mb-4 text-white">👁️</div>
             <p className="text-white text-2xl font-bold mb-2 game-text">
-              WARNING: PARTICIPATION IS VOLUNTARY
+              FINAL CHOICE AWAITS
             </p>
             <p className="text-pink-200 text-lg mb-6 font-mono">
-              Once you enter a game, elimination is permanent
+              The stakes are absolute. Once you enter, there's no turning back.
             </p>
             
             <div className="mt-4 text-xs text-pink-200 font-mono opacity-75">
-              By participating, you accept all risks and consequences
+              Choose your path, accept your fate.
             </div>
           </div>
         </div>
