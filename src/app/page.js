@@ -1,6 +1,7 @@
 import Events from "@/components/Home/events";
 import Footer from "@/components/Home/Footer/Footer";
 import Hero from "@/components/Home/Hero/hero";
+import { FooterContactDetailsCosmos } from "../../data";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <div className="relative z-10">
         <Events />
       </div>
-      <Footer />
+      <Footer footerDetails={FooterContactDetailsCosmos} />
     </div>
   );
 }
