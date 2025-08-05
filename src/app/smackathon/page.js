@@ -6,6 +6,8 @@ import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
 import Brochure from "../../components/smackathon/Brochure/brochure";{/*import Ddajki from "@/components/smackathon/animate/ddajki"*/}
 import Footer from "@/components/Home/Footer/Footer";
+import Prizepool from "@/components/smackathon/PrizePool/PrizePool";
+
 // app/smackathon/page.js
 
 export const metadata = {
@@ -57,7 +59,7 @@ const Page = () => {
       <Brochure />
       <Tracks />
       <Timeline />
-      {/*--<Section/>--*/}
+      <Prizepool/>
       <Rules />
       <FAQ />
 
