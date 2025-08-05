@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import  { rules } from "../../../../../data";
 
 import { useInView } from 'react-intersection-observer';
+import Ddajki from './ddajki';
 
 const initialKnobData = [
   { top: '1%', left: '34.5%', src: '/rules/knob1.png' },
@@ -19,6 +20,9 @@ export default function KnobBox() {
   const [knobPositions, setKnobPositions] = useState(initialKnobData);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [startDance, setStartDance] = useState(false); // default: no dance
+  const topRules = rules.slice(0, 7);
+  const bottomRules = rules.slice(7);
+
 
   const { ref: sectionRef, inView } = useInView({
     threshold: 0.4, 
@@ -93,62 +97,88 @@ export default function KnobBox() {
         </h2>
       </div>
 
-      {/* Content: Box + Rules */}
-      <div className="flex flex-col md:flex-row items-start gap-10">
-        {/* Box (Left) */}
-        <div
-          className="relative w-[400px] h-[400px] overflow-visible mt-50"
-          onMouseEnter={shuffleKnobs}
-          onMouseLeave={resetKnobs}
-        >
-          <Image src="/rules/box.png" alt="wooden box" fill className="object-contain" />
-          {knobPositions.map((knob, idx) => (
-            <motion.div
-              key={idx}
-              className="absolute cursor-pointer"
-              style={{
-                top: knob.top,
-                left: knob.left,
-                transform: 'translate(-50%, -50%)',
-              }}
-              initial={{ x: 0, y: 0, rotate: 0, opacity: 1 }}
-              animate={
-                hoveredIndex === idx
-                  ? { y: -30, opacity: 1 }
-                  : startDance
-                  ? getRingaMotion(idx)
-                  : { x: 0, y: 0, rotate: 0, opacity: 1 }
-              }
-              transition={{
-                duration: hoveredIndex === idx ? 0.4 : 3.5,
-                ease: 'easeInOut',
-                type: hoveredIndex === idx ? 'spring' : 'tween',
-              }}
-              onMouseEnter={() => setHoveredIndex(idx)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              <Image src={knob.src} alt={`Knob ${idx + 1}`} width={120} height={120} />
-            </motion.div>
-          ))}
-        </div>
+      {/* Top Section: Box + First 7 Rules */}
+<div className="flex flex-col md:flex-row items-start gap-10">
+  {/* Box (Left) */}
+  <div
+    className="relative w-[400px] h-[400px] overflow-visible mt-10"
+    onMouseEnter={shuffleKnobs}
+    onMouseLeave={resetKnobs}
+  >
+    <Image src="/rules/box.png" alt="wooden box" fill className="object-contain" />
+    {knobPositions.map((knob, idx) => (
+      <motion.div
+        key={idx}
+        className="absolute cursor-pointer"
+        style={{
+          top: knob.top,
+          left: knob.left,
+          transform: 'translate(-50%, -50%)',
+        }}
+        initial={{ x: 0, y: 0, rotate: 0, opacity: 1 }}
+        animate={
+          hoveredIndex === idx
+            ? { y: -30, opacity: 1 }
+            : startDance
+            ? getRingaMotion(idx)
+            : { x: 0, y: 0, rotate: 0, opacity: 1 }
+        }
+        transition={{
+          duration: hoveredIndex === idx ? 0.4 : 3.5,
+          ease: 'easeInOut',
+          type: hoveredIndex === idx ? 'spring' : 'tween',
+        }}
+        onMouseEnter={() => setHoveredIndex(idx)}
+        onMouseLeave={() => setHoveredIndex(null)}
+      >
+        <Image src={knob.src} alt={`Knob ${idx + 1}`} width={120} height={120} />
+      </motion.div>
+    ))}
+  </div>
 
-        {/* Rules (Right) */}
-        <div className="max-w-3xl space-y-6 font-[Orbitron] text-lg font-semibold leading-relaxed text-white/90 ml-20">
-          {rules.map((rule, index) => (
-            <div key={index} className="flex items-start gap-4">
-              <Image
-                src={`/rules/knob${(index % 5) + 1}.png`}
-                alt="Rule icon"
-                width={35}
-                height={35}
-                className="mt-1"
-              />
-              <p>{rule}</p>
-            </div>
-          ))}
-        </div>
+  {/* Top 7 Rules (Right) */}
+  <div className="max-w-3xl space-y-6 font-[Orbitron] text-lg font-semibold tracking-widest text-white/90 ml-20">
+    {topRules.map((rule, index) => (
+      <div key={index} className="flex items-start gap-4">
+        <Image
+          src={`/rules/knob${(index % 5) + 1}.png`}
+          alt="Rule icon"
+          width={35}
+          height={35}
+          className="mt-1"
+        />
+        <p>{rule}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+      {/* Bottom Rules (Below the Box) */}
+<div className="mt-24 flex flex-col md:flex-row gap-12 items-start justify-start mr-2">
+  
+  {/* Bottom Rules (Left Side) */}
+  <div className="flex-1 space-y-6 font-[Orbitron] tracking-widest text-lg font-semibold leading-relaxed text-white/90">
+    {bottomRules.map((rule, index) => (
+      <div key={index} className="flex items-start gap-4">
+        <Image
+          src={`/rules/knob${((index + 7) % 5) + 1}.png`}
+          alt="Rule icon"
+          width={35}
+          height={35}
+          className="mt-1"
+        />
+        <p>{rule}</p>
+      </div>
+    ))}
+  </div>
+
+  {/* Right-Side Component */}
+  <div className="flex-1 flex ">
+    <Ddajki />
+  </div>
+</div>
       </div>
     </div>
-    </div>
+
   );
 }
