@@ -56,6 +56,10 @@
   background-repeat: no-repeat;
 }
 
+.custom-gradient {
+  background-image: linear-gradient(to bottom, black, transparent, black);
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .envelope-wrapper {
