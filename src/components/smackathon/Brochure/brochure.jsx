@@ -122,7 +122,7 @@ const Brochure = () => {
                   rel="noopener noreferrer"
                 >
                   <button className="bg-pink-700 cursor-pointer hover:bg-pink-800 py-1 px-3 rounded-lg mt-2">
-                    Download
+                    View
                   </button>
                 </a>
               </div>
