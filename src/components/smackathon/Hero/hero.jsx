@@ -121,7 +121,7 @@ const Hero = () => {
                 className="inline-block transform translate-y-full opacity-0"
                 ref={headRef1}
               >
-                YCCE Techfest
+                YCCE <span className="text-xl">x</span> CSE Techfest
               </span>
             </h1>
             <h1 className="overflow-hidden drop-shadow-[0_0_30px_#ff4da6] text-lg md:text-xl font-bold text-pink-100 mt-2">
@@ -143,7 +143,10 @@ const Hero = () => {
               height={100}
               priority
             />
-            <p ref={presentsRef} className="text-white text-xl text-center font-bold mt-5 opacity-0 transform scale-70">
+            <p
+              ref={presentsRef}
+              className="text-white text-xl text-center font-bold mt-5 opacity-0 transform scale-70"
+            >
               Presents
             </p>
           </div>
@@ -165,7 +168,7 @@ const Hero = () => {
               ref={dateRef}
               className="text-pink-100 text-nowrap drop-shadow-[0_0_20px_#ff4da6] text-3xl md:text-5xl text-center opacity-0 transform translate-y-12"
             >
-              22nd - 23rd August
+              22<sup>nd</sup> - 23<sup>rd</sup> August
             </p>
           </div>
 
