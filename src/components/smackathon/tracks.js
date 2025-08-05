@@ -236,10 +236,10 @@ export default function Tracks() {
             return (
               <motion.div
                 key={track.title}
-                className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-2xl p-6 shadow-2xl hover:${colorClasses.shadow} transition-all duration-500 group relative overflow-hidden ${colorClasses.bg} max-w-sm mx-auto`}
+                className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-2xl p-6 shadow-2xl hover:${colorClasses.shadow} transition-all duration-300 group relative overflow-hidden ${colorClasses.bg} max-w-sm mx-auto`}
                 initial={{ opacity: 0, y: 50, rotateX: -15 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ delay: index * 0.15, duration: 0.8 }}
+                transition={{ delay: index * 0.1, duration: 0.8 }}
                 whileHover={{ 
                   scale: 1.05,
                   rotateY: 5,
@@ -282,7 +282,7 @@ export default function Tracks() {
                       {track.icon}
                     </motion.div>
                     <div>
-                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-white game-text">
+                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-300 group-hover:text-white game-text">
                         {track.title}
                       </h3>
                       <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
@@ -318,10 +318,10 @@ export default function Tracks() {
             return (
               <motion.div
                 key={track.title}
-                className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-2xl p-6 shadow-2xl hover:${colorClasses.shadow} transition-all duration-500 group relative overflow-hidden ${colorClasses.bg} max-w-sm`}
+                className={`bg-[#111]/90 backdrop-blur-md border-2 ${colorClasses.border} rounded-2xl p-6 shadow-2xl hover:${colorClasses.shadow} transition-all duration-300 group relative overflow-hidden ${colorClasses.bg} max-w-sm`}
                 initial={{ opacity: 0, y: 50, rotateX: -15 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ delay: actualIndex * 0.15, duration: 0.8 }}
+                transition={{ delay: actualIndex * 0.1, duration: 0.8 }}
                 whileHover={{ 
                   scale: 1.05,
                   rotateY: 5,
@@ -364,7 +364,7 @@ export default function Tracks() {
                       {track.icon}
                     </motion.div>
                     <div>
-                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-500 group-hover:text-white game-text">
+                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-300 group-hover:text-white game-text">
                         {track.title}
                       </h3>
                       <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
@@ -396,7 +396,7 @@ export default function Tracks() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.8 }}
+        transition={{ delay: 0.7, duration: 0.8 }}
         className="text-center mt-20"
       >
         <div className="inline-block bg-gradient-to-r from-pink-600 via-red-600 to-pink-600 p-8 rounded-3xl shadow-2xl relative overflow-hidden">
