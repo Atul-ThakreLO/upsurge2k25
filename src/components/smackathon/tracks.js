@@ -407,7 +407,7 @@ export default function Tracks() {
               FINAL CHOICE AWAITS
             </p>
             <p className="text-pink-200 text-lg mb-6 font-mono">
-              The stakes are absolute. Once you enter, there's no turning back.
+              The stakes are absolute. Once you enter, there&#39;s no turning back.
             </p>
             
             <div className="mt-4 text-xs text-pink-200 font-mono opacity-75">
