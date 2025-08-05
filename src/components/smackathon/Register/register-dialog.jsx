@@ -41,13 +41,19 @@ const RegisterDialog = () => {
             </button>
             <button
               className="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-medium text-sm px-4 py-2 rounded transition-all duration-300"
-              onClick={() => alert("Coming Soon!")}
+              onClick={() =>
+                window.open(
+                  "https://unstop.com/o/16qOFci?lb=9RlTJ3q5",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
             >
               Online Registration
             </button>
           </div>
         ) : step === "offline" ? (
-          <div className="h-[80vh] md:h-[70vh]">
+          <div className="h-[65vh] md:h-[70vh]">
             <iframe
               src="https://konfhub.com/widget/smackathon-2k25?desc=false&secondaryBg=ffffff&ticketBg=ffffff&borderCl=ffffff&bg=FFFFFF&fontColor=002E6E&ticketCl=002E6E&btnColor=fb5850&fontFamily=Nunito&borderRadius=10"
               id="konfhub-widget"
@@ -65,43 +71,7 @@ const RegisterDialog = () => {
             </button>
           </div>
         ) : (
-          <form className="flex flex-col gap-3 mt-5">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <input
-              type="text"
-              placeholder="College Name"
-              className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <button
-              onClick={() =>
-                window.open(
-                  "https://unstop.com/",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-              type="submit"
-              className="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold text-sm py-2 px-4 rounded transition-all duration-300"
-            >
-              Submit
-            </button>
-            <button
-              type="button"
-              className="text-xs text-pink-300 underline mt-1 self-center"
-              onClick={() => setStep("choose")}
-            >
-              ← Back
-            </button>
-          </form>
+          <div>Something went wrong</div>
         )}
       </DialogContent>
     </Dialog>
