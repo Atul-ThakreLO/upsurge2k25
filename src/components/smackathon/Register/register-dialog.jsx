@@ -41,7 +41,7 @@ const RegisterDialog = () => {
             </button>
             <button
               className="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-medium text-sm px-4 py-2 rounded transition-all duration-300"
-              onClick={() => setStep("offline")}
+              onClick={() => setStep("online")}
             >
               Online Registration
             </button>
@@ -65,43 +65,44 @@ const RegisterDialog = () => {
             </button>
           </div>
         ) : (
-          <form className="flex flex-col gap-3 mt-5">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <input
-              type="text"
-              placeholder="College Name"
-              className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
-            />
-            <button
-              onClick={() =>
-                window.open(
-                  "https://unstop.com/",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-              type="submit"
-              className="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold text-sm py-2 px-4 rounded transition-all duration-300"
-            >
-              Submit
-            </button>
-            <button
-              type="button"
-              className="text-xs text-pink-300 underline mt-1 self-center"
-              onClick={() => setStep("choose")}
-            >
-              ← Back
-            </button>
-          </form>
+          alert("Coming Soon!")
+          // <form className="flex flex-col gap-3 mt-5">
+          //   <input
+          //     type="text"
+          //     placeholder="Full Name"
+          //     className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+          //   />
+          //   <input
+          //     type="email"
+          //     placeholder="Email Address"
+          //     className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+          //   />
+          //   <input
+          //     type="text"
+          //     placeholder="College Name"
+          //     className="w-full px-3 py-2 rounded bg-black border border-pink-300 text-white placeholder-pink-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+          //   />
+          //   <button
+          //     onClick={() =>
+          //       window.open(
+          //         "https://unstop.com/",
+          //         "_blank",
+          //         "noopener,noreferrer"
+          //       )
+          //     }
+          //     type="submit"
+          //     className="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold text-sm py-2 px-4 rounded transition-all duration-300"
+          //   >
+          //     Submit
+          //   </button>
+          //   <button
+          //     type="button"
+          //     className="text-xs text-pink-300 underline mt-1 self-center"
+          //     onClick={() => setStep("choose")}
+          //   >
+          //     ← Back
+          //   </button>
+          // </form>
         )}
       </DialogContent>
     </Dialog>

@@ -3,9 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import StaticMoneyPile from "./StaticMoneyPile";
-import { FooterContactDetails, FooterSocialLinks } from "../../../../data";
+import { FooterSocialLinks } from "../../../../data";
 
-const Footer = () => {
+const Footer = ({ footerDetails }) => {
   return (
     <footer className="relative w-full text-white py-24 font-mono overflow-hidden">
       {/* <FallingMoney /> */}
@@ -123,22 +123,27 @@ const Footer = () => {
               />
               <div className="absolute inset-0 bg-black/40 z-10" />
               <div className="relative z-20 px-4 py-6 text-white space-y-4">
-                {FooterContactDetails.map(
-                  ({ name, position, tel, phone }, i) => (
-                    <div key={i} className="border-b border-white/10 pb-2">
-                      <strong className="text-lg text-[#0d152b]">{name}</strong>
-                      <br />
-                      <span className="text-sm">{position}</span>
-                      <br />
-                      <a
-                        href={tel}
-                        className="text-sm text-pink-200 hover:underline"
-                      >
-                        {phone}
-                      </a>
-                    </div>
-                  )
-                )}
+                {footerDetails.map(({ name, position, tel, phone }, i) => (
+                  <div
+                    key={i}
+                    className={`${
+                      i != footerDetails.length - 1
+                        ? "border-b border-white/10"
+                        : ""
+                    } pb-2`}
+                  >
+                    <strong className="text-lg text-[#0d152b]">{name}</strong>
+                    <br />
+                    <span className="text-sm">{position}</span>
+                    <br />
+                    <a
+                      href={tel}
+                      className="text-sm text-pink-200 hover:underline"
+                    >
+                      {phone}
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -156,11 +161,21 @@ const Footer = () => {
         <br />
         Developed by <span className="text-yellow-400">Website Team CSE</span>.
         <br />
-        <a href="/privacy" className="text-red-500 hover:underline">
+        <a
+          href="https://drive.google.com/file/d/1--gJQ99KVrr83m0NxV-0THayvesLrQ_T/view?usp=drive_link"
+          className="text-red-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Privacy Policy
         </a>{" "}
         |{" "}
-        <a href="/refund" className="text-red-500 hover:underline">
+        <a
+          href="https://drive.google.com/file/d/1rx1nGnWxxPpl5lxqS9IXL1yJsn94sn0W/view?usp=drive_link"
+          className="text-red-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           No Refund Policy
         </a>
       </div>

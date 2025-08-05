@@ -8,6 +8,10 @@
   src: url("/Game Of Squids.otf") format("opentype");
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --font-squid: "squid", sans-serif;
   --radius: 0.625rem;
