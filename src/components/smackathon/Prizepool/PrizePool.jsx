@@ -227,7 +227,7 @@ export default function Prizepool() {
           alt="Cyberpunk arena"
           className="w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/100"></div>
         <div className="absolute inset-0 cyber-grid"></div>
       </div>
 

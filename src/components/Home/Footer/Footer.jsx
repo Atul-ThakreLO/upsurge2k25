@@ -162,17 +162,19 @@ const Footer = ({ footerDetails }) => {
         Developed by <span className="text-yellow-400">Website Team CSE</span>.
         <br />
         <a
-          href="/pdf/Privacy Policy.pdf"
-          download
+          href="https://drive.google.com/file/d/1--gJQ99KVrr83m0NxV-0THayvesLrQ_T/view?usp=drive_link"
           className="text-red-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Privacy Policy
         </a>{" "}
         |{" "}
         <a
-          href="/pdf/No Return Policy.pdf"
-          download
+          href="https://drive.google.com/file/d/1rx1nGnWxxPpl5lxqS9IXL1yJsn94sn0W/view?usp=drive_link"
           className="text-red-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           No Refund Policy
         </a>

@@ -14,7 +14,7 @@ const Goodies = () => {
           alt="Squid Game Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/1ss0 to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/10 to-black/90" />
       </div>
 
       <RotatingHeader />
