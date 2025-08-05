@@ -134,7 +134,7 @@ export default function Component() {
           </p>
 
           {/* Criteria Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-8 md:px-16 lg:px-24 xl:px-32">
             {/* Quality of work */}
             <Card className="bg-black/50 border border-pink-500/40 backdrop-blur-sm shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:border-pink-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
               <CardContent className="p-10 text-left h-full flex flex-col justify-center">
@@ -317,7 +317,7 @@ export default function Component() {
             </p>
           </div>
 
-          <Accordion type="single" collapsible className="space-y-6">
+          <Accordion type="single" collapsible className="space-y-6 px-8 md:px-16 lg:px-24 xl:px-32">
             {faqData.map((faq) => (
               <AccordionItem
                 key={faq.id}
@@ -346,7 +346,7 @@ export default function Component() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-8 pb-8 relative z-10">
-                    <div className="ml-16 text-gray-300 leading-relaxed text-lg font-light group-hover:text-white/90 transition-colors duration-300">
+                    <div className="ml-16 text-gray-300 leading-relaxed text-lg font-semibold group-hover:text-white/90 transition-colors duration-300">
                       {faq.answer}
                     </div>
                   </AccordionContent>
