@@ -42,7 +42,7 @@ const RotatingHeader = () => {
         className="w-10 h-10 mr-2 md:w-12 md:h-12 md:mr-4"
       />
       <h1 className="text-2xl md:text-6xl text-center font-mono md:font-sans font-bold text-white relative">
-        Exclusive Goods From Cojag and Unstop
+        Exclusive Goods From GFG
       </h1>
       <img
         ref={rightImgRef}
