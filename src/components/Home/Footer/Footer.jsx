@@ -18,18 +18,10 @@ const Footer = ({ footerDetails }) => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/50 to-black/10" />
       </div>
 
-      <section className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+      <section className="z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
         {/* Column 1: Logos + Socials */}
-        <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
-          {/* <Image
-            src="/game-card.jpg"
-            alt="Squid Card Background"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 z-0"
-          />
-          <div className="absolute inset-0 bg-black/30" /> */}
-          <div className="relative z-10 flex flex-col justify-between h-full p-6">
+        <div className="aspect-video rounded-lg">
+          <div className="flex flex-col justify-between h-full p-6">
             <div className="flex justify-around items-center h-full">
               {[
                 "/img/Upsurge Logo.png",
@@ -40,8 +32,8 @@ const Footer = ({ footerDetails }) => {
                   key={i}
                   src={src}
                   alt={`Sponsor Logo ${i + 1}`}
-                  width={100}
-                  height={100}
+                  width={`${i == 0 ? 125 : 100}`}
+                  height={`${i == 0 ? 125 : 100}`}
                   // style={{ height: "auto", width: "auto" }}
                   className="object-cover hover:scale-110 transition-transform duration-300"
                 />
