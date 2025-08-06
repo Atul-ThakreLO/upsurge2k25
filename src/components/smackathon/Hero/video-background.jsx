@@ -16,7 +16,7 @@ export const VideoBackground = ({
   }, []);
 
   return (
-    <div className="absolute w-full h-screen overflow-hidden">
+    <div className="absolute top-0 w-full h-full overflow-hidden">
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
