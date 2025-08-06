@@ -6,7 +6,7 @@ import GoodiesDesktop from "./GoodiesDesktop";
 
 const Goodies = () => {
   return (
-    <div className="relative w-full min-h-[50vh]">
+    <div className="relative w-full min-h-[50vh] bg-gradient-to-t from-black via-transparent to-transparent">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <img
