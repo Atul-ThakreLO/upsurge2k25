@@ -17,13 +17,13 @@ const GoodiesDesktop = () => {
       </div>
       <div className="hidden sm:grid grid-cols-2">
         {/* Middle Guard Image */}
-        <div className="text-white hidden md:block items-center justify-center">
+        <div className="text-white hidden md:flex items-center justify-end">
           <Image
+          className="relative -right-[70%] -translate-x-1/2 -z-[1]"
             src="/img/guard-goodies.png"
             alt="Squid Game Middle Guard"
-            fill
-            sizes="(max-width: 768px) 100vw, 200px"
-            style={{ objectFit: "contain" }}
+            width={500}
+            height={500}
           />
         </div>
         <div className="relative w-full min-h-[55vh]">

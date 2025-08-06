@@ -106,12 +106,20 @@ const Hero = () => {
         ref={gradientRef}
         className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-black"
       />
-      <div className="flex flex-col pt-20 md:pt-0 md:flex-row justify-around items-center h-full w-full relative z-10 gap-10">
+      <div className="flex flex-col pt-20 md:pt-0 md:flex-row justify-evenly items-center h-full w-full relative z-10 gap-0">
         <div className="flex  md:flex-col order-1 md:order-[0] h-[70%] w-full md:w-[20%] items-center justify-center md:justify-end">
-          {/* <div className="flex flex-col justify-center items-center gap-3">
+          <div className="flex flex-col justify-center items-center gap-3">
             <h3 className="text-xl text-white font-bold">Powered by</h3>
-            <div className="h-20 aspect-square bg-white"></div>
-          </div> */}
+            <Image
+              // ref={gfgLogoRef}
+              // className="object-cover h-20 w-20 md:h-28 md:w-28 opacity-0 transform scale-70"
+              src="/img/GFG_Logo.png"
+              alt="character"
+              width={200}
+              height={200}
+              priority
+            />
+          </div>
         </div>
 
         <div className="relative h-full w-full md:w-[40%] z-10 flex flex-col justify-center items-center">
@@ -139,8 +147,8 @@ const Hero = () => {
               className="object-cover rounded-full h-20 w-20 md:h-28 md:w-28 opacity-0 transform scale-70"
               src="https://res.cloudinary.com/dok1hsojb/image/upload/v1754205676/GFG_jsi10a.webp"
               alt="character"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
               priority
             />
             <p

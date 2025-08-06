@@ -24,7 +24,7 @@ const Footer = ({ footerDetails }) => {
           <div className="flex flex-col justify-between h-full p-6">
             <div className="flex justify-around items-center h-full">
               {[
-                "/img/Upsurge Logo.png",
+                "/img/Upsurge_Logo-rm.png",
                 "/img/Cosmos Logo.png",
                 "/img/ACM Final.png",
               ].map((src, i) => (
