@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import RegisterButton from "../../ui/register-button";
 import Image from "next/image";
@@ -16,6 +16,7 @@ const Hero = () => {
   const headRef1 = useRef(null);
   const headRef2 = useRef(null);
   const presentsRef = useRef(null);
+  const sponosrByRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -96,23 +97,32 @@ const Hero = () => {
         },
         "-=0.3"
       );
+
+      tl.to(sponosrByRef.current, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+      });
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
   return (
-    <section className="relative w-full font-[Orbitron] md:h-screen bg-cover bg-center bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp')]  flex justify-center items-center">
+    <section className="relative w-full font-[Orbitron] md:h-screen pb-5 md:pb-0 bg-cover bg-center bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp')]  flex justify-center items-center">
       <div
         ref={gradientRef}
         className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-black"
       />
       <div className="flex flex-col pt-20 md:pt-0 md:flex-row justify-evenly items-center h-full w-full relative z-10 gap-0">
         <div className="flex  md:flex-col order-1 md:order-[0] h-[70%] w-full md:w-[20%] items-center justify-center md:justify-end">
-          <div className="flex flex-col justify-center items-center gap-3">
-            <h3 className="text-xl text-white font-bold">Powered by</h3>
+          <div
+            ref={sponosrByRef}
+            className="flex flex-col justify-center items-center gap-3 mt-16 opacity-0 transform translate-y-[50px] 0 scale-70"
+          >
+            <h3 className="text-xl text-white font-bold">Sponsored by</h3>
             <Image
-              // ref={gfgLogoRef}
-              // className="object-cover h-20 w-20 md:h-28 md:w-28 opacity-0 transform scale-70"
+              className=""
               src="/img/GFG_Logo.png"
               alt="character"
               width={200}
