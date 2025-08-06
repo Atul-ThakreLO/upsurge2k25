@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import RegisterButton from "../../ui/register-button";
 import Image from "next/image";
 import RegisterDialog from "../Register/register-dialog";
+import { VideoBackground } from "./video-background";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -109,7 +110,13 @@ const Hero = () => {
     return () => ctx.revert();
   }, []);
   return (
-    <section className="relative w-full font-[Orbitron] md:h-screen pb-5 md:pb-0 bg-cover bg-center bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp')]  flex justify-center items-center">
+    // <section className="relative w-full font-[Orbitron] md:h-screen pb-5 md:pb-0 bg-cover bg-center bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp')]  flex justify-center items-center">
+    <section className="relative w-full font-[Orbitron] md:h-screen pb-5 md:pb-0 flex justify-center items-center">
+      <VideoBackground
+        webmUrl="https://res.cloudinary.com/dok1hsojb/video/upload/v1754491200/bg-viedo_i0nvba.webm"
+        mp4Url="https://res.cloudinary.com/dok1hsojb/video/upload/v1754494191/bg-viedo-com_dypbav.mp4"
+        fallbackImage="https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp"
+      />
       <div
         ref={gradientRef}
         className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-black"

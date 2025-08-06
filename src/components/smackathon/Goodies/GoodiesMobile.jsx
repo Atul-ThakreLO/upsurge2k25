@@ -5,7 +5,7 @@ import GoodiesRewards from "./GoddiesReward";
 
 const GoodiesMobile = () => {
   return (
-    <div className="flex flex-col items-center text-white md:hidden overflow-hidden">
+    <div className="flex flex-col items-center text-white md:hidden overflow-hidden pb-20 md:pb-0">
       <div className="relative w-[200px] h-[200px]">
         <Image
           src="/img/Goodies.png"
