@@ -64,9 +64,9 @@ const Page = () => {
       <Brochure />
       <div className="transition h-[50px] w-full bg-black shadow-[0_30px_50px_20px_#000000] relative z-10" />
       <Prizepool />
-      <div className="transition h-[70px] w-full bg-black shadow-[0_-30px_50px_20px_#000000] relative z-10" />
+      <div className="transition h-[50px] w-full bg-black shadow-[0_-10px_20px_10px_#000000] relative z-10" />
       <Goodies />
-      <div className="transition h-[30px] w-full bg-black shadow-[0_-30px_50px_20px_#000000] relative z-10" />
+      <div className="transition h-[10px] w-full bg-black shadow-[0_-5px_10px_5px_#000000] relative z-10" />
       <div className="transition h-[30px] w-full bg-black shadow-[0_30px_50px_20px_#000000] relative z-10" />
       <Tracks />
       <Timeline />
