@@ -4,7 +4,10 @@ import Tracks from "@/components/smackathon/tracks";
 import Timeline from "@/components/smackathon/Timeline/TimelineItem";
 import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
-import Brochure from "../../components/smackathon/Brochure/brochure";{/*import Ddajki from "@/components/smackathon/animate/ddajki"*/}
+import Brochure from "../../components/smackathon/Brochure/brochure";
+{
+  /*import Ddajki from "@/components/smackathon/animate/ddajki"*/
+}
 import Footer from "@/components/Home/Footer/Footer";
 import Prizepool from "@/components/smackathon/Prizepool/PrizePool";
 import Goodies from "../../components/smackathon/Goodies/Goodies";
@@ -56,17 +59,23 @@ const Page = () => {
     // <div className="h-screen w-full bg-no-repeat bg-cover bg-center bg-[url('/smbg.png')]">
     // </div>
     <main>
-     <Hero />
+      <Hero />
+      {/* <div className="transition h-[50px] w-full bg-black shadow-[0_40px_50px_#000000] relative z-10" /> */}
       <Brochure />
-      <Prizepool/>
+      <div className="transition h-[50px] w-full bg-black shadow-[0_30px_50px_20px_#000000] relative z-10" />
+      <Prizepool />
+      <div className="transition h-[50px] w-full bg-black shadow-[0_-10px_20px_10px_#000000] relative z-10" />
       <Goodies />
+      {/* <div className="transition h-[10px] w-full bg-black shadow-[0_-5px_35px_20px_#000000] relative z-10" /> */}
+      <div className="transition h-[30px] w-full bg-black shadow-[0_30px_50px_20px_#000000] relative z-10" />
       <Tracks />
       <Timeline />
       {/*/*--<Section/>--*/}
       <Rules />
       <FAQ />
+      <div className="transition h-[30px] w-full bg-black shadow-[0_-30px_50px_20px_#000000] relative z-10" />
       <LocateUs />
-<Footer footerDetails={FooterContactDetailsACM} />
+      <Footer footerDetails={FooterContactDetailsACM} />
     </main>
   );
 };

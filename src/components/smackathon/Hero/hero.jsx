@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import RegisterButton from "../../ui/register-button";
 import Image from "next/image";
 import RegisterDialog from "../Register/register-dialog";
+import { VideoBackground } from "./video-background";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -16,6 +17,7 @@ const Hero = () => {
   const headRef1 = useRef(null);
   const headRef2 = useRef(null);
   const presentsRef = useRef(null);
+  const sponosrByRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -96,22 +98,45 @@ const Hero = () => {
         },
         "-=0.3"
       );
+
+      tl.to(sponosrByRef.current, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+      });
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
   return (
-    <section className="relative w-full font-[Orbitron] md:h-screen bg-cover bg-center bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp')]  flex justify-center items-center">
+    // <section className="relative w-full font-[Orbitron] md:h-screen pb-5 md:pb-0 bg-cover bg-center bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp')]  flex justify-center items-center">
+    <section className="relative w-full font-[Orbitron] md:h-screen pb-5 md:pb-0 flex justify-center items-center">
+      <VideoBackground
+        webmUrl="https://res.cloudinary.com/dok1hsojb/video/upload/v1754491200/bg-viedo_i0nvba.webm"
+        mp4Url="https://res.cloudinary.com/dok1hsojb/video/upload/v1754494191/bg-viedo-com_dypbav.mp4"
+        fallbackImage="https://res.cloudinary.com/dok1hsojb/image/upload/v1754229663/smbg_upscaled_1_jvjcyn.webp"
+      />
       <div
         ref={gradientRef}
         className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-black"
       />
-      <div className="flex flex-col pt-20 md:pt-0 md:flex-row justify-around items-center h-full w-full relative z-10 gap-10">
+      <div className="flex flex-col pt-20 md:pt-0 md:flex-row justify-evenly items-center h-full w-full relative z-10 gap-0">
         <div className="flex  md:flex-col order-1 md:order-[0] h-[70%] w-full md:w-[20%] items-center justify-center md:justify-end">
-          {/* <div className="flex flex-col justify-center items-center gap-3">
-            <h3 className="text-xl text-white font-bold">Powered by</h3>
-            <div className="h-20 aspect-square bg-white"></div>
-          </div> */}
+          <div
+            ref={sponosrByRef}
+            className="flex flex-col justify-center items-center gap-3 mt-16 opacity-0 transform translate-y-[50px] 0 scale-70"
+          >
+            <h3 className="text-xl text-white font-bold">Sponsored by</h3>
+            <Image
+              className=""
+              src="/img/GFG_Logo.png"
+              alt="character"
+              width={200}
+              height={200}
+              priority
+            />
+          </div>
         </div>
 
         <div className="relative h-full w-full md:w-[40%] z-10 flex flex-col justify-center items-center">
@@ -133,14 +158,14 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 flex flex-col items-center">
             <Image
               ref={gfgLogoRef}
               className="object-cover rounded-full h-20 w-20 md:h-28 md:w-28 opacity-0 transform scale-70"
               src="https://res.cloudinary.com/dok1hsojb/image/upload/v1754205676/GFG_jsi10a.webp"
               alt="character"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
               priority
             />
             <p

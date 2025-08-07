@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { goodiesReward } from '../../../../data';
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { goodiesReward } from "../../../../data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,16 +14,16 @@ const GoodiesRewards = () => {
   useEffect(() => {
     const q = gsap.utils.selector(containerRef);
 
-    gsap.from(q('.reward-line'), {
+    gsap.from(q(".reward-line"), {
       y: 30,
       opacity: 0,
       duration: 0.8,
       stagger: 0.2,
-      ease: 'power2.out',
+      ease: "power2.out",
       scrollTrigger: {
         trigger: containerRef.current,
-        start: 'top 60%',
-        toggleActions: 'play none none reverse',
+        start: "top 60%",
+        toggleActions: "play none none reverse",
       },
     });
   }, []);
@@ -38,7 +38,8 @@ const GoodiesRewards = () => {
               alt={`mask-${index}`}
               width={52}
               height={52}
-              style={{ objectFit: 'contain' }}
+              unoptimized
+              style={{ objectFit: "contain" }}
             />
           </div>
           <span>
