@@ -21,12 +21,12 @@ const RegisterDialog = () => {
         <DialogHeader>
           <DialogTitle className="text-center text-lg sm:text-xl tracking-widest font-squid">
             {step === "choose"
-              ? "Choose Registration Type"
-              : "Offline Registration"}
+              ? "Choose Participation Type"
+              : "Offline Participation"}
           </DialogTitle>
           <DialogDescription className="text-center mt-1 text-sm text-pink-200">
             {step === "choose"
-              ? "Please select how you'd like to register"
+              ? "Please select how you'd like to Participate"
               : "Fill in your details below"}
           </DialogDescription>
         </DialogHeader>
@@ -37,7 +37,7 @@ const RegisterDialog = () => {
               className="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-medium text-sm px-4 py-2 rounded transition-all duration-300"
               onClick={() => setStep("offline")}
             >
-              Offline Registration
+              Offline Participation
             </button>
             <button
               className="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-medium text-sm px-4 py-2 rounded transition-all duration-300"
@@ -49,7 +49,7 @@ const RegisterDialog = () => {
                 )
               }
             >
-              Online Registration
+              Online Participation
             </button>
           </div>
         ) : step === "offline" ? (
