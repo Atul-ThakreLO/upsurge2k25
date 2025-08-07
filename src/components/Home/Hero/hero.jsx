@@ -61,12 +61,12 @@ const Hero = () => {
       if (window.innerWidth < 768) return;
       tlRef.current.to(item, {
         duration: 0.5,
-        scale: 1.7,
+        scale: 1.4,
         ease: "power2.out",
         scrollTrigger: {
           trigger: container,
-          start: "50% bottom",
-          end: "bottom top",
+          start: "bottom bottom",
+          end: "200% top",
           scrub: 3,
         },
       });
@@ -154,8 +154,8 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div ref={containerRef}>
-      <div ref={fixedContainerRef} className="relative">
+    <div ref={containerRef} className="h-[100vh] md:h-[110vh]">
+      <div ref={fixedContainerRef} className="relative h-[100vh]">
         <div className="block md:hidden">
           <HeroMobile />
         </div>
@@ -166,17 +166,21 @@ const Hero = () => {
       <div
         ref={scrollingContainerRef}
         style={{ transform: "translateY(100vh)" }}
-        className="h-[160vh] rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
+        className="h-[100vh] md:h-[110vh] rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
       >
-        <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-squid mt-5 md:mt-16 underline">
-            Smackathon
-          </h1>
-          <p className="mt-8 text-lg md:text-xl">
-            A{" "}
-            <span className="text-2xl md:text-3xl font-squid mx-3">24 Hrs</span>{" "}
-            Hackathon
-          </p>
+        <div className="text-center h-full flex flex-col justify-around items-center">
+          <div>
+            <h1 className="text-4xl md:text-6xl font-squid mt-5 md:mt-16 underline">
+              Smackathon
+            </h1>
+            <p className="mt-8 text-lg md:text-xl">
+              A{" "}
+              <span className="text-2xl md:text-3xl font-squid mx-3">
+                24 Hrs
+              </span>{" "}
+              Hackathon
+            </p>
+          </div>
           <RotateMask />
           <p className=" md:w-[50%] mx-auto text-sm md:text-xl mt-10">
             Are you ready to innovate, collaborate, and push the boundaries of
