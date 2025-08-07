@@ -58,21 +58,13 @@ export default function Component() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0c1b] via-[#101223] to-[#181a2b] flex flex-col items-center justify-start p-4 relative overflow-hidden py-8">
-      {/* Removed SquidGameBackground. Using dark blue/black gradient background. */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none z-0">
-        <div className="absolute top-20 left-20 w-32 h-32 border-2 border-primary animate-pulse"></div>
-        <div className="absolute top-40 right-32 w-0 h-0 border-l-12 border-r-12 border-b-24 border-l-transparent border-r-transparent border-b-primary"></div>
-        <div className="absolute bottom-32 left-32 w-16 h-16 bg-primary rounded-full animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-20 h-20 border-2 border-accent rotate-45"></div>
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 pointer-events-none z-0"></div>
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-xl pointer-events-none z-0"></div>
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-radial from-accent/15 via-secondary/8 to-transparent rounded-full blur-xl pointer-events-none z-0"></div>
+    <div className="min-h-screen bg-black flex flex-col items-center justify-start relative overflow-hidden py-12">
+      {/* Using complete dark black background. */}
+      {/* Plain black background without decorations. */}
 
       {/* ASSESSMENT CRITERIA SECTION */}
-      <Card className="w-full max-w-none mx-0 bg-gradient-to-br from-slate-900 via-purple-900 to-pink-900 border-2 border-pink-500/40 backdrop-blur-sm shadow-xl shadow-pink-500/30 hover:shadow-pink-500/50 transition-all duration-300 hover:border-pink-400/60 relative z-10 overflow-hidden min-h-[800px]">
-        <CardContent className="px-4 py-20 text-center relative overflow-hidden">
+      <Card className="w-full max-w-none mx-0 bg-gradient-to-br from-slate-900 via-purple-900 to-pink-900 backdrop-blur-sm relative z-10 overflow-hidden min-h-[800px] border border-blue-800 shadow-xl shadow-pink-500/30">
+        <CardContent className="py-20 text-center relative overflow-hidden">
           {/* Enhanced Geometric Pattern Background - Contained */}
           <div className="absolute inset-0 opacity-20 overflow-hidden">
             {/* Triangle Pattern - Enhanced */}
@@ -136,7 +128,7 @@ export default function Component() {
           {/* Criteria Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-8 md:px-16 lg:px-24 xl:px-32">
             {/* Quality of work */}
-            <Card className="bg-black/50 border border-pink-500/40 backdrop-blur-sm shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:border-pink-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
+             <Card className="bg-black/50 border border-pink-500/40 backdrop-blur-sm shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:border-pink-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
               <CardContent className="p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
@@ -267,7 +259,7 @@ export default function Component() {
       </Card>
 
       {/* FAQ Section */}
-      <div className="relative w-full max-w-none mt-8 py-28 bg-[#111] rounded-2xl border-2 border-pink-500/40 backdrop-blur-sm shadow-xl shadow-pink-500/30 transition-all duration-300 z-10 overflow-hidden min-h-[900px]">
+      <div className="relative w-full max-w-none mt-8 py-28 bg-[#111] rounded-2xl backdrop-blur-sm shadow-xl shadow-pink-500/30 transition-all duration-300 z-10 overflow-hidden min-h-[900px]">
         {/* Track-Inspired Background Effects */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div
