@@ -43,19 +43,19 @@ const Hero = () => {
       },
     });
 
-    tlRef.current.fromTo(
-      scrollingContainer,
-      {
-        y: "100vh",
-        // opacity: 0.9,
-      },
-      {
-        y: "0vh",
-        // opacity: 1,
-        ease: "none",
-        duration: 1,
-      }
-    );
+    // tlRef.current.fromTo(
+    //   scrollingContainer,
+    //   {
+    //     y: "100vh",
+    //     // opacity: 0.9,
+    //   },
+    //   {
+    //     y: "0vh",
+    //     // opacity: 1,
+    //     ease: "none",
+    //     duration: 1,
+    //   }
+    // );
 
     [bgRef.current, mainCharRef.current].forEach((item) => {
       if (window.innerWidth < 768) return;
@@ -65,8 +65,8 @@ const Hero = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: container,
-          start: "bottom bottom",
-          end: "200% top",
+          start: "top top",
+          end: "bottom top",
           scrub: 3,
         },
       });
@@ -154,7 +154,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div ref={containerRef} className="h-[100vh] md:h-[110vh]">
+    <div ref={containerRef} className="h-[200vh] md:h-[210vh]">
       <div ref={fixedContainerRef} className="relative h-[100vh]">
         <div className="block md:hidden">
           <HeroMobile />
@@ -165,8 +165,8 @@ const Hero = () => {
       </div>
       <div
         ref={scrollingContainerRef}
-        style={{ transform: "translateY(100vh)" }}
-        className="h-[100vh] md:h-[110vh] rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
+        // style={{ transform: "translateY(100vh)" }}
+        className="h-[100vh] md:h-[110vh] relative rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
       >
         <div className="text-center h-full flex flex-col justify-around items-center">
           <div>

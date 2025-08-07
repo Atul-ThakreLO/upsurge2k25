@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <div className="relative z-10"> */}
+      <div className="relative z-10">
         <Events />
-      {/* </div> */}
-      <Footer footerDetails={FooterContactDetailsCosmos} />
+        <Footer footerDetails={FooterContactDetailsCosmos} />
+      </div>
     </div>
   );
 }
