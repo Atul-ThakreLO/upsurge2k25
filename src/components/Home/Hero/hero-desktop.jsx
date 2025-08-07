@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { forwardRef } from "react";
 
 const HeroDesktop = forwardRef((props, refs) => {
@@ -12,7 +13,7 @@ const HeroDesktop = forwardRef((props, refs) => {
         className="main bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753938415/bg-main_upscaled_i2tz06.webp')] scale-[1.1] md:w-1/2 h-[80vh] lg:h-[90vh] bg-center bg-no-repeat bg-cover absolute bottom-3"
       />
       <div>
-        <h1 className="name2 font-squid text-6xl leading-16 text-center text-[#EF428C text-pink-800 opacity- absolute bottom-7 left-1/2 -translate-x-1/2">
+        <h1 className="name2 font-squid text-6xl leading-16 text-center text-pink-800 absolute bottom-7 left-1/2 -translate-x-1/2">
           upsurge <br /> <span className="ml-64">2k25</span>
         </h1>
         <h1 className="name1 font-squid text-6xl leading-16 text-center text-[#85073d] opacity-70 absolute bottom-7 left-1/2 -translate-x-1/2">

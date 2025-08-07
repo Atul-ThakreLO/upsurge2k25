@@ -206,7 +206,7 @@ const HeroMobile = () => {
         />
       </Head>
 
-      <div className="absolute top-0 left-0 h-screen w-full bg-gradient-to-b from-black to-170% to-pink-900">
+      <div className="absolute top-0 left-0 h-screen overflow-hidden w-full bg-gradient-to-b from-black to-170% to-pink-900">
         <div className="absolute top-40 sm:top-52 left-1/2 -translate-x-1/2">
           <h1
             ref={titleRef}
@@ -216,7 +216,7 @@ const HeroMobile = () => {
           </h1>
         </div>
 
-        <div className="absolute h-[55%] w-full bottom-[5%] left-1/2 -translate-x-1/2">
+        <div className="absolute h-[55%] w-full bottom-0 left-1/2 -translate-x-1/2">
           <Image
             ref={imageRef}
             className="object-cover scale-[1.2] transition-opacity duration-200 mx-auto"
