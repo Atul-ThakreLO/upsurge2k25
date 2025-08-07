@@ -10,7 +10,6 @@ export default function Ddajki() {
   const redRef = useRef<HTMLDivElement>(null);
   const blueRef = useRef<HTMLDivElement>(null);
   const [hasHit, setHasHit] = useState(false);
-  const [animationDone, setAnimationDone] = useState(false);
 
 
   // Set up intersection observer
@@ -58,8 +57,6 @@ export default function Ddajki() {
     delay: 0.3,
     ease: 'easeInOut',
   },
-}).then(() => {
-  setAnimationDone(true); // 
 });
 
         }
@@ -82,7 +79,10 @@ export default function Ddajki() {
         className="absolute"
         animate={redControls}
         ref={redRef}
-        style={{ bottom: '20px', right: '40px' }}
+        style={{ bottom: '20px', right: '40px', zIndex: 10 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 300 }}
+
         
       >
         <Image
@@ -99,11 +99,13 @@ export default function Ddajki() {
         initial={{ x: '10vw', y: '30vh', rotate: -90 }}
         animate={blueControls}
         ref={blueRef}
-        style={{ top: '10px', left: '10px' }}
+        style={{ top: '10px', left: '10px', zIndex: 10 }} // Ensure it's above other elements
+        whileHover={{ scale: 1.1 }} // Same hover effect here
+        transition={{ type: 'spring', stiffness: 300 }}
+        whileTap={{ scale: 0.9 }}
+
+
         onClick={() => {
-    if (animationDone) {
-      alert('Red ddakji clicked!');
-    }
   }}
       >
         <Image
