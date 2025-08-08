@@ -52,7 +52,7 @@ export default function SquidStepScene() {
           className="w-[300px] h-auto"
         >
           <Image
-            src="/Schedule/girl.png"
+            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/girl-min_ygo0s5.png"
             alt="Character"
             width={300}
             height={450}
@@ -76,7 +76,7 @@ export default function SquidStepScene() {
             className="w-[300px] h-auto"
           >
             <Image
-              src="/Schedule/guy.png"
+              src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/guy-min_xj4jgc.png"
               alt="Left Visual"
               width={300}
               height={450}
@@ -160,7 +160,7 @@ export default function SquidStepScene() {
           className="relative w-full h-[350vh]"
         >
           <Image
-            src="/Schedule/transition.png"
+            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643352/transition_avzosl.jpg"
             alt="Squid Game Scene"
             fill
             className="object-cover"

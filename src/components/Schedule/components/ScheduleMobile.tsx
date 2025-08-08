@@ -12,7 +12,7 @@ export default function SquidStepScene() {
       {/* Background Image */}
       <div className="absolute top-0 w-full h-full z-10 pointer-events-none">
         <Image
-          src="/Schedule/transition.png"
+          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643352/transition_avzosl.jpg"
           alt="Background"
           width={1920}
           height={1080}
@@ -40,7 +40,7 @@ export default function SquidStepScene() {
           className="w-full flex justify-center mb-10"
         >
           <Image
-            src="/Schedule/girl.png"
+            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/girl-min_ygo0s5.png"
             alt="Character"
             width={160}
             height={240}
@@ -77,7 +77,7 @@ export default function SquidStepScene() {
           className="w-full flex justify-center mb-10"
         >
           <Image
-            src="/Schedule/guy.png"
+            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/guy-min_xj4jgc.png"
             alt="Guy"
             width={160}
             height={240}
