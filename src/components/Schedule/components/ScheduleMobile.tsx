@@ -11,7 +11,7 @@ export default function SquidStepScene() {
     <div className="relative min-h-screen text-white overflow-x-hidden bg-black">
       <div className="absolute top-0 w-full h-full z-0 pointer-events-none">
         <Image
-          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643352/transition_avzosl.jpg"
+          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754649023/background1_cpoctz.jpg"
           alt="Background"
           width={1920}
           height={1080}
