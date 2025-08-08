@@ -74,7 +74,7 @@ return (
     </div>
 
     {/* Title */}
-    <div className="relative z-10 text-center mt-24 mb-10">
+    <div className="relative z-50 text-center mt-24 mb-10">
       <h1 className="text-4xl font-bold font-[Orbitron] text-pink-700">
         규칙 및 규정
       </h1>
