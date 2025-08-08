@@ -7,7 +7,6 @@ export default function Section() {
     <div><div className="relative z-[40] w-full h-[20vh] bg-[#0a0a0a]">
 
 
-  {/* ⬇️ TOP BLUR DROP (grain or tile-based) */}
   <div className="absolute top-[-50px] left-0 w-full h-[100px] pointer-events-none z-50">
     <Image
       src="/timeline/grain.png" // or your tiles
@@ -22,7 +21,6 @@ export default function Section() {
        backgroundImage: "linear-gradient(to top, transparent, #0a0a0a)"
      }}>
      </div>
-  {/* ⬇️ GRADIENT MASK to soften the line */}
   <div className="absolute top-0 left-0 w-full h-10 z-40 pointer-events-none overflow-visible"
        style={{
          backgroundImage: "linear-gradient(to bottom, rgba(10,10,10,0.6), rgba(10,10,10,1))"
