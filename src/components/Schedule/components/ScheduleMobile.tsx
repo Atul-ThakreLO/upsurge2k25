@@ -38,33 +38,32 @@ export default function SquidStepScene() {
         </div>
 
         {/* Character Image */}
+        <Image
+          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/girl-min_ygo0s5.png"
+          alt="Character"
+          width={160}
+          height={240}
+          priority
+          sizes="(max-width: 768px) 50vw, 160px"
+          className="w-40 h-auto object-contain"
+        />
 
-          <Image
-            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/girl-min_ygo0s5.png"
-            alt="Character"
-            width={160}
-            height={240}
-            className="w-40 h-auto object-contain drop-shadow-[0_8px_15px_rgba(222,171,186,0.5)]"
-          />
-
-        {/* Event Blocks — simple staggered rise */}
+        {/* Event Blocks */}
         <motion.div
           className="flex flex-col items-center gap-6 w-full max-w-md"
         >
           {eventBlocks.map((event, i) => (
             <motion.div
-  key={i}
-  variants={{
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0 },
-  }}
-  transition={{ duration: 0.5, ease: 'easeOut' }}
-  style={{ willChange: 'transform, opacity' }}
-  className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
->
-  {event}
-</motion.div>
-
+              key={i}
+              variants={{
+                hidden: { opacity: 0, y: 40 },
+                show: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+              className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
+            >
+              {event}
+            </motion.div>
           ))}
         </motion.div>
 
@@ -79,13 +78,15 @@ export default function SquidStepScene() {
         </div>
 
         {/* Guy Image */}
-          <Image
-            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/guy-min_xj4jgc.png"
-            alt="Guy"
-            width={160}
-            height={240}
-            className="w-40 h-auto object-contain drop-shadow-[0_8px_15px_rgba(222,171,186,0.5)]"
-          />
+        <Image
+          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/guy-min_xj4jgc.png"
+          alt="Guy"
+          width={160}
+          height={240}
+          priority
+          sizes="(max-width: 768px) 50vw, 160px"
+          className="w-40 h-auto object-contain"
+        />
 
         {/* Second Set of Event Blocks */}
         <motion.div
@@ -95,15 +96,13 @@ export default function SquidStepScene() {
           className="flex flex-col items-center gap-6 w-full max-w-md mb-10"
         >
           {eventBlocks.map((event, i) => (
-           <motion.div
-  key={i}
-  transition={{ duration: 0.5, ease: 'easeOut' }}
-  style={{ willChange: 'transform, opacity' }}
-  className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
->
-  {event}
-</motion.div>
-
+            <motion.div
+              key={i}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+              className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
+            >
+              {event}
+            </motion.div>
           ))}
         </motion.div>
 
