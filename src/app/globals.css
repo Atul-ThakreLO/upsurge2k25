@@ -290,3 +290,14 @@ body {
     box-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.6), 0 0 40px rgba(255, 105, 180, 0.5);
   }
 }
+
+
+.glow-glass-effect-mobile {
+  background: rgba(255, 105, 180, 0.1); 
+  border: 2px solid rgba(255, 105, 180, 0.5); 
+  box-shadow:
+    0 0 15px rgba(255, 105, 180, 0.7),
+    0 0 30px rgba(255, 105, 180, 0.6),
+    0 0 60px rgba(255, 105, 180, 0.5);
+  backdrop-filter: blur(2px);
+}
