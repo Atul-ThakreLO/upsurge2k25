@@ -62,7 +62,7 @@ export const NavLinks = [
   { name: "Home", href: "/" },
   { name: "Smackathon", href: "/smackathon" },
   { name: "Events", href: "#" },
-  { name: "Schedule", href: "#" },
+  { name: "Schedule", href: "/Schedule" },
   { name: "Team", href: "#" },
 ];
 
@@ -112,4 +112,13 @@ export const timelineItems = [
     desc: "Final Presentations, Top 5 Finalists Declaration",
   },
   { day: "DAY 2", time: ["2:00 PM"], desc: "Winners Announcement" },
+];
+
+
+export const eventBlocks = [
+  "Inauguration 10:00",
+  "Talentque 11:00am",
+  "Dare Devils 11:00am",
+  "Coding Casino 11:00am",
+  "Fifa & Smackdown 11:00am",
 ];
