@@ -264,3 +264,29 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.perspective-1000 {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+
+.glow-glass-effect {
+  background: rgba(255, 105, 180, 0.1); /* Light pink, semi-transparent */
+  border: 2px solid rgba(255, 105, 180, 0.5); /* Thin border to enhance the "glass" look */
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.5);
+  backdrop-filter: blur(2px); /* Creates a blurred background effect, enhancing the glass look */
+  animation: glow 3s infinite ease-in-out; /* The animation applied */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.6), 0 0 40px rgba(255, 105, 180, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 105, 180, 1), 0 0 30px rgba(255, 105, 180, 0.8), 0 0 60px rgba(255, 105, 180, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.6), 0 0 40px rgba(255, 105, 180, 0.5);
+  }
+}

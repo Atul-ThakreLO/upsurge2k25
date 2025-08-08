@@ -86,7 +86,7 @@ export default function Ddajki() {
         
       >
         <Image
-          src="/red.png"
+          src="/rules/red.png"
           alt="Red Ddakji"
           width={500}
           height={500}
@@ -109,7 +109,7 @@ export default function Ddajki() {
   }}
       >
         <Image
-          src="/blue.png"
+          src="/rules/blue.png"
           alt="Blue Ddakji"
           width={600}
           height={600}

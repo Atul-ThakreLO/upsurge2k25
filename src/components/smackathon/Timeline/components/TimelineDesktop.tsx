@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { timelineItems } from '../../../../../data';
-
+import Image from 'next/image';
 export default function Timeline() {
   const totalRows = timelineItems.length + 4;
   const [playerPos, setPlayerPos] = useState({ row: -1, side: 'left' });
@@ -192,10 +192,13 @@ export default function Timeline() {
           }
         }
       `}</style>
-      <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none z-20"
+      {/* Apply to the bottom of tile section */}
+<div className="absolute bottom-0 left-0 w-full h-120 z-50 pointer-events-none"
      style={{
-       backgroundImage: "linear-gradient(to top, #0a0a0a 5%, transparent 80%)"
-     }} />
+       backgroundImage: "linear-gradient(to bottom, transparent, #0a0a0a)"
+     }}>
+     </div>
+
     </motion.div>
   );
 }

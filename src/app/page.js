@@ -1,5 +1,5 @@
 // import Events from "@/components/Home/events";
-import Footer from "@/components/Home/Footer/Footer";
+import Footer from "C:/Users/Akanksha/upsurge2k25/src/components/Home/Footer/Footer.jsx";
 import Hero from "@/components/Home/Hero/hero";
 import { FooterContactDetailsCosmos } from "../../data";
 import Events from "@/components/Home/Events/events";
