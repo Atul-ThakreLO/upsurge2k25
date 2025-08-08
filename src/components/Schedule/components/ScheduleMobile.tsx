@@ -4,16 +4,17 @@ import { eventBlocks } from '../../../../data';
 import Footer from './footer';
 import { FooterContactDetailsACM } from '../../../../data';
 import Image from 'next/image';
-
+import {motion} from 'framer-motion'
 export default function SquidStepScene() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
+      {/* Background Image with Overlay */}
       <div className="absolute top-0 w-full h-full">
         <Image
           src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754649584/background1_yjghao.jpg"
           alt="Background"
-          width={1920}
-          height={1080}
+          width={600}
+          height={600}
           priority
           className="w-full h-full object-cover opacity-90"
           style={{
@@ -37,16 +38,28 @@ export default function SquidStepScene() {
           </h2>
         </div>
 
-        {/* Character Image */}
-        <Image
-          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/girl-min_ygo0s5.png"
-          alt="Character"
-          width={160}
-          height={240}
-          priority
-          sizes="(max-width: 768px) 50vw, 160px"
-          className="w-40 h-auto object-contain"
-        />
+        {/* Character Image with Subtle Glow and Floating Effect */}
+        <div className="relative w-40 h-auto object-contain">
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          viewport={{ once: false }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="w-[300px] h-auto"
+        >
+          <Image
+            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/girl-min_ygo0s5.png"
+            alt="Character"
+            width={160}
+            height={240}
+            className="object-contain"
+            style={{
+              filter: 'drop-shadow(0px 50px 50px #deabba)',
+            }}
+          />
+        </motion.div>
+        </div>
+
 
         {/* Event Blocks */}
         <div className="flex flex-col items-center gap-6 w-full max-w-md">
@@ -70,16 +83,27 @@ export default function SquidStepScene() {
           </h2>
         </div>
 
-        {/* Guy Image */}
-        <Image
-          src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/guy-min_xj4jgc.png"
-          alt="Guy"
-          width={160}
-          height={240}
-          priority
-          sizes="(max-width: 768px) 50vw, 160px"
-          className="w-40 h-auto object-contain"
-        />
+        {/* Guy Image with Subtle Glow and Floating Effect */}
+        <div className="relative w-40 h-auto object-contain">
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          viewport={{ once: false }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="w-[300px] h-auto"
+        >
+          <Image
+            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643470/guy-min_xj4jgc.png"
+            alt="Guy"
+            width={160}
+            height={240}
+            className="object-contain"
+            style={{
+              filter: 'drop-shadow(0px 50px 50px #deabba)',
+            }}
+          />
+        </motion.div>
+        </div>
 
         {/* Second Set of Event Blocks */}
         <div className="flex flex-col items-center gap-6 w-full max-w-md mb-10">
@@ -98,6 +122,25 @@ export default function SquidStepScene() {
           <Footer footerDetails={FooterContactDetailsACM} />
         </div>
       </div>
+
+      <style jsx>{`
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+          .glow-effect {
+            animation: float 5s ease-in-out infinite, glow 2s ease-in-out infinite;
+          }
+
+          /* Mobile Glow: reduce intensity */
+          @keyframes glow {
+            0%, 100% {
+              box-shadow: 0 0 8px #deabba, 0 0 15px #deabba;
+            }
+            50% {
+              box-shadow: 0 0 12px #deabba, 0 0 20px #deabba;
+            }
+          }
+        }
+      `}</style>
     </div>
   );
 }
