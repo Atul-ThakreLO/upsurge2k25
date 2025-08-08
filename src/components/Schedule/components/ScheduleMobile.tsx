@@ -3,13 +3,12 @@
 import { eventBlocks } from '../../../../data';
 import Footer from './footer';
 import { FooterContactDetailsACM } from '../../../../data';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function SquidStepScene() {
   return (
-    <div className="relative min-h-screen text-white overflow-x-hidden bg-black">
-      <div className="absolute top-0 w-full h-full z-0 pointer-events-none">
+    <div className="relative min-h-screen text-white overflow-hidden">
+      <div className="absolute top-0 w-full h-full">
         <Image
           src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754649584/background1_yjghao.jpg"
           alt="Background"
@@ -20,9 +19,10 @@ export default function SquidStepScene() {
           style={{
             objectPosition: 'center top',
             filter: 'blur(2px)',
-            willChange: 'transform',
           }}
         />
+        {/* Adding an overlay on the background image */}
+        <div className="absolute top-0 w-full h-full bg-black opacity-50"></div>
       </div>
 
       {/* Main Content */}
@@ -49,23 +49,16 @@ export default function SquidStepScene() {
         />
 
         {/* Event Blocks */}
-        <motion.div
-          className="flex flex-col items-center gap-6 w-full max-w-md"
-        >
+        <div className="flex flex-col items-center gap-6 w-full max-w-md">
           {eventBlocks.map((event, i) => (
-            <motion.div
+            <div
               key={i}
-              variants={{
-                hidden: { opacity: 0, y: 40 },
-                show: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
               className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
             >
               {event}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Day 2 Header */}
         <div className="w-full text-center mt-20 mb-10">
@@ -89,22 +82,16 @@ export default function SquidStepScene() {
         />
 
         {/* Second Set of Event Blocks */}
-        <motion.div
-          variants={{
-            show: { transition: { staggerChildren: 0.12 } },
-          }}
-          className="flex flex-col items-center gap-6 w-full max-w-md mb-10"
-        >
+        <div className="flex flex-col items-center gap-6 w-full max-w-md mb-10">
           {eventBlocks.map((event, i) => (
-            <motion.div
+            <div
               key={i}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
               className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
             >
               {event}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Footer */}
         <div className="w-full">
