@@ -84,7 +84,7 @@ export default function TimelineMobile() {
       </div>
 
       {/* Tile + Timeline Section */}
-      <div ref={ref} className="relative z-10 w-full flex flex-row items-start justify-center gap-6 px-4 mb-10">
+      <div ref={ref} className="relative z-50 w-full flex flex-row items-start justify-center gap-6 px-4 mb-10">
         {/* Tile Grid on Left */}
         <div className="flex flex-col gap-3">
           {Array.from({ length: totalRows }).map((_, rowIdx) => {
@@ -134,7 +134,7 @@ export default function TimelineMobile() {
         </div>
 
         {/* Timeline Cards on Right */}
-        <div className="flex flex-col gap-6 pb-16 max-w-sm">
+        <div className="flex flex-col gap-6 pb-16 max-w-sm z-50">
           {timelineItems.map((item, idx) => (
             <motion.div
               key={idx}
