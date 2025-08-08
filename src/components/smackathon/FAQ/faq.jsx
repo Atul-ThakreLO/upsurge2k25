@@ -59,7 +59,7 @@ export default function Component() {
 
   return (
      
-    <div className=' w-full overflow-visible bg-gradient-to-b from-[#0a0a0f] to-[#110012] shadow-[0_-100px_100px_50px_rgba(0,0,0,0.8)]'>
+    <div className=' w-full overflow-hidden bg-gradient-to-b from-[#0a0a0f] to-[#110012] shadow-[0_-100px_100px_50px_rgba(0,0,0,0.8)]'>
       {/* Continuous gradient background for seamless transition */}
       {/* ASSESSMENT CRITERIA SECTION */}
       <Card className="w-full max-w-none mx-0 bg-gradient-to-br from-[#0a0a0f]/80 via-[#120014]/60 to-[#0a0a0f]/80 backdrop-blur-sm relative z-5 overflow-hidden max-h-[800px] shadow-[0_120px_0_0_rgba(16,0,18,0.85),0_220px_140px_80px_rgba(10,10,15,0.85)] shadow-black border-0">
