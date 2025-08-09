@@ -152,22 +152,26 @@ export default function SquidStepScene() {
 
       {/* Background Parallax */}
       <div className="absolute top-0 w-full h-full z-10 pointer-events-none">
-        <div
-          style={{
-            transform: `translateY(${smoothedScroll * -0.2}px)`,
-            willChange: 'transform',
-          }}
-          className="relative w-full h-[350vh]"
-        >
-          <Image
-            src="https://res.cloudinary.com/dhzjs2xvo/image/upload/v1754643352/transition_avzosl.jpg"
-            alt="Squid Game Scene"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-      </div>
+  <div
+    style={{
+      transform: `translateY(${smoothedScroll * -0.2}px)`,
+      willChange: 'transform',
+    }}
+    className="relative w-full h-[350vh]"
+  >
+    <Image
+      src="/Schedule/transition.webp"
+      alt="Squid Game Scene"
+      fill
+      objectFit="cover"
+      quality={100}
+      className="object-cover"
+      priority
+    />
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+</div>
+
 
       {/* Footer Overlayed */}
       <div className="absolute bottom-0 w-full z-50">
