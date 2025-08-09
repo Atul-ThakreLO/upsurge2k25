@@ -23,7 +23,7 @@ export default function SquidStepScene() {
           }}
         />
         {/* Adding an overlay on the background image */}
-        <div className="absolute top-0 w-full h-full bg-black opacity-50"></div>
+        <div className="absolute top-0 w-full h-full bg-black opacity-60"></div>
       </div>
 
       {/* Main Content */}
