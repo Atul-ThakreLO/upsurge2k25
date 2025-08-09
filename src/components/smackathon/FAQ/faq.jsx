@@ -62,8 +62,8 @@ export default function Component() {
     <div className=' w-full overflow-hidden bg-gradient-to-b from-[#0a0a0f] to-[#110012] shadow-[0_-100px_100px_50px_rgba(0,0,0,0.8)]'>
       {/* Continuous gradient background for seamless transition */}
       {/* ASSESSMENT CRITERIA SECTION */}
-      <Card className="w-full max-w-none mx-0 bg-gradient-to-br from-[#0a0a0f]/80 via-[#120014]/60 to-[#0a0a0f]/80 backdrop-blur-sm relative z-5 overflow-hidden max-h-[800px] shadow-[0_120px_0_0_rgba(16,0,18,0.85),0_220px_140px_80px_rgba(10,10,15,0.85)] shadow-black border-0">
-        <CardContent className="py-20 text-center relative overflow-hidden">
+      <Card className="w-full max-w-none mx-0 bg-gradient-to-br from-[#0a0a0f]/80 via-[#120014]/60 to-[#0a0a0f]/80 backdrop-blur-sm relative z-5 overflow-hidden shadow-[0_120px_0_0_rgba(16,0,18,0.85),0_220px_140px_80px_rgba(10,10,15,0.85)] shadow-black border-0">
+        <CardContent className="py-10 sm:py-16 md:py-20 text-center relative overflow-hidden">
           {/* Enhanced Geometric Pattern Background - Contained */}
           <div className="absolute inset-0 opacity-10 overflow-hidden">
             {/* Triangle Pattern - Enhanced with Glow */}
@@ -160,7 +160,7 @@ export default function Component() {
           </div>
 
           {/* Section Title */}
-          <h2 className="text-4xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest relative z-10">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold font-[var(--font-geist-sans)] text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest relative z-10">
             Assessment Criteria
           </h2>
           <p className="text-gray-300 text-lg mb-16 tracking-wide relative z-10">
@@ -168,10 +168,10 @@ export default function Component() {
           </p>
 
           {/* Criteria Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-8 md:px-16 lg:px-24 xl:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 px-2 sm:px-4 md:px-16 lg:px-24 xl:px-32">
             {/* Quality of work */}
-             <Card className="bg-[#0c0b10]/70 border-4 border-fuchsia-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(217,70,239,0.4)] hover:border-fuchsia-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
-              <CardContent className="p-10 text-left h-full flex flex-col justify-center">
+             <Card className="bg-[#0c0b10]/70 border-4 border-fuchsia-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(217,70,239,0.4)] hover:border-fuchsia-400/60 transition-all duration-200 cursor-pointer group min-h-[160px] sm:min-h-[180px] md:min-h-[200px] w-full">
+              <CardContent className="p-4 sm:p-6 md:p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-fuchsia-500 to-violet-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
                     <svg
@@ -189,10 +189,10 @@ export default function Component() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-fuchsia-400 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-fuchsia-400 transition-colors">
                       Quality of work submitted
                     </h3>
-                    <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed group-hover:text-white transition-colors">
                       Excellence in code quality, design, and overall execution
                       of your project.
                     </p>
@@ -202,8 +202,8 @@ export default function Component() {
             </Card>
 
             {/* Timeliness */}
-            <Card className="bg-[#0c0b10]/70 border-4 border-violet-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(139,92,246,0.4)] hover:border-violet-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
-              <CardContent className="p-10 text-left h-full flex flex-col justify-center">
+            <Card className="bg-[#0c0b10]/70 border-4 border-violet-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(139,92,246,0.4)] hover:border-violet-400/60 transition-all duration-200 cursor-pointer group min-h-[160px] sm:min-h-[180px] md:min-h-[200px] w-full">
+              <CardContent className="p-4 sm:p-6 md:p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
                     <svg
@@ -221,10 +221,10 @@ export default function Component() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-violet-400 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-violet-400 transition-colors">
                       Timeliness of submissions
                     </h3>
-                    <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed group-hover:text-white transition-colors">
                       Meeting deadlines and delivering your work within the
                       specified timeframes.
                     </p>
@@ -234,8 +234,8 @@ export default function Component() {
             </Card>
 
             {/* Participation */}
-            <Card className="bg-[#0c0b10]/70 border-4 border-purple-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(168,85,247,0.4)] hover:border-purple-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
-              <CardContent className="p-10 text-left h-full flex flex-col justify-center">
+            <Card className="bg-[#0c0b10]/70 border-4 border-purple-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(168,85,247,0.4)] hover:border-purple-400/60 transition-all duration-200 cursor-pointer group min-h-[160px] sm:min-h-[180px] md:min-h-[200px] w-full">
+              <CardContent className="p-4 sm:p-6 md:p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
                     <svg
@@ -253,10 +253,10 @@ export default function Component() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-purple-400 transition-colors">
                       Participation in discussions
                     </h3>
-                    <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed group-hover:text-white transition-colors">
                       Active engagement in team discussions, mentorship
                       sessions, and community interactions.
                     </p>
@@ -266,8 +266,8 @@ export default function Component() {
             </Card>
 
             {/* Innovation */}
-            <Card className="bg-[#0c0b10]/70 border-4 border-indigo-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(99,102,241,0.4)] hover:border-indigo-400/60 transition-all duration-200 cursor-pointer group min-h-[200px]">
-              <CardContent className="p-10 text-left h-full flex flex-col justify-center">
+            <Card className="bg-[#0c0b10]/70 border-4 border-indigo-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(99,102,241,0.4)] hover:border-indigo-400/60 transition-all duration-200 cursor-pointer group min-h-[160px] sm:min-h-[180px] md:min-h-[200px] w-full">
+              <CardContent className="p-4 sm:p-6 md:p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
                     <svg
@@ -285,10 +285,10 @@ export default function Component() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-indigo-400 transition-colors">
                       Innovation through imagination
                     </h3>
-                    <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed group-hover:text-white transition-colors">
                       Creative thinking, unique approaches, and innovative
                       solutions to complex problems.
                     </p>
@@ -407,7 +407,7 @@ export default function Component() {
 
         <div className="relative z-10 w-full max-w-none mx-auto px-4 py-10">
           <div className="text-center mb-18">
-            <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold font-[var(--font-geist-sans)] text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-300 tracking-wide">
