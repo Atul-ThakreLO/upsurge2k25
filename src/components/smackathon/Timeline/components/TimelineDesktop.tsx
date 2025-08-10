@@ -97,7 +97,7 @@ export default function Timeline() {
 
       {/* Bridge Tiles */}
       {inView && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 flex flex-col gap-4 pointer-events-none mt-20">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 flex flex-col gap-4 pointer-events-none mt-20">
           {Array.from({ length: totalRows }).map((_, rowIdx) => (
             <div key={rowIdx} className="flex gap-4 justify-center relative">
               {['left', 'right'].map((side) => {
@@ -153,7 +153,7 @@ export default function Timeline() {
       )}
 
       {/* Timeline Cards */}
-      <div className="relative z-10 text-white flex flex-col items-center px-4 py-12">
+      <div className="relative z-50 text-white flex flex-col items-center px-4 py-12">
         <div className="flex flex-col gap-6 max-w-2xl w-full">
           {timelineItems.map((item, idx) => {
             const isEven = idx % 2 === 0;
