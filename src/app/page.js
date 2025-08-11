@@ -10,6 +10,7 @@ export default function Home() {
       <div className="relative z-10">
         <Events />
       </div>
+      
       <Footer footerDetails={FooterContactDetailsCosmos} />
     </div>
   );
