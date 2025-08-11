@@ -9,6 +9,7 @@ import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
 import RegisterButton from "../../ui/register-button";
 import Link from "next/link";
+import SmackathonSection from "../smackathon/smackathon-section";
 
 const Hero = () => {
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -168,32 +169,8 @@ const Hero = () => {
         // style={{ transform: "translateY(100vh)" }}
         className="h-[100vh] md:h-[110vh] relative rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
       >
-        <div className="text-center h-full flex flex-col justify-around items-center">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-squid mt-5 md:mt-16 underline">
-              Smackathon
-            </h1>
-            <p className="mt-8 text-lg md:text-xl">
-              A{" "}
-              <span className="text-2xl md:text-3xl font-squid mx-3">
-                24 Hrs
-              </span>{" "}
-              Hackathon
-            </p>
-          </div>
-          <RotateMask />
-          <p className=" md:w-[50%] mx-auto text-sm md:text-xl mt-10">
-            Are you ready to innovate, collaborate, and push the boundaries of
-            technology? Join us for an exhilarating 24-hour hackathon where
-            brilliant minds converge to solve real-world problems and build
-            amazing projects from scratch! Click Register to register now
-          </p>
-          <div className="w-min mx-auto mt-20">
-            <Link href="/smackathon">
-              <RegisterButton />
-            </Link>
-          </div>
-        </div>
+        <div className="absolute z-[1] w-full h-full left-0 top-0 bg-gradient-to-b from-black/70 via-black/50 to-black/100"></div>
+        <SmackathonSection />
       </div>
     </div>
   );
