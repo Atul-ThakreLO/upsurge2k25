@@ -5,6 +5,7 @@ import Timeline from "@/components/smackathon/Timeline/TimelineItem";
 import Rules from "../../components/smackathon/Rules/Rules";
 import FAQ from "@/components/smackathon/FAQ/faq";
 import Brochure from "../../components/smackathon/Brochure/brochure";
+import Section from "@/components/smackathon/Timeline/components/section";
 {
   /*import Ddajki from "@/components/smackathon/animate/ddajki"*/
 }
@@ -67,12 +68,14 @@ const Page = () => {
       <Prizepool />
       <div className="transition h-[50px] w-full bg-black shadow-[0_-10px_20px_10px_#000000] relative z-10" />
       <Goodies />
-      <div className="transition h-[10px] w-full bg-black shadow-[0_-5px_10px_5px_#000000] relative z-10" />
+      {/* <div className="transition h-[10px] w-full bg-black shadow-[0_-5px_35px_20px_#000000] relative z-10" /> */}
       <div className="transition h-[30px] w-full bg-black shadow-[0_30px_50px_20px_#000000] relative z-10" />
       <Tracks />
       <Timeline />
-      {/*/*--<Section/>--*/}
+      <Section/>
       <Rules />
+      <div className="transition h-[80px] w-full bg-[#110012] shadow-[0_30px_50px_20px_#110012] relative z-10" />
+      <div className="transition h-[80px] w-full bg-gradient-to-br from-[#0a0c1b] via-[#101223] to-[#181a2b]"></div>
       <FAQ />
       <div className="transition h-[30px] w-full bg-black shadow-[0_-30px_50px_20px_#000000] relative z-10" />
       <LocateUs />
