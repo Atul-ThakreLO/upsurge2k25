@@ -13,8 +13,9 @@ export default function Home() {
       <div className="relative z-10">
         <Events />
         <SponsorSlider/>
-        <Footer footerDetails={FooterContactDetailsCosmos} />
+        {/* <div className="h-screen"></div> */}
       </div>
+      <Footer footerDetails={FooterContactDetailsCosmos} />
     </div>
   );
 }
