@@ -7,12 +7,12 @@ export default function Section() {
     <div><div className="relative z-[40] w-full h-[20vh] bg-[#0a0a0a]">
 
 
-  <div className="absolute top-[-50px] left-0 w-full h-[100px] pointer-events-none z-50">
+  <div className="absolute top-[-50px] left-0 w-full h-[100px] pointer-events-none z-50 overflow-hidden">
     <Image
       src="/timeline/grain.png" // or your tiles
       alt="blur overlay"
       fill
-      className="object-top object-cover blur-3xl opacity-40 scale-180 overflow-hidden"
+      className="object-top object-cover blur-3xl opacity-40 scale-180"
     />
   </div>
 
