@@ -16,7 +16,7 @@ export default function Section() {
           #fec700 81% 90%,
           #ffd100 90% 100%)`
       }}>
-        
+
       {/* Better color-matched top shadow */}
       <div className="absolute top-0 left-0 w-full h-32 z-10 pointer-events-none"
         style={{
