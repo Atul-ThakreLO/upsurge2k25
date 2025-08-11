@@ -72,12 +72,12 @@ export default function KnobBox() {
   };
 
   return (
-    <div className=' w-full overflow-hidden bg-gradient-to-b from-[#0a0a0f] to-[#110012]'>
-     
+    
+    <div className=' w-full overflow-visible bg-gradient-to-b from-[#0a0a0f] to-[#110012]'>
 
   {/* Bottom Cinematic Shadow */}
   
-    <div ref={sectionRef} className="w-full px-8 py-10 ml-25 overflow-hidden">
+    <div ref={sectionRef} className="w-full px-8 py-10 ml-20 overflow-hidden">
         <div className='absolute right-6 z-50 w-64 h-64 p-2 rotate-[8deg]'>
   <Image
     src="/rules/ddajki.png"
@@ -88,14 +88,15 @@ export default function KnobBox() {
   />
   </div>
       {/* Title */}
-      <div className="text-center mb-20 mt-30 mr-70">
-        <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-700">
-          규칙 및 규정
-        </h1>
-        <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">
-          Rules and Regulations 
-        </h2>
-      </div>
+<div className="relative text-center mb-30 mt-0 mr-70 z-[100]">
+  <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-700">
+    규칙 및 규정
+  </h1>
+  <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">
+    Rules and Regulations 
+  </h2>
+</div>
+
 
       {/* Top Section: Box + First 7 Rules */}
 <div className="flex flex-col md:flex-row items-start gap-10">
@@ -109,7 +110,7 @@ export default function KnobBox() {
     {knobPositions.map((knob, idx) => (
       <motion.div
         key={idx}
-        className="absolute cursor-pointer"
+        className="absolute cursor-pointer z-50"
         style={{
           top: knob.top,
           left: knob.left,
@@ -179,6 +180,5 @@ export default function KnobBox() {
 </div>
       </div>
     </div>
-
   );
 }

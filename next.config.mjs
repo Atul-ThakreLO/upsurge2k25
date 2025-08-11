@@ -23,7 +23,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/smackathon', 
+        destination: '/smackathon',  
         permanent: false, // `false` for temporary (302), `true` for permanent (308)
       },
     ];
