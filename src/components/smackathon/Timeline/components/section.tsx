@@ -12,7 +12,7 @@ export default function Section() {
       src="/timeline/grain.png" // or your tiles
       alt="blur overlay"
       fill
-      className="object-top object-cover blur-3xl opacity-40 scale-180"
+      className="object-top object-cover blur-3xl opacity-40 scale-180 overflow-hidden"
     />
   </div>
 
