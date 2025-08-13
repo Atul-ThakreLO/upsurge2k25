@@ -19,7 +19,7 @@ const nextConfig = {
     // modern: true,
   },
   // next.config.js
-  async redirects() {
+   async redirects() {
     return [
       {
         source: '/',
