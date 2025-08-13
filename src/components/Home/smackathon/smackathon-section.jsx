@@ -38,7 +38,6 @@ const SmackathonSection = () => {
         trigger: containerRef.current,
         start: "top 80%",
         toggleActions: "play reset resume reset",
-        markers: true,
       },
     });
 
@@ -51,7 +50,6 @@ const SmackathonSection = () => {
         trigger: containerRef.current,
         start: "60% 90%",
         toggleActions: "play reset resume reset",
-        markers: true,
       },
     });
 
@@ -71,7 +69,6 @@ const SmackathonSection = () => {
           trigger: containerRef.current,
           start: "40% 90%",
           toggleActions: "play reset resume reset",
-          markers: true,
         },
       }
     );
