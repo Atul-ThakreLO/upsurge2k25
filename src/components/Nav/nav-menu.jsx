@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { AlignJustify } from 'lucide-react';
 import Image from "next/image";
 import { NavLinks } from "../../../data";
 import Link from "next/link";
@@ -22,7 +23,7 @@ const NavMenu = () => {
     const tl = gsap.timeline();
 
     tl.to(capsuleRef.current, {
-      height: 500,
+      height: 400,
       duration: 0.3,
       ease: "power2.out",
     })
@@ -101,7 +102,7 @@ const NavMenu = () => {
       .to(
         capsuleRef.current,
         {
-          width: 130,
+          width: 50,
           duration: 0.4,
           ease: "power2.in",
         },
@@ -138,62 +139,66 @@ const NavMenu = () => {
 
   return (
     // <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-700 flex items-center justify-center p-5">
-    <div className="relative">
-      <div
-        ref={capsuleRef}
-        onClick={handleToggle}
-        className="bg-white/95 backdrop-blur-lg border border-white/30 rounded-[50px] cursor-pointer shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 overflow-hidden relative"
-        style={{ width: "130px", height: "30px" }}
-      >
+<div className="relative w-fit">
+  {/* Toggle Icon - OUTSIDE THE CAPSULE BOX */}
+  <div
+    onClick={handleToggle}
+    className="cursor-pointer absolute top-0 left-0 z-20"
+  >
+    {isExpanded ? (
+      <Image
+        src="/option-X.png"
+        alt="Close Icon"
+        width={50}
+        height={50}
+        className="transition-all duration-300"
+      />
+    ) : (
+      <Image
+  src="/option-O.png"
+  alt="Open Icon"
+  width={50}
+  height={50}
+  className="transition-all duration-300 blink-glow"
+/>
+
+    )}
+  </div>
+
+  {/* Capsule expanding box */}
+  <div
+    ref={capsuleRef}
+    className="bg-gray/95 backdrop-blur-lg border border-white/30 rounded-[50px] shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 overflow-hidden relative text-white"
+    style={{
+      width: isExpanded ? "300px" : "50px",
+      height: isExpanded ? "400px" : "50px",
+      marginLeft: isExpanded ? "-250px" : "0px", // push box right so image stays visible
+      opacity: isExpanded ? 1 : 0,
+      transition: "all 0.3s ease",
+    }}
+  >
+    {/* Link section inside the box */}
+    <div
+      ref={linksRef}
+      className="w-full flex flex-col items-center justify-between mt-10 px-5"
+    >
+      {NavLinks.map((link, index) => (
         <div
-          ref={menuContentRef}
-          className="flex justify-center items-center w-full h-[30px] relative"
+          key={link.name}
+          className="hover:bg-pink-700 w-full py-5 text-center rounded-2xl"
         >
-          <div className="flex items-center text-sm md:text-lg h-full gap-3">
-            <span className="font-semibold text-gray-800 text-base whitespace-nowrap select-none">
-              Menu
-            </span>
-            <Image
-              className=""
-              src="/Logo.svg"
-              alt="Menu logo"
-              width={50}
-              height={50}
-              priority
-            />
-          </div>
+          <Link
+            ref={(el) => (linkRefs.current[index] = el)}
+            href={link.href}
+          >
+            {link.name}
+          </Link>
         </div>
-        <div
-          ref={linksRef}
-          className="w-full flex flex-col items-center justify-between mt-10  px-5 opacity-0"
-        >
-          {NavLinks.map((link, index) => (
-            // <a
-            //   key={link.name}
-            //   ref={(el) => (linkRefs.current[index] = el)}
-            //   href={link.href}
-            //   onClick={(e) => handleLinkClick(e, link.name)}
-            //   className="text-gray-800 font-medium text-sm px-3 py-2 rounded-xl transition-all duration-300 whitespace-nowrap opacity-0 hover:bg-indigo-500/10 hover:text-indigo-600"
-            // >
-            //   {link.name}
-            // </a>
-            <div
-              key={link.name}
-              className="hover:bg-gray-700 w-full py-5 text-center"
-            //   onClick={(e) => handleLinkClick(e, link.name)}
-            >
-              <Link
-                ref={(el) => (linkRefs.current[index] = el)}
-                href={link.href}
-              >
-                {link.name}
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
+      ))}
     </div>
-    // </div>
+  </div>
+</div>
+
   );
 };
 
