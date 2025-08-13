@@ -13,6 +13,7 @@ import Footer from "@/components/Home/Footer/Footer";
 import Prizepool from "@/components/smackathon/Prizepool/PrizePool";
 import Goodies from "../../components/smackathon/Goodies/Goodies";
 import { FooterContactDetailsACM } from "../../../data";
+// import SponsorSlider from "../../components/Sponsors/SponsorSlider";
 // app/smackathon/page.js
 
 export const metadata = {
@@ -78,6 +79,7 @@ const Page = () => {
       <FAQ />
       <div className="transition h-[30px] w-full bg-black shadow-[0_-30px_50px_20px_#000000] relative z-10" />
       <LocateUs />
+      {/* <SponsorSlider></SponsorSlider> */}
       <Footer footerDetails={FooterContactDetailsACM} />
     </main>
   );
