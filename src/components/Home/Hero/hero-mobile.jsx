@@ -158,7 +158,7 @@ const HeroMobile = () => {
   useGSAP(() => {
     [imageRef.current, titleRef.current].forEach((el) => {
       gsap.set(el, {
-        scale: 0.6,
+        scale: 0.9,
       });
     });
     gsap.from(imageRef.current, {
@@ -174,7 +174,7 @@ const HeroMobile = () => {
     });
     gsap.from(titleRef.current, {
       duration: 0.5,
-      scale: 1,
+      scale: 1.1,
       ease: "none",
       scrollTrigger: {
         trigger: ".ghanta",
@@ -206,11 +206,11 @@ const HeroMobile = () => {
         />
       </Head>
 
-      <div className="absolute top-0 left-0 h-screen overflow-hidden w-full bg-gradient-to-b from-black to-170% to-pink-900">
+      <div className="absolute ghanta top-0 left-0 h-screen overflow-hidden w-full bg-gradient-to-b from-black to-170% to-pink-900">
         <div className="absolute top-40 sm:top-52 left-1/2 -translate-x-1/2">
           <h1
             ref={titleRef}
-            className="font-squid name2 text-5xl leading-12 text-center text-white relative"
+            className="font-squid name2 text-5xl scale-[1.1] leading-12 text-center text-white relative"
           >
             upsurge <br /> <span className="ml-30">2k25</span>
           </h1>

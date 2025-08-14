@@ -129,7 +129,7 @@ const Events = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="bg-black w-full">
+    <section ref={containerRef} className="bg-black w-full max-w-screen">
       <div className=" relative text-white text-center h-screen flex flex-col pt-[200px] md:pt-[200px] justify-around items-center bg-center bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754644020/event-bg_upscaled_uopwtk.jpg')]">
         <div className="absolute z-[1] w-full h-full left-0 top-0 bg-gradient-to-b from-black/100 via-black/70 to-black/100"></div>
         <div className="relative z-[2]">
@@ -162,10 +162,13 @@ const Events = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:pb-[200px] p-14 md:p-20">
+      <div className="relative grid grid-cols-1 gap-5 md:grid-cols-7 md:pb-[200px]">
+        <div className="sticky col-span-7 top-0 w-full h-screen bg-no-repeat bg-cover bg-center bg-[url('https://img.freepik.com/free-vector/neon-landscape-background_53876-91662.jpg?semt=ais_hybrid&w=740&q=80')]">
+          <div className="w-full h-full bg-gradient-to-b from-black/90 via-black/50 to-black/90" />
+        </div>
         <div
           ref={fixedContainerRef}
-          className="w-full pt-[250px] pb-[75px] hidden md:block"
+          className="col-span-3 w-full pt-[250px pb-[75px] hidden md:block"
         >
           <div className="w-full h-[500px] sticky top-[15%] flex justify-center">
             <ModelCanvas path={"/3d/squid_game_-_guards.glb"}>
@@ -179,7 +182,7 @@ const Events = () => {
             </ModelCanvas>
           </div>
         </div>
-        <div className="flex flex-wrap flex-col gap-40 md:gap-20">
+        <div className="col-span-7 md:col-span-4 flex flex-wrap flex-col gap-40 md:gap-20 px-14 md:px-20">
           {EventsDataMobile.map((event, i) => (
             <div
               key={event.title}
@@ -192,6 +195,7 @@ const Events = () => {
                 id={event.title}
                 description={event.description}
                 i={i}
+                link={event.detailsLink}
               />
             </div>
           ))}

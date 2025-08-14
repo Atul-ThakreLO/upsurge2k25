@@ -232,17 +232,17 @@ export const EventsDataDesktop = [
 
 export const EventsDataMobile = [
   {
-    title: "Flashmob",
+    title: "Smackathon",
     description:
-      "Get ready for an explosive burst of energy at the CSE Department's FLASHMOB on August 23rd, 2024, at 3 PM! Join us in front of the CSE Department for spontaneous dance moves, electrifying music, and non-stop excitement!",
+      "A 24-hour hackathon where teams build innovative solutions across domains like education, health, finance, and more, fostering creativity, teamwork, and problem-solving under pressure.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/flashmob.png",
     detailsLink: "/events/#flashmob",
   },
   {
-    title: "Cosmotown",
+    title: "Cosmo-town",
     description:
-      "Cosmotown is a thrilling game mela with over 10 exciting minigames. Play, earn credits, and bid on fantastic prizes. Join us on August 24th from 10 AM to 3:30 PM, with an auction at 4 PM!",
+      "A four-part team competition featuring debugging, AI challenges, and more, assessing technical and analytical skills while promoting teamwork and innovation.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/cosmoTown.png",
     detailsLink: "/events/#cosmotown",
@@ -250,55 +250,55 @@ export const EventsDataMobile = [
   {
     title: "Coding Relay",
     description:
-      "Get ready for the high-energy CODING RELAY at UPSURGE 2K24! Kick off with a Debugging Quiz then, race against time in the Coding Relay. With a prize pool of ₹2400, bring your laptops and join us on August 24th, 2024, at the CSE Department!",
+      "A team-based coding race where members take turns solving DSA problems under strict time limits, testing problem-solving and collaborative programming skills.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
     detailsLink: "/events/#codingRelay",
   },
   {
-    title: "Desi Daredevils",
+    title: "Ideathon",
     description:
-      '"Desi Daredevils" offers an exhilarating three-stage game, designed for teams of four. Bring along your best friends as you explore the arena, enjoy mouthwatering food, and take on thrilling challenges.join us on August 23rd, 2024!',
+      "An idea-pitching competition with TBI at YCCE, where participants brainstorm real-world solutions, receive mentorship, and pitch to experts for potential incubation and funding.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/desiDaredevils.png",
     detailsLink: "/events/#desiDaredevils",
   },
   {
-    title: "Coding Casino",
+    title: "Escape Room",
     description:
-      'Join us for the electrifying "CODING CASINO" at UPSURGE 2K24! Bet before seeing the question and win if you solve it. With a prize pool of ₹2000, the event is on August 23rd, 2024. Are you ready to claim the title of Coding Casino champion?',
+      "A fast-paced team challenge with three rounds of riddles, puzzles, and clue-hunting, testing logic, speed, and collaboration to escape before time runs out.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingCasino.png",
     detailsLink: "/events/#codingCasino",
   },
   {
-    title: "FIFA",
+    title: "FIFA EA Sports FC",
     description:
-      "Join the FIFA FEVER CUP! Face off 1v1 with custom tactics, 6-minute halves, and single elimination. Entry is ₹49. Win ₹1000 for first place and show off your skills!",
+      "A competitive football simulation offering authentic teams, dynamic gameplay, and thrilling modes, bringing the sport to life for fans and gamers alike.",
     image: "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/fifa.png",
     detailsLink: "/events/#fifa",
   },
   {
-    title: "WWE Smackdown",
+    title: "Capture the Flag",
     description:
-      "Step into WWE's golden age with the Smackdown Showdown Championship! Compete in a Survival Round, Elimination Chamber, and Single Match. Register for ₹49 and vie for ₹1000 or ₹500 in prizes!",
+      "A cybersecurity puzzle event where players solve digital challenges to uncover hidden “flags,” blending logic, problem-solving, and fun tech learning.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/smackdown.png",
     detailsLink: "/events/#smackdown",
   },
 
   {
-    title: "Talentsque",
+    title: "Car Simulator",
     description:
-      "Get ready to dazzle at TALENTESQUE on August 23rd, 2024, at noon! Showcase your talent and compete for Rs 5000/- in prizes. Entry fees: ₹49 (solo), ₹99 (duo), ₹149 (group). Don’t miss out!",
+      "A realistic driving game with diverse vehicles, customizable features, and open-world exploration for solo or multiplayer racing adventures.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/talentsque.png",
     detailsLink: "/events/#talentsque",
   },
   {
-    title: "Data Science Seminar",
+    title: "Free Fire",
     description:
-      "Unlock your future in data science and technology! Join us on August 23rd at 1 PM, where our expert speaker will guide you on how to break into the tech industry and jumpstart your career.",
+      "A mobile battle royale where 50 players fight to be the last survivor, combining quick matches, strategy, and intense action on a shrinking map.",
     image:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
     detailsLink: "/events/#dataScience",
