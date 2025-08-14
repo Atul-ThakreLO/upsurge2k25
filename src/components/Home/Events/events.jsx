@@ -195,6 +195,7 @@ const Events = () => {
                 id={event.title}
                 description={event.description}
                 i={i}
+                link={event.detailsLink}
               />
             </div>
           ))}

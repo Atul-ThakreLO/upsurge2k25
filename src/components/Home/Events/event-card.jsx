@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const EventCard = ({ poster, title, id, description, i }) => {
+const EventCard = ({ poster, title, id, description, i, link }) => {
   return (
     <div key={i} className="relative flex flex-col text-white h-full">
       <Image
@@ -18,9 +19,11 @@ const EventCard = ({ poster, title, id, description, i }) => {
         <h2 className="text-xl pl-5 pt-3">{title}</h2>
         <p className="text-xs px-5 text-justify font-light">{description}</p>
       </div>
-      <button className="absolute bottom-5 right-5 w-min px-3 py-1 bg-pink-700 hover:bg-pink-800 border-2 drop-shadow-[0_0_20px_#f72561] cursor-pointer border-pink-100 rounded-sm">
-        Details
-      </button>
+      <Link href={link}>
+        <button className="absolute bottom-5 right-5 w-min px-3 py-1 md:px-6 md:text-xl md:py-2 bg-pink-700 hover:bg-pink-800 border-2 drop-shadow-[0_0_20px_#f72561] cursor-pointer border-pink-100 rounded-sm">
+          Details
+        </button>
+      </Link>
     </div>
   );
 };
