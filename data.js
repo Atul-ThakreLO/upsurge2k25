@@ -18,8 +18,8 @@ export const FooterContactDetailsACM = [
   {
     name: "Om Mane",
     position: "(ACM Chairperson)",
-    phone: "9158494481",
-    tel: "tel:9158494481",
+    phone: "8767332854",
+    tel: "tel:8767332854",
   },
   {
     name: "Shantanu Nichante",
