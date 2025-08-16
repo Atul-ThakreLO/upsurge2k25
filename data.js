@@ -121,7 +121,7 @@ export const timelineItems = [
 export const EventsDataDesktop = [
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingCasino.png",
     title: "Smackathon",
     id: "smackathon",
     prizePool: "30,000",
