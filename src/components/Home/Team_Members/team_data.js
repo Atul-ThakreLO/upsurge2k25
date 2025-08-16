@@ -2,6 +2,7 @@ import placeholder from "./public/placeholder.svg";
 const placeholderUrl = typeof placeholder === "string" ? placeholder : (placeholder && placeholder.src) ? placeholder.src : placeholder;
 
 export const teamMembers = [
+  //CORE COMMITEE
   {
     id: 1,
     name: "Gayati Umap",
@@ -9,10 +10,8 @@ export const teamMembers = [
     imageUrl: placeholderUrl,
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/gayatri-umap/",
-    githubUrl: "https://github.com/gayatriumap19", // Add GitHub URL here if available
+    githubUrl: "https://github.com/gayatriumap19", 
   },
-
-  // JOINT SECRETARY
   {
     id: 2,
     name: "Tiya Banerjee",
@@ -20,10 +19,63 @@ export const teamMembers = [
     imageUrl: placeholderUrl,
     instagramUrl: "https://www.instagram.com/tiyabanerjee_?igsh=ZzZkcTdzNm14ODkw",
     linkedinUrl: "https://www.linkedin.com/in/tiya-banerjee",
-    githubUrl: "", // Add GitHub URL here if available
+    githubUrl: "", 
   },
-
-  // WEB MASTERS
+  {
+    id: 41,
+    name: "Alok Roy",
+    position: "TREASURER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 42,
+    name: "Aditya Chafale",
+    position: "JOINT SECRETARY",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 43,
+    name: "Dishita Ghuge",
+    position: "JOINT TREASURER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+// TECHNICAL TEAM
+  {
+    id: 25,
+    name: "Laukik Lanje",
+    position: "TECHNICAL HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 26,
+    name: "Mehul Kohad",
+    position: "TECHNICAL HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 27,
+    name: "Lokesh Parate",
+    position: "TECHNICAL HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
   {
     id: 3,
     name: "Himanshu Chavan",
@@ -51,8 +103,52 @@ export const teamMembers = [
   linkedinUrl: "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   githubUrl: "https://github.com/Atul-ThakreLO"
   },
-
-  // EVENT MANAGEMENT MASTERS
+  {
+    id: 45,
+    name: "Saksham Khobragade",
+    position: "TECHNICAL CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 46,
+    name: "Rishabh Gokhe",
+    position: "TECHNICAL CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+   {
+    id: 61,
+    name: "Yogesh Nagrare",
+    position: "TECHNICAL MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  // EVENT MANAGEMENT Team
+    {
+    id: 35,
+    name: "Mandar Lakhe",
+    position: "E M HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+    {
+    id: 39,
+    name: "Kushal Javkhedkar",
+    position: "H M HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
   {
     id: 6,
     name: "Rohan Andelkar",
@@ -89,8 +185,79 @@ export const teamMembers = [
   linkedinUrl: "https://www.linkedin.com/in/vedantbomidwar",
   githubUrl: "https://github.com/Vedantb04",
   },
-
-  // CONTENT CREATION MASTERS
+{
+    id: 53,
+    name: "Aditya Tekade",
+    position: "EVENT MANAGEMENT CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 54,
+    name: "Bhavesh Doifode",
+    position: "E M CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+   {
+    id: 62,
+    name: "Kripa Vazirani",
+    position: "E M MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+    {
+    id: 66,
+    name: "Diya Choudhari",
+    position: "HALL MANAGEMENT",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 67,
+    name: "Riya Singh",
+    position: "H M MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  //LITERATURE TEAM
+  {
+    id: 37,
+    name: "Nishita Dande",
+    position: "LITERATURE HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 38,
+    name: "Dhani Rathod",
+    position: "LITERATURE HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+    {
+    id: 56,
+    name: "Neha Dhawas",
+    position: "LITERATURE CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
   {
     id: 10,
     name: "Himanshi  Choubal",
@@ -119,7 +286,7 @@ export const teamMembers = [
   githubUrl: "",
   },
 
-  // DESIGN MASTERS
+  // DESIGN Team
   {
     id: 13,
     name: "Aditya Rajankar",
@@ -128,6 +295,24 @@ export const teamMembers = [
   instagramUrl: "https://www.instagram.com/adityar.og/",
   linkedinUrl: "https://www.linkedin.com/in/aditya-rajankar/",
   githubUrl: "",
+  },
+    {
+    id: 31,
+    name: "Devyani Gharad",
+    position: "ART HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 32,
+    name: "Janvi Thakre",
+    position: "ARTS HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
   },
   {
     id: 14,
@@ -147,6 +332,24 @@ export const teamMembers = [
   linkedinUrl: "https://www.linkedin.com/in/aishwarya-khetade-8a6124253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   githubUrl: "",
   },
+   {
+    id: 50,
+    name: "Rohini Bhoyar",
+    position: "ARTS CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 51,
+    name: "Vaibhavi Tumsare",
+    position: "ART CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
   {
     id: 16,
     name: "Shreya Sakhare",
@@ -156,8 +359,71 @@ export const teamMembers = [
   linkedinUrl: "",
   githubUrl: "",
   },
+   {
+    id: 59,
+    name: "Nicky Meshram",
+    position: "DESIGN MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+   {
+    id: 64,
+    name: "Savani Apte",
+    position: "Design MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  // PUBLICITY Team
+{ 
+  id: 17,
+    name: "Aaditi Bedarkar ",
+    position: "PR Head",
+  imageUrl:"placeholderUrl",
+  instagramUrl: "",
+  linkedinUrl: "",
+  githubUrl: "",
+  },
+   {
+    id: 29,
+    name: "Atharva Vaidya",
+    position: "PUBLICITY HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 30,
+    name: "Raj Bhelkar",
+    position: "PUBLICITY HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 48,
+    name: "Samiksha Bilgaye",
+    position: "PUBLICITY CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 49,
+    name: "Sana Channawar",
+    position: "PUBLICITY CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
 
-  // PR MASTERS
   {
     id: 18,
     name: "Neha Kotalwar",
@@ -167,13 +433,200 @@ export const teamMembers = [
   linkedinUrl: "https://www.linkedin.com/in/neha-kotalwar-304753274",
   githubUrl: "https://github.com/nehakotalwar",
   },
+
+  //CULTURAL TEAM
   {
-    id: 17,
-    name: "Aaditi Bedarkar ",
-    position: "PR Head",
-  imageUrl:"https://drive.google.com/open?id=1cY-1E55ZpyMlCByR82PYSEd5llZlo_8o",
-  instagramUrl: "",
-  linkedinUrl: "",
-  githubUrl: "",
+    id: 19,
+    name: "Richa Kalpande",
+    position: "CULTURAL HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
   },
+  {
+    id: 20,
+    name: "Ayush Asutkar",
+    position: "CULTURAL HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 21,
+    name: "Vaishnavi Asare",
+    position: "CULTURAL HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 57,
+    name: "Saee Nimbalkar",
+    position: "CULTURAL CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+
+
+
+  // SPONSORSHIP TEAM
+  {
+    id: 28,
+    name: "Darpan Thakur",
+    position: "SPONSORSHIP HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 47,
+    name: "Kabeir Kaushik",
+    position: "SPONSORSHIP CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+ {
+    id: 63,
+    name: "Advait Mahajan",
+    position: "SPONSORSHIP MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+
+  // SOCIAL MEDIA TEAM
+  {
+    id: 40,
+    name: "Ayush Sontakke",
+    position: "SOCIAL MEDIA HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+    {
+    id: 58,
+    name: "Disha Nannaware",
+    position: "SOCIAL MEDIA CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+
+
+// DATABASE TEAM
+  {
+    id: 22,
+    name: "Anshu Vairagade",
+    position: "DATABASE HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 23,
+    name: "Abhang Kolte",
+    position: "DATABASE HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 24,
+    name: "Shreya Kashyap",
+    position: "DATABASE HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+    {
+    id: 44,
+    name: "Bhawana Nirwan",
+    position: "DATABASE CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: 60,
+    name: "Shaki Gajbhiye",
+    position: "DATABASE MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  //PHOTOGRAPHY TEAM
+    {
+    id: 68,
+    name: "Jatin Mahajan",
+    position: "PHOTOGRAPHY HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },  {
+    id: 69,
+    name: "Krushnangi Manekar",
+    position: "PHOTOGRAPHY HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+   {
+    id: 52,
+    name: "Shreeyash Dhale",
+    position: "PHOTOGRAPHY CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+
+
+  // SPORTS TEAM
+
+  {
+    id: 36,
+    name: "Kshitij Shrikhande",
+    position: "SPORTS HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+   {
+    id: 55,
+    name: "Omair Khan",
+    position: "SPORTS CO-HEAD",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+
+  {
+    id: 65,
+    name: "Atharva Pagar",
+    position: "MEMBER",
+    imageUrl: placeholderUrl,
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+  }
 ];

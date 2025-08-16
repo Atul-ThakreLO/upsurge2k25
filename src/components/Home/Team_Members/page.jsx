@@ -2,6 +2,49 @@ import { MemberCard } from "./members_cards"
 import { teamMembers } from "./team_data"
 
 export default function TeamMembers() {
+  // Group team members by their teams
+  const teamGroups = {
+    "CORE COMMITTEE": teamMembers.filter(member => 
+      ["SECRETARY", "JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
+    ),
+    "TECHNICAL TEAM": teamMembers.filter(member => 
+      ["TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
+    ),
+    "EVENT MANAGEMENT TEAM": teamMembers.filter(member => 
+      ["E M HEAD", "H M HEAD", "E M MASTERS", "EVENT MANAGEMENT CO-HEAD", "E M CO-HEAD", "E M MEMBER", "HALL MANAGEMENT", "H M MEMBER"].includes(member.position)
+    ),
+    "LITERATURE TEAM": teamMembers.filter(member => 
+      ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)
+    ),
+    "DESIGN TEAM": teamMembers.filter(member => 
+      ["DESIGN Head", "ART HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER"].includes(member.position)
+    ),
+    "PUBLICITY TEAM": teamMembers.filter(member => 
+      ["PR Head", "PUBLICITY HEAD", "PUBLICITY CO-HEAD", "PR MASTERS"].includes(member.position)
+    ),
+    "CULTURAL TEAM": teamMembers.filter(member => 
+      ["CULTURAL HEAD", "CULTURAL CO-HEAD"].includes(member.position)
+    ),
+    "SPONSORSHIP TEAM": teamMembers.filter(member => 
+      ["SPONSORSHIP HEAD", "SPONSORSHIP CO-HEAD", "SPONSORSHIP MEMBER"].includes(member.position)
+    ),
+    "SOCIAL MEDIA TEAM": teamMembers.filter(member => 
+      ["SOCIAL MEDIA HEAD", "SOCIAL MEDIA CO-HEAD"].includes(member.position)
+    ),
+    "DATABASE TEAM": teamMembers.filter(member => 
+      ["DATABASE HEAD", "DATABASE CO-HEAD", "DATABASE MEMBER"].includes(member.position)
+    ),
+    "PHOTOGRAPHY TEAM": teamMembers.filter(member => 
+      ["PHOTOGRAPHY HEAD", "PHOTOGRAPHY CO-HEAD"].includes(member.position)
+    ),
+    "SPORTS TEAM": teamMembers.filter(member => 
+      ["SPORTS HEAD", "SPORTS CO-HEAD"].includes(member.position)
+    ),
+    "GENERAL MEMBERS": teamMembers.filter(member => 
+      ["MEMBER"].includes(member.position)
+    )
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-black">
@@ -54,34 +97,51 @@ export default function TeamMembers() {
       </div>
 
       {/* Content */}
-  <div className="relative z-10 py-12 px-10">
+      <div className="relative z-10 py-12 px-10">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-[0_0_10px_rgba(236,72,153,0.5)]">
-              ACM Team Members
+              UPSURGE Team Members
             </h1>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto drop-shadow-lg">
-              Meet our talented team of developers, designers, and innovators who make ACM an amazing community for
-              computer science students.
+              Meet our talented team of developers, designers, and innovators who make Upsurge an amazing Event of YCCE Nagpur.
             </p>
           </div>
 
-          {/* Team Grid */}
-          <div className="grid grid-cols-[repeat(3,300px)] gap-x-18 gap-y-32 w-fit mx-auto">
-            {teamMembers.map((member, index) => (
-              <MemberCard
-                key={member.id}
-                name={member.name}
-                position={member.position}
-                imageUrl={member.imageUrl}
-                instagramUrl={member.instagramUrl}
-                linkedinUrl={member.linkedinUrl}
-                index={index}
-              />
-            ))}
-          </div>
-    
+          {/* Team Sections */}
+          {Object.entries(teamGroups).map(([teamName, members]) => {
+            if (members.length === 0) return null;
+            
+            return (
+              <div key={teamName} className="mb-20">
+                {/* Team Section Header */}
+                <div className="text-center mb-10">
+                  <h2 className="text-5xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text mb-2 drop-shadow-lg">
+                    {teamName}
+                  </h2>
+                  <div className="w-32 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 mx-auto rounded-full"></div>
+                </div>
+
+                {/* Team Members Grid */}
+                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+                  {members.map((member, index) => (
+                    <div key={member.id} className="flex-shrink-0">
+                      <MemberCard
+                        name={member.name}
+                        position={member.position}
+                        imageUrl={member.imageUrl}
+                        instagramUrl={member.instagramUrl}
+                        linkedinUrl={member.linkedinUrl}
+                        githubUrl={member.githubUrl}
+                        index={index}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
