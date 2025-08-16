@@ -618,15 +618,5 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "",
     githubUrl: "",
-  },
-
-  {
-    id: 65,
-    name: "Atharva Pagar",
-    position: "MEMBER",
-    imageUrl: placeholderUrl,
-    instagramUrl: "",
-    linkedinUrl: "",
-    githubUrl: "",
   }
 ];
