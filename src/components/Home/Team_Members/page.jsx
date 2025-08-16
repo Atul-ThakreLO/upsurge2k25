@@ -39,9 +39,6 @@ export default function TeamMembers() {
     ),
     "SPORTS TEAM": teamMembers.filter(member => 
       ["SPORTS HEAD", "SPORTS CO-HEAD"].includes(member.position)
-    ),
-    "GENERAL MEMBERS": teamMembers.filter(member => 
-      ["MEMBER"].includes(member.position)
     )
   };
 
