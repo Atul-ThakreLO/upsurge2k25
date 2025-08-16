@@ -10,8 +10,8 @@ export default function Home() {
     <div>
       <Hero />
       <div className="relative z-10">
-        <Events />
         <SponsorSlider/>
+        <Events />
             {/* <div className="h-screen"></div> */}
       </div>
       <Footer footerDetails={FooterContactDetailsCosmos} />
