@@ -121,108 +121,180 @@ export const timelineItems = [
 export const EventsDataDesktop = [
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/cosmoTown.png",
-    title: "Cosmotown",
-    id: "cosmotown",
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+    title: "Smackathon",
+    id: "smackathon",
+    prizePool: "30,000",
+    entryFees: 599,
+    teamMembers: "3-5",
     description:
-      "Cosmotown is a thrilling minigame festival happening on August 24th from 10 AM to 3:30 PM! Explore over 10 diverse games, collecting stamps on your Cosmo-Passport as you progress. Win prizes and bid on rewards in the 4 PM auction. Pre-register to receive double CosmoCoins, giving you a competitive edge. Entry fee is just Rs 50, making it an affordable and fun-filled experience. Don't miss out on the excitement and prizes worth Rs 2500! Come along and see if you have what it takes to conquer Cosmotown!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char2.png",
-    isPosterLeft: true,
-    registerLink: "https://forms.gle/MG2tg8sbh7eY6S3v8",
-  },
-  {
-    poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/talentsque.png",
-    title: "Talentesque",
-    id: "talentsque",
-    description:
-      "Calling all talented individuals! Join TALENTESQUE, a spectacular talent show, on August 23rd, 2024, at 12:00 noon. Whether you're a singer, dancer, musician, magician, comedian, or have any other hidden talent, we invite you to take center stage. Showcase your unique talent, compete for prizes worth Rs 5000/, and enjoy an unforgettable experience. Entry fees: Rs 49/ (solo), Rs 99/ (duo), Rs 149/ (group). Register now and unleash your inner star!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char1.png",
-    isPosterLeft: false,
-    registerLink: "https://forms.gle/rAKGi9MVayXSd8Th8",
+      "Smackathon is a 24-hour hackathon where teams work to develop innovative solutions to real-world problems. Participants engage in a series of challenges across diverse domains such as Education, Healthcare, Finance, Web 3.0, Agriculture, Environment, and Open Innovation. The event encourages creativity, collaboration, and problem-solving.",
+    registerLink: "https://upsurge2k25.tech/smackathon",
   },
   {
     poster:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
-    title: "Coding Relay",
-    id: "codingRelay",
+    title: "Ideathon",
+    id: "ideathon",
+    prizePool: "10,000",
+    entryFees: 299,
+    teamMembers: "1-4",
     description:
-      "Get ready for the high-energy CODING RELAY at UPSURGE 2k24! Assemble your team for a thrilling two-stage challenge. First, tackle the Debugging Quiz, where only the top teams will advance. Then, compete in the Coding Relay, where speed and accuracy will crown the champions. With a ₹2400 prize pool, this is your chance to shine as a team and claim victory. Don't forget your laptops and join us on August 24th, 2024, at the CSE Department. Be prepared for an electrifying competition that will put your coding skills to the test!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char3.png",
-    isPosterLeft: true,
-    registerLink: "https://forms.gle/icuRvzvb6RpJtEKf8",
+      "The Ideathon, in collaboration with Technology Business Incubator (TBI) at YCCE, is a high-energy idea-pitching competition to spark innovation and entrepreneurship. Participants brainstorm solutions to real-world problems, refine concepts with guidance from mentors, and pitch to an expert panel. The event encourages creativity, collaboration, and problem solving.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScGEkV_mlS5PFcD27dl6ytLVQEK3fOzIa5tPn3G2yp7Hj8nGg/viewform?usp=dialog",
+  },
+  {
+    poster:
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+    title: "Escape Room ",
+    id: "escapeRoom",
+    prizePool: "2,000",
+    entryFees: 200,
+    teamMembers: "3-5",
+    description: (
+      <>
+        <p>
+          A high-stakes, team-based challenge testing logic, teamwork, and quick
+          thinking. Teams of 3 face three thrilling rounds:
+          <br />
+          1. Find the torch in the dark <br />
+          2. Crack riddles, locks, and puzzles <br />
+          3. Uncover the key to escape. Race against time. Decode the clues.
+          Escape before it’s too late
+        </p>
+      </>
+    ),
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfHy_BCTCmbrPEriFkkE_8Z9NoDGT33hdMOQn9KDOIZhGcUtQ/viewform?usp=header",
+  },
+  {
+    poster:
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+    title: "Singularity",
+    id: "singularity",
+    prizePool: "8,000",
+    entryFees: 400,
+    teamMembers: "2-4",
+    description:
+      "It is a team-based technical competition where groups of four compete in mini-events like Debugging, AI or Not, and AI Front-End. Each event tests different technical and analytical skills. Teams earn points for their performance, and the highest-scoring team wins a cash prize.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe-KEtVbuYhhb8z7gNWVZJ8_3fAJfGJHdYVNXDzLyWOfjjFOA/viewform?usp=dialog",
   },
   {
     poster:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingCasino.png",
-    title: "Coding Casino",
-    id: "codingCasino",
+    title: "Capture the Flag",
+    id: "captureTheFlag",
+    prizePool: "2,000",
+    entryFees: 200,
+    teamMembers: "2-4",
     description:
-      "Welcome to the thrilling and electrifying 'CODING CASINO' brought to you by UPSURGE 2k24. Whether you're a coding wizard or just looking for some high-stakes fun, this event is your shot to prove your skills and seize victory. Bet before seeing the question, win if you solve it, and lose if you don’t. With the prize pool of rupees 2000, this is your moment to shine and claim the title of Coding Casino champion. Don't forget to bring your laptops and we'll see you guys on August 23rd, 2024 at Lab 3 and 4 ,CSE Department!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char5.png",
-    isPosterLeft: false,
-    registerLink: "https://forms.gle/N8b2NCndQWjAeStdA",
+      "Project: SIGNAL is a tech puzzle event in Capture The Flag style where individuals or teams solve creative digital challenges to uncover hidden flags. Each puzzle earns points and boosts your leaderboard rank. Perfect for techies and curious minds, beginners and pros alike—no experience needed! Solve, learn, and level up.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSft7H3G9_wD0wpnByTeyHows1EFKZCy-RzrSRcyukj8eJ_P0g/viewform",
   },
   {
     poster:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/flashmob.png",
-    title: "Flashmob",
-    id: "flashmob",
+    title: "FIFA",
+    id: "fifa",
+    prizePool: "2,000",
+    entryFees: 59,
+    teamMembers: "Solo",
     description:
-      "Get ready for an unforgettable flashmob on August 23rd, 2024, at 3 PM in front of the CSE Department! This high-energy event will feature electrifying music, vibrant energy, and spontaneous dance moves. Whether you're a seasoned dancer or just looking for fun, this is your chance to be part of something extraordinary. Celebrate the CSE spirit, connect with fellow students, and create an unforgettable moment. Gather friends, get in the groove, and join us for an afternoon of pure joy. Don't just watch – be part of it and help light up the campus with enthusiasm!",
-    pokemon: "/images/events/char7.png",
-    isPosterLeft: true,
-    registerLink: "",
+      "EA Sports FC – Where Football Meets the Future. Experience the ultimate football simulation with authentic teams, leagues, and players. Build your dream team in Ultimate Team, compete in thrilling matches, or enjoy 5v5 Rush Mode. With lifelike graphics, dynamic gameplay, and regular updates, the action never stops!",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScoU4QIiJpf4we-o0xCQe3drevG_lIhz5w9TebeIXMx_mGJLg/viewform?usp=dialog",
   },
   {
     poster: "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/fifa.png",
-    title: "FIFA",
-    id: "fifa",
+    title: "F1 Simulator",
+    id: "f1Simulator",
+    prizePool: "NA",
+    entryFees: 79,
+    teamMembers: "Solo",
     description:
-      "Get ready for the FIFA FEVER CUP, an electrifying 1v1 football gaming tournament that will ignite your competitive spirit! Face off in a thrilling derby showdown and showcase your skills, tactics, and formations. With 6-minute halves and a single elimination format, every second counts. For just ₹49, you could win the ₹1000 first prize! The event will be held at the CSE Department, so mark your calendars, gear up, and bring your A-game to outmaneuver and outscore your opponents. Don’t miss this chance to prove your mettle, create unforgettable memories, and claim your victory!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char9.png",
-    isPosterLeft: false,
-    registerLink: "https://forms.gle/uXxVqxF1v3BsLRnR6",
+      "Drive Your Dream with Car Simulator, a dynamic driving game combining realistic physics and open-world exploration. Choose from 100+ vehicles, customize them, tackle missions, or race friends in multiplayer. With vibrant cities, day-night cycles, and immersive sounds, every drive feels thrilling and authentic.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeOCw62is36UYcXjpY7UOZFe7LUEMQ9fz_pd40WajPQEW6Rsw/viewform?usp=header",
   },
   {
     poster:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/smackdown.png",
-    title: "WWE Smackdown",
-    id: "smackdown",
+    title: "Free Fire",
+    id: "freeFire",
+    prizePool: "12,000",
+    entryFees: 200,
+    teamMembers: "2-4",
     description:
-      "Step into the golden age of WWE with the Smackdown Showdown Championship, a nostalgic gaming tournament on the classic PS2 platform. Relive iconic wrestling moments and test your skills in Survival Rounds, Elimination Chambers, and Single Match showdowns. Join us on August 23rd and 24th at the CSE Department for intense action and friendly competition. For just ₹49, compete for a chance to win prizes of ₹1000 or ₹500 and claim the title of Smackdown Showdown Champion. Don’t miss this chance to relive WWE's glory days and prove yourself as a wrestling gaming legend!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char10.png",
-    isPosterLeft: true,
-    registerLink: "https://forms.gle/Q6RHr9X4JgSzmvS98",
+      "Garena Free Fire is a fast-paced mobile battle royale where 50 players drop onto a remote island to be the last one standing. Scavenge weapons, armor, and supplies while navigating a shrinking safe zone. With quick 10–20 minute matches, it delivers intense, competitive action perfect for gaming on the go.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScsFoHVEiujXaZ2FQOUeNNoVq9vt9hJXZ6F_-QX0MBY-WZIaw/viewform",
   },
   {
     poster:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/desiDaredevils.png",
-    title: "Desi Daredevils",
-    id: "desiDaredevils",
-    description: `Desi Daredevils: A 3-stage team game for 4 players, featuring unique challenges in each round for a day full of teamwork and excitement. \n ▶ Blindfold Backshift: Two teammates coordinate back-to-back to move balloons, while a blindfolded third member navigates the course with guidance from the fourth. \n ▶ Bite Battle: A culinary challenge where food enthusiasts embark on a delicious journey that will tantalize their taste buds. \n ▶ Mystery Roll: The grand finale, a life-sized ludo-inspired game, filled with excitement and surprises at every turn.`,
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char8.png",
-    isPosterLeft: false,
-    registerLink: "https://forms.gle/nbqsf72FNsjXb9GN8",
+    title: "Coding Relay",
+    id: "codingRelay",
+    prizePool: "2,500",
+    entryFees: 100,
+    teamMembers: "2-3",
+    description: `It is a team event (2–3 members) where teams collaboratively solve 3 basic DSA problems in 1 hour. Problem statements are revealed 10 mins prior for discussion only—no coding. During the event, each member codes for 20 mins in sequence, continuing from where the previous member left.`,
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe07LRLsfEFKC3DQG93UUIkbw7aYlkjTEXG7QpY-Ea0n2Cwkg/viewform?usp=dialog",
   },
   {
     poster:
       "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
-    title: "Data Science Seminar",
-    id: "dataScience",
+    title: "Cipher Chase",
+    id: "cipherChase",
+    prizePool: "5,000",
+    entryFees: 179,
+    teamMembers: "1-4",
     description:
-      "Unlock your potential in data science and technology! Join us on August 23rd at 1 PM for an exclusive session designed to help you navigate this exciting field. Our expert speaker will guide you through building a successful tech career, covering essential skills, industry trends, and job opportunities. Whether you're starting out or looking to pivot, this session will provide the insights and confidence you need to break into the tech world and give your career the head start it deserves. Don't miss this chance to embark on your journey into the tech industry!",
-    pokemon:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/images/events/char4.png",
-    isPosterLeft: true,
-    registerLink: "https://konfhub.com/data-science-seminar-eee1269a",
+      "Cipher Chase is a thrilling treasure hunt for coders. Participants start by scanning a QR code to unlock their first coding challenge. Solving it reveals a clue to the next QR. Each QR presents a new problem, testing speed, logic, and programming skills. The hunt continues until all challenges are solved and the final destination is reached.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd_Bh9TYzy6ajrdWZB83MWzxU37JXaNc54pLN0sG95IZWsQYg/viewform?usp=header",
+  },
+  {
+    poster:
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+    title: "Alphinate",
+    id: "alphinate",
+    prizePool: "4,000",
+    entryFees: 299,
+    teamMembers: "3-5",
+    description:
+      "Alphinate is an innovation-focused exhibition where students showcase technical projects. Participants present ideas, demonstrate models, and engage in Q&A with judges. The event highlights creativity, practicality, and presentation skills. Winners receive trophies and rewards, while all gain exposure, confidence, and the chance to inspire others.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdMczhjufrTqSfGZO0mwz_pXbo1rsx7UxtJIffuwrCIfUVriQ/viewform?usp=sharing&ouid=110467277229543546554",
+  },
+  {
+    poster:
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+    title: "WWE SmackDown",
+    id: "wweSmackDown",
+    prizePool: "NA",
+    entryFees: 49,
+    teamMembers: "Solo",
+    description:
+      "Step into the virtual ring with the WWE SmackDown! Here Comes the Pain Tournament. Players compete in a knockout format, showcasing gaming skills and strategies in intense wrestling matchups. Winners advance round by round, with the ultimate champion receiving prizes and certificates in this thrilling fest highlight.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScv9b8lEjs4chXGPdfpK-y3oEESfAwKBuDtvidYpR8xd51vvg/viewform?usp=sharing&ouid=110467277229543546554",
+  },
+  {
+    poster:
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+    title: "Carrom Event",
+    id: "carromEvent",
+    prizePool: "1,000",
+    entryFees: 39,
+    teamMembers: "Solo",
+    description:
+      "The Carrom Event blends competition and casual play. In Tournament Mode, skilled players compete in a knockout format for prizes, while the Casual Play Zone offers a relaxed space for everyone to enjoy. The event unites enthusiasts and casual players, fostering fun, community, and friendly competition.",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeaZYaOsDNFeqUrTl4VCQ_DRmqCqISgRdqxG3fQ_xgFLbOzwQ/viewform?usp=dialog ",
   },
 ];
 
@@ -232,11 +304,11 @@ export const EventsDataDesktop = [
 
 export const EventsDataMobile = [
   {
-    title: "Smackathon",
+    title: "CipherChase",
     description:
-      "A 24-hour hackathon where teams build innovative solutions across domains like education, health, finance, and more, fostering creativity, teamwork, and problem-solving under pressure.",
+      "Get ready for an explosive burst of energy at the CSE Department's FLASHMOB on August 23rd, 2024, at 3 PM! Join us in front of the CSE Department for spontaneous dance moves, electrifying music, and non-stop excitement!",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/flashmob.png",
+      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/cosmoTown.png",
     detailsLink: "/events/#flashmob",
   },
   {

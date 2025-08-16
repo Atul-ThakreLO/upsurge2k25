@@ -11,6 +11,9 @@ const EventsMobile = () => {
             title={event.title}
             poster={event.poster}
             description={event.description}
+            prizePool={event.prizePool}
+            entryFees={event.entryFees}
+            teamMembers={event.teamMembers}
           />
         </div>
       ))}
