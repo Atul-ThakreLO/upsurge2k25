@@ -5,10 +5,10 @@ export default function TeamMembers() {
   // Group team members by their teams
   const teamGroups = {
     "CORE COMMITTEE": teamMembers.filter(member => 
-      ["SECRETARY", "JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
+      [ "ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
     ),
     "TECHNICAL TEAM": teamMembers.filter(member => 
-      ["TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
+      ["TECHNICAL HEAD","ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
     ),
     "EVENT MANAGEMENT TEAM": teamMembers.filter(member => 
       ["E M HEAD", "H M HEAD", "E M MASTERS", "EVENT MANAGEMENT CO-HEAD", "E M CO-HEAD", "E M MEMBER", "HALL MANAGEMENT", "H M MEMBER"].includes(member.position)
@@ -17,10 +17,10 @@ export default function TeamMembers() {
       ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)
     ),
     "DESIGN TEAM": teamMembers.filter(member => 
-      ["DESIGN Head", "ART HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER"].includes(member.position)
+      ["ACM DESIGN HEAD", "ART HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER","Design MEMBER"].includes(member.position)
     ),
     "PUBLICITY TEAM": teamMembers.filter(member => 
-      ["PR Head", "PUBLICITY HEAD", "PUBLICITY CO-HEAD", "PR MASTERS"].includes(member.position)
+      ["ACM PR HEAD", "PUBLICITY HEAD", "PUBLICITY CO-HEAD", "PR MASTERS"].includes(member.position)
     ),
     "CULTURAL TEAM": teamMembers.filter(member => 
       ["CULTURAL HEAD", "CULTURAL CO-HEAD"].includes(member.position)
