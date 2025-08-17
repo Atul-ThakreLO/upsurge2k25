@@ -190,7 +190,7 @@ const Events = () => {
               className="card-wrapper w-full h-[55vh] md:h-[500px] bg-black border-[10px] md:border-[15px] shadow-2xl border-white sticky top-[15%] z-[2]"
             >
               <EventCard
-                poster={event.image}
+                poster={event.poster}
                 title={event.title}
                 id={event.title}
                 description={event.description}
