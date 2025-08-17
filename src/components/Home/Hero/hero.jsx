@@ -10,8 +10,26 @@ import HeroMobile from "./hero-mobile";
 import RegisterButton from "../../ui/register-button";
 import Link from "next/link";
 import SmackathonSection from "../smackathon/smackathon-section";
+import { usePathname } from "next/navigation";
 
 const Hero = () => {
+  const pathname = usePathname();
+  const previousPathnameRef = useRef();
+
+  useEffect(() => {
+    // Check if we navigated TO the home page from another page
+    if ((pathname === '/' || pathname === '/home') && 
+        previousPathnameRef.current && 
+        previousPathnameRef.current !== pathname) {
+      
+      // Small delay to ensure navigation is complete
+      setTimeout(() => {
+        window.location.reload();
+      }, 100);
+    }
+    
+    previousPathnameRef.current = pathname;
+  }, [pathname]);
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////// Animation /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -24,28 +42,8 @@ const Hero = () => {
   const scrollingContainerRef = useRef(null);
   const tlRef = useRef(null);
 
-  useEffect(() => {
-    const handlePopState = () => {
-      if (
-        window.location.pathname === "/" ||
-        window.location.pathname === "/home"
-      ) {
-        setTimeout(() => {
-          ScrollTrigger.refresh();
-        }, 100);
-      }
-    };
-
-    window.addEventListener("popstate", handlePopState);
-
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-    };
-  }, []);
-
   // scroll animation
   useGSAP(() => {
-    ScrollTrigger.refresh();
     const fixedContainer = fixedContainerRef.current;
     const scrollingContainer = scrollingContainerRef.current;
     const container = containerRef.current;
