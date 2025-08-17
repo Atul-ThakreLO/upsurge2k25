@@ -32,23 +32,23 @@ const SmackathonSection = () => {
     gsap.to([titleRef.current, subtitleRef.current], {
       y: 0,
       opacity: 1,
-      duration: 0.8,
+      duration: 0.5,
       stagger: 0.3,
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "top 80%",
+        start: "top 90%",
         toggleActions: "play reset resume reset",
       },
     });
 
     gsap.to([infoRef.current, buttonRef.current], {
       y: 0,
-      duration: 0.8,
+      duration: 0.5,
       opacity: 1,
-      stagger: 0.5,
+      stagger: 0.3,
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "60% 90%",
+        start: "60% bottom",
         toggleActions: "play reset resume reset",
       },
     });
