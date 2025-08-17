@@ -123,7 +123,7 @@ const Events = () => {
           trigger: card,
           start: "top 80%",
           end: "bottom bottom",
-          scrub: window.innerWidth < 768 ? 0.5 : 2,
+          scrub: window.innerWidth < 768 ? 0 : 2,
           refreshPriority: -1,
           invalidateOnRefresh: true,
         },
@@ -222,7 +222,7 @@ const Events = () => {
             </ModelCanvas>
           </div>
         </div>
-        <div className="col-span-7 md:col-span-4 flex flex-wrap flex-col gap-96 md:gap-20 px-14 md:px-20">
+        <div className="col-span-7 md:col-span-4 flex flex-wrap flex-col gap-60 md:gap-20 px-14 md:px-20">
           {EventsDataMobile.map((event, i) => (
             <div
               key={event.title}
