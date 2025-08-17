@@ -24,8 +24,28 @@ const Hero = () => {
   const scrollingContainerRef = useRef(null);
   const tlRef = useRef(null);
 
+  useEffect(() => {
+    const handlePopState = () => {
+      if (
+        window.location.pathname === "/" ||
+        window.location.pathname === "/home"
+      ) {
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+        }, 100);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
   // scroll animation
   useGSAP(() => {
+    ScrollTrigger.refresh();
     const fixedContainer = fixedContainerRef.current;
     const scrollingContainer = scrollingContainerRef.current;
     const container = containerRef.current;
