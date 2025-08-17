@@ -17,10 +17,10 @@ export default function TeamMembers() {
       ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)
     ),
     "DESIGN TEAM": teamMembers.filter(member => 
-      ["ACM DESIGN HEAD", "ART HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER","Design MEMBER"].includes(member.position)
+      ["ACM DESIGN HEAD", "DESIGN HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER","Design MEMBER"].includes(member.position)
     ),
     "PUBLICITY TEAM": teamMembers.filter(member => 
-      ["ACM PR HEAD", "PUBLICITY HEAD", "PUBLICITY CO-HEAD", "PR MASTERS"].includes(member.position)
+      ["ACM PR HEAD", "PUBLICITY HEAD", "PUBLICITY CO-HEAD", "PR MASTERS","PUBLICITY MEMBER"].includes(member.position)
     ),
     "CULTURAL TEAM": teamMembers.filter(member => 
       ["CULTURAL HEAD", "CULTURAL CO-HEAD"].includes(member.position)

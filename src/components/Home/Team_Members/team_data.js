@@ -166,6 +166,15 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/yogesh-nagrare-707a9b32a/",
     githubUrl: "https://github.com/Yogesh-Nagrare",
   },
+    {
+      id: 1012,
+      name: "Sujal Dandhale",
+      position: "TECHNICAL MEMBER",
+      imageUrl: "/profile_photo/Sujal Dandhale.png",
+      instagramUrl: "",
+      linkedinUrl: "https://www.linkedin.com/in/sujal-dandhale",
+      githubUrl: "https://github.com/Sujal1123",
+    },
   // EVENT MANAGEMENT Team
     {
   id: 16,
@@ -176,6 +185,15 @@ export const teamMembers = [
     linkedinUrl: "",
     githubUrl: "",
   },
+    {
+      id: 1013,
+      name: "Dhruv Munghate",
+      position: "E M HEAD",
+      imageUrl: "/profile_photo/Dhruv Munghate.JPG",
+      instagramUrl: "https://www.instagram.com/_.dhruv_munghate._?igsh=NTZwcDJlNWF3ejcw",
+      linkedinUrl: "https://www.linkedin.com/in/dhruv-munghate-a69023339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
     {
   id: 17,
     name: "Kushal Javkhedkar",
@@ -230,11 +248,20 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/aditya-tekade-626104287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Adityamtekade/",
   },
+    {
+      id: 1001,
+      name: "Ayush Dhurve",
+      position: "E M CO-HEAD",
+      imageUrl: "/profile_photo/Ayush Dhurvey.jpeg",
+      instagramUrl: "https://www.instagram.com/ayush_dhurve_09?igsh=NXY0eWVpeHo0YWh2&utm_source=qr",
+      linkedinUrl: "",
+      githubUrl: "",
+    },
   {
   id: 23,
     name: "Bhavesh Doifode",
     position: "E M CO-HEAD",
-  imageUrl: "/profile_photo/Bhavesh Doifode.png",
+  imageUrl: "/profile_photo/Bhavesh Doifode.JPEG",
     instagramUrl: "https://www.instagram.com/doifode__27/profilecard/?igsh=M2xsc3I0bnFuYmR3",
     linkedinUrl: "https://www.linkedin.com/in/bhavesh-doifode-a760312a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     githubUrl: "",
@@ -291,8 +318,8 @@ export const teamMembers = [
     position: "LITERATURE CO-HEAD",
   imageUrl: "/profile_photo/Neha Dhawas.jpg",
     instagramUrl: "https://www.instagram.com/neha._.dhawas?igsh=MXZpeHVjdXgwMjZsaA==",
-    linkedinUrl: "https://www.linkedin.com/in/neha-d-22b9b6220",
-    githubUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/neha-dhawas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    githubUrl: "https://github.com/nehaadhawas?tab=overview&from=2025-07-01&to=2025-07-04",
   },
    {
   id: 69,
@@ -303,6 +330,15 @@ export const teamMembers = [
     linkedinUrl: "",
     githubUrl: "",
   },
+    {
+      id: 1009,
+      name: "Aliya Sayyed",
+      position: "LITERATURE CO-HEAD",
+      imageUrl: "/profile_photo/Aliya Sayyad.JPG",
+      instagramUrl: "",
+      linkedinUrl: "https://www.linkedin.com/in/aliya-sayyed-85909a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "https://github.com/Aliya-28",
+    },
   {
   id: 30,
     name: "Himanshi  Choubal",
@@ -341,6 +377,16 @@ export const teamMembers = [
   linkedinUrl: "https://www.linkedin.com/in/aditya-rajankar/",
   githubUrl: "",
   },
+   {
+      id: 1007,
+      name: "Chitraksh Chavan",
+      position: "DESIGN HEAD",
+      imageUrl: "/profile_photo/chitraksh chavan.jpg",
+      instagramUrl: "https://www.instagram.com/chitraksh_9?igsh=MXFqOXI3emZrNHhuOQ==",
+      linkedinUrl: "https://www.linkedin.com/in/chitraksh-chavan",
+      githubUrl: "https://github.com/Chitraksh09error",
+    },
+
     {
   id: 34,
     name: "Devyani Gharad",
@@ -395,6 +441,25 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/vaibhavi-tumsare-40320b2b4",
     githubUrl: "https://github.com/Vaibhavitumsare",
   },
+{
+      id: 1005,
+      name: "Vaishnavi Dhomane",
+      position: "DESIGN CO-HEAD",
+      imageUrl: "/profile_photo/Vaishnavi Dhomane.jpg",
+      instagramUrl: "https://www.instagram.com/vaishnavii_2912/",
+      linkedinUrl: "https://www.linkedin.com/in/vaishnavi-dhomane-38a12a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
+    {
+      id: 1006,
+      name: "Saurabh Kulavi",
+      position: "DESIGN CO-HEAD",
+      imageUrl: "/profile_photo/SAURABH KULAVI.jpg",
+      instagramUrl: "https://www.instagram.com/_saurhubbbb?igsh=b2Rkb2lvaHpmMHcw",
+      linkedinUrl: "https://www.linkedin.com/in/saurabh-kulavi-b4b871316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "https://github.com/saurabhkulavi",
+    },
+
   {
   id: 40,
     name: "Shreya Sakhare",
@@ -413,6 +478,7 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/nickymeshram",
     githubUrl: "https://github.com/NickyMeshram",
   },
+   
    {
   id: 42,
     name: "Savani Apte",
@@ -495,6 +561,15 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/sarthakk-chavan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
   },
+    {
+      id: 1008,
+      name: "Abhinav Tomar",
+      position: "PUBLICITY MEMBER",
+      imageUrl: "/profile_photo/Abhinav Tomar.jpg",
+      instagramUrl: "",
+      linkedinUrl: "https://www.linkedin.com/in/abhinavjaihind?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
 
   //CULTURAL TEAM
   {
@@ -546,6 +621,15 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/darpan-thakur",
     githubUrl: "",
   },
+    {
+      id: 1010,
+      name: "Riddhi Nahate",
+      position: "SPONSORSHIP HEAD",
+      imageUrl: "/profile_photo/Riddhi Nahate.jpg",
+      instagramUrl: "https://www.instagram.com/_.riddhi09?igsh=MWx5eDMyNXV1bnd2cQ==",
+      linkedinUrl: "https://www.linkedin.com/in/riddhi-nahate-1893a0254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
   {
   id: 54,
     name: "Kabeir Kaushik",
@@ -584,6 +668,15 @@ export const teamMembers = [
     linkedinUrl: "http://linkedin.com/in/disha-nannaware-074883319",
     githubUrl: "",
   },
+    {
+      id: 1011,
+      name: "Ishika Lohakare",
+      position: "SOCIAL MEDIA CO-HEAD",
+      imageUrl: "/profile_photo/Ishika Lohakare.jpg",
+      instagramUrl: "https://www.instagram.com/ishika.230?igsh=MWZoeGUzbDMyODh4bQ==",
+      linkedinUrl: "https://www.linkedin.com/in/ishika-lohakare?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
 
 
 // DATABASE TEAM
@@ -672,6 +765,24 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/kshitij-shrikhande",
     githubUrl: "",
   },
+    {
+      id: 1002,
+      name: "Chinmay Tekade",
+      position: "SPORTS HEAD",
+      imageUrl: "/profile_photo/CHINMAY TEKADE.jpg",
+      instagramUrl: "https://www.instagram.com/chinmay11_?igsh=OXVoMm4xMGF3bXls",
+      linkedinUrl: "https://www.linkedin.com/in/chinmay-tekade-95447a248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
+    {
+      id: 1004,
+      name: "Vedant Raut",
+      position: "SPORTS HEAD",
+      imageUrl: "/profile_photo/Vedant Raut.jpg",
+      instagramUrl: "",
+      linkedinUrl: "https://www.linkedin.com/in/vedant-raut-ab2b3225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "",
+    },
    {
   id: 67,
     name: "Omair Khan",
@@ -690,5 +801,13 @@ export const teamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/rushabh-thakurdware-63a9a12aa/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/rushabhthakurdware",
   },
-
+   {
+      id: 1003,
+      name: "Hrishikesh Divekar",
+      position: "SPORTS MEMBERS",
+      imageUrl: "/profile_photo/Hrishikesh Divekar.JPG",
+      instagramUrl: "https://www.instagram.com/hrishikesh.divekar?igsh=MXJzODl3bnVyMDN3Yw==",
+      linkedinUrl: "https://www.linkedin.com/in/hrishikesh-divekar-505255345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      githubUrl: "https://github.com/HrishikeshDivekar",
+    }
 ];
