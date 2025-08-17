@@ -7,7 +7,7 @@ export const teamMembers = [
   id: 68,
     name: "Om Mane",
     position: "ACM CHAIRPERSON",
-  imageUrl: "/profile_photo/Om Mane.png",
+  imageUrl: "/profile_photo/Om Mane.jpg",
     instagramUrl: "https://www.instagram.com/shantanu_nichante?igsh=bmd6OW85czM2MmZj",
     linkedinUrl: "https://www.linkedin.com/in/shantanu-nichante",
     githubUrl: "https://github.com/shantanu-nichante", 
