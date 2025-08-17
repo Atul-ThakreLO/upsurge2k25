@@ -78,14 +78,14 @@ const EventsPage = () => {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-screen px-5 py-14 flex flex-col items-center text-white overflow-hidden"
+      className="relative min-h-screen py-14 flex flex-col items-center text-white overflow-hidden"
     >
       <div className="absolute inset-0 -z-10">
         <SquidGameBackground />
       </div>
 
       <h1
-        className="page-title font-squid text-5xl md:text-8xl font-extrabold pt-10 md:pt-0 mb-5 md:mb-14 text-transparent tracking-wide relative [text-shadow:
+        className="page-title font-squid text-5xl md:text-7xl font-extrabold pt-10 md:pt-0 mb-5 md:mb-9 text-transparent tracking-wide relative [text-shadow:
           0_0_2px_rgb(236_72_153),
           0_0_5px_rgb(236_72_153),
           0_0_10px_rgb(219_39_119),

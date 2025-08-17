@@ -10,9 +10,9 @@ const shapes = [
   { type: "circle", x: 600, y: 800, size: 20, rotation: 0 },
 
   // Squid Game Logo Shapes
-  // { type: "triangle", x: 700, y: 220, size: 34, rotation: 0 },
-  // { type: "circle", x: 663, y: 220, size: 34, rotation: 0 },
-  // { type: "square", x: 737, y: 220, size: 36, rotation: 0 },
+  { type: "triangle", x: 700, y: 180, size: 34, rotation: 0 },
+  { type: "circle", x: 663, y: 180, size: 34, rotation: 0 },
+  { type: "square", x: 737, y: 180, size: 36, rotation: 0 },
 
   { type: "square", x: 800, y: 540, size: 26, rotation: 10 },
   { type: "circle", x: 1200, y: 640, size: 26, rotation: 10 },
