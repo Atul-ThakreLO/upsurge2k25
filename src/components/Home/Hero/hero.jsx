@@ -22,17 +22,6 @@ const Hero = () => {
   const scrollingContainerRef = useRef(null);
   const tlRef = useRef(null);
 
-  useEffect(() => {
-    const handlePageShow = (event) => {
-      if (event.persisted) {
-        window.location.reload();
-      }
-    };
-
-    window.addEventListener("pageshow", handlePageShow);
-    return () => window.removeEventListener("pageshow", handlePageShow);
-  }, []);
-
   // scroll animation
   useGSAP(() => {
     const fixedContainer = fixedContainerRef.current;
