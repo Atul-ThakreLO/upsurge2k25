@@ -48,10 +48,10 @@
 }
 
 /* === Sponsor Wrapper === */
-.sponsor-wrapper {
+/* .sponsor-wrapper {
   display: flex;
   gap: 40px;
-  animation: scrollSponsors 15s linear infinite;
+  animation: scrollSponsors 20s linear infinite;
   width: fit-content;
   margin: 0 auto;
 }
@@ -61,7 +61,26 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+} */
+.sponsor-wrapper {
+  display: flex;
+  gap: 40px;
+  animation: scrollSponsors 20s linear infinite;
+  width: max-content; /* Needed for continuous flow */
+}
+.sponsor-item:hover {
+  border-color: #be185d;
+  box-shadow: 0 0 20px rgba(190, 24, 93, 0.8), 0 0 40px rgba(190, 24, 93, 0.5);
+  transform: scale(1.05);
+}
+@keyframes scrollSponsors {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll half the total width (because of duplication) */
   }
 }
 
@@ -92,6 +111,7 @@
   object-fit: contain;
   filter: brightness(1.1);
 }
+
 
 /* === Responsive === */
 @media (max-width: 768px) {
