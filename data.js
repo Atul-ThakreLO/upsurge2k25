@@ -80,7 +80,7 @@ export const rules = [
   "At least 2 members must be present at the allotted table at all times during Smackathon.",
   "Participants must not engage in malicious activities. Damage to college property leads to disqualification.",
   "Meals and rest areas will be provided if food and accommodation is opted. One accommodation ticket includes 2 beds.",
-  "Per YCCE Policy, female participants cannot stay overnight. After 7 PM they must leave and can return at 6 AM. Female team members coming from outside Nagpur should be responsible for their own accommodation arrangements.",
+  //"Per YCCE Policy, female participants cannot stay overnight. After 7 PM they must leave and can return at 6 AM. Female team members coming from outside Nagpur should be responsible for their own accommodation arrangements.",
   "Rules may change at the discretion of the Smackathon organizing team.",
 ];
 
