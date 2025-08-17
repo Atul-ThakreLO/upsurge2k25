@@ -4,13 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import RotateMask from "../Mask/rotate-mask";
 import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
-import RegisterButton from "../../ui/register-button";
-import Link from "next/link";
 import SmackathonSection from "../smackathon/smackathon-section";
-import { usePathname } from "next/navigation";
 
 const Hero = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,13 +22,10 @@ const Hero = () => {
   const scrollingContainerRef = useRef(null);
   const tlRef = useRef(null);
 
-  const pathname = usePathname();
-
   useEffect(() => {
     const handlePageShow = (event) => {
       if (event.persisted) {
-        // Page restored from cache → force recalculation
-        ScrollTrigger.refresh(true);
+        window.location.reload();
       }
     };
 
@@ -42,12 +35,6 @@ const Hero = () => {
 
   // scroll animation
   useGSAP(() => {
-    if (pathname !== "/") return;
-    ScrollTrigger.getAll().forEach((t) => {
-      if (t.vars?.id?.startsWith("hero-")) t.kill();
-    });
-    if (tlRef.current) tlRef.current.kill();
-
     const fixedContainer = fixedContainerRef.current;
     const scrollingContainer = scrollingContainerRef.current;
     const container = containerRef.current;
@@ -105,7 +92,7 @@ const Hero = () => {
       }
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [pathname]);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {

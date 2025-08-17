@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       {/* <Hero /> */}
-      <RefreshHome />
+      {/* <RefreshHome /> */}
       <HomeExport />
       <div className="relative z-10">
         <SponsorSlider />
