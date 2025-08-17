@@ -4,8 +4,8 @@ import "./EventCardButton.css";
 const EventCardButton = ({
   text = "Register",
   hoverText = "Ready?",
-  iconSrc = "/gif/coins.svg",
-  hoverIconSrc = "/gif/coinsHover.svg",
+  iconSrc = "/svg/coins.svg",
+  hoverIconSrc = "/svg/coinsHover.svg",
   link = "", // new prop
 }) => {
   const buttonContent = (

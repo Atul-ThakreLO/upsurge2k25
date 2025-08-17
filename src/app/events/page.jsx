@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SquidGameBackground from "../../components/Events/SquidGameBackground";
 import EventsDesktop from "../../components/Events/EventsDesktop";
 import EventsMobile from "../../components/Events/EventsMobile";
+import FloatingButton from "../../components/ui/FloatingButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -121,6 +122,8 @@ const EventsPage = () => {
       ) : (
         <EventsMobile />
       )}
+
+      <FloatingButton />
     </div>
   );
 };

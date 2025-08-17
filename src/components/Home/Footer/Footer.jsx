@@ -82,7 +82,7 @@ const Footer = ({ footerDetails }) => {
                   </a>
 
                   <img
-                    src="/svg/bullet.gif"
+                    src="/gif/bullet.gif"
                     alt="gif"
                     className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 ease-out"
                   />
