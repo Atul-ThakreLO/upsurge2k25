@@ -19,7 +19,7 @@ const nextConfig = {
     // modern: true,
   },
   // next.config.js
-   async redirects() {
+  /* async redirects() {
     return [
       {
         source: '/',
@@ -27,7 +27,7 @@ const nextConfig = {
         permanent: false, // `false` for temporary (302), `true` for permanent (308)
       },
     ];
-  },
+  },*/
 };
 
 export default nextConfig;

@@ -5,7 +5,7 @@ export default function TeamMembers() {
   // Group team members by their teams
   const teamGroups = {
     "CORE COMMITTEE": teamMembers.filter(member => 
-      [ "ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
+      [ "ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","VICE PRESIDENT","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
     ),
     "TECHNICAL TEAM": teamMembers.filter(member => 
       ["TECHNICAL HEAD","ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
