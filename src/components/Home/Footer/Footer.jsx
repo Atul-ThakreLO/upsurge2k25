@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import StaticMoneyPile from "./StaticMoneyPile";
-import { FooterSocialLinks } from "../../../../data";
+import { FooterSocialLinks, NavLinks } from "../../../../data";
 
 const Footer = ({ footerDetails }) => {
   return (
@@ -68,21 +68,21 @@ const Footer = ({ footerDetails }) => {
             NAVIGATION
           </h2>
           <ul className="space-y-3">
-            {["Home", "Smackathon", "Schedule", "Events", "Teams"].map(
+            {NavLinks.map(
               (link) => (
                 <li
                   key={link}
                   className="group relative flex items-center gap-2"
                 >
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={`${link.href.toLowerCase()}`}
                     className="text-white/90 group-hover:text-pink-400 transition"
                   >
-                    {link}
+                    {link.name}
                   </a>
 
                   <img
-                    src="/svg/bullet.gif"
+                    src="/gif/bullet.gif"
                     alt="gif"
                     className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 ease-out"
                   />
