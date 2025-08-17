@@ -28,6 +28,18 @@ const Hero = () => {
 
   const pathname = usePathname();
 
+  useEffect(() => {
+    const handlePageShow = (event) => {
+      if (event.persisted) {
+        // Page restored from cache → force recalculation
+        ScrollTrigger.refresh(true);
+      }
+    };
+
+    window.addEventListener("pageshow", handlePageShow);
+    return () => window.removeEventListener("pageshow", handlePageShow);
+  }, []);
+
   // scroll animation
   useGSAP(() => {
     if (pathname !== "/") return;
@@ -169,24 +181,22 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div key={pathname}>
-      <div ref={containerRef} className="h-[200vh] md:h-[210vh]">
-        <div ref={fixedContainerRef} className="relative h-[100vh]">
-          <div className="block md:hidden">
-            <HeroMobile />
-          </div>
-          <div className="hidden md:block">
-            <HeroDesktop ref={{ bgRef, mainCharRef }} />
-          </div>
+    <div ref={containerRef} className="h-[200vh] md:h-[210vh]">
+      <div ref={fixedContainerRef} className="relative h-[100vh]">
+        <div className="block md:hidden">
+          <HeroMobile />
         </div>
-        <div
-          ref={scrollingContainerRef}
-          // style={{ transform: "translateY(100vh)" }}
-          className="h-[100vh] md:h-[110vh] relative rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
-        >
-          <div className="absolute z-[1] w-full h-full left-0 top-0 bg-gradient-to-b from-black/70 via-black/50 to-black/100"></div>
-          <SmackathonSection />
+        <div className="hidden md:block">
+          <HeroDesktop ref={{ bgRef, mainCharRef }} />
         </div>
+      </div>
+      <div
+        ref={scrollingContainerRef}
+        // style={{ transform: "translateY(100vh)" }}
+        className="h-[100vh] md:h-[110vh] relative rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
+      >
+        <div className="absolute z-[1] w-full h-full left-0 top-0 bg-gradient-to-b from-black/70 via-black/50 to-black/100"></div>
+        <SmackathonSection />
       </div>
     </div>
   );
