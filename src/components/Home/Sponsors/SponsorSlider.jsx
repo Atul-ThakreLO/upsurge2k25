@@ -24,7 +24,7 @@ export default function SponsorSlider() {
   return (
     <section className="sponsor-section items-center">
       
-      <div className="sponsor-heading mt-5">
+      <div className="sponsor-heading mt-32">
         <Image src="/sponhead.png" alt="VIP Sponsors" width={500} height={100} className="vip-heading" />
       </div>
 
@@ -42,7 +42,7 @@ export default function SponsorSlider() {
           />
         ))}
       </div>
-      <div className="sponsor-wrapper">
+      <div className="sponsor-wrapper mt-20">
         {[...sponsors, ...sponsors].map((src, index) => (
           <div key={index} className="sponsor-item">
             <Image

@@ -121,7 +121,7 @@ export const timelineItems = [
 export const EventsDataDesktop = [
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingCasino.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367043/smackathon_1_mpznmo.webp",
     title: "Smackathon",
     id: "smackathon",
     prizePool: "30,000",
@@ -133,7 +133,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344946/ideathonn_vf9nhu.webp",
     title: "Ideathon",
     id: "ideathon",
     prizePool: "10,000",
@@ -146,8 +146,8 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
-    title: "Escape Room ",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344941/escape_romm_iabp8s.webp",
+    title: "Escape Room",
     id: "escapeRoom",
     prizePool: "2,000",
     entryFees: 200,
@@ -170,7 +170,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344949/singularityy_a5lqum.webp",
     title: "Singularity",
     id: "singularity",
     prizePool: "8,000",
@@ -183,7 +183,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingCasino.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367043/ctf_4_hgzuxc.webp",
     title: "Capture the Flag",
     id: "captureTheFlag",
     prizePool: "2,000",
@@ -196,7 +196,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/flashmob.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/fifa_h_rlelzb.webp",
     title: "FIFA",
     id: "fifa",
     prizePool: "2,000",
@@ -208,7 +208,8 @@ export const EventsDataDesktop = [
       "https://docs.google.com/forms/d/e/1FAIpQLScoU4QIiJpf4we-o0xCQe3drevG_lIhz5w9TebeIXMx_mGJLg/viewform?usp=dialog",
   },
   {
-    poster: "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/fifa.png",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/F1_simulatorr_cs2hkl.webp",
     title: "F1 Simulator",
     id: "f1Simulator",
     prizePool: "NA",
@@ -221,7 +222,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/smackdown.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/freefire_h_s0weih.webp",
     title: "Free Fire",
     id: "freeFire",
     prizePool: "12,000",
@@ -234,7 +235,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/desiDaredevils.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/coding_relayy_rvsie0.webp",
     title: "Coding Relay",
     id: "codingRelay",
     prizePool: "2,500",
@@ -246,7 +247,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/cipherchasee_lboito.webp",
     title: "Cipher Chase",
     id: "cipherChase",
     prizePool: "5,000",
@@ -259,7 +260,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344939/alphinatee_dxnycx.webp",
     title: "Alphinate",
     id: "alphinate",
     prizePool: "4,000",
@@ -272,7 +273,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/SmackDown_h_yun145.webp",
     title: "WWE SmackDown",
     id: "wweSmackDown",
     prizePool: "NA",
@@ -285,7 +286,7 @@ export const EventsDataDesktop = [
   },
   {
     poster:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367604/carrom_h_w61vuu.webp",
     title: "Carrom Event",
     id: "carromEvent",
     prizePool: "1,000",
@@ -304,77 +305,108 @@ export const EventsDataDesktop = [
 
 export const EventsDataMobile = [
   {
-    title: "CipherChase",
+    title: "Smackathon",
     description:
-      "Get ready for an explosive burst of energy at the CSE Department's FLASHMOB on August 23rd, 2024, at 3 PM! Join us in front of the CSE Department for spontaneous dance moves, electrifying music, and non-stop excitement!",
-    image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/cosmoTown.png",
-    detailsLink: "/events/#flashmob",
-  },
-  {
-    title: "Singularity",
-    description:
-      "A four-part team competition featuring debugging, AI challenges, and more, assessing technical and analytical skills while promoting teamwork and innovation.",
-    image:
-      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344949/singularityy_a5lqum.webp",
-    detailsLink: "/events/#singularity",
-  },
-  {
-    title: "Coding Relay",
-    description:
-      "A team-based coding race where members take turns solving DSA problems under strict time limits, testing problem-solving and collaborative programming skills.",
-    image:
-      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/coding_relayy_rvsie0.webp",
-    detailsLink: "/events/#codingRelay",
+      "A 24-hour hackathon where teams build innovative solutions across domains like education, health, and finance, fostering creativity, teamwork, and problem-solving under pressure.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367043/smackathon_1_mpznmo.webp",
+    detailsLink: "/events/#smackathon",
   },
   {
     title: "Ideathon",
     description:
-      "An idea-pitching competition with TBI at YCCE, where participants brainstorm real-world solutions, receive mentorship, and pitch to experts for potential incubation and funding.",
-    image:
+      "An idea-pitching competition with TBI at YCCE where participants brainstorm real-world solutions, receive mentorship, and pitch to experts for potential incubation and funding.",
+    poster:
       "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344946/ideathonn_vf9nhu.webp",
-    detailsLink: "/events/#desiDaredevils",
+    detailsLink: "/events/#ideathon",
   },
   {
     title: "Escape Room",
     description:
-      "A fast-paced team challenge with three rounds of riddles, puzzles, and clue-hunting, testing logic, speed, and collaboration to escape before time runs out.",
-    image:
+      "A fast-paced team challenge with puzzles, riddles, and clue-hunting across three rounds, testing logic, collaboration, and speed to escape in time.",
+    poster:
       "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344941/escape_romm_iabp8s.webp",
-    detailsLink: "/events/#codingCasino",
+    detailsLink: "/events/#escapeRoom",
   },
   {
-    title: "FIFA EA Sports FC",
+    title: "Singularity",
     description:
-      "A competitive football simulation offering authentic teams, dynamic gameplay, and thrilling modes, bringing the sport to life for fans and gamers alike.",
-    image:
-      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344944/fifaaa_hfgsqt.webp",
-    detailsLink: "/events/#fifa",
+      "A multi-round technical contest where teams tackle debugging, AI, and problem-solving events, earning points to showcase innovation and analytical skills.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344949/singularityy_a5lqum.webp",
+    detailsLink: "/events/#singularity",
   },
   {
     title: "Capture the Flag",
     description:
       "A cybersecurity puzzle event where players solve digital challenges to uncover hidden “flags,” blending logic, problem-solving, and fun tech learning.",
-    image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/smackdown.png",
-    detailsLink: "/events/#smackdown",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367043/ctf_4_hgzuxc.webp",
+    detailsLink: "/events/#captureTheFlag",
   },
-
   {
-    title: "Car Simulator",
+    title: "FIFA",
     description:
-      "A realistic driving game with diverse vehicles, customizable features, and open-world exploration for solo or multiplayer racing adventures.",
-    image:
-      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/F1_simulator_zivpjh.webp",
-    detailsLink: "/events/#car_simulator",
+      "A football simulation with authentic teams, dynamic gameplay, and thrilling modes, delivering an immersive and competitive sports gaming experience.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/fifa_h_rlelzb.webp",
+    detailsLink: "/events/#fifa",
+  },
+  {
+    title: "F1 Simulator",
+    description:
+      "A realistic racing simulator with diverse vehicles, customizable features, and open-world driving for solo adventures or competitive multiplayer thrills.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/F1_simulatorr_cs2hkl.webp",
+    detailsLink: "/events/#f1Simulator",
   },
   {
     title: "Free Fire",
     description:
-      "A mobile battle royale where 50 players fight to be the last survivor, combining quick matches, strategy, and intense action on a shrinking map.",
-    image:
-      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344949/freefiree_m8zyb0.webp",
-    detailsLink: "/events/#free_fire",
+      "A mobile battle royale where 50 players fight to survive, combining strategy, quick matches, and intense action on a shrinking map.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/freefire_h_s0weih.webp",
+    detailsLink: "/events/#freeFire",
+  },
+  {
+    title: "Coding Relay",
+    description:
+      "A team coding race where members take turns solving DSA problems under strict time limits, testing collaboration and programming skills.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/coding_relayy_rvsie0.webp",
+    detailsLink: "/events/#codingRelay",
+  },
+  {
+    title: "Cipher Chase",
+    description:
+      "A coding treasure hunt where solving problems reveals QR clues, pushing participants to combine logic, speed, and programming to reach the finish.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/cipherchasee_lboito.webp",
+    detailsLink: "/events/#cipherChase",
+  },
+  {
+    title: "Alphinate",
+    description:
+      "A technical project showcase where students present innovations, working models, and ideas on stage, highlighting creativity, practicality, and presentation skills.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344939/alphinatee_dxnycx.webp",
+    detailsLink: "/events/#alphinate",
+  },
+  {
+    title: "WWE SmackDown",
+    description:
+      "A knockout-style gaming tournament where participants compete in virtual wrestling matches, battling round by round to become champion.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/SmackDown_h_yun145.webp",
+    detailsLink: "/events/#wweSmackDown",
+  },
+  {
+    title: "Carrom Event",
+    description:
+      "A dual-format competition offering a knockout tournament for skilled players and a casual zone for fun play, uniting enthusiasts and newcomers alike.",
+    poster:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367604/carrom_h_w61vuu.webp",
+    detailsLink: "/events/#carromEvent",
   },
 ];
 
