@@ -13,23 +13,7 @@ import SmackathonSection from "../smackathon/smackathon-section";
 import { usePathname } from "next/navigation";
 
 const Hero = () => {
-  const pathname = usePathname();
-  const previousPathnameRef = useRef();
-
-  useEffect(() => {
-    // Check if we navigated TO the home page from another page
-    if ((pathname === '/' || pathname === '/home') && 
-        previousPathnameRef.current && 
-        previousPathnameRef.current !== pathname) {
-      
-      // Small delay to ensure navigation is complete
-      setTimeout(() => {
-        window.location.reload();
-      }, 100);
-    }
-    
-    previousPathnameRef.current = pathname;
-  }, [pathname]);
+  gsap.registerPlugin(ScrollTrigger);
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////// Animation /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,8 +26,16 @@ const Hero = () => {
   const scrollingContainerRef = useRef(null);
   const tlRef = useRef(null);
 
+  const pathname = usePathname();
+
   // scroll animation
   useGSAP(() => {
+    if (pathname !== "/") return;
+    ScrollTrigger.getAll().forEach((t) => {
+      if (t.vars?.id?.startsWith("hero-")) t.kill();
+    });
+    if (tlRef.current) tlRef.current.kill();
+
     const fixedContainer = fixedContainerRef.current;
     const scrollingContainer = scrollingContainerRef.current;
     const container = containerRef.current;
@@ -91,13 +83,15 @@ const Hero = () => {
       });
     });
 
+    ScrollTrigger.refresh();
+
     return () => {
       if (tlRef.current) {
         tlRef.current.kill();
       }
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     const handleResize = () => {
