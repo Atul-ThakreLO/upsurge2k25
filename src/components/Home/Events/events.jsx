@@ -123,7 +123,7 @@ const Events = () => {
           trigger: card,
           start: "top 80%",
           end: "bottom bottom",
-          scrub: window.innerWidth < 768 ? 0.5 : 3,
+          scrub: window.innerWidth < 768 ? 0 : 3,
           refreshPriority: -1,
           invalidateOnRefresh: true,
         },

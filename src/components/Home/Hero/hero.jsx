@@ -4,13 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import RotateMask from "../Mask/rotate-mask";
 import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
-import RegisterButton from "../../ui/register-button";
-import Link from "next/link";
 import SmackathonSection from "../smackathon/smackathon-section";
-import { usePathname } from "next/navigation";
 
 const Hero = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,16 +22,8 @@ const Hero = () => {
   const scrollingContainerRef = useRef(null);
   const tlRef = useRef(null);
 
-  const pathname = usePathname();
-
   // scroll animation
   useGSAP(() => {
-    if (pathname !== "/") return;
-    ScrollTrigger.getAll().forEach((t) => {
-      if (t.vars?.id?.startsWith("hero-")) t.kill();
-    });
-    if (tlRef.current) tlRef.current.kill();
-
     const fixedContainer = fixedContainerRef.current;
     const scrollingContainer = scrollingContainerRef.current;
     const container = containerRef.current;
@@ -93,7 +81,7 @@ const Hero = () => {
       }
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [pathname]);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -169,24 +157,22 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div key={pathname}>
-      <div ref={containerRef} className="h-[200vh] md:h-[210vh]">
-        <div ref={fixedContainerRef} className="relative h-[100vh]">
-          <div className="block md:hidden">
-            <HeroMobile />
-          </div>
-          <div className="hidden md:block">
-            <HeroDesktop ref={{ bgRef, mainCharRef }} />
-          </div>
+    <div ref={containerRef} className="h-[200vh] md:h-[210vh]">
+      <div ref={fixedContainerRef} className="relative h-[100vh]">
+        <div className="block md:hidden">
+          <HeroMobile />
         </div>
-        <div
-          ref={scrollingContainerRef}
-          // style={{ transform: "translateY(100vh)" }}
-          className="h-[100vh] md:h-[110vh] relative rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
-        >
-          <div className="absolute z-[1] w-full h-full left-0 top-0 bg-gradient-to-b from-black/70 via-black/50 to-black/100"></div>
-          <SmackathonSection />
+        <div className="hidden md:block">
+          <HeroDesktop ref={{ bgRef, mainCharRef }} />
         </div>
+      </div>
+      <div
+        ref={scrollingContainerRef}
+        // style={{ transform: "translateY(100vh)" }}
+        className="h-[100vh] md:h-[110vh] relative rounded-tl-3xl rounded-tr-3xl p-10 w-full bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1753982566/smackathon-section-bg_cvaumo.webp')] text-white"
+      >
+        <div className="absolute z-[1] w-full h-full left-0 top-0 bg-gradient-to-b from-black/70 via-black/50 to-black/100"></div>
+        <SmackathonSection />
       </div>
     </div>
   );

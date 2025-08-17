@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import Hero from "@/components/Home/Hero/hero";
+import { usePathname } from "next/navigation";
 
 const HomeExport = () => {
-  return <Hero />;
+  const pathname = usePathname();
+  return <Hero key={pathname} />;
 };
 
 export default HomeExport;
