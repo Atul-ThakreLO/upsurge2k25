@@ -414,7 +414,11 @@ export default function Component() {
               Everything you need to know about SMACKATHON
             </p>
           </div> 
-          <Accordion type="single" collapsible className="space-y-6 px-8 md:px-16 lg:px-24 xl:px-32">
+          <Accordion
+            type="single"
+            collapsible
+            className="space-y-6 px-2 sm:px-4 md:px-16 lg:px-24 xl:px-32"
+          >
             {faqData.map((faq) => (
               <AccordionItem
                 key={faq.id}
@@ -425,7 +429,7 @@ export default function Component() {
                   {/* Simplified Card Glow Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-500/5 to-violet-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
-                  <AccordionTrigger className="px-8 py-8 text-left hover:no-underline group relative z-10">
+                  <AccordionTrigger className="px-4 sm:px-8 py-8 text-left hover:no-underline group relative z-10">
                     <div className="flex items-center gap-4 w-full">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-500 flex items-center justify-center text-[#2d1a00] font-bold text-lg shadow-lg group-hover:animate-pulse group-hover:shadow-yellow-400/50 group-hover:scale-110 transition-all duration-300 border border-yellow-300/40 relative">
                         <span
@@ -442,8 +446,8 @@ export default function Component() {
                       </span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="px-8 pb-8 relative z-10">
-                    <div className="ml-16 text-gray-300 leading-relaxed text-lg font-semibold group-hover:text-white/90 transition-colors duration-300">
+                  <AccordionContent className="px-4 sm:px-8 pb-8 relative z-10">
+                    <div className="ml-14 sm:ml-16 text-gray-300 leading-relaxed text-base sm:text-lg font-semibold group-hover:text-white/90 transition-colors duration-300">
                       {faq.answer}
                     </div>
                   </AccordionContent>
