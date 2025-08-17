@@ -222,12 +222,12 @@ const Events = () => {
             </ModelCanvas>
           </div>
         </div>
-        <div className="col-span-7 md:col-span-4 flex flex-wrap flex-col gap-60 md:gap-20 px-14 md:px-20">
+        <div className="snap-y snap-mandatory h-full col-span-7 md:col-span-4 flex flex-wrap flex-col gap-60 md:gap-20 px-14 md:px-20">
           {EventsDataMobile.map((event, i) => (
             <div
               key={event.title}
               ref={(el) => (cardsRef.current[i] = el)}
-              className="event-card-element card-wrapper w-full h-[55vh] md:h-[500px] bg-black border-[10px] md:border-[15px] shadow-2xl border-white sticky top-[15%] z-[2]"
+              className="event-card-element snap-always snap-start card-wrapper w-full h-[55vh] md:h-[500px] bg-black border-[10px] md:border-[15px] shadow-2xl border-white sticky top-[15%] z-[2]"
             >
               <EventCard
                 poster={event.poster}
