@@ -240,19 +240,19 @@ export const EventsDataMobile = [
     detailsLink: "/events/#flashmob",
   },
   {
-    title: "Cosmo-town",
+    title: "Singularity",
     description:
       "A four-part team competition featuring debugging, AI challenges, and more, assessing technical and analytical skills while promoting teamwork and innovation.",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/cosmoTown.png",
-    detailsLink: "/events/#cosmotown",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344949/singularityy_a5lqum.webp",
+    detailsLink: "/events/#singularity",
   },
   {
     title: "Coding Relay",
     description:
       "A team-based coding race where members take turns solving DSA problems under strict time limits, testing problem-solving and collaborative programming skills.",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingRelay.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/coding_relayy_rvsie0.webp",
     detailsLink: "/events/#codingRelay",
   },
   {
@@ -260,7 +260,7 @@ export const EventsDataMobile = [
     description:
       "An idea-pitching competition with TBI at YCCE, where participants brainstorm real-world solutions, receive mentorship, and pitch to experts for potential incubation and funding.",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/desiDaredevils.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344946/ideathonn_vf9nhu.webp",
     detailsLink: "/events/#desiDaredevils",
   },
   {
@@ -268,14 +268,15 @@ export const EventsDataMobile = [
     description:
       "A fast-paced team challenge with three rounds of riddles, puzzles, and clue-hunting, testing logic, speed, and collaboration to escape before time runs out.",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/codingCasino.png",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344941/escape_romm_iabp8s.webp",
     detailsLink: "/events/#codingCasino",
   },
   {
     title: "FIFA EA Sports FC",
     description:
       "A competitive football simulation offering authentic teams, dynamic gameplay, and thrilling modes, bringing the sport to life for fans and gamers alike.",
-    image: "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/fifa.png",
+    image:
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344944/fifaaa_hfgsqt.webp",
     detailsLink: "/events/#fifa",
   },
   {
@@ -292,16 +293,16 @@ export const EventsDataMobile = [
     description:
       "A realistic driving game with diverse vehicles, customizable features, and open-world exploration for solo or multiplayer racing adventures.",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/talentsque.png",
-    detailsLink: "/events/#talentsque",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344940/F1_simulator_zivpjh.webp",
+    detailsLink: "/events/#car_simulator",
   },
   {
     title: "Free Fire",
     description:
       "A mobile battle royale where 50 players fight to be the last survivor, combining quick matches, strategy, and intense action on a shrinking map.",
     image:
-      "https://upsurge2k24.s3.ap-south-1.amazonaws.com/events/dataScience.png",
-    detailsLink: "/events/#dataScience",
+      "https://res.cloudinary.com/dok1hsojb/image/upload/v1755344949/freefiree_m8zyb0.webp",
+    detailsLink: "/events/#free_fire",
   },
 ];
 
