@@ -10,8 +10,8 @@ export default function Home() {
     <div>
       <Hero />
       <div className="relative z-10">
-        <Events />
         <SponsorSlider/>
+        <Events />
         {/* <TeamMembers/> */}
             {/* <div className="h-screen"></div> */}
       </div>

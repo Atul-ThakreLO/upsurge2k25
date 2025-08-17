@@ -4,8 +4,8 @@ import Image from "next/image";
 import "./sponsor.css";
 
 const sponsors = [
-  "/option-O.png", "/option-O.png", "/option-O.png", "/option-O.png",
-  "/option-O.png", "/option-O.png", "/option-O.png", "/option-O.png",
+  "/shubi.png", "/vivo.png", "/TIME.png", "/Shahoverseas.png",
+  "/dahiyamomos.png", "/gulsons.png", "/Dreamasia.png",
 ];
 
 export default function SponsorSlider() {
@@ -42,16 +42,9 @@ export default function SponsorSlider() {
           />
         ))}
       </div>
-
       <div className="sponsor-wrapper">
-        {sponsors.map((src, index) => (
-          <div
-            key={index}
-            className="sponsor-item"
-            style={{
-              animationDelay: `calc(30s / 8 * (8 - ${index}) * -1)`,
-            }}
-          >
+        {[...sponsors, ...sponsors].map((src, index) => (
+          <div key={index} className="sponsor-item">
             <Image
               src={src}
               alt={`Sponsor ${index + 1}`}
