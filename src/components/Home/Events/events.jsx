@@ -28,7 +28,6 @@ const Events = () => {
   const cardsRef = useRef([]);
   const shapesRef = useRef(null);
   const squareRef = useRef(null);
-  const overlayRef = useRef(null);
 
   useGSAP(() => {
     gsap.fromTo(
@@ -62,44 +61,80 @@ const Events = () => {
       },
     });
 
-    gsap.set(overlayRef.current, {
-      height: "100%",
-    });
+    // cardsRef.current.forEach((card, index) => {
+    //   if (!card) return;
 
-    gsap.to(overlayRef.current, {
-      height: "0%",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top -110%",
-        end: "bottom bottom",
-        scrub: 1,
-      },
-    });
+    //   const randomRotation = (Math.random() - 0.5) * 16;
+    //   const randomX = (Math.random() - 0.5) * 60;
+    //   const randomScale = 0.95 + Math.random() * 0.1;
+
+    //   gsap.set(card, {
+    //     scale: 0.9,
+    //     filter: "blur(10px) grayscale(100%) brightness(50%)",
+    //     y: 500,
+    //   });
+
+    //   gsap.to(card, {
+    //     y: 0,
+    //     filter: "blur(0px) grayscale(0%) brightness(100%)",
+    //     duration: 0.3,
+    //     ease: "power2.out",
+    //     scrollTrigger: {
+    //       trigger: card,
+    //       start: "top 80%",
+    //       end: "bottom bottom",
+    //       scrub: 2,
+    //     },
+    //   });
+
+    //   gsap.to(card, {
+    //     rotation: randomRotation,
+    //     x: randomX,
+    //     scale: randomScale,
+    //     duration: 1,
+    //     ease: "back.out(1.7)",
+    //     scrollTrigger: {
+    //       trigger: card,
+    //       start: "top 80%",
+    //       toggleActions: "play none none reverse",
+    //     },
+    //   });
+    // });
 
     cardsRef.current.forEach((card, index) => {
       if (!card) return;
 
+      // Pre-calculate random values to avoid repeated calculations
       const randomRotation = (Math.random() - 0.5) * 16;
       const randomX = (Math.random() - 0.5) * 60;
       const randomScale = 0.95 + Math.random() * 0.1;
 
+      // Enable hardware acceleration and optimize for mobile
       gsap.set(card, {
         scale: 0.9,
         filter: "blur(10px) grayscale(100%) brightness(50%)",
         y: 500,
+        force3D: true,
+        transformOrigin: "center center",
       });
 
-      gsap.to(card, {
-        y: 0,
-        filter: "blur(0px) grayscale(0%) brightness(100%)",
-        duration: 0.3,
-        ease: "power2.out",
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: card,
           start: "top 80%",
           end: "bottom bottom",
-          scrub: 2,
+          scrub: window.innerWidth < 768 ? 0 : 3,
+          refreshPriority: -1,
+          invalidateOnRefresh: true,
         },
+      });
+
+      tl.to(card, {
+        y: 0,
+        filter: "blur(0px) grayscale(0%) brightness(100%)",
+        duration: 0.3,
+        ease: "power2.out",
+        force3D: true,
       });
 
       gsap.to(card, {
@@ -108,10 +143,15 @@ const Events = () => {
         scale: randomScale,
         duration: 1,
         ease: "back.out(1.7)",
+        force3D: true,
         scrollTrigger: {
           trigger: card,
           start: "top 80%",
           toggleActions: "play none none reverse",
+          refreshPriority: -1,
+        },
+        onComplete: () => {
+          card.style.willChange = "auto";
         },
       });
     });
@@ -182,12 +222,12 @@ const Events = () => {
             </ModelCanvas>
           </div>
         </div>
-        <div className="col-span-7 md:col-span-4 flex flex-wrap flex-col gap-40 md:gap-20 px-14 md:px-20">
+        <div className="snap-y snap-mandatory h-full col-span-7 md:col-span-4 flex flex-wrap flex-col gap-60 md:gap-96 px-14 md:px-20">
           {EventsDataMobile.map((event, i) => (
             <div
               key={event.title}
               ref={(el) => (cardsRef.current[i] = el)}
-              className="card-wrapper w-full h-[55vh] md:h-[500px] bg-black border-[10px] md:border-[15px] shadow-2xl border-white sticky top-[15%] z-[2]"
+              className="event-card-element snap-always snap-start card-wrapper w-full h-[55vh] md:h-[500px] bg-black border-[10px] md:border-[15px] shadow-2xl border-white sticky top-[15%] z-[2]"
             >
               <EventCard
                 poster={event.poster}

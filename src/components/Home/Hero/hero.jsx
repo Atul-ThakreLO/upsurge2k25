@@ -4,14 +4,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import RotateMask from "../Mask/rotate-mask";
 import HeroDesktop from "./hero-desktop";
 import HeroMobile from "./hero-mobile";
-import RegisterButton from "../../ui/register-button";
-import Link from "next/link";
 import SmackathonSection from "../smackathon/smackathon-section";
 
 const Hero = () => {
+  gsap.registerPlugin(ScrollTrigger);
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////// Animation /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -33,6 +31,7 @@ const Hero = () => {
     if (!fixedContainer || !scrollingContainer) return;
     tlRef.current = gsap.timeline({
       scrollTrigger: {
+        id: "hero-main",
         trigger: container,
         start: "top top",
         end: "bottom top",
@@ -58,13 +57,14 @@ const Hero = () => {
     //   }
     // );
 
-    [bgRef.current, mainCharRef.current].forEach((item) => {
+    [bgRef.current, mainCharRef.current].forEach((item, i) => {
       if (window.innerWidth < 768) return;
       tlRef.current.to(item, {
         duration: 0.5,
         scale: 1.4,
         ease: "power2.out",
         scrollTrigger: {
+          id: `hero-scale-${i}`,
           trigger: container,
           start: "top top",
           end: "bottom top",
@@ -72,6 +72,8 @@ const Hero = () => {
         },
       });
     });
+
+    ScrollTrigger.refresh();
 
     return () => {
       if (tlRef.current) {
