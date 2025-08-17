@@ -61,9 +61,9 @@ export const goodiesReward = [
 export const NavLinks = [
   { name: "Home", href: "/" },
   { name: "Smackathon", href: "/smackathon" },
-  { name: "Events", href: "#" },
-  { name: "Schedule", href: "/Schedule" },
-  { name: "Team", href: "#" },
+  { name: "Events", href: "/events" },
+  { name: "Schedule", href: "/schedule" },
+  { name: "Team", href: "/teams" },
 ];
 
 export const EventLogos = [""];
@@ -154,7 +154,6 @@ export const EventsDataDesktop = [
     teamMembers: "3-5",
     description: (
       <>
-        <p>
           A high-stakes, team-based challenge testing logic, teamwork, and quick
           thinking. Teams of 3 face three thrilling rounds:
           <br />
@@ -162,7 +161,6 @@ export const EventsDataDesktop = [
           2. Crack riddles, locks, and puzzles <br />
           3. Uncover the key to escape. Race against time. Decode the clues.
           Escape before it’s too late
-        </p>
       </>
     ),
     registerLink:
