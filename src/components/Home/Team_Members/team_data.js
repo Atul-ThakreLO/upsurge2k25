@@ -250,9 +250,9 @@ export const teamMembers = [
   },
     {
       id: 1001,
-      name: "Ayush Dhurve",
+      name: "Ayush Dhurvey",
       position: "E M CO-HEAD",
-      imageUrl: "/profile_photo/Ayush Dhurvey.jpeg",
+      imageUrl: "/profile_photo/Ayush Dhurvey.jpg",
       instagramUrl: "https://www.instagram.com/ayush_dhurve_09?igsh=NXY0eWVpeHo0YWh2&utm_source=qr",
       linkedinUrl: "",
       githubUrl: "",
