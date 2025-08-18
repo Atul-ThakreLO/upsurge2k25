@@ -1,14 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const RefreshHome = () => {
   useEffect(() => {
     const handleReload = () => {
-      console.log("reload");
       window.location.reload();
     };
-    window.addEventListener('popstate', handleReload);
-    window.addEventListener('hashchange', handleReload);
+    window.addEventListener("popstate", handleReload);
   }, []);
 
   return null;
