@@ -15,7 +15,7 @@ export function ScheduleBackground() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/10 to-black/90" />
 
       {/* Animated Geometric Shapes */}
       <motion.div
