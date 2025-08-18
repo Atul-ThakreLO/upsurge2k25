@@ -25,7 +25,6 @@ export default function SquidStepScene() {
         {/* Adding an overlay on the background image */}
         <div className="absolute top-0 w-full h-full bg-black opacity-60"></div>
       </div>
-
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center px-6">
         {/* Day 1 Header */}
@@ -118,9 +117,10 @@ export default function SquidStepScene() {
         </div>
 
         {/* Footer */}
-        <div className="w-full">
-          <Footer footerDetails={FooterContactDetailsACM} />
-        </div>
+<div className="w-full !px-0 !mx-0">
+  <Footer footerDetails={FooterContactDetailsACM} />
+</div>
+
       </div>
 
       <style jsx>{`
