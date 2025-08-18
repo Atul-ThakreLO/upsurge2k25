@@ -34,7 +34,7 @@ const GoodiesRewards = () => {
         <div key={index} className="reward-line flex items-center space-x-3">
           <div className="relative w-6 h-6">
             <Image
-              src="/svg/bullet.gif"
+              src="/gif/bullet.gif"
               alt={`mask-${index}`}
               width={52}
               height={52}

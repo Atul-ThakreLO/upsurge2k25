@@ -221,6 +221,20 @@ body {
   /* background: var(--background);
   color: var(--foreground); */
 }
+/* In styles/globals.css or any global CSS file */
+
+@keyframes blinkGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #00f) drop-shadow(0 0 8px #00f);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px #00f) drop-shadow(0 0 16px #0ff);
+  }
+}
+
+.blink-glow {
+  animation: blinkGlow 1.5s ease-in-out infinite;
+}
 
 .dark {
   --background: oklch(0.129 0.042 264.695);
@@ -302,3 +316,9 @@ body {
   backdrop-filter: blur(1px); 
 }
 
+
+.event-card-element {
+  will-change: transform, filter;
+  transform: translateZ(0); /* Force hardware acceleration */
+  backface-visibility: hidden;
+}

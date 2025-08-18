@@ -2,7 +2,7 @@
 const nextConfig = {
   compress: true,
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "upsurge2k24.s3.ap-south-1.amazonaws.com"],
     formats: ["image/webp", "image/avif"],
     remotePatterns: [
       {
@@ -19,16 +19,15 @@ const nextConfig = {
     // modern: true,
   },
   // next.config.js
-  /*async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/smackathon',  
-        permanent: false, // `false` for temporary (302), `true` for permanent (308)
-      },
-    ];
-  },*/
-
+  // async redirects() {
+  //  return [
+  //  {
+  //  source: '/',
+  //   destination: '/smackathon',
+  //   permanent: false, // `false` for temporary (302), `true` for permanent (308)
+  // },
+  // ];
+  // },
 };
 
 export default nextConfig;

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import StaticMoneyPile from "./StaticMoneyPile";
-import { FooterSocialLinks } from "../../../../data";
+import { FooterSocialLinks, NavLinks } from "../../../../data";
 
 const Footer = ({ footerDetails }) => {
   return (
@@ -68,27 +68,22 @@ const Footer = ({ footerDetails }) => {
             NAVIGATION
           </h2>
           <ul className="space-y-3">
-            {["Home", "Smackathon", "Schedule", "Events", "Teams"].map(
-              (link) => (
-                <li
-                  key={link}
-                  className="group relative flex items-center gap-2"
+            {NavLinks.map((link, idx) => (
+              <li key={idx} className="group relative flex items-center gap-2">
+                <a
+                  href={`${link.href.toLowerCase()}`}
+                  className="text-white/90 group-hover:text-pink-400 transition"
                 >
-                  <a
-                    href={`#${link.toLowerCase()}`}
-                    className="text-white/90 group-hover:text-pink-400 transition"
-                  >
-                    {link}
-                  </a>
+                  {link.name}
+                </a>
 
-                  <img
-                    src="/svg/bullet.gif"
-                    alt="gif"
-                    className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 ease-out"
-                  />
-                </li>
-              )
-            )}
+                <img
+                  src="/gif/bullet.gif"
+                  alt="gif"
+                  className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 ease-out"
+                />
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -151,7 +146,14 @@ const Footer = ({ footerDetails }) => {
       <div className="text-center mt-13 text-sm text-gray-400 leading-6">
         &copy; 2025 Department of Computer Science and Engineering, YCCE.
         <br />
-        Developed by <span className="text-yellow-400">Website Team CSE</span>.
+        Developed by{" "}
+        <a
+          href="/tech_team"
+          className="underline decoration-gray-500 hover:decoration-yellow-400 decoration-2 transition-colors duration-300"
+        >
+          <span className="text-yellow-400">Website Team CSE</span>
+        </a>
+        .
         <br />
         <a
           href="https://drive.google.com/file/d/1--gJQ99KVrr83m0NxV-0THayvesLrQ_T/view?usp=drive_link"

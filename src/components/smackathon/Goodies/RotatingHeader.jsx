@@ -34,7 +34,7 @@ const RotatingHeader = () => {
   }, []);
 
   return (
-    <div className="relative w-full pt-5 flex justify-center items-center md:mx-0">
+    <div className="relative w-full pt-5 flex justify-center items-center md:mx-0 overflow-hidden">
       <img
         ref={leftImgRef}
         src="/img/rotate-blue.png"

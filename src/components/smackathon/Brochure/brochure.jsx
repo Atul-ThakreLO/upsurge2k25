@@ -159,7 +159,7 @@ const Brochure = () => {
 
   return (
     <>
-      <section className="relative font-[Orbitron] bg-no-repeat bg-cover bg-center bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOdOfFc-GwOhmbBa33YGokx9esPlKj32QvQ&s')] py-10 ">
+      <section className="relative font-[Orbitron] bg-no-repeat bg-cover bg-center bg-[url('https://res.cloudinary.com/dok1hsojb/image/upload/v1754644112/brochure-bg_upscaled_q15ozp.jpg')] py-10 ">
         <div className="absolute inset-0 top-0 bg-gradient-to-b from-15% from-black  to-transparent z-[1]" />
         <div className="absolute inset-0 top-0 bg-gradient-to-t from-black to-transparent z-[1]" />
 

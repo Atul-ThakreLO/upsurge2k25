@@ -1,0 +1,59 @@
+.neon-grid-bg {
+  background-color: #0a0a0a;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  overflow: hidden;
+  /* Ambient radial glow */
+}
+.neon-grid-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at center,
+    rgba(230, 33, 99, 0.15) 0%,
+    transparent 70%
+  );
+  mix-blend-mode: screen;
+}
+
+/* Neon grid lines with soft glow */
+.grid-line {
+  filter: drop-shadow(0 0 1px #e62163aa);
+}
+
+/* Neon symbols glow and pulse */
+.neon-symbol {
+  opacity: 0.15;
+  filter: drop-shadow(0 0 3px #e62163aa);
+  animation: pulseGlow 4s ease-in-out infinite, drift 10s ease-in-out infinite;
+  will-change: transform, opacity, filter;
+}
+
+/* Glow pulse animation */
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.15;
+    filter: drop-shadow(0 0 3px #e62163aa);
+  }
+  50% {
+    opacity: 0.45;
+    filter: drop-shadow(0 0 10px #ff6ec4);
+  }
+}
+
+/* Slow drifting animation for natural flicker */
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2px, 1.5px);
+  }
+}
+

@@ -18,6 +18,8 @@ const Hero = () => {
   const headRef2 = useRef(null);
   const presentsRef = useRef(null);
   const sponosrByRef = useRef(null);
+  const comunityPartnerByRef = useRef(null);
+
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -99,7 +101,7 @@ const Hero = () => {
         "-=0.3"
       );
 
-      tl.to(sponosrByRef.current, {
+      tl.to([sponosrByRef.current, comunityPartnerByRef.current], {
         opacity: 1,
         y: 0,
         scale: 1,
@@ -129,9 +131,9 @@ const Hero = () => {
           >
             <h3 className="text-xl text-white font-bold">Sponsored by</h3>
             <Image
-              className=""
-              src="/img/GFG_Logo.png"
-              alt="character"
+              className="h-32 bg-white object-contain"
+              src="/img/webgurukul.png"
+              alt="webgurukul"
               width={200}
               height={200}
               priority
@@ -205,10 +207,20 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex md:flex-col order-1 h-[70%] w-full md:w-[20%] items-center justify-center md:justify-end">
-          {/* <div className="flex flex-col justify-center items-center gap-3">
-            <h3 className="text-xl text-white font-bold">Co-Powered by</h3>
-            <div className="h-20 aspect-square bg-white"></div>
-          </div> */}
+          <div
+            ref={comunityPartnerByRef}
+            className="flex flex-col justify-center items-center gap-3 mt-16 opacity-0 transform translate-y-[50px] 0 scale-70"
+          >
+            <h3 className="text-xl text-white font-bold">Community Partner</h3>
+            <Image
+              className="h-32 object-cover"
+              src="/svg/gfg-rbu.svg"
+              alt="gfg-rbu"
+              width={200}
+              height={200}
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>

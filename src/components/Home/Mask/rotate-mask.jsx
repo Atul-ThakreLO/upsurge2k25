@@ -14,7 +14,7 @@ const LoadingFallback = () => (
 
 const RotateMask = () => {
   return (
-    <div className="w-full md:mt-10 mx-auto md:w-1/2 h-[40%] md:h-1/2 relative cursor-none">
+    <div className="w-full h-full">
       <Canvas
         shadows
         dpr={[1, 2]}
