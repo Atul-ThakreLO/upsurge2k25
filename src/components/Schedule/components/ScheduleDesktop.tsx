@@ -117,16 +117,18 @@ export default function SquidStepScene() {
       </div>
 
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
-      <div className="absolute top-[220vh] right-60 z-20 flex flex-col gap-8 w-[35vw]">
-        {eventBlocksDay2desktop.map((event, i) => {
-          return (
-            <motion.div
-              key={`right-${i}`}
-              initial={{ opacity: 0, x: i % 2 === 0 ? 100 : -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
-              className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
+
+<div className="absolute top-[205vh] right-60 z-20 flex flex-col gap-14 w-[40vw]">
+  {eventBlocksDay2desktop.map((event, i) => {
+    return (
+      <motion.div
+        key={`right-${i}`}
+        initial={{ opacity: 0, x: i % 2 === 0 ? 100 : -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
+        className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
+
                     font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
                     ${i % 2 === 0 ? "self-end" : "self-start"}`}
             >
