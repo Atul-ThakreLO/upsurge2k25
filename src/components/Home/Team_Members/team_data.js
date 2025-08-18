@@ -149,7 +149,7 @@ export const teamMembers = [
   id: 12,
     name: "Atul Thakre",
     position: "WEB MASTERS",
-  imageUrl: "/profile_photo/Atul_Thakre.jpg",
+  imageUrl: "/profile_photo/ATUL.jpg",
   instagramUrl: "",
   linkedinUrl: "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   githubUrl: "https://github.com/Atul-ThakreLO"
@@ -331,7 +331,7 @@ export const teamMembers = [
   id: 28,
     name: "Dhani Rathod",
     position: "LITERATURE HEAD",
-  imageUrl: "/profile_photo/Dhani_Rathod.jpg",
+  imageUrl: "/profile_photo/DHANI.jpg",
     instagramUrl: "https://www.instagram.com/dhaniirathod?igsh=MW94cHluZGtvaGtmeA==",
     linkedinUrl: "https://www.linkedin.com/in/dhani-rathod",
     githubUrl: "https://github.com/DhaniRathod",
