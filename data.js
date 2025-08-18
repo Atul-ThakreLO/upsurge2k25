@@ -410,9 +410,12 @@ export const EventsDataMobile = [
 
 export const eventBlocksdesktop = [
   "Smackathon [10:00am 24hrs]",
-  "CTF [11:00am] Singularity [11:00 am]",
-  "Cipher Chase [11:00 am] F1 Stimulation [All Day]",
-  "Free Fire [11:00 am] FIFA [All Day]",
+  "CTF [11:00am]",
+  "Singularity [11:00 am]",
+  "Cipher Chase [11:00 am]",
+  "F1 Stimulation [All Day]",
+  "Free Fire [11:00 am]",
+  "FIFA [All Day]",
   "Alphanite [11:00 am]",
 
 ]
