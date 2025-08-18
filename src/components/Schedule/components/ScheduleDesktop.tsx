@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { eventBlocks } from '../../../../data';
+import { eventBlocksDay2desktop, eventBlocksdesktop} from '../../../../data';
 import Footer from './footer';
 import { FooterContactDetailsACM } from '../../../../data';
 
@@ -32,9 +32,9 @@ export default function SquidStepScene() {
   }, [scrollY]);
 
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden text-white">
+    <div className="relative min-h-screen bg-black text-white">
       {/* Day 1 Header */}
-      <div className="absolute top-[20vh] left-0 z-50 w-full text-center mb-10 mt-10 ml-40">
+      <div className="absolute top-[10vh] left-0 z-50 w-full text-center mb-10 mt-10 ml-40">
         <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-600/90">
           1 - 일차
         </h1>
@@ -42,7 +42,7 @@ export default function SquidStepScene() {
       </div>
 
       {/* Character */}
-      <div className="absolute right-10 top-[20vh] z-30">
+      <div className="absolute right-10 top-[45vh] z-30">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           viewport={{ once: false }}
@@ -63,12 +63,12 @@ export default function SquidStepScene() {
         </motion.div>
       </div>
 
-      {/* Guy Image on the left */}
+      {/* Guy Image*/}
       <div className="relative w-full min-h-[300vh] bg-black overflow-visible">
         {/* Guy Image */}
-        <div className="absolute left-10 top-[95vh] z-30">
+        <div className="absolute left-30 top-[160vh] z-30">
           <motion.div
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: 50 }}
             viewport={{ once: false }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 4 }}
@@ -86,7 +86,7 @@ export default function SquidStepScene() {
         </div>
 
         {/* Day 2 Content */}
-        <div className="absolute left-[400px] top-[75vh] z-[40] text-white p-4">
+        <div className="absolute left-[400px] top-[100vh] z-[40] text-white p-4">
           <div className="text-center mb-20 mt-60 ml-20">
             <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-600/90">
               2 - 일차
@@ -97,57 +97,44 @@ export default function SquidStepScene() {
       </div>
 
       {/* Step Blocks */}
-      <div className="absolute top-[10vh] left-0 z-20 perspective-1000">
-        <div className="absolute top-[30vh] left-10 z-20">
-          {eventBlocks.map((event, i) => {
-            const mt = i * 10;
-            const ml = i * 300;
+     <div className="absolute top-[40vh] left-50 z-20 flex flex-col gap-15 mb-20  w-[40vw]">
+  {eventBlocksdesktop.map((event, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
+      className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
+                  font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
+                  ${i % 2 === 0 ? 'self-start' : 'self-end'}`}
+    >
+      {event}
+    </motion.div>
+  ))}
+</div>
 
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
-                style={{
-                  marginTop: `${mt}px`,
-                  marginLeft: `${ml}px`,
-                }}
-                className="w-64 h-24 bg-pink-500 rounded-lg shadow-2xl flex items-center justify-center font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow"
-              >
-                {event}
-              </motion.div>
-            );
-          })}
-        </div>
-      </div>
 
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
-      <div className="absolute top-[130vh] right-80 z-20 perspective-1000">
-        {eventBlocks.map((event, i) => {
-          if (!event || i === 5) return null;
-          const mt = i * 10;
-          const mr = i * 306;
+<div className="absolute top-[160vh] right-60 z-20 flex flex-col gap-8 mb-20 w-[35vw]">
+  {eventBlocksDay2desktop.map((event, i) => {
+    return (
+      <motion.div
+        key={`right-${i}`}
+        initial={{ opacity: 0, x: i % 2 === 0 ? 100 : -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
+        className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
+                    font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
+                    ${i % 2 === 0 ? 'self-end' : 'self-start'}`}
+      >
+        {event}
+      </motion.div>
+    );
+  })}
+</div>
 
-          return (
-            <motion.div
-              key={`right-${i}`}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
-              style={{
-                marginTop: `${mt}px`,
-                marginRight: `${mr}px`,
-              }}
-              className="w-64 h-24 bg-pink-500 rounded-lg shadow-2xl flex items-center justify-center font-bold text-lg text-white ml-auto shadow-pink-500/50 glow-glass-effect animate-glow"
-            >
-              {event}
-            </motion.div>
-          );
-        })}
-      </div>
 
       {/* Background Parallax */}
       <div className="absolute top-0 w-full h-full z-10 pointer-events-none">
