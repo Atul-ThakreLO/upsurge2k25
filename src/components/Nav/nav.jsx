@@ -25,7 +25,7 @@ const Nav = () => {
             height={50}
             priority
           />
-          {/* <NavMenu/> */}
+          <NavMenu/>
         </div>
       </div>
     </nav>
