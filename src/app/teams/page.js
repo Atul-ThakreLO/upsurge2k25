@@ -1,11 +1,11 @@
 import TeamMembers from "@/components/Home/Team_Members/page";
-import FloatingButton from "../../components/ui/FloatingButton";
+import Footer from "@/components/Home/Footer/Footer.jsx";
 
 export default function Home() {
     return(
         <div>
             <TeamMembers/>
-            <FloatingButton />
+            <Footer />
         </div>
 
     );
