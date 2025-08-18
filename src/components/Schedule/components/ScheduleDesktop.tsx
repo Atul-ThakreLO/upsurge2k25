@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -174,7 +173,7 @@ export default function SquidStepScene() {
 
 
       {/* Footer Overlayed */}
-      <div className="absolute bottom-0 w-full z-50">
+      <div className="relative w-full z-50 mt-12">
         <Footer footerDetails={FooterContactDetailsACM} />
       </div>
     </div>
