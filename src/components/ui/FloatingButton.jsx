@@ -13,7 +13,7 @@ const FloatingButton = ({
       <button
         className="white-sweep group relative flex items-center justify-center gap-2
                  px-3 py-2 rounded-xl border-2 border-zinc-700
-                 bg-black/60 backdrop-blur-md text-pink-500 font-bold
+                 bg-black/30 backdrop-blur-md text-pink-500 font-bold
                  text-sm overflow-hidden
                  hover:bg-pink-500/10 hover:shadow-[0_0_20px_rgba(236,72,153,0.7)]
                  hover:border-pink-500 transition-colors duration-300 ease-out cursor-pointer"
