@@ -11,7 +11,7 @@ export default function TeamMembers() {
       ["TECHNICAL HEAD","ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
     ),
     "EVENT MANAGEMENT TEAM": teamMembers.filter(member => 
-      ["E M HEAD", "H M HEAD", "E M MASTERS", "E M CO-HEAD", "E M MEMBER", "H M", "H M MEMBER"].includes(member.position)
+      ["E M HEAD", "H M HEAD", "E M MASTERS", "E M CO-HEAD", "E M MEMBER", "H M","H M CO-HEAD", "H M MEMBER"].includes(member.position)
     ),
     "LITERATURE TEAM": teamMembers.filter(member => 
       ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)
@@ -101,7 +101,7 @@ export default function TeamMembers() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-[0_0_10px_rgba(236,72,153,0.5)]">
-              UPSURGE Team Members
+              UPSURGE TEAM MEMBERS
             </h1>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto drop-shadow-lg">
               Meet our talented team of developers, designers, and innovators who make Upsurge an amazing Event of YCCE Nagpur.
@@ -113,17 +113,17 @@ export default function TeamMembers() {
             if (members.length === 0) return null;
             
             return (
-              <div key={teamName} className="mb-20">
+              <div key={teamName} className="mb-32">
                 {/* Team Section Header */}
                 <div className="text-center mb-10">
-                  <h2 className="text-5xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text mb-2 drop-shadow-lg">
+                  <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text mb-2 drop-shadow-lg break-words whitespace-normal">
                     {teamName}
                   </h2>
-                  <div className="w-32 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 mx-auto rounded-full"></div>
+                  <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 {/* Team Members Grid */}
-                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto will-change-transform" style={{ scrollBehavior: 'smooth' }}>
+                <div className="flex flex-wrap justify-center gap-8 md:gap-x-12 md:gap-y-16 max-w-6xl mx-auto will-change-transform" style={{ scrollBehavior: 'smooth' }}>
                   {members.map((member, index) => (
                     <div key={member.id} className="flex-shrink-0">
                       <MemberCard
@@ -141,8 +141,10 @@ export default function TeamMembers() {
               </div>
             );
           })}
-        </div>
+          </div>
+          {/* Shadow starts exactly from the left margin, no gap */}
+
       </div>
     </div>
-  )
+  );
 }
