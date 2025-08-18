@@ -116,7 +116,7 @@ export default function SquidStepScene() {
 
 
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
-<div className="absolute top-[220vh] right-60 z-20 flex flex-col gap-8 w-[35vw]">
+<div className="absolute top-[205vh] right-60 z-20 flex flex-col gap-14 w-[40vw]">
   {eventBlocksDay2desktop.map((event, i) => {
     return (
       <motion.div
