@@ -44,7 +44,7 @@ export default function EventSchedule() {
   }
 
   return (
-    <div className="min-h-screen relative bg-black">
+    <div className="min-h-screen relative bg-black pt-20 pb-15">
       <ScheduleBackground />
 
       {/* Guard Characters */}
