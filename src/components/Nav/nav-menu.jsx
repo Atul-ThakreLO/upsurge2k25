@@ -17,7 +17,6 @@ const NavMenu = () => {
     gsap.set(linksRef.current, { opacity: 0 });
   }, []);
 
-  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -107,16 +106,35 @@ const NavMenu = () => {
           ref={linksRef}
           className="w-full flex flex-col items-center mt-12 px-4"
         >
-          {NavLinks.map((link, index) => (
-            <Link
-              key={link.name}
-              ref={(el) => (linkRefs.current[index] = el)}
-              href={link.href}
-              className="w-full py-3 text-center rounded-xl text-lg transition-all duration-300 hover:text-pink-400 hover:underline decoration-pink-400/70"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {NavLinks.map((link, index) => {
+            if (link.href === "/") {
+              return (
+                <Link
+                  key={link.name}
+                  ref={(el) => (linkRefs.current[index] = el)}
+                  href={link.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "/";
+                  }}
+                  className="w-full py-3 text-center rounded-xl text-lg transition-all duration-300 hover:text-pink-400 hover:underline decoration-pink-400/70"
+                >
+                  {link.name}
+                </Link>
+              );
+            } else {
+              return (
+                <Link
+                  key={link.name}
+                  ref={(el) => (linkRefs.current[index] = el)}
+                  href={link.href}
+                  className="w-full py-3 text-center rounded-xl text-lg transition-all duration-300 hover:text-pink-400 hover:underline decoration-pink-400/70"
+                >
+                  {link.name}
+                </Link>
+              );
+            }
+          })}
         </div>
       </div>
 
