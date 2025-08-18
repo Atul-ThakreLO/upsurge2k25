@@ -1,6 +1,6 @@
 'use client';
 
-import { eventBlocks, eventBlocksDay2 } from '../../../../data';
+import { eventBlocks } from '../../../../data';
 import Footer from './footer';
 import { FooterContactDetailsACM } from '../../../../data';
 import Image from 'next/image';
@@ -107,7 +107,7 @@ export default function SquidStepScene() {
 
         {/* Second Set of Event Blocks */}
         <div className="flex flex-col items-center gap-6 w-full max-w-md mb-10">
-          {eventBlocksDay2.map((event, i) => (
+          {eventBlocks.map((event, i) => (
             <div
               key={i}
               className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
