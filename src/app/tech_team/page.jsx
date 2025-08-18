@@ -3,7 +3,6 @@ import { teamMembers } from "../../components/Home/Team_Members/team_data"
 import FloatingButton from "../../components/ui/FloatingButton";
 
 export default function TeamMembers() {
-  // Only Technical Team Members
   const technicalTeam = teamMembers.filter(member =>
     ["TECHNICAL HEAD", "ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
   )
@@ -11,7 +10,6 @@ export default function TeamMembers() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-black">
-        {/* Decorative elements (kept same) */}
         <div className="absolute top-20 left-10 w-32 h-32 border-4 border-pink-500 rotate-45 opacity-60 shadow-[0_0_30px_#ec4899]"></div>
         <div className="absolute top-40 right-20 w-24 h-24 border-4 border-emerald-400 opacity-50 shadow-[0_0_25px_#34d399]"></div>
         <div className="absolute bottom-32 left-1/4 w-20 h-20 border-4 border-pink-500 rounded-full opacity-40 shadow-[0_0_20px_#ec4899]"></div>
