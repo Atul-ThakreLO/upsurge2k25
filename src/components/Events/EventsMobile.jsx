@@ -3,7 +3,7 @@ import EventCard from "./EventCard";
 
 const EventsMobile = () => {
   return (
-    <div className="w-full max-w-[80vw] mx-auto flex flex-col gap-16 mt-24 px-1">
+    <div className="w-full max-w-[90vw] mx-auto flex flex-col gap-16 mt-24 px-1">
       {EventsDataDesktop.map((event, index) => (
         <div id={event.id} key={`card-${index}`} className="relative w-full">
           <EventCard
