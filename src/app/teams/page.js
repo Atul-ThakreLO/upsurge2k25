@@ -1,11 +1,12 @@
 import TeamMembers from "@/components/Home/Team_Members/page";
-import FloatingButton from "../../components/ui/FloatingButton";
+//import Footer from "@/components/Home/Footer/Footer.jsx";
+//import { FooterContactDetailsCosmos } from "../../data";
 
 export default function Home() {
     return(
         <div>
             <TeamMembers/>
-            <FloatingButton />
+        {/* <Footer footerDetails={FooterContactDetailsCosmos} /> */}
         </div>
 
     );
