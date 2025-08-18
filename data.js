@@ -423,7 +423,7 @@ export const eventBlocksDay2desktop = [
   "FIFA [All Day]",
   "Ideathon [11:00am]", 
   "Escape Room [11:00am]",
-  "Coding Relay [10:00]",
+  "Coding Relay [10:00 am]",
   "Smackathon",
 ];
 
@@ -443,6 +443,6 @@ export const eventBlocksDay2 = [
   "FIFA [All Day]",
   "Ideathon [11:00am]", 
   "Escape Room [11:00am]",
-  "Coding Relay [10:00]",
+  "Coding Relay [10:00am]",
   "Smackathon",
 ];
