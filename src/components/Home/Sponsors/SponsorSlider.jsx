@@ -4,8 +4,8 @@ import Image from "next/image";
 import "./sponsor.css";
 
 const sponsors = [
-  "/shubi.png", "/vivo.png", "/TIME.png", "/Shahoverseas.png",
-  "/dahiyamomos.png", "/gulsons.png", "/Dreamasia.png",
+  "/sponsors/shubi.png", "/sponsors/vivo.png", "/sponsors/TIME.png", "/sponsors/Shahoverseas.png",
+  "/sponsors/dahiyamomos.png", "/sponsors/gulsons.png", "/sponsors/Dreamasia.png",
 ];
 
 export default function SponsorSlider() {
@@ -25,7 +25,7 @@ export default function SponsorSlider() {
     <section className="sponsor-section items-center">
       
       <div className="sponsor-heading mt-32">
-        <Image src="/sponhead.png" alt="VIP Sponsors" width={500} height={100} className="vip-heading" />
+        <Image src="/sponsors/sponhead.png" alt="VIP Sponsors" width={500} height={100} className="vip-heading" />
       </div>
 
       <div className="sparkle-background">
