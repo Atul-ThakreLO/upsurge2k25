@@ -8,6 +8,7 @@ const RefreshHome = () => {
       window.location.reload();
     };
     window.addEventListener('popstate', handleReload);
+    window.addEventListener('hashchange', handleReload);
   }, []);
 
   return null;

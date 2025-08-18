@@ -36,8 +36,12 @@ export default function EventSchedule() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-red-400 mb-4">Error Loading Events</h2>
-          <p className="text-gray-300">Failed to load the event schedule. Please try again later.</p>
+          <h2 className="text-2xl font-bold text-red-400 mb-4">
+            Error Loading Events
+          </h2>
+          <p className="text-gray-300">
+            Failed to load the event schedule. Please try again later.
+          </p>
         </div>
       </div>
     );
@@ -73,28 +77,44 @@ export default function EventSchedule() {
       {/* Main Content */}
       <div className="relative z-10">
         {/* Header */}
-        <header className="text-center py-12 px-4 font-war">
+        <header className="text-center py-12 px-4 font-war relative">
+          {/* Neon Glow Behind Heading */}
+          <div className="absolute inset-0 flex justify-center">
+            <div className="w-2/3 h-32 bg-squid-pink/20 blur-3xl rounded-full"></div>
+          </div>
+
           <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-4"
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative text-5xl font-squid md:text-7xl font-bold text-squid-pink drop-shadow-[0_0_15px_rgba(255,0,127,0.8)] tracking-wider"
             data-testid="text-title-main"
           >
-            Welcome to the Survival Lobby
+            SURVIVAL LOBBY
           </motion.h1>
+
           <motion.p
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl text-gray-300 opacity-80"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="mt-4 text-lg md:text-2xl text-gray-200 opacity-90 font-light"
             data-testid="text-subtitle"
           >
-            Follow the path set in the{" "}
-            <span className="text-squid-pink font-semibold">EVENT SCHEDULE</span>
+            Follow the path in the{" "}
+            <span className="text-green-400 font-squid font-semibold drop-shadow-[0_0_10px_rgba(0,255,156,0.7)]">
+              EVENT SCHEDULE
+            </span>
           </motion.p>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mx-auto mt-6 w-40 h-1 bg-squid-pink rounded-full"
+          />
         </header>
 
         <DaySwitcher activeDay={activeDay} onDayChange={setActiveDay} />
@@ -122,7 +142,10 @@ export default function EventSchedule() {
             </div>
           ) : events.length === 0 ? (
             <div className="text-center py-16">
-              <h3 className="text-2xl font-bold text-gray-400 mb-4" data-testid="text-no-events">
+              <h3
+                className="text-2xl font-bold text-gray-400 mb-4"
+                data-testid="text-no-events"
+              >
                 No Events Scheduled
               </h3>
               <p className="text-gray-500">
