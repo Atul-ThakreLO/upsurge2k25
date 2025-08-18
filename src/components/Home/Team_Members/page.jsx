@@ -43,8 +43,10 @@ export default function TeamMembers() {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+    <div className="min-h-screen relative overflow-hidden" style={{ scrollBehavior: 'smooth' }}>
+      {/* Fixed background gradient to cover entire scrollable area */}
+      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-slate-900 via-gray-900 to-black" />
+      <div className="absolute inset-0 pointer-events-none">
         {/* Neon geometric shapes */}
         <div className="absolute top-20 left-10 w-32 h-32 border-4 border-pink-500 rotate-45 opacity-60 shadow-[0_0_30px_#ec4899]"></div>
         <div className="absolute top-40 right-20 w-24 h-24 border-4 border-emerald-400 opacity-50 shadow-[0_0_25px_#34d399]"></div>
@@ -121,7 +123,7 @@ export default function TeamMembers() {
                 </div>
 
                 {/* Team Members Grid */}
-                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto will-change-transform" style={{ scrollBehavior: 'smooth' }}>
                   {members.map((member, index) => (
                     <div key={member.id} className="flex-shrink-0">
                       <MemberCard
