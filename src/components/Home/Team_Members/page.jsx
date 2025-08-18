@@ -11,7 +11,7 @@ export default function TeamMembers() {
       ["TECHNICAL HEAD","ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
     ),
     "EVENT MANAGEMENT TEAM": teamMembers.filter(member => 
-      ["E M HEAD", "H M HEAD", "E M MASTERS", "E M CO-HEAD", "E M MEMBER", "H M", "H M MEMBER"].includes(member.position)
+      ["E M HEAD", "H M HEAD", "E M MASTERS", "E M CO-HEAD", "E M MEMBER", "H M","H M CO-HEAD", "H M MEMBER"].includes(member.position)
     ),
     "LITERATURE TEAM": teamMembers.filter(member => 
       ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)

@@ -300,6 +300,15 @@ export const teamMembers = [
     githubUrl: "",
   },
   {
+    id:111,
+    name:"Arjun Kadam",
+    position: "H M CO-HEAD",
+    imageUrl: "/profile_photo/Arjun_Kadam.jpg",
+    instagramUrl: "https://www.instagram.com/arjun__1107?igsh=MXN0ZG14M2RwdGJicA%3D%3D&utm_source=qr",
+    linkedinUrl: "",
+    githubUrl: "",
+  },
+  {
   id: 26,
     name: "Riya Singh",
     position: "H M MEMBER",
