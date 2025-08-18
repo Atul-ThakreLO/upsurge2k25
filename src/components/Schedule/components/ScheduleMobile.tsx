@@ -2,7 +2,7 @@
 
 import { eventBlocks } from '../../../../data';
 import Footer from './footer';
-import { FooterContactDetailsACM } from '../../../../data';
+import { FooterContactDetailsCosmos } from '../../../../data';
 import Image from 'next/image';
 import {motion} from 'framer-motion'
 export default function SquidStepScene() {
@@ -37,7 +37,7 @@ export default function SquidStepScene() {
           </h2>
         </div>
 
-        {/* Character Image with Subtle Glow and Floating Effect */}
+        {/* Character Image */}
         <div className="relative w-40 h-auto object-contain">
           <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -82,7 +82,7 @@ export default function SquidStepScene() {
           </h2>
         </div>
 
-        {/* Guy Image with Subtle Glow and Floating Effect */}
+        {/* Guy Image */}
         <div className="relative w-40 h-auto object-contain">
           <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -118,7 +118,7 @@ export default function SquidStepScene() {
 
         {/* Footer */}
 <div className="w-full !px-0 !mx-0">
-  <Footer footerDetails={FooterContactDetailsACM} />
+  <Footer footerDetails={FooterContactDetailsCosmos} />
 </div>
 
       </div>

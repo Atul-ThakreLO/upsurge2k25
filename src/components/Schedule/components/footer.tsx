@@ -9,14 +9,6 @@ const Footer = ({ footerDetails }) => {
   return (
     <footer className="relative w-full text-white py-24 font-mono overflow-hidden">
       {/* <FallingMoney /> */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/img/squid-bg.png"
-          alt="Squid Game Background"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/50 to-black/10" />
-      </div>
 
       <section className="z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
         {/* Column 1: Logos + Socials */}
