@@ -75,7 +75,7 @@ export default function EventSchedule() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 overflow-hidden">
         {/* Header */}
         <header className="text-center py-12 px-4 font-war relative">
           {/* Neon Glow Behind Heading */}
