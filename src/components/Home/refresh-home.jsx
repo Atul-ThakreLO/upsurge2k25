@@ -1,13 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, } from "react";
+import { useEffect, useRef } from "react";
 
 const RefreshHome = () => {
   const pathname = usePathname();
-  const prevPath = useRef(null);
+  const prevPath = useRef("");
 
   useEffect(() => {
-    if (pathname === "/" && prevPath.current && prevPath.current !== "/") {
+    if (prevPath.current && pathname === "/") {
       window.location.reload();
     }
     prevPath.current = pathname;
