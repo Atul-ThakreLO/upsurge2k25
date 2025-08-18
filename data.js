@@ -62,7 +62,7 @@ export const NavLinks = [
   { name: "Home", href: "/" },
   { name: "Smackathon", href: "/smackathon" },
   { name: "Events", href: "/events" },
-  { name: "Schedule", href: "/schedule" },
+  { name: "Schedule", href: "/Schedule" },
   { name: "Team", href: "/teams" },
 ];
 
