@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, } from "react";
 
 const RefreshHome = () => {
   const pathname = usePathname();
@@ -8,7 +8,6 @@ const RefreshHome = () => {
 
   useEffect(() => {
     if (pathname === "/" && prevPath.current && prevPath.current !== "/") {
-      console.log("Refreshing Home...");
       window.location.reload();
     }
     prevPath.current = pathname;
@@ -19,10 +18,6 @@ const RefreshHome = () => {
       window.location.reload();
     };
     window.addEventListener("popstate", handleReload);
-
-    return () => {
-      window.removeEventListener("popstate", handleReload);
-    };
   }, []);
 
   return null;
