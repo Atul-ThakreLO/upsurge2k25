@@ -37,7 +37,7 @@ export default function SquidStepScene() {
           </h2>
         </div>
 
-        {/* Character Image with Subtle Glow and Floating Effect */}
+        {/* Character Image */}
         <div className="relative w-40 h-auto object-contain">
           <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -82,7 +82,7 @@ export default function SquidStepScene() {
           </h2>
         </div>
 
-        {/* Guy Image with Subtle Glow and Floating Effect */}
+        {/* Guy Image */}
         <div className="relative w-40 h-auto object-contain">
           <motion.div
           initial={{ opacity: 0, y: 50 }}

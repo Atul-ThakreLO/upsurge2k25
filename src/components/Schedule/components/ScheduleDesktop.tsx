@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { eventBlocks, eventBlocksDay2, eventBlocksDay2desktop, eventBlocksdesktop} from '../../../../data';
+import { eventBlocksDay2desktop, eventBlocksdesktop} from '../../../../data';
 import Footer from './footer';
 import { FooterContactDetailsACM } from '../../../../data';
 
@@ -118,8 +118,6 @@ export default function SquidStepScene() {
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
 <div className="absolute top-[160vh] right-60 z-20 flex flex-col gap-8 mb-20 w-[35vw]">
   {eventBlocksDay2desktop.map((event, i) => {
-    if (!event || i === 5) return null;
-
     return (
       <motion.div
         key={`right-${i}`}
