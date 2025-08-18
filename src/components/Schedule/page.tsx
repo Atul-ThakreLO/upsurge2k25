@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const ScheduleDesktop = dynamic(() => import('./components/ScheduleDesktop'), { ssr: false });
 const ScheduleMobile = dynamic(() => import('./components/ScheduleMobile'), { ssr: false });
 
-export default function schedule() {
+export default function Schedule() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
