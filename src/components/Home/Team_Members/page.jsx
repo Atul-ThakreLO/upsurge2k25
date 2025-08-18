@@ -5,13 +5,13 @@ export default function TeamMembers() {
   // Group team members by their teams
   const teamGroups = {
     "CORE COMMITTEE": teamMembers.filter(member => 
-      [ "ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","VICE PRESIDENT","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
+      [ "PRESIDENT","ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","VICE PRESIDENT","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
     ),
     "TECHNICAL TEAM": teamMembers.filter(member => 
       ["TECHNICAL HEAD","ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
     ),
     "EVENT MANAGEMENT TEAM": teamMembers.filter(member => 
-      ["E M HEAD", "H M HEAD", "E M MASTERS", "EVENT MANAGEMENT CO-HEAD", "E M CO-HEAD", "E M MEMBER", "HALL MANAGEMENT", "H M MEMBER"].includes(member.position)
+      ["E M HEAD", "H M HEAD", "E M MASTERS", "E M CO-HEAD", "E M MEMBER", "H M", "H M MEMBER"].includes(member.position)
     ),
     "LITERATURE TEAM": teamMembers.filter(member => 
       ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)
@@ -38,7 +38,7 @@ export default function TeamMembers() {
       ["PHOTOGRAPHY HEAD", "PHOTOGRAPHY CO-HEAD"].includes(member.position)
     ),
     "SPORTS TEAM": teamMembers.filter(member => 
-      ["SPORTS HEAD", "SPORTS CO-HEAD"].includes(member.position)
+      ["SPORTS HEAD", "SPORTS CO-HEAD","SPORTS MEMBER"].includes(member.position)
     )
   };
 
