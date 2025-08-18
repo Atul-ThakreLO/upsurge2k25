@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "war";
+  src: url("/fonts/WarriotTech.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --squid-pink: hsl(338, 95%, 51%);
+  --squid-green: hsl(160, 84%, 39%);
+  --squid-yellow: hsl(48, 96%, 53%);
+  --squid-black: hsl(0, 0%, 8%);
+  --squid-red: hsl(0, 84%, 55%);
+}
+
+@layer components {
+  .bg-squid-pattern {
+    background: linear-gradient(135deg, var(--squid-black) 0%, hsl(286, 38%, 15%) 50%, hsl(321, 39%, 18%) 100%);
+    position: relative;
+  }
+  
+  .text-squid-pink {
+    color: hsl(338, 95%, 51%);
+  }
+  
+  .border-squid-pink {
+    border-color: hsl(338, 95%, 51%);
+  }
+  
+  .neon-border {
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(0, 212, 170, 0.1)) padding-box,
+                linear-gradient(135deg, var(--squid-pink), var(--squid-green)) border-box;
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(251, 7, 79, 0.3);
+  }
+  
+  .geometric-overlay {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  
+  .event-card {
+    backdrop-filter: blur(10px);
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(255, 107, 157, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .event-card:hover {
+    background: rgba(26, 26, 26, 0.9);
+    border-color: var(--squid-pink);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .day-tab {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(255, 107, 157, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .day-tab.active {
+    background: linear-gradient(135deg, var(--squid-pink), var(--squid-red));
+    border-color: var(--squid-pink);
+    box-shadow: 0 0 20px rgba(255, 107, 157, 0.4);
+  }
+  
+  .guard-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .shape-circle {
+    border-radius: 50%;
+    border: 2px solid var(--squid-pink);
+  }
+  
+  .shape-triangle {
+    position: relative;
+    background: transparent;
+    border: none;
+  }
+  
+  .shape-triangle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 42px solid var(--squid-green);
+    z-index: -1;
+  }
+  
+  .shape-triangle::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+    border-bottom: 36px solid rgba(26, 26, 26, 0.8);
+    z-index: -1;
+  }
+  
+  .shape-triangle span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .shape-square {
+    border: 2px solid var(--squid-yellow);
+  }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px var(--squid-pink), 0 0 10px var(--squid-pink), 0 0 15px var(--squid-pink); }
+  100% { box-shadow: 0 0 10px var(--squid-pink), 0 0 20px var(--squid-pink), 0 0 30px var(--squid-pink); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-neon {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+

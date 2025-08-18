@@ -66,7 +66,7 @@
 } */
 .sponsor-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 80px;
   animation: scrollSponsors 20s linear infinite;
   width: max-content; /* Needed for continuous flow */
 }
@@ -114,12 +114,27 @@
 
 
 /* === Responsive === */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .sponsor-item {
     min-width: 200px;
     height: 120px;
   }
+} */
+/* Mobile view */
+@media (max-width: 768px) {
+  .sponsor-item {
+    min-width: 170px;
+    aspect-ratio: 3 / 2;
+    height: auto;
+  }
+
+  .sponsor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
+
 /* === Sponsor Item === */
 .sponsor-item {
   min-width: 300px;

@@ -17,15 +17,15 @@ const Nav = () => {
           />
         </div>
         <div className="absolute right-0 top-2 flex gap-3">       
-           <Image
+           {/* <Image
             className=""
             src="/Logo.svg"
             alt="Menu logo"
             width={50}
             height={50}
             priority
-          />
-          {/* <NavMenu/> */}
+          /> */}
+          <NavMenu/>
         </div>
       </div>
     </nav>
