@@ -408,10 +408,41 @@ export const EventsDataMobile = [
   },
 ];
 
+export const eventBlocksdesktop = [
+  "Smackathon [10:00am 24hrs]",
+  "CTF [11:00am] Singularity [11:00 am]",
+  "Cipher Chase [11:00 am] F1 Stimulation [All Day]",
+  "Free Fire [11:00 am] FIFA [All Day]",
+  "Alphanite [11:00 am]",
+
+]
+
+
+export const eventBlocksDay2desktop = [
+  "F1 Stimulation [All Day]",
+  "FIFA [All Day]",
+  "Ideathon [11:00am]", 
+  "Escape Room [11:00am]",
+  "Coding Relay [10:00]",
+  "Smackathon",
+];
+
 export const eventBlocks = [
-  "Inauguration 10:00",
-  "Talentque 11:00am",
-  "Dare Devils 11:00am",
-  "Coding Casino 11:00am",
-  "Fifa & Smackdown 11:00am",
+  "Smackathon [10:00am 24hrs]",
+  "CTF [11:00am]",
+  "Singularity [11:00 am]",
+  "Cipher Chase [11:00 am]",
+  "F1 Stimulation [All Day]",
+  "Free Fire [11:00 am]",
+  "FIFA [All Day]",
+  "Alphanite [11:00 am]",
+];
+
+export const eventBlocksDay2 = [
+  "F1 Stimulation [All Day]",
+  "FIFA [All Day]",
+  "Ideathon [11:00am]", 
+  "Escape Room [11:00am]",
+  "Coding Relay [10:00]",
+  "Smackathon",
 ];
