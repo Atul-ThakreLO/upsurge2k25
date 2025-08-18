@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { eventBlocksDay2desktop, eventBlocksdesktop} from '../../../../data';
 import Footer from './footer';
-import { FooterContactDetailsACM } from '../../../../data';
+import { FooterContactDetailsCosmos } from '../../../../data';
 
 export default function SquidStepScene() {
   const [scrollY, setScrollY] = useState(0);
@@ -161,7 +161,7 @@ export default function SquidStepScene() {
 
       {/* Footer Overlayed */}
       <div className="relative w-full z-50 mt-12">
-        <Footer footerDetails={FooterContactDetailsACM} />
+        <Footer footerDetails={FooterContactDetailsCosmos} />
       </div>
     </div>
   );
