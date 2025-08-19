@@ -22,7 +22,7 @@ const GoodiesRewards = () => {
       ease: "power2.out",
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "top 60%",
+        start: "top 80%",
         toggleActions: "play none none reverse",
       },
     });

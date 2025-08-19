@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import GlitchText from "./Prizepool/GlitchText";
 
 const tracks = [
   {
@@ -282,9 +283,7 @@ export default function Tracks() {
                       {track.icon}
                     </motion.div>
                     <div>
-                      <h3 className="text-xl font-bold tracking-wide text-white transition-all duration-300 group-hover:text-white game-text">
-                        {track.title}
-                      </h3>
+                      <GlitchText text={track.title} />
                       <div className={`text-xs font-mono ${colorClasses.text} opacity-75`}>
                         SURVIVAL PROTOCOL
                       </div>
@@ -450,16 +449,6 @@ export default function Tracks() {
         @keyframes danger-pulse {
           0%, 100% { box-shadow: 0 0 5px rgba(255, 20, 147, 0.5); }
           50% { box-shadow: 0 0 20px rgba(255, 20, 147, 0.8), 0 0 30px rgba(255, 20, 147, 0.6); }
-        }
-
-        .game-text {
-          font-family: "Orbitron", "Share Tech Mono", monospace;
-          text-shadow: 
-            2px 2px 0 #ff0066,
-            -2px -2px 0 #00ffff,
-            0 0 10px rgba(255, 20, 147, 0.5);
-          position: relative;
-          font-weight: 700;
         }
 
         .group:hover .game-text {

@@ -160,7 +160,7 @@ export default function Component() {
           </div>
 
           {/* Section Title */}
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold font-[var(--font-geist-sans)] text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest relative z-10">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest relative z-10">
             Assessment Criteria
           </h2>
           <p className="text-gray-300 text-lg mb-16 tracking-wide relative z-10">
@@ -407,7 +407,7 @@ export default function Component() {
 
         <div className="relative z-10 w-full max-w-none mx-auto px-4 py-10">
           <div className="text-center mb-18">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold font-[var(--font-geist-sans)] text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-300 tracking-wide">
