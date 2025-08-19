@@ -13,6 +13,10 @@ export const teamMembers = [
     name: "Paras Kalbande",
     position: "PRESIDENT",
     imageUrl: "/profile_photo/paras_.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/paraskalbande/#",
+    linkedinUrl: "https://www.linkedin.com/in/paras-kalbande-788717212/",
+    githubUrl: "",
     comm: "COSMOS",
   },
   {
@@ -32,9 +36,9 @@ export const teamMembers = [
     position: "ACM CHAIRPERSON",
     imageUrl: "/profile_photo/Om_Mane.jpg",
     instagramUrl:
-      "https://www.instagram.com/shantanu_nichante?igsh=bmd6OW85czM2MmZj",
-    linkedinUrl: "https://www.linkedin.com/in/shantanu-nichante",
-    githubUrl: "https://github.com/shantanu-nichante",
+      "https://www.instagram.com/_.om_31._?igsh=MW03aDZtNTAybm54cQ==",
+    linkedinUrl: "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    githubUrl: "https://github.com/spectropaws",
     comm: "ACM",
   },
   {
@@ -63,14 +67,14 @@ export const teamMembers = [
     name: "Avanti Raut",
     position: "SECRETARY",
     imageUrl: "/profile_photo/Avant_ Raut.jpeg",
-    instagramUrl: "",
-    linkedinUrl: "",
+    instagramUrl: "https://www.instagram.com/avanti__raut/",
+    linkedinUrl: "https://www.linkedin.com/in/avanti-raut-0615a82a4/",
     githubUrl: "",
     comm: "ACM",
   },
   {
     id: 2,
-    name: "Gayati Umap",
+    name: "Gayatri Umap",
     position: "ACM SECRETARY",
     imageUrl: "/profile_photo/Gayati_Umap.jpg",
     instagramUrl: "",
@@ -530,7 +534,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/adityar.og/",
     linkedinUrl: "https://www.linkedin.com/in/aditya-rajankar/",
     githubUrl: "",
-    comm: "COSMOS",
+    comm: "ACM",
   },
 
   {
@@ -684,6 +688,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/bhuvaneshdorle/#",
     linkedinUrl: "https://www.linkedin.com/in/bhuvaneshdorle/",
     githubUrl: "https://github.com/Bhuvaneshdorle",
+    comm: "COSMOS",
   },
   {
     id: 45,
