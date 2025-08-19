@@ -114,8 +114,6 @@ export default function SquidStepScene() {
             </div>
           ))}
         </div>
-
-        {/* Footer */}
       </div>
       <div className="w-full !px-0 !mx-0">
         <Footer footerDetails={FooterContactDetailsCosmos} />

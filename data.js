@@ -29,7 +29,7 @@ export const FooterContactDetailsACM = [
   },
 ];
 
-import InstagramIcon from "./public/img/Instagram Icon";
+import InstagramIcon from "./public/svg/Instagram Icon";
 import MailSend01Icon from "./public/svg/MailSend01Icon";
 import Linkedin01Icon from "./public/svg/Linkedin01Icon.jsx";
 
@@ -409,23 +409,23 @@ export const EventsDataMobile = [
 ];
 
 export const eventBlocksdesktop = [
-  "Smackathon [10:00am 24hrs]",
-  "CTF [11:00am]",
-  "Singularity [11:00 am]",
-  "Cipher Chase [11:00 am]",
+  "Smackathon [10:00 am - 10:00 am 24hrs]",
+  "CTF  [11:00 am - 2:00 pm]",
+  "Singularity  [11:00 am - 1:00 pm]",
+  "Cipher Chase [11:00 am - 1:00 pm]",
   "F1 Stimulation [All Day]",
-  "Free Fire [11:00 am]",
-  "Alphanite [11:00 am]",
-  "FIFA [All Day]",
-];
+  "Free Fire [11:00 am - 1:00 pm]",
+  "FIFA [All Day 24 hrs]",
+  "Alph
+
 
 export const eventBlocksDay2desktop = [
-  "F1 Stimulation [All Day]",
-  "FIFA [All Day]",
-  "Ideathon [11:00am]",
-  "Escape Room [11:00am]",
-  "Coding Relay [10:00 am]",
-  "Smackathon",
+  "F1 Stimulation [All Day 24hrs]",
+  "Ideathon [11:00 am - 2:00 pm]", 
+  "Coding Relay [10:00 am - 1:00 pm]",
+  "Smackathon[ 10:00 am - 10:00 am 24hrs]",
+  "Escape Room [11:00am - 1:00 pm]",
+  "FIFA [All Day 24hrs]",
 ];
 
 export const eventBlocks = [
@@ -433,7 +433,7 @@ export const eventBlocks = [
   "CTF [11:00am]",
   "Singularity [11:00 am]",
   "Cipher Chase [11:00 am]",
-  "F1 Stimulation [All Day]",
+  "F1 Stimulation [All Day 24hrs]",
   "Free Fire [11:00 am]",
   "FIFA [All Day]",
   "Alphanite [11:00 am]",
