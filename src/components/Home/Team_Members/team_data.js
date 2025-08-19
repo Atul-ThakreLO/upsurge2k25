@@ -923,6 +923,16 @@ export const teamMembers = [
     githubUrl: "https://github.com/rushabhthakurdware",
   },
   {
+    id: 7000,
+    name: "Tanmay Isal",
+    position: "SPORTS MEMBER",
+    imageUrl: "/profile_photo/Tanmay_isal.jpeg",
+    instagramUrl: "https://www.instagram.com/tanmayy6711?igsh=MXEwY3k1ZmluZGI0Mg==&utm_source=ig_contact_invite",
+    linkedinUrl:
+      "",
+    githubUrl: "",
+  },
+  {
     id: 1003,
     name: "Hrishikesh Divekar",
     position: "SPORTS MEMBER",
@@ -932,5 +942,16 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/hrishikesh-divekar-505255345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/HrishikeshDivekar",
+  },
+  {
+    id: 100309,
+    name: "Atharva Pagar",
+    position: "MEMBER",
+    imageUrl: "/profile_photo/Atharva_pagar.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/atharva_pagar/",
+    linkedinUrl:
+      "http://www.linkedin.com/in/atharva-pagar-65830b28b",
+    githubUrl: "",
   },
 ];
