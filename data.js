@@ -435,7 +435,7 @@ export const eventBlocks = [
   "CTF [11:00am]",
   "Singularity [11:00 am]",
   "Cipher Chase [11:00 am]",
-  "F1 Stimulation [All Day 24hrs]",
+  "F1 Stimulation [All Day]",
   "Free Fire [11:00 am]",
   "FIFA [All Day]",
   "Alphanite [11:00 am]",
