@@ -586,6 +586,15 @@ export const teamMembers = [
     githubUrl: "",
   },
   {
+    id: 144,
+    name: "Bhuvanesh Dorle",
+    position: "PUBLICITY HEAD",
+    imageUrl: "/profile_photo/Bhuvanesh_Dorle.jpg",
+    instagramUrl: "https://www.instagram.com/bhuvaneshdorle/#",
+    linkedinUrl: "https://www.linkedin.com/in/bhuvaneshdorle/",
+    githubUrl: "https://github.com/Bhuvaneshdorle",
+  },
+  {
     id: 45,
     name: "Raj Bhelkar",
     position: "PUBLICITY HEAD",
@@ -946,7 +955,7 @@ export const teamMembers = [
   {
     id: 100309,
     name: "Atharva Pagar",
-    position: "MEMBER",
+    position: "SPORTS MEMBER",
     imageUrl: "/profile_photo/Atharva_pagar.jpeg",
     instagramUrl:
       "https://www.instagram.com/atharva_pagar/",
