@@ -4,7 +4,7 @@ import NavMenu from "./nav-menu";
 
 const Nav = () => {
   return (
-    <nav className="fixed z-50 w-full">
+    <nav className="fixed z-[100] w-full">
       <div className="relative w-[90%] mt-5 mx-auto flex justify-between items-center">
         <div>
           <a href="/">
