@@ -21,7 +21,7 @@ const tracks = [
     icon: <School className="w-8 h-8" />,
     players: 67,
     eliminated: 12,
-    color: "pink",
+    color: "emerald",
     gameNumber: "001",
   },
   {
@@ -32,7 +32,7 @@ const tracks = [
     icon: <HeartPulse className="w-8 h-8" />,
     players: 89,
     eliminated: 8,
-    color: "green",
+    color: "pink",
     gameNumber: "002",
   },
   {
@@ -43,7 +43,7 @@ const tracks = [
     icon: <Leaf className="w-8 h-8" />,
     players: 54,
     eliminated: 15,
-    color: "emerald",
+    color: "green",
     gameNumber: "003",
   },
   {
