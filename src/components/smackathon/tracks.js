@@ -148,7 +148,7 @@ export default function Tracks() {
   };
 
   return (
-    <div className={`bg-black py-20 px-4 sm:px-10 min-h-screen text-white font-sans relative overflow-hidden ${glitchActive ? 'animate-pulse' : ''}`}>
+    <div className={`bg-black py-20 px-4 sm:px-10 min-h-screen text-white tracking-wider relative overflow-hidden ${glitchActive ? 'animate-pulse' : ''}`}>
       
 
       {/* Background Effects */}
@@ -292,7 +292,7 @@ export default function Tracks() {
                   </div>
 
                   {/* Description - Centered */}
-                  <p className="text-gray-300 mt-3 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500 text-center">
+                  <p className="text-gray-300 mt-3 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500 text-justify">
                     {track.description}
                   </p>
 
@@ -374,7 +374,7 @@ export default function Tracks() {
                   </div>
 
                   {/* Description - Centered */}
-                  <p className="text-gray-300 mt-3 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500 text-center">
+                  <p className="text-gray-300 mt-3 text-sm leading-relaxed group-hover:text-pink-200 transition-colors duration-500 text-justify">
                     {track.description}
                   </p>
 

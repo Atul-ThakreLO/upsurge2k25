@@ -7,13 +7,13 @@ import { FooterSocialLinks, NavLinks } from "../../../../data";
 
 const Footer = ({ footerDetails }) => {
   return (
-    <footer className="relative w-full text-white py-24 font-mono overflow-hidden">
+    <footer className="relative w-full text-white py-24 px-3 font-mono overflow-hidden">
       {/* <FallingMoney /> */}
 
       <section className="z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
         {/* Column 1: Logos + Socials */}
         <div className="aspect-video rounded-lg">
-          <div className="flex flex-col justify-between h-full p-6">
+          <div className="flex flex-col justify-between h-full md:p-6">
             <div className="flex justify-around items-center h-full">
               {[
                 "/img/Upsurge_Logo-rm.png",
