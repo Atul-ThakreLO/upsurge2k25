@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import { FooterSocialLinks, NavLinks } from "../../../../data";
+import StaticMoneyPile from "@/components/Home/Footer/StaticMoneyPile";
 
 const Footer = ({ footerDetails }) => {
   return (
@@ -165,6 +166,7 @@ const Footer = ({ footerDetails }) => {
           No Refund Policy
         </a>
       </div>
+      <StaticMoneyPile />
     </footer>
   );
 };

@@ -116,16 +116,16 @@ export default function SquidStepScene() {
 
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
 
-<div className="absolute top-[225vh] right-60 z-20 flex flex-col gap-18 w-[40vw]">
-  {eventBlocksDay2desktop.map((event, i) => {
-    return (
-      <motion.div
-        key={`right-${i}`}
-        initial={{ opacity: 0, x: i % 2 === 0 ? 100 : -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
-        className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
+      <div className="absolute top-[225vh] right-60 z-20 flex flex-col gap-18 w-[40vw]">
+        {eventBlocksDay2desktop.map((event, i) => {
+          return (
+            <motion.div
+              key={`right-${i}`}
+              initial={{ opacity: 0, x: i % 2 === 0 ? 100 : -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
+              className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
 
                     font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
                     ${i % 2 === 0 ? "self-end" : "self-start"}`}
@@ -143,7 +143,7 @@ export default function SquidStepScene() {
             transform: `translateY(${smoothedScroll * -0.2}px)`,
             willChange: "transform",
           }}
-          className="relative w-full h-[520vh]"
+          className="relative w-full h-[491vh]"
         >
           <Image
             src="/Schedule/transition.webp"
