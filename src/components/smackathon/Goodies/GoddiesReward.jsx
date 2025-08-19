@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { goodiesReward } from "../../../../data";
+import GlitchText from "../Prizepool/GlitchText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,7 +32,7 @@ const GoodiesRewards = () => {
   return (
     <div ref={containerRef} className="flex flex-col gap-4 text-white">
       {goodiesReward.map((text, index) => (
-        <div key={index} className="reward-line flex items-center space-x-3">
+        <div key={index} className="tracking-tight flex items-center space-x-3">
           <div className="relative w-6 h-6">
             <Image
               src="/gif/bullet.gif"
@@ -43,7 +44,7 @@ const GoodiesRewards = () => {
             />
           </div>
           <span>
-            <strong>{text}</strong>
+            <GlitchText text={text} />
           </span>
         </div>
       ))}

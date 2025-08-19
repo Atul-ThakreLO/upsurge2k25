@@ -208,7 +208,7 @@ export default function Tracks() {
           >
             △
           </motion.div>
-          <h1 className={`text-4xl md:text-6xl font-extrabold text-pink-500 uppercase tracking-widest game-text ${glitchActive ? 'animate-bounce' : ''}`}>
+          <h1 className={`text-4xl md:text-6xl font-squid font-extrabold text-pink-500 uppercase tracking-widest game-text ${glitchActive ? 'animate-bounce' : ''}`}>
             🕹️ TRACKS
           </h1>
           <motion.div 

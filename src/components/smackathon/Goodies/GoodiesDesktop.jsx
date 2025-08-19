@@ -27,7 +27,7 @@ const GoodiesDesktop = () => {
           />
         </div>
         <div className="relative w-full min-h-[55vh]">
-          <div className="absolute right-20 top-1/2 transform -translate-y-1/2 text-white flex flex-col justify-center space-y-4 text-lg md:text-xl">
+          <div className="absolute right-15 top-1/2 transform -translate-y-1/2 text-white flex flex-col justify-center space-y-4 text-lg md:text-xl">
             <GoodiesRewards />
           </div>
         </div>

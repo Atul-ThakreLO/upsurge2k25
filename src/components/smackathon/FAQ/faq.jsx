@@ -58,8 +58,7 @@ export default function Component() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-     
-    <div className=' w-full overflow-hidden bg-gradient-to-b from-[#0a0a0f] to-[#110012] shadow-[0_-100px_100px_50px_rgba(0,0,0,0.8)]'>
+    <div className=" w-full overflow-hidden bg-gradient-to-b from-[#0a0a0f] to-[#110012] shadow-[0_-100px_100px_50px_rgba(0,0,0,0.8)]">
       {/* Continuous gradient background for seamless transition */}
       {/* ASSESSMENT CRITERIA SECTION */}
       <Card className="w-full max-w-none mx-0 bg-gradient-to-br from-[#0a0a0f]/80 via-[#120014]/60 to-[#0a0a0f]/80 backdrop-blur-sm relative z-5 overflow-hidden shadow-[0_120px_0_0_rgba(16,0,18,0.85),0_220px_140px_80px_rgba(10,10,15,0.85)] shadow-black border-0">
@@ -91,37 +90,61 @@ export default function Component() {
             {/* Honeycomb Pattern */}
             <div className="absolute top-12 left-1/2 transform -translate-x-1/2">
               <div className="relative w-8 h-8">
-                <div className="absolute inset-0 border-2 border-pink-400/50 rotate-0 shadow-[0_0_8px_rgba(244,114,182,0.4)]" style={{clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}>
+                <div
+                  className="absolute inset-0 border-2 border-pink-400/50 rotate-0 shadow-[0_0_8px_rgba(244,114,182,0.4)]"
+                  style={{
+                    clipPath:
+                      "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+                  }}
+                >
                   <div className="w-full h-full bg-pink-400/20"></div>
                 </div>
               </div>
             </div>
-            
+
             {/* Star Pattern (reminiscent of guard masks) */}
-            <div className="absolute bottom-20 left-1/4 w-6 h-6 text-pink-500/70" style={{textShadow: '0 0 8px rgba(236,72,153,0.6)'}}>
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-[0_0_6px_rgba(236,72,153,0.5)]">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            <div
+              className="absolute bottom-20 left-1/4 w-6 h-6 text-pink-500/70"
+              style={{ textShadow: "0 0 8px rgba(236,72,153,0.6)" }}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full drop-shadow-[0_0_6px_rgba(236,72,153,0.5)]"
+              >
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
             </div>
-            
+
             {/* Umbrella Symbol */}
-            <div className="absolute top-3/4 right-1/3 w-8 h-8 text-pink-400/60" style={{textShadow: '0 0 10px rgba(244,114,182,0.6)'}}>
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-[0_0_8px_rgba(244,114,182,0.5)]">
-                <path d="M12 2C8.14 2 5 5.14 5 9h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7zm0 3c-2.21 0-4 1.79-4 4h8c0-2.21-1.79-4-4-4zm0 6v9h2v-9h-2z"/>
+            <div
+              className="absolute top-3/4 right-1/3 w-8 h-8 text-pink-400/60"
+              style={{ textShadow: "0 0 10px rgba(244,114,182,0.6)" }}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full drop-shadow-[0_0_8px_rgba(244,114,182,0.5)]"
+              >
+                <path d="M12 2C8.14 2 5 5.14 5 9h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7zm0 3c-2.21 0-4 1.79-4 4h8c0-2.21-1.79-4-4-4zm0 6v9h2v-9h-2z" />
               </svg>
             </div>
-            
+
             {/* Diamond Pattern */}
-            <div className="absolute top-1/4 left-3/4 w-6 h-6 bg-pink-500/40 rotate-45 shadow-[0_0_10px_rgba(236,72,153,0.5)]" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
-            </div>
-            
+            <div
+              className="absolute top-1/4 left-3/4 w-6 h-6 bg-pink-500/40 rotate-45 shadow-[0_0_10px_rgba(236,72,153,0.5)]"
+              style={{
+                clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+              }}
+            ></div>
+
             {/* Bridge/Ladder Pattern */}
             <div className="absolute bottom-1/4 right-12 flex flex-col space-y-1">
               <div className="w-6 h-1 bg-pink-400/30 shadow-[0_0_4px_rgba(244,114,182,0.5)]"></div>
               <div className="w-6 h-1 bg-pink-400/30 shadow-[0_0_4px_rgba(244,114,182,0.5)]"></div>
               <div className="w-6 h-1 bg-pink-400/30 shadow-[0_0_4px_rgba(244,114,182,0.5)]"></div>
             </div>
-            
+
             {/* Marbles Pattern */}
             <div className="absolute top-1/6 right-1/6 grid grid-cols-2 gap-1">
               <div className="w-2 h-2 rounded-full bg-pink-400/50 shadow-[0_0_4px_rgba(244,114,182,0.6)]"></div>
@@ -129,7 +152,7 @@ export default function Component() {
               <div className="w-2 h-2 rounded-full bg-pink-500/50 shadow-[0_0_4px_rgba(236,72,153,0.6)]"></div>
               <div className="w-2 h-2 rounded-full bg-pink-400/50 shadow-[0_0_4px_rgba(244,114,182,0.6)]"></div>
             </div>
-            
+
             {/* Tug of War Rope Pattern */}
             <div className="absolute bottom-1/3 left-1/6 w-12 h-1 bg-gradient-to-r from-pink-400/40 to-pink-500/40 shadow-[0_0_6px_rgba(240,93,173,0.5)] transform rotate-12"></div>
 
@@ -160,7 +183,7 @@ export default function Component() {
           </div>
 
           {/* Section Title */}
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest relative z-10">
+          <h2 className="text-4xl font-squid sm:text-4xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest relative z-10">
             Assessment Criteria
           </h2>
           <p className="text-gray-300 text-lg mb-16 tracking-wide relative z-10">
@@ -170,7 +193,7 @@ export default function Component() {
           {/* Criteria Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 px-2 sm:px-4 md:px-16 lg:px-24 xl:px-32">
             {/* Quality of work */}
-             <Card className="bg-[#0c0b10]/70 border-4 border-fuchsia-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(217,70,239,0.4)] hover:border-fuchsia-400/60 transition-all duration-200 cursor-pointer group min-h-[160px] sm:min-h-[180px] md:min-h-[200px] w-full">
+            <Card className="bg-[#0c0b10]/70 border-4 border-fuchsia-500/20 backdrop-blur-sm shadow-[0_24px_60px_-12px_rgba(16,0,18,0.6)] hover:shadow-[0_36px_90px_-12px_rgba(217,70,239,0.4)] hover:border-fuchsia-400/60 transition-all duration-200 cursor-pointer group min-h-[160px] sm:min-h-[180px] md:min-h-[200px] w-full">
               <CardContent className="p-4 sm:p-6 md:p-10 text-left h-full flex flex-col justify-center">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-fuchsia-500 to-violet-500 rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse">
@@ -300,8 +323,6 @@ export default function Component() {
         </CardContent>
       </Card>
 
-      
-
       {/* FAQ Section */}
       <div className="relative w-full max-w-none mt-0 py-42 bg-gradient-to-b from-[#0a0a0f]/80 via-[#100012]/60 to-[#110012]/80 rounded-2xl backdrop-blur-sm transition-all duration-300 z-10 overflow-hidden min-h-[900px]">
         {/* Track-Inspired Background Effects */}
@@ -316,104 +337,176 @@ export default function Component() {
         </div>
         {/* Floating Geometric Shapes with Enhanced Glow */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-[10%] left-[2%] text-6xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_20px_rgba(236,72,153,0.8)]" style={{textShadow: '0 0 30px rgba(236,72,153,0.6), 0 0 60px rgba(236,72,153,0.4)'}}>
+          <div
+            className="absolute top-[10%] left-[2%] text-6xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_20px_rgba(236,72,153,0.8)]"
+            style={{
+              textShadow:
+                "0 0 30px rgba(236,72,153,0.6), 0 0 60px rgba(236,72,153,0.4)",
+            }}
+          >
             △
           </div>
-          <div className="absolute top-[20%] right-[1%] text-5xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_16px_rgba(244,114,182,0.8)]" style={{textShadow: '0 0 25px rgba(244,114,182,0.6), 0 0 50px rgba(244,114,182,0.4)'}}>
+          <div
+            className="absolute top-[20%] right-[1%] text-5xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_16px_rgba(244,114,182,0.8)]"
+            style={{
+              textShadow:
+                "0 0 25px rgba(244,114,182,0.6), 0 0 50px rgba(244,114,182,0.4)",
+            }}
+          >
             ○
           </div>
-          <div className="absolute top-[35%] left-[1%] text-7xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_24px_rgba(236,72,153,0.8)]" style={{textShadow: '0 0 35px rgba(236,72,153,0.6), 0 0 70px rgba(236,72,153,0.4)'}}>
+          <div
+            className="absolute top-[35%] left-[1%] text-7xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_24px_rgba(236,72,153,0.8)]"
+            style={{
+              textShadow:
+                "0 0 35px rgba(236,72,153,0.6), 0 0 70px rgba(236,72,153,0.4)",
+            }}
+          >
             □
           </div>
-          <div className="absolute top-[50%] right-[2%] text-4xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_14px_rgba(244,114,182,0.8)]" style={{textShadow: '0 0 20px rgba(244,114,182,0.6), 0 0 40px rgba(244,114,182,0.4)'}}>
+          <div
+            className="absolute top-[50%] right-[2%] text-4xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_14px_rgba(244,114,182,0.8)]"
+            style={{
+              textShadow:
+                "0 0 20px rgba(244,114,182,0.6), 0 0 40px rgba(244,114,182,0.4)",
+            }}
+          >
             △
           </div>
-          <div className="absolute top-[65%] left-[3%] text-6xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_20px_rgba(236,72,153,0.8)]" style={{textShadow: '0 0 30px rgba(236,72,153,0.6), 0 0 60px rgba(236,72,153,0.4)'}}>
+          <div
+            className="absolute top-[65%] left-[3%] text-6xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_20px_rgba(236,72,153,0.8)]"
+            style={{
+              textShadow:
+                "0 0 30px rgba(236,72,153,0.6), 0 0 60px rgba(236,72,153,0.4)",
+            }}
+          >
             ○
           </div>
-          <div className="absolute top-[80%] right-[1%] text-5xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_18px_rgba(244,114,182,0.8)]" style={{textShadow: '0 0 28px rgba(244,114,182,0.6), 0 0 55px rgba(244,114,182,0.4)'}}>
+          <div
+            className="absolute top-[80%] right-[1%] text-5xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_18px_rgba(244,114,182,0.8)]"
+            style={{
+              textShadow:
+                "0 0 28px rgba(244,114,182,0.6), 0 0 55px rgba(244,114,182,0.4)",
+            }}
+          >
             □
           </div>
-          
+
           {/* Squid Game Themed Elements at Margins */}
           {/* Guard Mask Symbols */}
-          <div className="absolute top-[15%] left-[1%] w-8 h-8 text-pink-400/20 animate-pulse drop-shadow-[0_0_12px_rgba(244,114,182,0.6)]" style={{textShadow: '0 0 20px rgba(244,114,182,0.5)'}}>
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-              <path d="M12 2L13.5 8.5L20 9L14.5 14L16 20L12 17L8 20L9.5 14L4 9L10.5 8.5L12 2Z"/>
+          <div
+            className="absolute top-[15%] left-[1%] w-8 h-8 text-pink-400/20 animate-pulse drop-shadow-[0_0_12px_rgba(244,114,182,0.6)]"
+            style={{ textShadow: "0 0 20px rgba(244,114,182,0.5)" }}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-full h-full"
+            >
+              <path d="M12 2L13.5 8.5L20 9L14.5 14L16 20L12 17L8 20L9.5 14L4 9L10.5 8.5L12 2Z" />
             </svg>
           </div>
-          
+
           {/* Doll Eyes Pattern */}
           <div className="absolute top-[25%] right-[2%] flex space-x-1 animate-pulse">
             <div className="w-3 h-3 rounded-full bg-pink-400/30 shadow-[0_0_8px_rgba(244,114,182,0.6)]"></div>
             <div className="w-3 h-3 rounded-full bg-pink-400/30 shadow-[0_0_8px_rgba(244,114,182,0.6)]"></div>
           </div>
-          
+
           {/* Honeycomb Pattern */}
           <div className="absolute top-[40%] left-[2%] w-10 h-10 animate-pulse">
-            <div className="w-full h-full border-2 border-pink-500/30 shadow-[0_0_10px_rgba(236,72,153,0.5)]" style={{clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}>
+            <div
+              className="w-full h-full border-2 border-pink-500/30 shadow-[0_0_10px_rgba(236,72,153,0.5)]"
+              style={{
+                clipPath:
+                  "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+              }}
+            >
               <div className="w-full h-full bg-pink-500/10"></div>
             </div>
           </div>
-          
+
           {/* Money Symbol */}
-          <div className="absolute top-[55%] right-[1%] text-3xl text-pink-500/20 font-bold animate-pulse drop-shadow-[0_0_12px_rgba(236,72,153,0.6)]" style={{textShadow: '0 0 20px rgba(236,72,153,0.5)'}}>
+          <div
+            className="absolute top-[55%] right-[1%] text-3xl text-pink-500/20 font-bold animate-pulse drop-shadow-[0_0_12px_rgba(236,72,153,0.6)]"
+            style={{ textShadow: "0 0 20px rgba(236,72,153,0.5)" }}
+          >
             ₩
           </div>
-          
+
           {/* Player Number Pattern */}
           <div className="absolute top-[70%] left-[1%] w-8 h-8 rounded-full border-2 border-pink-500/30 flex items-center justify-center text-xs text-pink-500/40 font-bold shadow-[0_0_8px_rgba(236,72,153,0.4)] animate-pulse">
             456
           </div>
-          
+
           {/* Marble Pattern */}
           <div className="absolute top-[85%] right-[3%] grid grid-cols-3 gap-1 animate-pulse">
             <div className="w-2 h-2 rounded-full bg-pink-400/40 shadow-[0_0_4px_rgba(244,114,182,0.6)]"></div>
             <div className="w-2 h-2 rounded-full bg-pink-500/40 shadow-[0_0_4px_rgba(236,72,153,0.6)]"></div>
             <div className="w-2 h-2 rounded-full bg-pink-400/40 shadow-[0_0_4px_rgba(244,114,182,0.6)]"></div>
           </div>
-          
+
           {/* Glass Bridge Pattern */}
           <div className="absolute top-[30%] left-[3%] flex flex-col space-y-1 animate-pulse">
             <div className="w-4 h-1 bg-pink-500/20 shadow-[0_0_6px_rgba(236,72,153,0.4)]"></div>
             <div className="w-4 h-1 bg-pink-400/20 shadow-[0_0_6px_rgba(244,114,182,0.4)]"></div>
             <div className="w-4 h-1 bg-pink-500/20 shadow-[0_0_6px_rgba(236,72,153,0.4)]"></div>
           </div>
-          
+
           {/* Umbrella Candy Shape */}
           <div className="absolute top-[45%] right-[3%] w-6 h-6 text-pink-400/25 animate-pulse drop-shadow-[0_0_8px_rgba(244,114,182,0.5)]">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-              <path d="M12 2C8.14 2 5 5.14 5 9h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7zm0 7v11h2V9h-2z"/>
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-full h-full"
+            >
+              <path d="M12 2C8.14 2 5 5.14 5 9h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7zm0 7v11h2V9h-2z" />
             </svg>
           </div>
-          
+
           {/* Squid Shape */}
           <div className="absolute top-[75%] left-[2%] w-8 h-8 text-pink-500/20 animate-pulse drop-shadow-[0_0_10px_rgba(236,72,153,0.5)]">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-              <ellipse cx="12" cy="8" rx="6" ry="4"/>
-              <path d="M12 12v8M8 16l-2 4M16 16l2 4M6 14l-2 2M18 14l2 2"/>
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-full h-full"
+            >
+              <ellipse cx="12" cy="8" rx="6" ry="4" />
+              <path d="M12 12v8M8 16l-2 4M16 16l2 4M6 14l-2 2M18 14l2 2" />
             </svg>
           </div>
-          
+
           {/* Additional Random Margin Elements */}
-          <div className="absolute top-[60%] right-[2%] text-4xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_16px_rgba(236,72,153,0.8)]" style={{textShadow: '0 0 24px rgba(236,72,153,0.6), 0 0 48px rgba(236,72,153,0.4)'}}>
+          <div
+            className="absolute top-[60%] right-[2%] text-4xl text-pink-500/15 font-bold animate-pulse drop-shadow-[0_0_16px_rgba(236,72,153,0.8)]"
+            style={{
+              textShadow:
+                "0 0 24px rgba(236,72,153,0.6), 0 0 48px rgba(236,72,153,0.4)",
+            }}
+          >
             ◆
           </div>
-          
-          <div className="absolute top-[90%] left-[1%] text-3xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_12px_rgba(244,114,182,0.8)]" style={{textShadow: '0 0 18px rgba(244,114,182,0.6), 0 0 36px rgba(244,114,182,0.4)'}}>
+
+          <div
+            className="absolute top-[90%] left-[1%] text-3xl text-pink-400/15 font-bold animate-pulse drop-shadow-[0_0_12px_rgba(244,114,182,0.8)]"
+            style={{
+              textShadow:
+                "0 0 18px rgba(244,114,182,0.6), 0 0 36px rgba(244,114,182,0.4)",
+            }}
+          >
             ★
           </div>
         </div>
 
         <div className="relative z-10 w-full max-w-none mx-auto px-4 py-10">
           <div className="text-center mb-18">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 tracking-widest drop-shadow-2xl">
+            <h2 className="text-4xl tracking-widest sm:text-6xl md:text-7xl font-squid font-bold text-transparent bg-gradient-to-r from-fuchsia-400 via-white to-violet-400 bg-clip-text mb-6 drop-shadow-2xl leading-snug sm:leading-normal md:leading-relaxed">
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-300 tracking-wide">
               Everything you need to know about SMACKATHON
             </p>
-          </div> 
+          </div>
           <Accordion
             type="single"
             collapsible
@@ -430,7 +523,7 @@ export default function Component() {
                   <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-500/5 to-violet-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
 
                   <AccordionTrigger className="px-4 sm:px-8 py-8 text-left hover:no-underline group relative z-10">
-                    <div className="flex items-center gap-4 w-full">
+                    <div className="flex items-center gap-5 w-full">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-500 flex items-center justify-center text-[#2d1a00] font-bold text-lg shadow-lg group-hover:animate-pulse group-hover:shadow-yellow-400/50 group-hover:scale-110 transition-all duration-300 border border-yellow-300/40 relative">
                         <span
                           className="absolute inset-0 rounded-full pointer-events-none z-0"
