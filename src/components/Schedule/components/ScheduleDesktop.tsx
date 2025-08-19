@@ -1,10 +1,10 @@
-'use client';
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { eventBlocksDay2desktop, eventBlocksdesktop} from '../../../../data';
-import Footer from './footer';
-import { FooterContactDetailsCosmos } from '../../../../data';
+"use client";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { eventBlocksDay2desktop, eventBlocksdesktop } from "../../../../data";
+import Footer from "./footer";
+import { FooterContactDetailsCosmos } from "../../../../data";
 
 export default function SquidStepScene() {
   const [scrollY, setScrollY] = useState(0);
@@ -12,8 +12,8 @@ export default function SquidStepScene() {
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -57,14 +57,14 @@ export default function SquidStepScene() {
             height={450}
             className="object-contain"
             style={{
-              filter: 'drop-shadow(0px 50px 50px #deabba)',
+              filter: "drop-shadow(0px 50px 50px #deabba)",
             }}
           />
         </motion.div>
       </div>
 
       {/* Guy Image*/}
-      <div className="relative w-full min-h-[300vh] bg-black overflow-visible">
+      <div className="relative w-full min-h-[350vh] bg-black overflow-visible">
         {/* Guy Image */}
         <div className="absolute left-30 top-[220vh] z-30">
           <motion.div
@@ -80,7 +80,7 @@ export default function SquidStepScene() {
               width={300}
               height={450}
               className="object-contain"
-              style={{ filter: 'drop-shadow(0px 50px 50px #deabba)' }}
+              style={{ filter: "drop-shadow(0px 50px 50px #deabba)" }}
             />
           </motion.div>
         </div>
@@ -91,31 +91,33 @@ export default function SquidStepScene() {
             <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-600/90">
               2 - 일차
             </h1>
-            <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">Day - 2</h2>
+            <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">
+              Day - 2
+            </h2>
           </div>
         </div>
       </div>
 
       {/* Step Blocks */}
-     <div className="absolute top-[40vh] left-50 z-20 flex flex-col gap-15 w-[40vw]">
-  {eventBlocksdesktop.map((event, i) => (
-    <motion.div
-      key={i}
-      initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
-      className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
+      <div className="absolute top-[40vh] left-50 z-20 flex flex-col gap-15 w-[40vw]">
+        {eventBlocksdesktop.map((event, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
+            className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
                   font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
-                  ${i % 2 === 0 ? 'self-start' : 'self-end'}`}
-    >
-      {event}
-    </motion.div>
-  ))}
-</div>
-
+                  ${i % 2 === 0 ? "self-start" : "self-end"}`}
+          >
+            {event}
+          </motion.div>
+        ))}
+      </div>
 
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
+
 <div className="absolute top-[205vh] right-60 z-20 flex flex-col gap-14 w-[40vw]">
   {eventBlocksDay2desktop.map((event, i) => {
     return (
@@ -126,38 +128,37 @@ export default function SquidStepScene() {
         viewport={{ once: true }}
         transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
         className={`px-6 py-4 bg-pink-500 rounded-2xl shadow-2xl 
-                    font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
-                    ${i % 2 === 0 ? 'self-end' : 'self-start'}`}
-      >
-        {event}
-      </motion.div>
-    );
-  })}
-</div>
 
+                    font-bold text-lg text-white shadow-pink-500/50 glow-glass-effect animate-glow
+                    ${i % 2 === 0 ? "self-end" : "self-start"}`}
+            >
+              {event}
+            </motion.div>
+          );
+        })}
+      </div>
 
       {/* Background Parallax */}
       <div className="absolute top-0 w-full h-full z-10 pointer-events-none">
-  <div
-    style={{
-      transform: `translateY(${smoothedScroll * -0.2}px)`,
-      willChange: 'transform',
-    }}
-    className="relative w-full h-[450vh]"
-  >
-    <Image
-      src="/Schedule/transition.webp"
-      alt="Squid Game Scene"
-      fill
-      objectFit="cover"
-      quality={100}
-      className="object-cover"
-      priority
-    />
-    <div className="absolute inset-0 bg-black opacity-50"></div>
-  </div>
-</div>
-
+        <div
+          style={{
+            transform: `translateY(${smoothedScroll * -0.2}px)`,
+            willChange: "transform",
+          }}
+          className="relative w-full h-[450vh]"
+        >
+          <Image
+            src="/Schedule/transition.webp"
+            alt="Squid Game Scene"
+            fill
+            objectFit="cover"
+            quality={100}
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+      </div>
 
       {/* Footer Overlayed */}
       <div className="relative w-full bottom-0 z-50">

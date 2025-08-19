@@ -29,7 +29,7 @@ export const FooterContactDetailsACM = [
   },
 ];
 
-import InstagramIcon from "./public/img/Instagram Icon";
+import InstagramIcon from "./public/svg/Instagram Icon";
 import MailSend01Icon from "./public/svg/MailSend01Icon";
 import Linkedin01Icon from "./public/svg/Linkedin01Icon.jsx";
 

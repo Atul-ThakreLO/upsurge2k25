@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import { FooterSocialLinks, NavLinks } from "../../../../data";
+import StaticMoneyPile from "@/components/Home/Footer/StaticMoneyPile";
 
 const Footer = ({ footerDetails }) => {
   return (
@@ -63,7 +64,7 @@ const Footer = ({ footerDetails }) => {
             {NavLinks.map((link, idx) => (
               <li key={idx} className="group relative flex items-center gap-2">
                 <a
-                  href={`${link.href.toLowerCase()}`}
+                  href={`${link.href}`}
                   className="text-white/90 group-hover:text-pink-400 transition"
                 >
                   {link.name}
@@ -166,6 +167,7 @@ const Footer = ({ footerDetails }) => {
         </a>
       </div>
 
+      <StaticMoneyPile />
     </footer>
   );
 };
