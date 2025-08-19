@@ -87,7 +87,7 @@ export const eventsData = [
     venue: "LAB 7",
     time: "All Day",
     day: 1,
-    order: 7,
+    order: 8,
     details:
       "Master the traditional Korean children's game that gives the competition its name. Learn both offensive and defensive strategies, understand the playground layout, and prepare for the ultimate confrontation.",
     shapeType: "square",

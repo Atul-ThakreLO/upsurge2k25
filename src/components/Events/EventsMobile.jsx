@@ -15,6 +15,7 @@ const EventsMobile = () => {
               prizePool={event.prizePool}
               entryFees={event.entryFees}
               teamMembers={event.teamMembers}
+              registerLink={event.registerLink}
             />
           </div>
         ))}
