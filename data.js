@@ -223,7 +223,7 @@ export const EventsDataDesktop = [
       "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/freefire_h_s0weih.webp",
     title: "Free Fire",
     id: "freeFire",
-    prizePool: "12,000",
+    prizePool: "20,000",
     entryFees: 200,
     teamMembers: "2-4",
     description:

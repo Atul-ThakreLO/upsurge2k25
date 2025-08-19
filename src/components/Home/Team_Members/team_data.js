@@ -13,6 +13,7 @@ export const teamMembers = [
     name: "Paras Kalbande",
     position: "PRESIDENT",
     imageUrl: "/profile_photo/paras_.jpeg",
+    comm: "COSMOS",
   },
   {
     id: 73,
@@ -23,6 +24,7 @@ export const teamMembers = [
       "https://www.instagram.com/__karan17_?igsh=MXB4YXcybDJ4MzhqYw==",
     linkedinUrl: "http://www.linkedin.com/in/karankangali",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 68,
@@ -33,6 +35,17 @@ export const teamMembers = [
       "https://www.instagram.com/shantanu_nichante?igsh=bmd6OW85czM2MmZj",
     linkedinUrl: "https://www.linkedin.com/in/shantanu-nichante",
     githubUrl: "https://github.com/shantanu-nichante",
+    comm: "ACM",
+  },
+  {
+    id: 730,
+    name: "Jagdish Kachhawah",
+    position: "VICE PRESIDENT",
+    imageUrl: "/profile_photo/Jagdish_Kachhawah.jpg",
+    instagramUrl: "https://www.instagram.com/mc_sukuna?igsh=MXBkY3J5NTAxYm41",
+    linkedinUrl: "http://www.linkedin.com/in/jagdish-kachhawah-21jk",
+    githubUrl: "https://github.com/jagdish-kachhawah21/jagdish-kachhawah21",
+    comm: "COSMOS",
   },
   {
     id: 1,
@@ -43,24 +56,17 @@ export const teamMembers = [
       "https://www.instagram.com/shantanu_nichante?igsh=bmd6OW85czM2MmZj",
     linkedinUrl: "https://www.linkedin.com/in/shantanu-nichante",
     githubUrl: "https://github.com/shantanu-nichante",
+    comm: "ACM",
   },
   {
-    id: 730,
-    name: "Jagdish Kachhawah",
-    position: "VICE PRESIDENT",
-    imageUrl: "/profile_photo/Jagdish_Kachhawah.jpg",
-    instagramUrl: "https://www.instagram.com/mc_sukuna?igsh=MXBkY3J5NTAxYm41",
-    linkedinUrl: "http://www.linkedin.com/in/jagdish-kachhawah-21jk",
-    githubUrl: "https://github.com/jagdish-kachhawah21/jagdish-kachhawah21",
-  },
-  {
-    id: 4,
-    name: "Alok Roy",
-    position: "TREASURER",
-    imageUrl: "/profile_photo/Alok_Roy.jpg",
-    instagramUrl: "https://www.instagram.com/alokproy",
-    linkedinUrl: "https://in.linkedin.com/in/alok-roy-",
-    githubUrl: "https://github.com/AlokRoyal",
+    id: 2090,
+    name: "Avanti Raut",
+    position: "SECRETARY",
+    imageUrl: "/profile_photo/Avant_ Raut.jpeg",
+    instagramUrl: "",
+    linkedinUrl: "",
+    githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 2,
@@ -70,6 +76,17 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/gayatri-umap/",
     githubUrl: "https://github.com/gayatriumap19",
+    comm: "ACM",
+  },
+  {
+    id: 4,
+    name: "Alok Roy",
+    position: "TREASURER",
+    imageUrl: "/profile_photo/Alok_Roy.jpg",
+    instagramUrl: "https://www.instagram.com/alokproy",
+    linkedinUrl: "https://in.linkedin.com/in/alok-roy-",
+    githubUrl: "https://github.com/AlokRoyal",
+    comm: "COSMOS",
   },
   {
     id: 5,
@@ -81,6 +98,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/aditya-chafale-34332228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 6,
@@ -92,6 +110,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/dishita-ghuge-79a67b2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/dishitaghuge01",
+    comm: "COSMOS",
   },
   {
     id: 3,
@@ -102,6 +121,7 @@ export const teamMembers = [
       "https://www.instagram.com/tiyabanerjee_?igsh=ZzZkcTdzNm14ODkw",
     linkedinUrl: "https://www.linkedin.com/in/tiya-banerjee",
     githubUrl: "",
+    comm: "ACM",
   },
   // TECHNICAL TEAM
   {
@@ -113,24 +133,17 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/laukik-lanje?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/laukik-24",
+    comm: "COSMOS",
   },
   {
     id: 8,
     name: "Mehul Kohad",
     position: "TECHNICAL HEAD",
-    imageUrl: "/profile_photo/Mehul_Kohad.jpg",
+    imageUrl: "/profile_photo/Mehul_Kohad.jpeg",
     instagramUrl: "https://www.instagram.com/mehulkohad?igsh=amgzYWxuZW1qOWN4",
     linkedinUrl: "http://linkedin.com/in/mehul-kohad",
     githubUrl: "https://github.com/mehul515",
-  },
-  {
-    id: 71,
-    name: "Suyash Borikar",
-    position: "ACM TECHNICAL HEAD",
-    imageUrl: "/profile_photo/Suyash_Borikar.jpg",
-    instagramUrl: "https://www.instagram.com/__suyash__2310",
-    linkedinUrl: "https://www.linkedin.com/suyash-borikar",
-    githubUrl: "https://www.github.com/Suyash2304",
+    comm: "COSMOS",
   },
   {
     id: 9,
@@ -140,6 +153,17 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/lokesh-parate-08a70b256",
     githubUrl: "https://github.com/supremeStrange-04",
+    comm: "COSMOS",
+  },
+  {
+    id: 71,
+    name: "Suyash Borikar",
+    position: "ACM TECHNICAL HEAD",
+    imageUrl: "/profile_photo/Suyash_Borikar.jpg",
+    instagramUrl: "https://www.instagram.com/__suyash__2310",
+    linkedinUrl: "https://www.linkedin.com/suyash-borikar",
+    githubUrl: "https://www.github.com/Suyash2304",
+    comm: "ACM",
   },
   {
     id: 14,
@@ -149,6 +173,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/rishabh_gokhe/",
     linkedinUrl: "https://www.linkedin.com/in/rishabh-gokhe",
     githubUrl: "https://github.com/rishabhgokhe",
+    comm: "COSMOS",
   },
   {
     id: 12,
@@ -159,6 +184,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/atul-thakre-logers?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Atul-ThakreLO",
+    comm: "ACM",
   },
   {
     id: 11,
@@ -168,6 +194,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/akanksha-sawant-2598a1305",
     githubUrl: "https://github.com/nastyax0",
+    comm: "ACM",
   },
   {
     id: 10,
@@ -178,6 +205,7 @@ export const teamMembers = [
       "https://www.instagram.com/himanshuchavan98?igsh=MWxvdDY5Z2dycjAwbw==",
     linkedinUrl: "https://www.linkedin.com/in/himanshu-chavan-1a0b5330a/",
     githubUrl: "https://github.com/Himanshujchavan",
+    comm: "ACM",
   },
   {
     id: 13,
@@ -189,6 +217,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/saksham-khobragade-a421112b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Sakshamk17",
+    comm: "COSMOS",
   },
   {
     id: 15,
@@ -198,15 +227,17 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/yogesh-nagrare-707a9b32a/",
     githubUrl: "https://github.com/Yogesh-Nagrare",
+    comm: "COSMOS",
   },
   {
     id: 1012,
     name: "Sujal Dandhale",
     position: "TECHNICAL MEMBER",
-    imageUrl: "/profile_photo/Sujal_Dandhale.png",
+    imageUrl: "/profile_photo/Sujal_Dandhale.jpg",
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/sujal-dandhale",
     githubUrl: "https://github.com/Sujal1123",
+    comm: "COSMOS",
   },
   // EVENT MANAGEMENT Team
   {
@@ -217,6 +248,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1013,
@@ -228,6 +260,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/dhruv-munghate-a69023339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 17,
@@ -239,6 +272,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/kushal-nitin-javkhedkar-85813a327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 25,
@@ -248,6 +282,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/diya_choudhari28/",
     linkedinUrl: "https://www.linkedin.com/in/diya-choudhari-aa5861263/",
     githubUrl: "https://github.com/Diya-Choudhari",
+    comm: "COSMOS",
   },
   {
     id: 22,
@@ -259,6 +294,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/aditya-tekade-626104287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Adityamtekade/",
+    comm: "COSMOS",
   },
   {
     id: 1001,
@@ -269,6 +305,7 @@ export const teamMembers = [
       "https://www.instagram.com/ayush_dhurve_09?igsh=NXY0eWVpeHo0YWh2&utm_source=qr",
     linkedinUrl: "",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 23,
@@ -280,6 +317,30 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/bhavesh-doifode-a760312a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
+    id: 1101,
+    name: "Aarohi Dabhadkar",
+    position: "H M CO-HEAD",
+    imageUrl: "/profile_photo/Aarohi_dabhadkar.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/aarohii.1110?igsh=a3k5dzZwbXJjdXI=",
+    linkedinUrl:
+      "https://www.linkedin.com/in/aarohidabhadkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
+    id: 111,
+    name: "Arjun Kadam",
+    position: "H M CO-HEAD",
+    imageUrl: "/profile_photo/Arjun_Kadam.jpg",
+    instagramUrl:
+      "https://www.instagram.com/arjun__1107?igsh=MXN0ZG14M2RwdGJicA%3D%3D&utm_source=qr",
+    linkedinUrl: "",
+    githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 18,
@@ -291,6 +352,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/rohanandelkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/rohanandelkar",
+    comm: "ACM",
   },
   {
     id: 19,
@@ -301,6 +363,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/aditya-mendhe-869896282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Aditya125-cell",
+    comm: "ACM",
   },
   {
     id: 20,
@@ -312,6 +375,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/achal-sahu-480891284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 21,
@@ -322,26 +386,18 @@ export const teamMembers = [
       "https://www.instagram.com/vedant_b04?igsh=MWRnemh1NGNuOHhqMA==",
     linkedinUrl: "https://www.linkedin.com/in/vedantbomidwar",
     githubUrl: "https://github.com/Vedantb04",
+    comm: "ACM",
   },
   {
     id: 24,
     name: "Kripa Vazirani",
     position: "E M MEMBER",
-    imageUrl: "/profile_photo/Kripa_Vazirani.jpg",
+    imageUrl: "/profile_photo/Kripa_Vazirani.jpeg",
     instagramUrl:
       "https://www.instagram.com/kripa_vazirani12?igsh=MXhxeTA0MDV2MHI0OA%3D%3D&utm_source=qr",
     linkedinUrl: "",
     githubUrl: "",
-  },
-  {
-    id: 111,
-    name: "Arjun Kadam",
-    position: "H M CO-HEAD",
-    imageUrl: "/profile_photo/Arjun_Kadam.jpg",
-    instagramUrl:
-      "https://www.instagram.com/arjun__1107?igsh=MXN0ZG14M2RwdGJicA%3D%3D&utm_source=qr",
-    linkedinUrl: "",
-    githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 26,
@@ -353,6 +409,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/riya-singh-ba2ba8345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   //LITERATURE TEAM
   {
@@ -363,6 +420,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/nishita-dande",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 28,
@@ -373,6 +431,7 @@ export const teamMembers = [
       "https://www.instagram.com/dhaniirathod?igsh=MW94cHluZGtvaGtmeA==",
     linkedinUrl: "https://www.linkedin.com/in/dhani-rathod",
     githubUrl: "https://github.com/DhaniRathod",
+    comm: "COSMOS",
   },
   {
     id: 100000,
@@ -383,6 +442,7 @@ export const teamMembers = [
       "https://www.instagram.com/ayusshpatil28/profilecard/?igsh=MW5lOGliYmsxbXo1ag==",
     linkedinUrl: "https://www.linkedin.com/in/ayussshpatil",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 29,
@@ -395,6 +455,7 @@ export const teamMembers = [
       "https://www.linkedin.com/in/neha-dhawas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl:
       "https://github.com/nehaadhawas?tab=overview&from=2025-07-01&to=2025-07-04",
+    comm: "COSMOS",
   },
   {
     id: 69,
@@ -404,6 +465,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/pz_z23?igsh=MXY0amhocHhkNHI3Zg==",
     linkedinUrl: "",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1009,
@@ -414,6 +476,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/aliya-sayyed-85909a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Aliya-28",
+    comm: "COSMOS",
   },
   {
     id: 30,
@@ -424,6 +487,7 @@ export const teamMembers = [
       "https://www.instagram.com/himanshi_choubal?igsh=MTNodzdiZTk4MTA4Mw==",
     linkedinUrl: "https://www.linkedin.com/in/himanshi-choubal-430026299/",
     githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 31,
@@ -433,6 +497,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "",
     githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 32,
@@ -442,6 +507,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/soukhya-sasankar-91080a35a",
     githubUrl: "",
+    comm: "ACM",
   },
 
   // DESIGN Team
@@ -454,6 +520,7 @@ export const teamMembers = [
       "https://www.instagram.com/chitraksh_9?igsh=MXFqOXI3emZrNHhuOQ==",
     linkedinUrl: "https://www.linkedin.com/in/chitraksh-chavan",
     githubUrl: "https://github.com/Chitraksh09error",
+    comm: "COSMOS",
   },
   {
     id: 33,
@@ -463,16 +530,29 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/adityar.og/",
     linkedinUrl: "https://www.linkedin.com/in/aditya-rajankar/",
     githubUrl: "",
+    comm: "COSMOS",
   },
 
   {
     id: 34,
     name: "Devyani Gharad",
     position: "ARTS HEAD",
-    imageUrl: "/profile_photo/Devyani_Gharad.jpg",
+    imageUrl: "/profile_photo/Devyani_Gharad.JPG",
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/devyani-gharad",
     githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
+    id: 340,
+    name: "Mrunal Jagtap",
+    position: "ARTS HEAD",
+    imageUrl: "/profile_photo/Mrunal_Jagtap.JPG",
+    instagramUrl:
+      "https://www.instagram.com/_mrunal_jagtap_?igsh=MTQzbnNkMGpubTkxOA==",
+    linkedinUrl: "https://www.linkedin.com/in/mrunal-jagtap-0983b3280",
+    githubUrl: "https://github.com/mjjj0904",
+    comm: "COSMOS",
   },
   {
     id: 35,
@@ -483,6 +563,7 @@ export const teamMembers = [
       "https://www.instagram.com/justt_janvi07?igsh=MW1sNDZlZjlvcTRmYg==",
     linkedinUrl: "http://linkedin.com/in/janvi-thakre",
     githubUrl: "https://github.com/JanviThakre",
+    comm: "COSMOS",
   },
   {
     id: 1005,
@@ -493,6 +574,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/vaishnavi-dhomane-38a12a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1006,
@@ -503,6 +585,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/saurabh-kulavi-b4b871316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/saurabhkulavi",
+    comm: "COSMOS",
   },
   {
     id: 38,
@@ -514,6 +597,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/rohini-bhoyar-08089a376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 39,
@@ -523,6 +607,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/vaibhavi.tumsare_/",
     linkedinUrl: "https://www.linkedin.com/in/vaibhavi-tumsare-40320b2b4",
     githubUrl: "https://github.com/Vaibhavitumsare",
+    comm: "COSMOS",
   },
   {
     id: 36,
@@ -533,6 +618,7 @@ export const teamMembers = [
       "https://www.instagram.com/divesh.kshirsagar?igsh=MTJlajVkOW95ZDkzdw==",
     linkedinUrl: "https://www.linkedin.com/in/divesh-kshirsagar",
     githubUrl: "https://github.com/Divesh-Kshirsagar",
+    comm: "ACM",
   },
   {
     id: 37,
@@ -544,6 +630,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/aishwarya-khetade-8a6124253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 40,
@@ -554,6 +641,7 @@ export const teamMembers = [
       "https://www.instagram.com/shreyasakharee?igsh=MWF1NjQzeDA3OWE0cQ==",
     linkedinUrl: "",
     githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 41,
@@ -563,6 +651,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/nickyymeshram",
     linkedinUrl: "https://www.linkedin.com/in/nickymeshram",
     githubUrl: "https://github.com/NickyMeshram",
+    comm: "COSMOS",
   },
 
   {
@@ -574,6 +663,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/savani-apte-93a882304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   // PUBLICITY Team
   {
@@ -584,6 +674,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/atharva3402/",
     linkedinUrl: "http://www.linkedin.com/in/atharva-vaidya-b19b0125a",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 45,
@@ -595,6 +686,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/raj-bhelkar-53750725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 43,
@@ -606,6 +698,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/aditya-tekade-626104287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Adityamtekade/",
+    comm: "ACM",
   },
   {
     id: 46,
@@ -617,6 +710,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/samiksha-bilgaye-b91a71339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 47,
@@ -628,6 +722,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/sana-channawar-b63a2b2b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 72,
@@ -638,6 +733,7 @@ export const teamMembers = [
       "https://www.instagram.com/nikhileshghormode?igsh=MWFqcDJoaDQwa2ZmOA==",
     linkedinUrl: "https://www.linkedin.com/in/nikhilesh-ghormode-a3720728a",
     githubUrl: "https://github.com/NIKHILESH22",
+    comm: "ACM",
   },
   {
     id: 70,
@@ -647,6 +743,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/neha-kotalwar-304753274",
     githubUrl: "https://github.com/nehakotalwar",
+    comm: "ACM",
   },
   {
     id: 49,
@@ -657,6 +754,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/sarthakk-chavan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "ACM",
   },
   {
     id: 10090,
@@ -667,6 +765,7 @@ export const teamMembers = [
       "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=lotbehu",
     linkedinUrl: "https://www.linkedin.com/in/khushi-vegad",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1008,
@@ -677,6 +776,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/abhinavjaihind?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
 
   //CULTURAL TEAM
@@ -684,11 +784,12 @@ export const teamMembers = [
     id: 49,
     name: "Richa Kalpande",
     position: "CULTURAL HEAD",
-    imageUrl: "/profile_photo/Richa_Kalpande.jpeg",
+    imageUrl: "/profile_photo/Richa_Kalpande.JPG",
     instagramUrl:
       "https://www.instagram.com/richa.k23?igsh=MXBzNGFxbzNvbDNsZg==",
     linkedinUrl: "http://www.linkedin.com/in/richa-kalpande",
     githubUrl: "https://github.com/richa-k23",
+    comm: "COSMOS",
   },
   {
     id: 50,
@@ -698,6 +799,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 51,
@@ -707,6 +809,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/vaishnavi-asare",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 52,
@@ -718,6 +821,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/saeeenimbalkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
 
   // SPONSORSHIP TEAM
@@ -729,6 +833,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/darpan-thakur",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1010,
@@ -740,6 +845,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/riddhi-nahate-1893a0254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 54,
@@ -750,6 +856,18 @@ export const teamMembers = [
       "https://www.instagram.com/kabeirrr?igsh=NHhjY2dmNXd0aDZ1&utm_source=qr",
     linkedinUrl: "https://www.linkedin.com/in/kabeirkaushik",
     githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
+    id: 5400,
+    name: "Aryan Vardani",
+    position: "SPONSORSHIP CO-HEAD",
+    imageUrl: "/profile_photo/Aryan Vardani.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/aryan_vardani?igsh=MXR4MXBkdTR3YjExdw%3D%3D&utm_source=qr",
+    linkedinUrl: "",
+    githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 55,
@@ -759,6 +877,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/iamadvait_225",
     linkedinUrl: "https://www.linkedin.com/in/advaitmahajan255",
     githubUrl: "https://github.com/IAmAdvait",
+    comm: "COSMOS",
   },
 
   // SOCIAL MEDIA TEAM
@@ -772,6 +891,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/ayush-sontakke-779202280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 57,
@@ -781,6 +901,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "http://linkedin.com/in/disha-nannaware-074883319",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1011,
@@ -792,6 +913,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/ishika-lohakare?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
 
   // DATABASE TEAM
@@ -803,6 +925,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "http://www.linkedin.com/in/anshuvairagade",
     githubUrl: "https://github.com/AnshuVairagade",
+    comm: "COSMOS",
   },
   {
     id: 59,
@@ -812,6 +935,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "http://linkedin.com/in/abhang-kolte-a16897281",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 60,
@@ -821,6 +945,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/shreya__.kashyap/?next=%2F",
     linkedinUrl: "http://linkedin.com/in/shreya-kashyap3537",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 61,
@@ -831,6 +956,7 @@ export const teamMembers = [
       "https://www.instagram.com/ask_bhhavanaa_?igsh=cnczbzJ5bzE2cDQ5",
     linkedinUrl: "https://www.linkedin.com/in/bhawana-nirwan",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 62,
@@ -842,6 +968,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/shaki-gajbhiye?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/Shaki-2005",
+    comm: "COSMOS",
   },
   //PHOTOGRAPHY TEAM
   {
@@ -852,6 +979,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/_jatin.mahajan_",
     linkedinUrl: "https://www.linkedin.com/in/jatin-mahajan",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 64,
@@ -861,6 +989,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/krushnangi-manekar",
     githubUrl: "https://github.com/Krushnangi",
+    comm: "COSMOS",
   },
   {
     id: 65,
@@ -870,6 +999,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/shreeyash-dhale-249a1b2b9",
     githubUrl: "",
+    comm: "COSMOS",
   },
 
   // SPORTS TEAM
@@ -882,6 +1012,7 @@ export const teamMembers = [
     instagramUrl: "",
     linkedinUrl: "https://www.linkedin.com/in/kshitij-shrikhande",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1002,
@@ -892,6 +1023,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/chinmay-tekade-95447a248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1004,
@@ -902,6 +1034,7 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/vedant-raut-ab2b3225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 67,
@@ -911,6 +1044,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/omair.586/",
     linkedinUrl: "https://www.linkedin.com/in/omair-ahmad-khan-383621345/",
     githubUrl: "https://github.com/OmairKhan29",
+    comm: "COSMOS",
   },
   {
     id: 70,
@@ -921,16 +1055,18 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/rushabh-thakurdware-63a9a12aa/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/rushabhthakurdware",
+    comm: "COSMOS",
   },
   {
     id: 7000,
     name: "Tanmay Isal",
     position: "SPORTS MEMBER",
     imageUrl: "/profile_photo/Tanmay_isal.jpeg",
-    instagramUrl: "https://www.instagram.com/tanmayy6711?igsh=MXEwY3k1ZmluZGI0Mg==&utm_source=ig_contact_invite",
-    linkedinUrl:
-      "",
+    instagramUrl:
+      "https://www.instagram.com/tanmayy6711?igsh=MXEwY3k1ZmluZGI0Mg==&utm_source=ig_contact_invite",
+    linkedinUrl: "",
     githubUrl: "",
+    comm: "COSMOS",
   },
   {
     id: 1003,
@@ -942,16 +1078,16 @@ export const teamMembers = [
     linkedinUrl:
       "https://www.linkedin.com/in/hrishikesh-divekar-505255345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/HrishikeshDivekar",
+    comm: "COSMOS",
   },
   {
     id: 100309,
     name: "Atharva Pagar",
     position: "MEMBER",
     imageUrl: "/profile_photo/Atharva_pagar.jpeg",
-    instagramUrl:
-      "https://www.instagram.com/atharva_pagar/",
-    linkedinUrl:
-      "http://www.linkedin.com/in/atharva-pagar-65830b28b",
+    instagramUrl: "https://www.instagram.com/atharva_pagar/",
+    linkedinUrl: "http://www.linkedin.com/in/atharva-pagar-65830b28b",
     githubUrl: "",
+    comm: "COSMOS",
   },
 ];
