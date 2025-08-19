@@ -416,7 +416,8 @@ export const eventBlocksdesktop = [
   "F1 Stimulation [All Day]",
   "Free Fire [11:00 am - 1:00 pm]",
   "FIFA [All Day 24 hrs]",
-  "Alph
+  "Alphanite [11:00 am]",
+];
 
 
 export const eventBlocksDay2desktop = [
