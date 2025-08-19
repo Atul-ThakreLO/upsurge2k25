@@ -139,7 +139,7 @@ export function MemberCard({
         </Card>
 
         <Card
-          className="absolute inset-0 w-full h-full overflow-hidden shadow-lg hover:scale-105 hover:shadow-cyan-400/30 hover:shadow-2xl"
+          className="absolute inset-0 w-full h-full overflow-hidden shadow-lg transition-transform duration-500 ease-out hover:scale-110 hover:shadow-cyan-500/50 hover:shadow-2xl hover:brightness-110"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
@@ -186,7 +186,7 @@ export function MemberCard({
               </div>
 
               <h3
-                className={`text-2xl font-bold mb-2 font-mono text-center drop-shadow-lg text-purple-500 transition-all duration-700 ease-out ${
+                className={`text-2xl font-bold mb-2 mt-1 font-mono text-center drop-shadow-lg text-purple-500 transition-all duration-700 ease-out ${
                   isFlipped
                     ? "opacity-100 translate-y-0 scale-100"
                     : "opacity-0 translate-y-6 scale-95"

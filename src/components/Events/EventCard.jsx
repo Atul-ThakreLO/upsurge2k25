@@ -27,7 +27,7 @@ const EventCard = ({
         <h2 className="text-3xl md:text-4xl md:hidden font-bold text-pink-700 tracking-tight">
           {title}
         </h2>
-        <p className="text-gray-400 text-md leading-relaxed break-words md:line-clamp-10 [hyphens:auto] text-justify">
+        <p className="text-gray-400 font-sans text-md leading-relaxed break-words md:line-clamp-10 [hyphens:auto] text-justify">
           {description}
         </p>
 
