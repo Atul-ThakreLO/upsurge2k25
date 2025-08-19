@@ -92,7 +92,7 @@ export default function KnobBox() {
   <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-700">
     규칙 및 규정
   </h1>
-  <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">
+  <h2 className="text-4xl mt-2 text-gray-200">
     Rules and Regulations 
   </h2>
 </div>
@@ -138,7 +138,7 @@ export default function KnobBox() {
   </div>
 
   {/* Top 7 Rules (Right) */}
-  <div className="max-w-3xl space-y-6 font-[Orbitron] text-lg font-semibold tracking-widest text-white/90 ml-20">
+  <div className="max-w-3xl space-y-6 text-lg font-semibold tracking-widest text-white/90 ml-20">
     {topRules.map((rule, index) => (
       <div key={index} className="flex items-start gap-4">
         <Image
@@ -158,7 +158,7 @@ export default function KnobBox() {
 <div className="mt-24 flex flex-col md:flex-row gap-12 items-start justify-start mr-2">
   
   {/* Bottom Rules (Left Side) */}
-  <div className="flex-1 space-y-6 font-[Orbitron] tracking-widest text-lg font-semibold leading-relaxed text-white/90">
+  <div className="flex-1 space-y-6  tracking-widest text-lg font-semibold leading-relaxed text-white/90">
     {bottomRules.map((rule, index) => (
       <div key={index} className="flex items-start gap-4">
         <Image

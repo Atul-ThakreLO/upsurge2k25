@@ -38,7 +38,7 @@ export default function SquidStepScene() {
         <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-600/90">
           1 - 일차
         </h1>
-        <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">Day - 1</h2>
+        <h2 className="text-4xl mt-2 font-squid text-gray-200">Day - 1</h2>
       </div>
 
       {/* Character */}
@@ -91,7 +91,7 @@ export default function SquidStepScene() {
             <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-600/90">
               2 - 일차
             </h1>
-            <h2 className="text-4xl mt-2 font-[Orbitron] text-gray-200">Day - 2</h2>
+            <h2 className="text-4xl mt-2 font-squid text-gray-200">Day - 2</h2>
           </div>
         </div>
       </div>

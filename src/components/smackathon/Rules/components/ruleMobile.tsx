@@ -78,13 +78,13 @@ return (
       <h1 className="text-4xl font-bold font-[Orbitron] text-pink-700">
         규칙 및 규정
       </h1>
-      <h2 className="text-2xl mt-2 font-[Orbitron] text-gray-200">
+      <h2 className="text-2xl mt-2 text-gray-200">
         Rules and Regulations
       </h2>
     </div>
 
     {/* Rules List */}
-    <div className="relative z-10 max-w-md mx-auto space-y-6 font-[Orbitron] text-sm font-medium leading-relaxed text-white/90">
+    <div className="relative z-10 max-w-md mx-auto space-y-6 text-sm font-medium leading-relaxed text-white/90">
       {rules.map((rule, index) => (
         <div key={index} className="flex items-start gap-3">
           <Image

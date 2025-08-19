@@ -172,7 +172,7 @@ export function MemberCard({
                   src={imageUrl || "/default-avatar.jpg"}
                   alt={`${name}'s profile picture`}
                   fill
-                  sizes="(max-width: 768px) 96px, 96px"
+                  sizes="(max-width: 768px) 96px, 256px"
                   className="rounded-lg border-3 border-white shadow-lg object-cover transition-all duration-300 group-hover:shadow-pink-500/30"
                   priority={true}
                   placeholder="blur"
