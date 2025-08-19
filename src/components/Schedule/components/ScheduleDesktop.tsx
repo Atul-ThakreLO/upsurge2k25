@@ -66,7 +66,7 @@ export default function SquidStepScene() {
       {/* Guy Image*/}
       <div className="relative w-full min-h-[350vh] bg-black overflow-visible">
         {/* Guy Image */}
-        <div className="absolute left-30 top-[220vh] z-30">
+        <div className="absolute left-30 top-[230vh] z-30">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             viewport={{ once: false }}
@@ -86,7 +86,7 @@ export default function SquidStepScene() {
         </div>
 
         {/* Day 2 Content */}
-        <div className="absolute left-[400px] top-[155vh] z-[40] text-white p-4">
+        <div className="absolute left-[400px] top-[160vh] z-[40] text-white p-4">
           <div className="text-center mb-20 mt-60 ml-20">
             <h1 className="text-6xl md:text-5xl font-bold font-[Orbitron] text-pink-600/90">
               2 - 일차
@@ -118,7 +118,7 @@ export default function SquidStepScene() {
 
       {/* RIGHT STAIRCASE - Mirrored Blocks */}
 
-<div className="absolute top-[205vh] right-60 z-20 flex flex-col gap-14 w-[40vw]">
+<div className="absolute top-[225vh] right-60 z-20 flex flex-col gap-18 w-[40vw]">
   {eventBlocksDay2desktop.map((event, i) => {
     return (
       <motion.div
@@ -145,7 +145,7 @@ export default function SquidStepScene() {
             transform: `translateY(${smoothedScroll * -0.2}px)`,
             willChange: "transform",
           }}
-          className="relative w-full h-[450vh]"
+          className="relative w-full h-[520vh]"
         >
           <Image
             src="/Schedule/transition.webp"
