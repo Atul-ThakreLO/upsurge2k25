@@ -62,7 +62,6 @@ export const teamMembers = [
     linkedinUrl: "https://in.linkedin.com/in/alok-roy-",
     githubUrl: "https://github.com/AlokRoyal",
   },
-
   {
     id: 2,
     name: "Gayati Umap",
@@ -382,10 +381,8 @@ export const teamMembers = [
     imageUrl: "/profile_photo/Ayush_Patil.jpeg",
     instagramUrl:
       "https://www.instagram.com/ayusshpatil28/profilecard/?igsh=MW5lOGliYmsxbXo1ag==",
-    linkedinUrl:
-      "https://www.linkedin.com/in/ayussshpatil",
-    githubUrl:
-      "",
+    linkedinUrl: "https://www.linkedin.com/in/ayussshpatil",
+    githubUrl: "",
   },
   {
     id: 29,
@@ -659,6 +656,16 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/saarthakk7?igsh=c3czdnFmcDYyNml2",
     linkedinUrl:
       "https://www.linkedin.com/in/sarthakk-chavan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    githubUrl: "",
+  },
+  {
+    id: 10090,
+    name: "Khushi Vegad",
+    position: "PUBLICITY MEMBER",
+    imageUrl: "/profile_photo/Khushi_vegad.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=lotbehu",
+    linkedinUrl: "https://www.linkedin.com/in/khushi-vegad",
     githubUrl: "",
   },
   {

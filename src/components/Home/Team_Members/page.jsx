@@ -5,7 +5,7 @@ export default function TeamMembers() {
   // Group team members by their teams
   const teamGroups = {
     "CORE COMMITTEE": teamMembers.filter(member => 
-      [ "PRESIDENT","ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","VICE PRESIDENT","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER"].includes(member.position)
+      [ "PRESIDENT","ACM CHAIRPERSON","ACM VICE-CHAIRPERSON","VICE PRESIDENT","ACM SECRETARY", "ACM JOINT SECRETARY", "TREASURER", "JOINT TREASURER", "JOINT SECRETARY"].includes(member.position)
     ),
     "TECHNICAL TEAM": teamMembers.filter(member => 
       ["TECHNICAL HEAD","ACM TECHNICAL HEAD", "WEB MASTERS", "TECHNICAL CO-HEAD", "TECHNICAL MEMBER"].includes(member.position)
@@ -17,7 +17,7 @@ export default function TeamMembers() {
       ["LITERATURE HEAD", "LITERATURE CO-HEAD", "CONTENT CREATION MASTERS"].includes(member.position)
     ),
     "DESIGN TEAM": teamMembers.filter(member => 
-      ["ACM DESIGN HEAD", "DESIGN HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER","Design MEMBER"].includes(member.position)
+      ["ACM DESIGN HEAD", "DESIGN HEAD", "DESIGN CO-HEAD", "ARTS HEAD", "DESIGN MASTERS", "ARTS CO-HEAD", "ART CO-HEAD", "DESIGN MEMBER","Design MEMBER"].includes(member.position)
     ),
     "PUBLICITY TEAM": teamMembers.filter(member => 
       ["ACM PR HEAD", "PUBLICITY HEAD", "PUBLICITY CO-HEAD", "PR MASTERS","PUBLICITY MEMBER"].includes(member.position)

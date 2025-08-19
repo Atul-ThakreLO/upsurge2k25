@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[Orbitron]!`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono!`}
       >
         <Nav />
         {children}
