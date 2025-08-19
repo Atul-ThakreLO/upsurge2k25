@@ -48,7 +48,7 @@
   width: 80%;
   height: 90%;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 3px;
   z-index: 2;
   background-image: url("/img/game-card.jpg");
   background-size: cover;
