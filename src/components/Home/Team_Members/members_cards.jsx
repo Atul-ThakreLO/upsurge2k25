@@ -76,6 +76,7 @@ export function MemberCard({
   instagramUrl,
   linkedinUrl,
   githubUrl,
+  comm,
   index,
 }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -153,6 +154,10 @@ export function MemberCard({
               backgroundImage: `url(${acmBg && acmBg.src ? acmBg.src : acmBg})`,
             }}
           />
+          <div className="absolute top-7 bg-amber-600 left-0 w-44 -translate-x-12 z-20 py-1 -rotate-45">
+            <p className="text-2xl text-center w-full">{comm
+              }</p>
+          </div>
 
           <div className="absolute inset-0 border-2 border-pink-500/30 group-hover:border-cyan-400/50" />
 
