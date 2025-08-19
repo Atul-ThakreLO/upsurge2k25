@@ -7,7 +7,7 @@ import { FooterSocialLinks, NavLinks } from "../../../../data";
 
 const Footer = ({ footerDetails }) => {
   return (
-    <footer className="relative w-full text-white py-24 font-mono overflow-hidden">
+    <footer className="relative w-full text-white py-24 overflow-hidden font-[Orbitron] tracking-wider">
       {/* <FallingMoney /> */}
       <div className="absolute inset-0 -z-10">
         <img

@@ -32,7 +32,7 @@ export default function SquidStepScene() {
           <h1 className="text-4xl font-bold font-[Orbitron] text-pink-600/90">
             1 - 일차
           </h1>
-          <h2 className="text-2xl mt-2 font-[Orbitron] text-gray-200">
+          <h2 className="text-2xl mt-2 font-squid text-gray-200">
             Day - 1
           </h2>
         </div>
@@ -76,7 +76,7 @@ export default function SquidStepScene() {
           <h1 className="text-4xl font-bold font-[Orbitron] text-pink-600/90">
             2 - 일차
           </h1>
-          <h2 className="text-2xl mt-2 font-[Orbitron] text-gray-200">
+          <h2 className="text-2xl mt-2 font-squid text-gray-200">
             Day - 2
           </h2>
         </div>
@@ -115,11 +115,9 @@ export default function SquidStepScene() {
           ))}
         </div>
       </div>
-
       <div className="w-full !px-0 !mx-0">
         <Footer footerDetails={FooterContactDetailsCosmos} />
       </div>
-
       <style jsx>{`
         /* Mobile Optimization */
         @media (max-width: 768px) {

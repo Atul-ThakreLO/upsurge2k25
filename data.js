@@ -154,13 +154,13 @@ export const EventsDataDesktop = [
     teamMembers: "3-5",
     description: (
       <>
-          A high-stakes, team-based challenge testing logic, teamwork, and quick
-          thinking. Teams of 3 face three thrilling rounds:
-          <br />
-          1. Find the torch in the dark <br />
-          2. Crack riddles, locks, and puzzles <br />
-          3. Uncover the key to escape. Race against time. Decode the clues.
-          Escape before it’s too late
+        A high-stakes, team-based challenge testing logic, teamwork, and quick
+        thinking. Teams of 3 face three thrilling rounds:
+        <br />
+        1. Find the torch in the dark <br />
+        2. Crack riddles, locks, and puzzles <br />
+        3. Uncover the key to escape. Race against time. Decode the clues.
+        Escape before it’s too late
       </>
     ),
     registerLink:
@@ -416,9 +416,8 @@ export const eventBlocksdesktop = [
   "F1 Stimulation [All Day]",
   "Free Fire [11:00 am - 1:00 pm]",
   "FIFA [All Day 24 hrs]",
-  "Alphanite [11:00 am - 1:00 pm]",
-
-]
+  "Alphanite [11:00 am]",
+];
 
 
 export const eventBlocksDay2desktop = [
@@ -444,7 +443,7 @@ export const eventBlocks = [
 export const eventBlocksDay2 = [
   "F1 Stimulation [All Day]",
   "FIFA [All Day]",
-  "Ideathon [11:00am]", 
+  "Ideathon [11:00am]",
   "Escape Room [11:00am]",
   "Coding Relay [10:00am]",
   "Smackathon",

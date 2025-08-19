@@ -253,7 +253,7 @@ export default function Prizepool() {
         <div ref={victoryQuoteRef} className="text-center mb-12 max-w-2xl">
           <GlitchText
             text="Victory comes at a price. But for the last ones standing - the prize is everything"
-            className={`${styles.warriorFont} text-lg md:text-xl text-gray-300 leading-relaxed`}
+            className={`${styles.warriorFont} text-lg md:text-xl text-gray-300 leading-relaxed font-[Orbitron]! tracking-wider`}
           />
         </div>
 
@@ -348,7 +348,7 @@ export default function Prizepool() {
         <div ref={chooseQuoteRef} className="text-center mb-8 max-w-3xl">
           <GlitchText
             text="Choose wisely. Play fair - or don't. Only the game decides who survives."
-            className={`${styles.warriorFont} text-lg md:text-xl text-gray-300 leading-relaxed`}
+            className={`${styles.warriorFont} text-lg md:text-xl text-gray-300 leading-relaxed font-[Orbitron]! tracking-wider`}
           />
         </div>
 
