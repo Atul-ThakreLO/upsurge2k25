@@ -1,10 +1,10 @@
 "use client";
 
-import { eventBlocks } from "../../../../data";
-import Footer from "./footer";
-import { FooterContactDetailsCosmos } from "../../../../data";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { eventBlocks, eventBlocksDay2 } from '../../../../data';
+import Footer from './footer';
+import { FooterContactDetailsCosmos } from '../../../../data';
+import Image from 'next/image';
+import {motion} from 'framer-motion'
 export default function SquidStepScene() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -105,7 +105,7 @@ export default function SquidStepScene() {
 
         {/* Second Set of Event Blocks */}
         <div className="flex flex-col items-center gap-6 w-full max-w-md mb-10">
-          {eventBlocks.map((event, i) => (
+          {eventBlocksDay2.map((event, i) => (
             <div
               key={i}
               className="w-full h-24 rounded-lg shadow-xl flex items-center justify-center text-lg font-bold text-white glow-glass-effect-mobile"
