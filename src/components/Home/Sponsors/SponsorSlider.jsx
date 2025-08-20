@@ -5,7 +5,7 @@ import "./sponsor.css";
 
 const sponsors = [
   "/sponsors/shubi.png", "/sponsors/vivo.png", "/sponsors/TIME.png", "/sponsors/Shahoverseas.png",
-  "/sponsors/dahiyamomos.png", "/sponsors/gulsons.png", "/sponsors/Dreamasia.png",
+  "/sponsors/dahiyamomos.png", "/sponsors/gulsons.png", "/sponsors/Dreamasia.png","/sponsors/TruScholar.png",
 ];
 
 export default function SponsorSlider() {
