@@ -742,7 +742,7 @@ export const teamMembers = [
     id: 72,
     name: "Nikhilesh Ghormode",
     position: "PR MASTERS",
-    imageUrl: "/profile_photo/Nikhilesh_Ghormode.png",
+    imageUrl: "/profile_photo/Nikhilesh_Ghormode.jpg",
     instagramUrl:
       "https://www.instagram.com/nikhileshghormode?igsh=MWFqcDJoaDQwa2ZmOA==",
     linkedinUrl: "https://www.linkedin.com/in/nikhilesh-ghormode-a3720728a",
