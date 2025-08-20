@@ -249,7 +249,7 @@ export const EventsDataDesktop = [
     title: "Cipher Chase",
     id: "cipherChase",
     prizePool: "5,000",
-    entryFees: 179,
+    entryFees: 100,
     teamMembers: "1-4",
     description:
       "Cipher Chase is a thrilling treasure hunt for coders. Participants start by scanning a QR code to unlock their first coding challenge. Solving it reveals a clue to the next QR. Each QR presents a new problem, testing speed, logic, and programming skills. The hunt continues until all challenges are solved and the final destination is reached.",
@@ -262,7 +262,7 @@ export const EventsDataDesktop = [
     title: "Alphinate",
     id: "alphinate",
     prizePool: "4,000",
-    entryFees: 299,
+    entryFees: 99,
     teamMembers: "3-5",
     description:
       "Alphinate is an innovation-focused exhibition where students showcase technical projects. Participants present ideas, demonstrate models, and engage in Q&A with judges. The event highlights creativity, practicality, and presentation skills. Winners receive trophies and rewards, while all gain exposure, confidence, and the chance to inspire others.",
