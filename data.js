@@ -29,7 +29,7 @@ export const FooterContactDetailsACM = [
   },
 ];
 
-import InstagramIcon from "./public/img/Instagram Icon";
+import InstagramIcon from "./public/svg/Instagram Icon";
 import MailSend01Icon from "./public/svg/MailSend01Icon";
 import Linkedin01Icon from "./public/svg/Linkedin01Icon.jsx";
 
@@ -62,8 +62,8 @@ export const NavLinks = [
   { name: "Home", href: "/" },
   { name: "Smackathon", href: "/smackathon" },
   { name: "Events", href: "/events" },
-  { name: "Schedule", href: "/schedule" },
-  { name: "Team", href: "/teams" },
+  { name: "Schedule", href: "/Schedule" },
+  { name: "Teams", href: "/teams" },
 ];
 
 export const EventLogos = [""];
@@ -154,13 +154,13 @@ export const EventsDataDesktop = [
     teamMembers: "3-5",
     description: (
       <>
-          A high-stakes, team-based challenge testing logic, teamwork, and quick
-          thinking. Teams of 3 face three thrilling rounds:
-          <br />
-          1. Find the torch in the dark <br />
-          2. Crack riddles, locks, and puzzles <br />
-          3. Uncover the key to escape. Race against time. Decode the clues.
-          Escape before it’s too late
+        A high-stakes, team-based challenge testing logic, teamwork, and quick
+        thinking. Teams of 3 face three thrilling rounds:
+        <br />
+        1. Find the torch in the dark <br />
+        2. Crack riddles, locks, and puzzles <br />
+        3. Uncover the key to escape. Race against time. Decode the clues.
+        Escape before it’s too late
       </>
     ),
     registerLink:
@@ -223,7 +223,7 @@ export const EventsDataDesktop = [
       "https://res.cloudinary.com/dok1hsojb/image/upload/v1755367603/freefire_h_s0weih.webp",
     title: "Free Fire",
     id: "freeFire",
-    prizePool: "12,000",
+    prizePool: "20,000",
     entryFees: 200,
     teamMembers: "2-4",
     description:
@@ -249,7 +249,7 @@ export const EventsDataDesktop = [
     title: "Cipher Chase",
     id: "cipherChase",
     prizePool: "5,000",
-    entryFees: 179,
+    entryFees: 100,
     teamMembers: "1-4",
     description:
       "Cipher Chase is a thrilling treasure hunt for coders. Participants start by scanning a QR code to unlock their first coding challenge. Solving it reveals a clue to the next QR. Each QR presents a new problem, testing speed, logic, and programming skills. The hunt continues until all challenges are solved and the final destination is reached.",
@@ -262,7 +262,7 @@ export const EventsDataDesktop = [
     title: "Alphinate",
     id: "alphinate",
     prizePool: "4,000",
-    entryFees: 299,
+    entryFees: 99,
     teamMembers: "3-5",
     description:
       "Alphinate is an innovation-focused exhibition where students showcase technical projects. Participants present ideas, demonstrate models, and engage in Q&A with judges. The event highlights creativity, practicality, and presentation skills. Winners receive trophies and rewards, while all gain exposure, confidence, and the chance to inspire others.",
@@ -408,10 +408,43 @@ export const EventsDataMobile = [
   },
 ];
 
+export const eventBlocksdesktop = [
+  "Smackathon [10:00 am - 10:00 am 24hrs]",
+  "CTF  [11:00 am - 2:00 pm]",
+  "Singularity  [11:00 am - 1:00 pm]",
+  "Cipher Chase [11:00 am - 1:00 pm]",
+  "F1 Stimulation [All Day]",
+  "Free Fire [11:00 am - 1:00 pm]",
+  "FIFA [All Day 24 hrs]",
+  "Alphanite [11:00 am]",
+];
+
+
+export const eventBlocksDay2desktop = [
+  "F1 Stimulation [All Day 24hrs]",
+  "Ideathon [11:00 am - 2:00 pm]", 
+  "Coding Relay [10:00 am - 1:00 pm]",
+  "Smackathon[ 10:00 am - 10:00 am 24hrs]",
+  "Escape Room [11:00am - 1:00 pm]",
+  "FIFA [All Day 24hrs]",
+];
+
 export const eventBlocks = [
-  "Inauguration 10:00",
-  "Talentque 11:00am",
-  "Dare Devils 11:00am",
-  "Coding Casino 11:00am",
-  "Fifa & Smackdown 11:00am",
+  "Smackathon [10:00am 24hrs]",
+  "CTF [11:00am]",
+  "Singularity [11:00 am]",
+  "Cipher Chase [11:00 am]",
+  "F1 Stimulation [All Day]",
+  "Free Fire [11:00 am]",
+  "FIFA [All Day]",
+  "Alphanite [11:00 am]",
+];
+
+export const eventBlocksDay2 = [
+  "F1 Stimulation [All Day]",
+  "FIFA [All Day]",
+  "Ideathon [11:00am]",
+  "Escape Room [11:00am]",
+  "Coding Relay [10:00am]",
+  "Smackathon",
 ];

@@ -4,6 +4,7 @@ import { Card } from "./card";
 import { useEffect, useState } from "react";
 import acmBg from "./public/images/acm-background-latest.png";
 import cyberpunkBack from "./public/images/cyberpunk-back.png";
+import Image from "next/image";
 
 const InstagramIcon = () => (
   <svg
@@ -15,7 +16,13 @@ const InstagramIcon = () => (
     className="hover:scale-110 transition-all duration-200"
   >
     <defs>
-      <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <linearGradient
+        id="instagram-gradient"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="100%"
+      >
         <stop offset="0%" stopColor="#f09433" />
         <stop offset="25%" stopColor="#e6683c" />
         <stop offset="50%" stopColor="#dc2743" />
@@ -62,8 +69,16 @@ const GithubIcon = () => (
   </svg>
 );
 
-export function MemberCard({ name, position, imageUrl, instagramUrl, linkedinUrl, githubUrl, index }) {
-
+export function MemberCard({
+  name,
+  position,
+  imageUrl,
+  instagramUrl,
+  linkedinUrl,
+  githubUrl,
+  comm,
+  index,
+}) {
   const [isVisible, setIsVisible] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -85,7 +100,9 @@ export function MemberCard({ name, position, imageUrl, instagramUrl, linkedinUrl
   return (
     <div
       className={`relative transition-all duration-1000 ease-out ${
-        isVisible ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-90 translate-y-12"
+        isVisible
+          ? "opacity-100 scale-100 translate-y-0"
+          : "opacity-0 scale-90 translate-y-12"
       }`}
       style={{
         width: "330px",
@@ -111,16 +128,19 @@ export function MemberCard({ name, position, imageUrl, instagramUrl, linkedinUrl
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
             style={{
-              backgroundImage: `url(${(cyberpunkBack && cyberpunkBack.src) ? cyberpunkBack.src : cyberpunkBack})`,
+              backgroundImage: `url(${
+                cyberpunkBack && cyberpunkBack.src
+                  ? cyberpunkBack.src
+                  : cyberpunkBack
+              })`,
             }}
           />
           <div className="absolute inset-0 border-2 border-purple-500/30" />
-            {/* ACM Text Above Profile Image */}
-
+          {/* ACM Text Above Profile Image */}
         </Card>
 
         <Card
-          className="absolute inset-0 w-full h-full overflow-hidden shadow-lg hover:scale-105 hover:shadow-cyan-400/30 hover:shadow-2xl"
+          className="absolute inset-0 w-full h-full overflow-hidden shadow-lg transition-transform duration-500 ease-out hover:scale-110 hover:shadow-cyan-500/50 hover:shadow-2xl hover:brightness-110"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
@@ -131,9 +151,13 @@ export function MemberCard({ name, position, imageUrl, instagramUrl, linkedinUrl
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
             style={{
-              backgroundImage: `url(${(acmBg && acmBg.src) ? acmBg.src : acmBg})`,
+              backgroundImage: `url(${acmBg && acmBg.src ? acmBg.src : acmBg})`,
             }}
           />
+          <div className="absolute top-7 bg-amber-600 left-0 w-44 -translate-x-12 z-20 py-1 -rotate-45">
+            <p className="text-2xl text-center w-full">{comm
+              }</p>
+          </div>
 
           <div className="absolute inset-0 border-2 border-pink-500/30 group-hover:border-cyan-400/50" />
 
@@ -142,29 +166,45 @@ export function MemberCard({ name, position, imageUrl, instagramUrl, linkedinUrl
             {/* Profile Image and Text Content */}
             <div className="flex-1 flex flex-col items-center justify-center">
               <div
-                className={`transition-all duration-800 ease-out ${
-                  isFlipped ? "opacity-100 translate-y-0 rotate-0" : "opacity-0 translate-y-8 rotate-3"
+                className={`transition-all w-60 h-70  duration-800 ease-out ${
+                  isFlipped
+                    ? "opacity-100 translate-y-0 rotate-0"
+                    : "opacity-0 translate-y-8 rotate-3"
                 }`}
                 style={{ transitionDelay: isFlipped ? "200ms" : "0ms" }}
               >
-              <img
+                <Image
+                  src={imageUrl || "/default-avatar.jpg"}
+                  alt={`${name}'s profile picture`}
+                  fill
+                  sizes="(max-width: 768px) 96px, 256px"
+                  className="rounded-lg border-3 border-white shadow-lg object-cover transition-all duration-300 group-hover:shadow-pink-500/30"
+                  priority={true}
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAhEQACAQIEBwAAAAAAAAAAAAABAgMABAUGIWGRobHB0f/aAAwDAQACEQMRAD8A0XGARFBBBHoKzcWg=="
+                />
+                {/* <img
                 src={imageUrl || "/placeholder.svg"}
                 alt={`${name} profile`}
                 className="w-60 h-70 rounded-lg border-3 border-white shadow-lg object-cover transition-all duration-300 group-hover:shadow-pink-500/30 mt-2"
-              />
+              /> */}
               </div>
 
               <h3
-                className={`text-2xl font-bold mb-2 text-center drop-shadow-lg text-purple-500 transition-all duration-700 ease-out ${
-                  isFlipped ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-6 scale-95"
+                className={`text-2xl font-bold mb-2 mt-1 font-mono text-center drop-shadow-lg text-purple-500 transition-all duration-700 ease-out ${
+                  isFlipped
+                    ? "opacity-100 translate-y-0 scale-100"
+                    : "opacity-0 translate-y-6 scale-95"
                 } group-hover:text-pink-400 group-hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.8)]`}
                 style={{ transitionDelay: isFlipped ? "400ms" : "0ms" }}
               >
                 {name}
               </h3>
               <p
-                className={`text-xl text-center opacity-90 drop-shadow-md bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent transition-all duration-600 ease-out ${
-                  isFlipped ? "opacity-90 translate-y-0" : "opacity-0 translate-y-4"
+                className={`text-xl text-center opacity-90 font-mono font-medium drop-shadow-md bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent transition-all duration-600 ease-out ${
+                  isFlipped
+                    ? "opacity-90 translate-y-0"
+                    : "opacity-0 translate-y-4"
                 } group-hover:from-cyan-300 group-hover:to-pink-300`}
                 style={{ transitionDelay: isFlipped ? "600ms" : "0ms" }}
               >
@@ -175,7 +215,9 @@ export function MemberCard({ name, position, imageUrl, instagramUrl, linkedinUrl
             {/* Social Media Icons - Positioned at Bottom Left */}
             <div
               className={`flex gap-3 justify-start mb-0 transition-all duration-500 ease-out ${
-                isFlipped ? "opacity-100 translate-x-0 scale-100" : "opacity-0 -translate-x-8 scale-75"
+                isFlipped
+                  ? "opacity-100 translate-x-0 scale-100"
+                  : "opacity-0 -translate-x-8 scale-75"
               }`}
               style={{ transitionDelay: isFlipped ? "800ms" : "0ms" }}
             >
