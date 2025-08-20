@@ -70,7 +70,7 @@ export const teamMembers = [
     instagramUrl: "https://www.instagram.com/avanti__raut/",
     linkedinUrl: "https://www.linkedin.com/in/avanti-raut-0615a82a4/",
     githubUrl: "",
-    comm: "ACM",
+    comm: "COSMOS",
   },
   {
     id: 2,
