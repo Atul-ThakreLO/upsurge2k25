@@ -72,6 +72,7 @@ export default function TeamMembers() {
                   linkedinUrl={member.linkedinUrl}
                   githubUrl={member.githubUrl}
                   index={index}
+                  comm={member.comm}
                 />
               </div>
             ))}
