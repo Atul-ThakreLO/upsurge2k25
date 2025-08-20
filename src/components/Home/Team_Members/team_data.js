@@ -13,8 +13,7 @@ export const teamMembers = [
     name: "Paras Kalbande",
     position: "PRESIDENT",
     imageUrl: "/profile_photo/paras_.jpeg",
-    instagramUrl:
-      "https://www.instagram.com/paraskalbande/#",
+    instagramUrl: "https://www.instagram.com/paraskalbande/#",
     linkedinUrl: "https://www.linkedin.com/in/paras-kalbande-788717212/",
     githubUrl: "",
     comm: "COSMOS",
@@ -37,7 +36,8 @@ export const teamMembers = [
     imageUrl: "/profile_photo/Om_Mane.jpg",
     instagramUrl:
       "https://www.instagram.com/_.om_31._?igsh=MW03aDZtNTAybm54cQ==",
-    linkedinUrl: "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/om-mane-20479a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     githubUrl: "https://github.com/spectropaws",
     comm: "ACM",
   },
@@ -908,6 +908,18 @@ export const teamMembers = [
     comm: "COSMOS",
   },
   {
+    id: 11156,
+    name: "Ayush Nagpure",
+    position: "SOCIAL MEDIA HEAD",
+    imageUrl: "/profile_photo/Ayush_Nagpure.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/ayush_nagpure_19?igsh=MXhjeTMzYzkwZHExbA==",
+    linkedinUrl:
+      "https://www.linkedin.com/in/ayush-nagpure-59b52a371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
     id: 57,
     name: "Disha Nannaware",
     position: "SOCIAL MEDIA CO-HEAD",
@@ -992,6 +1004,28 @@ export const teamMembers = [
     imageUrl: "/profile_photo/Jatin_Mahajan.jpg",
     instagramUrl: "https://www.instagram.com/_jatin.mahajan_",
     linkedinUrl: "https://www.linkedin.com/in/jatin-mahajan",
+    githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
+    id: 1163,
+    name: "Sahil Ramteke",
+    position: "PHOTOGRAPHY HEAD",
+    imageUrl: "/profile_photo/Sahil_Ramteke.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/sahi.l_84?igsh=MW42ejB5eTZlMTAy&utm_source=qr",
+    linkedinUrl: "",
+    githubUrl: "",
+    comm: "COSMOS",
+  },
+  {
+    id: 1163,
+    name: "Ayush Motikar",
+    position: "PHOTOGRAPHY HEAD",
+    imageUrl: "/profile_photo/Ayush_Motikar.jpeg",
+    instagramUrl:
+      "https://www.instagram.com/__ayushmotikar__07__?igsh=MW4zMmVpY2o3eXM4bg==",
+    linkedinUrl: "",
     githubUrl: "",
     comm: "COSMOS",
   },
