@@ -1019,7 +1019,7 @@ export const teamMembers = [
     comm: "COSMOS",
   },
   {
-    id: 1163,
+    id: 116,
     name: "Ayush Motikar",
     position: "PHOTOGRAPHY HEAD",
     imageUrl: "/profile_photo/Ayush_Motikar.jpeg",
